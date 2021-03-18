@@ -1,0 +1,23 @@
+set(asm_HEADERS
+    include/asm/buffer.hxx
+    include/asm/callable.hxx
+    )
+set(asm_SOURCES
+    buffer.cxx
+    )
+
+if (WIN32)
+  list(APPEND asm_SOURCES
+      callable_win.cxx
+      )
+else ()
+  list(APPEND asm_SOURCES
+      callable_unix.cxx
+      )
+endif ()
+
+add_library(asm STATIC
+    ${asm_SOURCES}
+    ${asm_HEADERS}
+    )
+target_include_directories(asm PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
