@@ -17,10 +17,10 @@ TEST_CASE("can call function with parameters", "[callable]")
   // [](int a, int b) -> int { return a + b; }
 #ifdef _WIN32
   // on windows parameters are passed via ecx and edx
-  char const code[] = "\x8D\x04\x11\xC3";
+  char const code[] = "\x67\x8D\x04\x11\xC3";
 #else
   // on unix parameters are passed via edi and esi
-  char const code[] = "\x8D\x04\x37\xC3";
+  char const code[] = "\x67\x8D\x04\x37\xC3";
 #endif
   assembly::Callable add{reinterpret_cast<std::byte const*>(code), sizeof(code)};
 

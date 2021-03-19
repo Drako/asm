@@ -3,7 +3,6 @@
 #include <asm/instruction.hxx>
 
 #include <cassert>
-#include <cstdint>
 
 #include <iomanip>
 #include <ostream>
@@ -14,6 +13,8 @@ namespace assembly {
     append_legacy_prefix(inst);
     append_opcode(inst);
     append_modrm(inst);
+    append_sib(inst);
+    append_displacement(inst);
     append_immediate(inst);
   }
 
@@ -61,6 +62,38 @@ namespace assembly {
     }
   }
 
+  void Buffer::append_sib(Instruction const& inst)
+  {
+    if (inst.sib.value!=0u) {
+      push_back(static_cast<std::byte>(inst.sib.value));
+    }
+  }
+
+  void Buffer::append_displacement(Instruction const& inst)
+  {
+    std::size_t count;
+    switch (inst.displacement.type) {
+    case DisplacementType::Disp8:
+      count = 1u;
+      break;
+    case DisplacementType::Disp16:
+      count = 2u;
+      break;
+    case DisplacementType::Disp32:
+      count = 4u;
+      break;
+    case DisplacementType::Disp64:
+      count = 8u;
+      break;
+    default:
+      count = 0u;
+    }
+
+    for (std::size_t n = 0u; n<count; ++n) {
+      push_back(inst.displacement.bytes[n]);
+    }
+  }
+
   void Buffer::append_immediate(Instruction const& inst)
   {
     std::size_t count;
@@ -88,10 +121,10 @@ namespace assembly {
 
   void Buffer::dump(std::ostream& out) const
   {
-    out << "Buffer {";
+    out << "Buffer { \"";
     for (auto const b : *this) {
-      out << " 0x" << std::hex << std::setfill('0') << std::setw(2) << static_cast<unsigned>(b);
+      out << "\\x" << std::hex << std::setfill('0') << std::setw(2) << static_cast<unsigned>(b);
     }
-    out << " }" << std::endl;
+    out << "\" }" << std::endl;
   }
 }

@@ -25,6 +25,10 @@ namespace assembly {
 
     void append_modrm(Instruction const& inst);
 
+    void append_sib(Instruction const& inst);
+
+    void append_displacement(Instruction const& inst);
+
     void append_immediate(Instruction const& inst);
   };
 }

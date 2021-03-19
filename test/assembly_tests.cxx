@@ -2,6 +2,7 @@
 
 #include <asm/buffer.hxx>
 #include <asm/callable.hxx>
+#include <asm/instructions/lea.hxx>
 #include <asm/instructions/mov.hxx>
 #include <asm/instructions/ret.hxx>
 
@@ -43,4 +44,27 @@ TEST_CASE("can generate code for identity function and then run it", "[buffer][c
 
   auto const result = answer.call<char>('A');
   REQUIRE(result == 'A');
+}
+
+TEST_CASE("can generate code for add function and then run it", "[buffer][callable][instruction]")
+{
+  using namespace assembly::registers;
+
+  // [](int a, int b) -> int { return a + b; }
+  assembly::Buffer memory{};
+#ifdef _WIN32
+  memory.append(assembly::instructions::lea(EAX, assembly::addr(ECX, EDX)));
+#else
+  memory.append(assembly::instructions::lea(EAX, assembly::addr(EDI, ESI)));
+#endif
+  memory.append(assembly::instructions::retn());
+
+  std::ostringstream bytes;
+  memory.dump(bytes);
+  INFO("Generated code: " << bytes.str());
+
+  auto const answer = memory.to_callable();
+
+  auto const result = answer.call<int>(19, 23);
+  REQUIRE(result == 42);
 }

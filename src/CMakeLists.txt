@@ -1,8 +1,11 @@
 set(asm_HEADERS
     include/asm/buffer.hxx
     include/asm/callable.hxx
+    include/asm/memory.hxx
     include/asm/register.hxx
     include/asm/instruction.hxx
+    include/asm/instruction_helper.hxx
+    include/asm/instructions/lea.hxx
     include/asm/instructions/mov.hxx
     include/asm/instructions/ret.hxx
     )
