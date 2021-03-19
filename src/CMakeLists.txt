@@ -1,6 +1,10 @@
 set(asm_HEADERS
     include/asm/buffer.hxx
     include/asm/callable.hxx
+    include/asm/register.hxx
+    include/asm/instruction.hxx
+    include/asm/instructions/mov.hxx
+    include/asm/instructions/ret.hxx
     )
 set(asm_SOURCES
     buffer.cxx

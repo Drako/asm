@@ -1,4 +1,5 @@
 add_executable(asm_tests
+    assembly_tests.cxx
     buffer_tests.cxx
     callable_tests.cxx
     )
