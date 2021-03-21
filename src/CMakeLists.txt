@@ -3,6 +3,7 @@ set(asm_HEADERS
     include/asm/callable.hxx
     include/asm/memory.hxx
     include/asm/register.hxx
+    include/asm/types.hxx
     include/asm/instruction.hxx
     include/asm/instruction_helper.hxx
     include/asm/instructions/lea.hxx

@@ -143,24 +143,4 @@ namespace assembly {
     Displacement displacement{};
     Immediate immediate{};
   };
-
-  namespace detail {
-    template<typename ValueType>
-    constexpr void handle_single_byte_opcode(Instruction& inst, std::uint8_t opcode, std::uint8_t opcode8)
-    {
-      inst.opcode.opcode_size = 1u;
-      if constexpr (sizeof(ValueType)==1u) {
-        inst.opcode.opcode[0] = static_cast<std::byte>(opcode8);
-      }
-      else {
-        inst.opcode.opcode[0] = static_cast<std::byte>(opcode);
-        if constexpr (sizeof(ValueType)==2u) {
-          inst.legacy_prefixes.prefix3 = LegacyPrefix3::OperandSizeOverride;
-        }
-        else if constexpr (sizeof(ValueType)==8u) {
-          inst.opcode.rex_prefix |= REXPrefix::W;
-        }
-      }
-    }
-  }
 }

@@ -8,12 +8,15 @@
 
 #include <sstream>
 
+namespace r = assembly::registers;
+namespace i = assembly::instructions;
+
 TEST_CASE("can generate code for function returning int and then run it", "[buffer][callable][instruction]")
 {
   // []() -> int { return 42; }
   assembly::Buffer memory{};
-  memory.append(assembly::instructions::mov(assembly::registers::EAX, 42));
-  memory.append(assembly::instructions::retn());
+  memory.append(i::mov(r::EAX{}, 42u));
+  memory.append(i::retn());
 
   std::ostringstream bytes;
   memory.dump(bytes);
@@ -22,7 +25,7 @@ TEST_CASE("can generate code for function returning int and then run it", "[buff
   auto const answer = memory.to_callable();
 
   auto const result = answer.call<int>();
-  REQUIRE(result == 42);
+  REQUIRE(result==42);
 }
 
 TEST_CASE("can generate code for identity function and then run it", "[buffer][callable][instruction]")
@@ -30,11 +33,11 @@ TEST_CASE("can generate code for identity function and then run it", "[buffer][c
   // [](char a) -> char { return a; }
   assembly::Buffer memory{};
 #ifdef _WIN32
-  memory.append(assembly::instructions::mov(assembly::registers::AL, assembly::registers::CL));
+  memory.append(i::mov(r::AL{}, r::CL{}));
 #else
-  memory.append(assembly::instructions::mov(assembly::registers::AL, assembly::registers::DIL));
+  memory.append(i::mov(r::AL{}, r::DIL{}));
 #endif
-  memory.append(assembly::instructions::retn());
+  memory.append(i::retn());
 
   std::ostringstream bytes;
   memory.dump(bytes);
@@ -43,21 +46,19 @@ TEST_CASE("can generate code for identity function and then run it", "[buffer][c
   auto const answer = memory.to_callable();
 
   auto const result = answer.call<char>('A');
-  REQUIRE(result == 'A');
+  REQUIRE(result=='A');
 }
 
 TEST_CASE("can generate code for add function and then run it", "[buffer][callable][instruction]")
 {
-  using namespace assembly::registers;
-
   // [](int a, int b) -> int { return a + b; }
   assembly::Buffer memory{};
 #ifdef _WIN32
-  memory.append(assembly::instructions::lea(EAX, assembly::addr(ECX, EDX)));
+  memory.append(i::lea(r::EAX{}, assembly::addr(r::ECX{}, r::EDX{})));
 #else
-  memory.append(assembly::instructions::lea(EAX, assembly::addr(EDI, ESI)));
+  memory.append(i::lea(r::EAX{}, assembly::addr(r::EDI{}, r::ESI{})));
 #endif
-  memory.append(assembly::instructions::retn());
+  memory.append(i::retn());
 
   std::ostringstream bytes;
   memory.dump(bytes);
@@ -66,5 +67,5 @@ TEST_CASE("can generate code for add function and then run it", "[buffer][callab
   auto const answer = memory.to_callable();
 
   auto const result = answer.call<int>(19, 23);
-  REQUIRE(result == 42);
+  REQUIRE(result==42);
 }

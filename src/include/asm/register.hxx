@@ -1,49 +1,66 @@
 #pragma once
 
-#include <cstdint>
+#include "types.hxx"
 
 namespace assembly {
-  template<typename ValueType>
-  struct Register final {
-    using value_type = ValueType;
+  enum class REXRequirement {
+    DontCare = 0,
+    Required,
+    Forbidden,
+  };
 
-    std::uint8_t xreg;
-    bool need_rex = false;
+  template<typename ValueType, std::uint8_t Index, REXRequirement Rex = REXRequirement::DontCare, typename Valid = void>
+  struct Register;
+
+  template<typename ValueType, std::uint8_t Index, REXRequirement Rex>
+  struct Register<ValueType, Index, Rex, std::enable_if_t<
+      types::IsOneOfV<ValueType, std::uint8_t, std::uint16_t, std::uint32_t, std::uint64_t> && (Index<=15u)
+  >> final {
+    using value_type = ValueType;
+    using signed_type = types::SignedTypeT<ValueType>;
+    constexpr static std::uint8_t const index = Index;
+    constexpr static REXRequirement const rex = Rex;
   };
 
   namespace registers {
-    static Register<std::uint8_t> const AL{0u};
-    static Register<std::uint8_t> const AH{4u};
-    static Register<std::uint16_t> const AX{0u};
-    static Register<std::uint32_t> const EAX{0u};
-    static Register<std::uint64_t> const RAX{0u};
+#define ASM_BASE_REGISTERS(letter, idx) \
+    using letter##L = Register<std::uint8_t, idx>; \
+    using letter##H = Register<std::uint8_t, idx+4u, REXRequirement::Forbidden>; \
+    using letter##X = Register<std::uint16_t, idx>; \
+    using E##letter##X = Register<std::uint32_t, idx>; \
+    using R##letter##X = Register<std::uint64_t, idx>;
+    ASM_BASE_REGISTERS(A, 0u)
+    ASM_BASE_REGISTERS(B, 3u)
+    ASM_BASE_REGISTERS(C, 1u)
+    ASM_BASE_REGISTERS(D, 2u)
+#undef ASM_BASE_REGISTERS
 
-    static Register<std::uint8_t> const BL{3u};
-    static Register<std::uint8_t> const BH{7u};
-    static Register<std::uint16_t> const BX{3u};
-    static Register<std::uint32_t> const EBX{3u};
-    static Register<std::uint64_t> const RBX{3u};
+#define ASM_POINTER_REGISTERS(base, idx) \
+    using base##L = Register<std::uint8_t, idx, REXRequirement::Required>; \
+    using base = Register<std::uint16_t, idx>; \
+    using E##base = Register<std::uint32_t, idx>; \
+    using R##base = Register<std::uint64_t, idx>;
+    ASM_POINTER_REGISTERS(SP, 4u)
+    ASM_POINTER_REGISTERS(BP, 5u)
+    ASM_POINTER_REGISTERS(SI, 6u)
+    ASM_POINTER_REGISTERS(DI, 7u)
+#undef ASM_POINTER_REGISTERS
 
-    static Register<std::uint8_t> const CL{1u};
-    static Register<std::uint8_t> const CH{5u};
-    static Register<std::uint16_t> const CX{1u};
-    static Register<std::uint32_t> const ECX{1u};
-    static Register<std::uint64_t> const RCX{1u};
+    using R16 = Register<std::uint64_t, 16u>;
 
-    static Register<std::uint8_t> const DL{2u};
-    static Register<std::uint8_t> const DH{6u};
-    static Register<std::uint16_t> const DX{2u};
-    static Register<std::uint32_t> const EDX{2u};
-    static Register<std::uint64_t> const RDX{2u};
-
-    static Register<std::uint8_t> const SIL{6u, true};
-    static Register<std::uint16_t> const SI{6u};
-    static Register<std::uint32_t> const ESI{6u};
-    static Register<std::uint64_t> const RSI{6u};
-
-    static Register<std::uint8_t> const DIL{7u, true};
-    static Register<std::uint16_t> const DI{7u};
-    static Register<std::uint32_t> const EDI{7u};
-    static Register<std::uint64_t> const RDI{7u};
+#define ASM_EXTENDED_REGISTERS(idx) \
+    using R##idx##L = Register<std::uint8_t, idx##u>; \
+    using R##idx##W = Register<std::uint16_t, idx##u>; \
+    using R##idx##D = Register<std::uint32_t, idx##u>; \
+    using R##idx = Register<std::uint64_t, idx##u>;
+    ASM_EXTENDED_REGISTERS(8)
+    ASM_EXTENDED_REGISTERS(9)
+    ASM_EXTENDED_REGISTERS(10)
+    ASM_EXTENDED_REGISTERS(11)
+    ASM_EXTENDED_REGISTERS(12)
+    ASM_EXTENDED_REGISTERS(13)
+    ASM_EXTENDED_REGISTERS(14)
+    ASM_EXTENDED_REGISTERS(15)
+#undef ASM_EXTENDED_REGISTERS
   }
 }

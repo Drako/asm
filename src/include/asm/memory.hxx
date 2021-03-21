@@ -10,86 +10,66 @@
 #include <variant>
 
 namespace assembly {
-  template<typename RegisterType>
-  struct Memory final {
-    using register_type = RegisterType;
+  enum class IndexScale {
+    Scale1 = 0u,
+    Scale2 = 1u,
+    Scale4 = 2u,
+    Scale8 = 3u,
+  };
 
-    Register<register_type> base;
-    std::optional<Register<register_type>> index{};
-    std::uint8_t scale = 1u; // only 1, 2, 4 and 8 are allowed
+  template<typename T, std::uint8_t Idx, REXRequirement RexReq>
+  struct BaseWithDisplacement final {
+    static_assert(sizeof(T)==4u || sizeof(T)==8u);
+
+    using base = Register<T, Idx, RexReq>;
     std::optional<std::variant<std::int8_t, std::int32_t>> displacement{};
   };
 
-  namespace detail {
-    template<typename RegisterType>
-    constexpr void handle_displacement(Instruction& inst, Memory<RegisterType> const& mem)
-    {
-      if (mem.displacement.has_value()) {
-        auto const displacement = mem.displacement.value();
-        if (std::holds_alternative<std::int8_t>(displacement)) {
-          inst.mod_rm.mod = 0x1;
-          inst.displacement.type = DisplacementType::Disp8;
-          inst.displacement.disp8 = std::get<std::int8_t>(displacement);
-        }
-        else if (std::holds_alternative<std::int32_t>(displacement)) {
-          inst.mod_rm.mod = 0x2;
-          inst.displacement.type = DisplacementType::Disp32;
-          inst.displacement.disp32 = std::get<std::int32_t>(displacement);
-        }
-      }
-      else {
-        inst.mod_rm.mod = 0x0;
-      }
-    }
+  template<
+      typename T,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx, REXRequirement IndexRexReq
+  >
+  struct BaseWithScalableIndex final {
+    static_assert(sizeof(T)==4u || sizeof(T)==8u);
 
-    template<typename RegisterType>
-    constexpr void handle_scaled_index(Instruction& inst, Memory<RegisterType> const& mem)
-    {
-      assert(mem.index.has_value());
-      inst.sib.base = mem.base.xreg;
-      inst.sib.index = mem.index.value().xreg;
-      switch (mem.scale) {
-      case 1u:
-        inst.sib.scale = 0x0;
-        break;
-      case 2u:
-        inst.sib.scale = 0x1;
-        break;
-      case 4u:
-        inst.sib.scale = 0x2;
-        break;
-      case 8u:
-        inst.sib.scale = 0x3;
-        break;
-      default:
-        assert(false);
-      }
-    }
-  }
+    constexpr static Register<T, BaseIdx, BaseRexReq> const base{};
+    constexpr static Register<T, IndexIdx, IndexRexReq> const index{};
+    IndexScale scale = IndexScale::Scale1;
+    std::optional<std::variant<std::int8_t, std::int32_t>> displacement{};
+  };
 
-  template<typename RegisterType>
-  constexpr auto addr(
-      Register<RegisterType> base,
+  template<
+      typename T,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx, REXRequirement IndexRexReq
+  >
+  using Memory = std::variant<
+      BaseWithDisplacement<T, BaseIdx, BaseRexReq>,
+      BaseWithScalableIndex<T, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq>
+  >;
+
+  template<typename T, std::uint8_t Idx, REXRequirement RexReq>
+  constexpr Memory<T, Idx, RexReq, 0u, REXRequirement::DontCare> addr(
+      Register<T, Idx, RexReq>,
       std::optional<std::variant<std::int8_t, std::int32_t>> displacement = {}
   )
-  -> std::enable_if_t<
-      std::is_same_v<std::uint32_t, RegisterType> || std::is_same_v<std::uint64_t, RegisterType>, Memory<RegisterType>
-  >
   {
-    return {base, {}, 1u, displacement};
+    return BaseWithDisplacement<T, Idx, RexReq>{displacement};
   }
 
-  template<typename RegisterType>
-  constexpr auto addr(
-      Register<RegisterType> base,
-      Register<RegisterType> index,
-      std::uint8_t scale = 1u,
+  template<
+      typename T,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx, REXRequirement IndexRexReq
+  >
+  constexpr Memory<T, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> addr(
+      Register<T, BaseIdx, BaseRexReq>,
+      Register<T, IndexIdx, IndexRexReq>,
+      IndexScale scale = IndexScale::Scale1,
       std::optional<std::variant<std::int8_t, std::int32_t>> displacement = {}
   )
-  -> std::enable_if_t<
-      std::is_same_v<std::uint32_t, RegisterType> || std::is_same_v<std::uint64_t, RegisterType>, Memory<RegisterType>
-  >
   {
-    return {base, index, scale, displacement};
+    return BaseWithScalableIndex<T, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq>{scale, displacement};
   }
 }
