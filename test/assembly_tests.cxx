@@ -2,6 +2,7 @@
 
 #include <asm/buffer.hxx>
 #include <asm/callable.hxx>
+#include <asm/instructions/jmp.hxx>
 #include <asm/instructions/lea.hxx>
 #include <asm/instructions/mov.hxx>
 #include <asm/instructions/ret.hxx>
@@ -67,5 +68,27 @@ TEST_CASE("can generate code for add function and then run it", "[buffer][callab
   auto const answer = memory.to_callable();
 
   auto const result = answer.call<int>(19, 23);
+  REQUIRE(result==42);
+}
+
+TEST_CASE("can generate code for function calling callback and then run it", "[buffer][callable][instruction]")
+{
+  int (* multiply)(int, int) = [](int a, int b) { return a*b; };
+
+  // [](int a, int b, int(*callback)(int, int)) -> int { return callback(a, b); }
+  assembly::Buffer memory{};
+#ifdef _WIN32
+  memory.append(i::jmp(r::R8{}));
+#else
+  memory.append(i::jmp(r::RDX{}));
+#endif
+
+  std::ostringstream bytes;
+  memory.dump(bytes);
+  INFO("Generated code: " << bytes.str());
+
+  auto const answer = memory.to_callable();
+
+  auto const result = answer.call<int>(6, 7, multiply);
   REQUIRE(result==42);
 }

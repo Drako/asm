@@ -6,6 +6,7 @@ set(asm_HEADERS
     include/asm/types.hxx
     include/asm/instruction.hxx
     include/asm/instruction_helper.hxx
+    include/asm/instructions/jmp.hxx
     include/asm/instructions/lea.hxx
     include/asm/instructions/mov.hxx
     include/asm/instructions/ret.hxx

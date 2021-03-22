@@ -15,6 +15,28 @@ namespace assembly::instructions {
     }
   }
 
+  /// Move immediate to memory.
+  template<
+      typename RT,
+      typename VT,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
+  >
+  constexpr auto mov(
+      Memory <RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> dest,
+      VT imm
+  )
+  // the 64 bit takes a 32 bit value and does a sign extend
+  -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
+  {
+    if constexpr (sizeof(VT)==1u) {
+      return helper::opcode_with_memory_and_immediate(0xC6, dest, imm);
+    }
+    else {
+      return helper::opcode_with_memory_and_immediate(0xC7, dest, imm);
+    }
+  }
+
   /// Move from register to memory.
   template<
       typename RT,

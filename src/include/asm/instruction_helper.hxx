@@ -65,12 +65,12 @@ namespace assembly::helper {
     )
     {
       inst.sib.base = BaseIdx & 7u;
-      if constexpr (BaseIdx & 8u) {
+      if constexpr ((BaseIdx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::B;
       }
 
       inst.sib.index = IndexIdx & 7u;
-      if constexpr (IndexIdx & 8u) {
+      if constexpr ((IndexIdx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::X;
       }
 
@@ -81,7 +81,7 @@ namespace assembly::helper {
     constexpr void set_reg(Instruction& inst, Register<T, Idx, RexReq>)
     {
       inst.mod_rm.reg = Idx & 7u;
-      if constexpr (Idx & 8u) {
+      if constexpr ((Idx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::R;
       }
 
@@ -98,11 +98,24 @@ namespace assembly::helper {
     }
 
     template<typename T, std::uint8_t Idx, REXRequirement RexReq>
-    constexpr void set_rm(Instruction& inst, Register<T, Idx, RexReq>)
+    constexpr void set_rm(Instruction& inst, Register<T, Idx, RexReq>, bool is_address = false)
     {
       inst.mod_rm.rm = Idx & 7u;
-      if constexpr (Idx & 8u) {
+      if constexpr ((Idx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::B;
+      }
+
+      if (!is_address) {
+        if constexpr (RexReq==REXRequirement::Required) {
+          inst.opcode.rex_prefix |= REXPrefix::Marker;
+        }
+
+        if constexpr (sizeof(T)==2u) {
+          inst.legacy_prefixes.prefix3 = LegacyPrefix3::OperandSizeOverride;
+        }
+        else if constexpr (sizeof(T)==8u) {
+          inst.opcode.rex_prefix |= REXPrefix::W;
+        }
       }
     }
   }
@@ -144,7 +157,7 @@ namespace assembly::helper {
     }
 
     if (std::holds_alternative<BaseWithDisplacement<RT, BaseIdx, BaseRexReq>>(mem)) {
-      detail::set_rm(inst, Register<RT, BaseIdx, BaseRexReq>{});
+      detail::set_rm(inst, Register<RT, BaseIdx, BaseRexReq>{}, true);
       detail::set_displacement(inst, std::get<BaseWithDisplacement<RT, BaseIdx, BaseRexReq>>(mem).displacement);
     }
     else {
@@ -156,11 +169,6 @@ namespace assembly::helper {
     return inst;
   }
 
-  // naming of parameters might be misleading
-  // dest is not necessarily the destination and src is not necessarily the source
-  // src always goes into mod_rm.reg
-  // dest always goes into mod_rm.rm
-  // the opcode decides the direction
   template<
       typename T,
       std::uint8_t DestIdx, REXRequirement DestRexReq,
@@ -168,8 +176,8 @@ namespace assembly::helper {
   >
   constexpr Instruction opcode_with_register_and_register(
       std::uint8_t opcode,
-      Register<T, DestIdx, DestRexReq> dest,
-      Register<T, SrcIdx, SrcRexReq> src
+      Register<T, DestIdx, DestRexReq> rm,
+      Register<T, SrcIdx, SrcRexReq> reg
   )
   {
     static_assert(
@@ -179,9 +187,59 @@ namespace assembly::helper {
     );
 
     auto inst = helper::opcode(opcode);
-    detail::set_reg(inst, src);
-    detail::set_rm(inst, dest);
+    detail::set_reg(inst, reg);
+    detail::set_rm(inst, rm);
     inst.mod_rm.mod = 0x3;
+    return inst;
+  }
+
+  template<
+      typename RT,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
+  >
+  constexpr Instruction opcode_with_memory(
+      std::uint8_t opcode,
+      Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> mem,
+      std::uint8_t reg = 0u
+  )
+  {
+    auto inst = helper::opcode(opcode);
+    inst.mod_rm.reg = reg;
+
+    if constexpr (sizeof(RT)==4u) {
+      inst.legacy_prefixes.prefix4 = LegacyPrefix4::AddressSizeOverride;
+    }
+
+    if (std::holds_alternative<BaseWithDisplacement<RT, BaseIdx, BaseRexReq>>(mem)) {
+      detail::set_rm(inst, Register<RT, BaseIdx, BaseRexReq>{}, true);
+      detail::set_displacement(inst, std::get<BaseWithDisplacement<RT, BaseIdx, BaseRexReq>>(mem).displacement);
+    }
+    else {
+      inst.mod_rm.rm = 0x4;
+      auto const& bsib = std::get<BaseWithScalableIndex<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq>>(mem);
+      detail::set_displacement(inst, bsib.displacement);
+      detail::set_scaled_index(inst, bsib.base, bsib.index, bsib.scale);
+    }
+
+    return inst;
+  }
+
+  template<
+      typename RT,
+      typename VT,
+      std::uint8_t BaseIdx, REXRequirement BaseRexReq,
+      std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
+  >
+  constexpr Instruction opcode_with_memory_and_immediate(
+      std::uint8_t opcode,
+      Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> mem,
+      VT imm,
+      std::uint8_t reg = 0u
+  )
+  {
+    auto inst = opcode_with_memory(opcode, mem, reg);
+    detail::set_immediate(inst, imm);
     return inst;
   }
 
@@ -197,7 +255,7 @@ namespace assembly::helper {
     if constexpr (RexReq==REXRequirement::Required) {
       inst.opcode.rex_prefix |= REXPrefix::Marker;
     }
-    if constexpr (Index & 8u) {
+    if constexpr ((Index & 8u)!=0u) {
       inst.opcode.rex_prefix |= REXPrefix::B;
     }
 
