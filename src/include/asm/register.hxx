@@ -46,7 +46,8 @@ namespace assembly {
     ASM_POINTER_REGISTERS(DI, 7u)
 #undef ASM_POINTER_REGISTERS
 
-    using R16 = Register<std::uint64_t, 16u>;
+    // special for jumps
+    using RIP = RBP;
 
 #define ASM_EXTENDED_REGISTERS(idx) \
     using R##idx##L = Register<std::uint8_t, idx##u>; \

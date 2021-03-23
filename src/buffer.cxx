@@ -20,37 +20,37 @@ namespace assembly {
 
   Callable Buffer::to_callable() const
   {
-    return Callable{data(), size()};
+    return Callable{bytes};
   }
 
   void Buffer::append_legacy_prefix(Instruction const& inst)
   {
     if (inst.legacy_prefixes.prefix1!=LegacyPrefix1::None) {
-      push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix1));
+      bytes.push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix1));
     }
     if (inst.legacy_prefixes.prefix2!=LegacyPrefix2::None) {
-      push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix2));
+      bytes.push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix2));
     }
     if (inst.legacy_prefixes.prefix3!=LegacyPrefix3::None) {
-      push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix3));
+      bytes.push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix3));
     }
     if (inst.legacy_prefixes.prefix4!=LegacyPrefix4::None) {
-      push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix4));
+      bytes.push_back(static_cast<std::byte>(inst.legacy_prefixes.prefix4));
     }
   }
 
   void Buffer::append_opcode(Instruction const& inst)
   {
     if (inst.opcode.mandatory_prefix!=MandatoryPrefix::None) {
-      push_back(static_cast<std::byte>(inst.opcode.mandatory_prefix));
+      bytes.push_back(static_cast<std::byte>(inst.opcode.mandatory_prefix));
     }
     if (inst.opcode.rex_prefix!=REXPrefix::None) {
-      push_back(static_cast<std::byte>(inst.opcode.rex_prefix | REXPrefix::Marker));
+      bytes.push_back(static_cast<std::byte>(inst.opcode.rex_prefix | REXPrefix::Marker));
     }
     if (inst.opcode.opcode_size!=0) {
       assert(inst.opcode.opcode_size>0 && inst.opcode.opcode_size<4);
       for (std::size_t n = 0u; n<inst.opcode.opcode_size; ++n) {
-        push_back(inst.opcode.opcode[n]);
+        bytes.push_back(inst.opcode.opcode[n]);
       }
     }
   }
@@ -58,14 +58,14 @@ namespace assembly {
   void Buffer::append_modrm(Instruction const& inst)
   {
     if (inst.mod_rm.value!=0u) {
-      push_back(static_cast<std::byte>(inst.mod_rm.value));
+      bytes.push_back(static_cast<std::byte>(inst.mod_rm.value));
     }
   }
 
   void Buffer::append_sib(Instruction const& inst)
   {
     if (inst.sib.value!=0u) {
-      push_back(static_cast<std::byte>(inst.sib.value));
+      bytes.push_back(static_cast<std::byte>(inst.sib.value));
     }
   }
 
@@ -90,7 +90,7 @@ namespace assembly {
     }
 
     for (std::size_t n = 0u; n<count; ++n) {
-      push_back(inst.displacement.bytes[n]);
+      bytes.push_back(inst.displacement.bytes[n]);
     }
   }
 
@@ -115,16 +115,37 @@ namespace assembly {
     }
 
     for (std::size_t n = 0u; n<count; ++n) {
-      push_back(inst.immediate.bytes[n]);
+      bytes.push_back(inst.immediate.bytes[n]);
     }
   }
 
   void Buffer::dump(std::ostream& out) const
   {
     out << "Buffer { \"";
-    for (auto const b : *this) {
+    for (auto const b : bytes) {
       out << "\\x" << std::hex << std::setfill('0') << std::setw(2) << static_cast<unsigned>(b);
     }
     out << "\" }" << std::endl;
+  }
+
+  std::int32_t Buffer::set_symbol(std::string const& name)
+  {
+    return static_cast<std::int32_t>(symbols[name] = bytes.size());
+  }
+
+  std::optional<std::int32_t> Buffer::get_symbol(std::string const& name) const
+  {
+    auto it = symbols.find(name);
+    if (it==symbols.end()) {
+      return {};
+    }
+    else {
+      return static_cast<std::int32_t>(it->second);
+    }
+  }
+
+  std::int32_t Buffer::here() const
+  {
+    return static_cast<std::int32_t>(bytes.size());
   }
 }

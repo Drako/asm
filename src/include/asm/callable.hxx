@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 #include <array>
 #include <type_traits>
@@ -31,6 +32,14 @@ namespace assembly {
     {
       using FunctionPointer = Return(*)(Args...);
       auto const ptr = reinterpret_cast<FunctionPointer>(memory);
+      return ptr(args...);
+    }
+
+    template<typename Return, typename... Args>
+    inline Return call_addr(std::int32_t addr, Args ... args) const
+    {
+      using FunctionPointer = Return(*)(Args...);
+      auto const ptr = reinterpret_cast<FunctionPointer>(memory+addr);
       return ptr(args...);
     }
 
