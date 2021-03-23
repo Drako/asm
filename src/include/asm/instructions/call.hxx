@@ -7,6 +7,11 @@
 namespace assembly::instructions {
   constexpr Instruction call(std::int32_t displacement)
   {
+    constexpr auto const instruction_size = 5; // opcode + disp32
+
+    assert(displacement>=std::numeric_limits<std::int32_t>::min()+instruction_size);
+    displacement -= instruction_size;
+
     auto inst = helper::opcode(0xE8);
     helper::detail::set_displacement(inst, displacement);
     inst.mod_rm.mod = 0;
