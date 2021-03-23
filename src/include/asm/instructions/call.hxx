@@ -12,7 +12,7 @@ namespace assembly::instructions {
     assert(displacement>=std::numeric_limits<std::int32_t>::min()+instruction_size);
     displacement -= instruction_size;
 
-    auto inst = helper::opcode(0xE8);
+    auto inst = helper::opcode<0xE8>();
     helper::detail::set_displacement(inst, displacement);
     inst.mod_rm.mod = 0;
     return inst;
@@ -25,6 +25,6 @@ namespace assembly::instructions {
   >
   constexpr Instruction call(Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> dest)
   {
-    return helper::opcode_with_memory(0xFF, dest, 2u);
+    return helper::opcode_with_memory<0xFF>(dest, 2u);
   }
 }

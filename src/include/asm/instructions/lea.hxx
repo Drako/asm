@@ -17,6 +17,6 @@ namespace assembly::instructions {
   )
   -> std::enable_if_t<!std::is_same_v<std::uint8_t, VT>, Instruction>
   {
-    return helper::opcode_with_register_and_memory(0x8D, dest, src);
+    return helper::opcode_with_register_and_memory<0x8D>(dest, src);
   }
 }

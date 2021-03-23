@@ -120,23 +120,30 @@ namespace assembly::helper {
     }
   }
 
-  constexpr Instruction opcode(std::uint8_t opcode)
+  template<std::uint8_t... Opcode>
+  constexpr Instruction opcode()
   {
+    static_assert(sizeof...(Opcode)>=1 && sizeof...(Opcode)<=3u);
+    std::byte opc[] = {static_cast<std::byte>(Opcode)...};
+
     Instruction inst{};
-    inst.opcode.opcode[0] = static_cast<std::byte>(opcode);
-    inst.opcode.opcode_size = 1u;
+    for (std::size_t n = 0; n<sizeof...(Opcode); ++n) {
+      inst.opcode.opcode[n] = opc[n];
+    }
+    inst.opcode.opcode_size = sizeof...(Opcode);
     return inst;
   }
 
-  template<typename T>
-  constexpr Instruction opcode_with_immediate(std::uint8_t opcode, T imm)
+  template<std::uint8_t... Opcode, typename T>
+  constexpr Instruction opcode_with_immediate(T imm)
   {
-    auto inst = helper::opcode(opcode);
+    auto inst = helper::opcode<Opcode...>();
     detail::set_immediate(inst, imm);
     return inst;
   }
 
   template<
+      std::uint8_t... Opcode,
       typename RT,
       typename VT,
       std::uint8_t BaseIdx, REXRequirement BaseRexReq,
@@ -144,12 +151,11 @@ namespace assembly::helper {
       std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
   >
   constexpr Instruction opcode_with_register_and_memory(
-      std::uint8_t opcode,
       Register<VT, RIdx, RRexReq> r,
       Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> mem
   )
   {
-    auto inst = helper::opcode(opcode);
+    auto inst = helper::opcode<Opcode...>();
     detail::set_reg(inst, r);
 
     if constexpr (sizeof(RT)==4u) {
@@ -170,12 +176,12 @@ namespace assembly::helper {
   }
 
   template<
+      std::uint8_t... Opcode,
       typename T,
       std::uint8_t DestIdx, REXRequirement DestRexReq,
       std::uint8_t SrcIdx, REXRequirement SrcRexReq
   >
   constexpr Instruction opcode_with_register_and_register(
-      std::uint8_t opcode,
       Register<T, DestIdx, DestRexReq> rm,
       Register<T, SrcIdx, SrcRexReq> reg
   )
@@ -186,38 +192,37 @@ namespace assembly::helper {
             DestRexReq==SrcRexReq
     );
 
-    auto inst = helper::opcode(opcode);
+    auto inst = helper::opcode<Opcode...>();
     detail::set_reg(inst, reg);
     detail::set_rm(inst, rm);
     inst.mod_rm.mod = 0x3;
     return inst;
   }
 
-  template<typename VT, std::uint8_t Idx, REXRequirement RexReq>
+  template<std::uint8_t... Opcode, typename VT, std::uint8_t Idx, REXRequirement RexReq>
   constexpr Instruction opcode_with_register(
-      std::uint8_t opcode,
       Register<VT, Idx, RexReq> r,
       std::uint8_t reg = 0u
   )
   {
-    auto inst = helper::opcode(opcode);
+    auto inst = helper::opcode<Opcode...>();
     inst.mod_rm.reg = reg;
     detail::set_rm(inst, r);
     return inst;
   }
 
   template<
+      std::uint8_t... Opcode,
       typename RT,
       std::uint8_t BaseIdx, REXRequirement BaseRexReq,
       std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
   >
   constexpr Instruction opcode_with_memory(
-      std::uint8_t opcode,
       Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> mem,
       std::uint8_t reg = 0u
   )
   {
-    auto inst = helper::opcode(opcode);
+    auto inst = helper::opcode<Opcode...>();
     inst.mod_rm.reg = reg;
 
     if constexpr (sizeof(RT)==4u) {
@@ -269,14 +274,14 @@ namespace assembly::helper {
     return inst;
   }
 
-  template<typename T, std::uint8_t Index, REXRequirement RexReq>
+  template<std::uint8_t Opcode, typename T, std::uint8_t Index, REXRequirement RexReq>
   constexpr Instruction opcode_plus_register_with_immediate(
-      std::uint8_t opcode,
       Register<T, Index, RexReq>,
       T imm
   )
   {
-    auto inst = helper::opcode(opcode+(Index & 7u));
+    // TODO: might need adjustment if there are multibyte opcodes which add the register
+    auto inst = helper::opcode<Opcode+(Index&7u)>();
 
     if constexpr (RexReq==REXRequirement::Required) {
       inst.opcode.rex_prefix |= REXPrefix::Marker;

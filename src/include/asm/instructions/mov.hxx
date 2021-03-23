@@ -8,10 +8,10 @@ namespace assembly::instructions {
   constexpr Instruction mov(Register <T, Index, RexReq> r, T imm)
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_plus_register_with_immediate(0xB0, r, imm);
+      return helper::opcode_plus_register_with_immediate<0xB0>(r, imm);
     }
     else {
-      return helper::opcode_plus_register_with_immediate(0xB8, r, imm);
+      return helper::opcode_plus_register_with_immediate<0xB8>(r, imm);
     }
   }
 
@@ -30,10 +30,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_memory_and_immediate(0xC6, dest, imm);
+      return helper::opcode_with_memory_and_immediate<0xC6>(dest, imm);
     }
     else {
-      return helper::opcode_with_memory_and_immediate(0xC7, dest, imm);
+      return helper::opcode_with_memory_and_immediate<0xC7>(dest, imm);
     }
   }
 
@@ -51,10 +51,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x88, src, dest);
+      return helper::opcode_with_register_and_memory<0x88>(src, dest);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x89, src, dest);
+      return helper::opcode_with_register_and_memory<0x89>(src, dest);
     }
   }
 
@@ -72,10 +72,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x8A, dest, src);
+      return helper::opcode_with_register_and_memory<0x8A>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x8B, dest, src);
+      return helper::opcode_with_register_and_memory<0x8B>(dest, src);
     }
   }
 
@@ -88,10 +88,10 @@ namespace assembly::instructions {
   constexpr Instruction mov(Register <T, DestIdx, DestRexReq> dest, Register <T, SrcIdx, SrcRexReq> src)
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_register(0x88, dest, src);
+      return helper::opcode_with_register_and_register<0x88>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_register(0x89, dest, src);
+      return helper::opcode_with_register_and_register<0x89>(dest, src);
     }
   }
 }

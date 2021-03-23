@@ -9,10 +9,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<T, std::uint64_t>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_immediate(0x04, imm);
+      return helper::opcode_with_immediate<0x04>(imm);
     }
 
-    auto inst = helper::opcode_with_immediate(0x05, imm);
+    auto inst = helper::opcode_with_immediate<0x05>(imm);
     if constexpr (sizeof(T)==2u) {
       inst.legacy_prefixes.prefix3 = LegacyPrefix3::OperandSizeOverride;
     }
@@ -22,7 +22,7 @@ namespace assembly::instructions {
   /// add imm32 sign extended to rax
   constexpr Instruction add_a(Register<std::uint64_t, 0u, REXRequirement, std::uint32_t imm32)
   {
-    auto inst = helper::opcode_with_immediate(0x05, imm32);
+    auto inst = helper::opcode_with_immediate<0x05>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
     return inst;
   }
@@ -42,10 +42,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_memory_and_immediate(0x80, dest, imm);
+      return helper::opcode_with_memory_and_immediate<0x80>(dest, imm);
     }
     else {
-      return helper::opcode_with_memory_and_immediate(0x81, dest, imm);
+      return helper::opcode_with_memory_and_immediate<0x81>(dest, imm);
     }
   }
 
@@ -60,7 +60,7 @@ namespace assembly::instructions {
       std::uint32_t imm32
   )
   {
-    auto inst = helper::opcode_with_memory_and_immediate(0x81, dest, imm32);
+    auto inst = helper::opcode_with_memory_and_immediate<0x81>(dest, imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
     return inst;
   }
@@ -72,10 +72,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_immediate(0x80, r, imm);
+      return helper::opcode_with_register_and_immediate<0x80>(r, imm);
     }
     else {
-      return helper::opcode_with_register_and_immediate(0x81, r, imm);
+      return helper::opcode_with_register_and_immediate<0x81>(r, imm);
     }
   }
 
@@ -86,7 +86,7 @@ namespace assembly::instructions {
       std::uint32_t imm32
   )
   {
-    return helper::opcode_with_register_and_immediate(0x81, dest, imm32);
+    return helper::opcode_with_register_and_immediate<0x81>(dest, imm32);
   }
 
   /// Add register to register.
@@ -98,10 +98,10 @@ namespace assembly::instructions {
   constexpr Instruction add(Register<T, DestIdx, DestRexReq> dest, Register<T, SrcIdx, SrcRexReq> src)
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_register(0x00, dest, src);
+      return helper::opcode_with_register_and_register<0x00>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_register(0x01, dest, src);
+      return helper::opcode_with_register_and_register<0x01>(dest, src);
     }
   }
 
@@ -119,10 +119,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x00, src, dest);
+      return helper::opcode_with_register_and_memory<0x00>(src, dest);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x01, src, dest);
+      return helper::opcode_with_register_and_memory<0x01>(src, dest);
     }
   }
 
@@ -140,10 +140,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x02, dest, src);
+      return helper::opcode_with_register_and_memory<0x02>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x03, dest, src);
+      return helper::opcode_with_register_and_memory<0x03>(dest, src);
     }
   }
 
@@ -153,10 +153,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<T, std::uint64_t>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_immediate(0x2C, imm);
+      return helper::opcode_with_immediate<0x2C>(imm);
     }
 
-    auto inst = helper::opcode_with_immediate(0x2D, imm);
+    auto inst = helper::opcode_with_immediate<0x2D>(imm);
     if constexpr (sizeof(T)==2u) {
       inst.legacy_prefixes.prefix3 = LegacyPrefix3::OperandSizeOverride;
     }
@@ -166,7 +166,7 @@ namespace assembly::instructions {
   /// subtract imm32 sign extended from rax
   constexpr Instruction sub_a(Register<std::uint64_t, 0u, REXRequirement, std::uint32_t imm32)
   {
-    auto inst = helper::opcode_with_immediate(0x2D, imm32);
+    auto inst = helper::opcode_with_immediate<0x2D>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
     return inst;
   }
@@ -186,10 +186,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_memory_and_immediate(0x80, dest, imm, 5u);
+      return helper::opcode_with_memory_and_immediate<0x80>(dest, imm, 5u);
     }
     else {
-      return helper::opcode_with_memory_and_immediate(0x81, dest, imm, 5u);
+      return helper::opcode_with_memory_and_immediate<0x81>(dest, imm, 5u);
     }
   }
 
@@ -204,7 +204,7 @@ namespace assembly::instructions {
       std::uint32_t imm32
   )
   {
-    auto inst = helper::opcode_with_memory_and_immediate(0x81, dest, imm32, 5u);
+    auto inst = helper::opcode_with_memory_and_immediate<0x81>(dest, imm32, 5u);
     inst.opcode.rex_prefix |= REXPrefix::W;
     return inst;
   }
@@ -216,10 +216,10 @@ namespace assembly::instructions {
   -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_immediate(0x80, r, imm, 5u);
+      return helper::opcode_with_register_and_immediate<0x80>(r, imm, 5u);
     }
     else {
-      return helper::opcode_with_register_and_immediate(0x81, r, imm, 5u);
+      return helper::opcode_with_register_and_immediate<0x81>(r, imm, 5u);
     }
   }
 
@@ -230,7 +230,7 @@ namespace assembly::instructions {
       std::uint32_t imm32
   )
   {
-    return helper::opcode_with_register_and_immediate(0x81, dest, imm32, 5u);
+    return helper::opcode_with_register_and_immediate<0x81>(dest, imm32, 5u);
   }
 
   /// Subtract register from register.
@@ -242,10 +242,10 @@ namespace assembly::instructions {
   constexpr Instruction sub(Register<T, DestIdx, DestRexReq> dest, Register<T, SrcIdx, SrcRexReq> src)
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_register(0x28, dest, src);
+      return helper::opcode_with_register_and_register<0x28>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_register(0x29, dest, src);
+      return helper::opcode_with_register_and_register<0x29>(dest, src);
     }
   }
 
@@ -263,10 +263,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x28, src, dest);
+      return helper::opcode_with_register_and_memory<0x28>(src, dest);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x29, src, dest);
+      return helper::opcode_with_register_and_memory<0x29>(src, dest);
     }
   }
 
@@ -284,10 +284,10 @@ namespace assembly::instructions {
   )
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register_and_memory(0x2A, dest, src);
+      return helper::opcode_with_register_and_memory<0x2A>(dest, src);
     }
     else {
-      return helper::opcode_with_register_and_memory(0x2B, dest, src);
+      return helper::opcode_with_register_and_memory<0x2B>(dest, src);
     }
   }
 }

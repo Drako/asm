@@ -13,10 +13,10 @@ namespace assembly::instructions {
   constexpr Instruction inc(Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> dest)
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_memory(0xFE, dest);
+      return helper::opcode_with_memory<0xFE>(dest);
     }
     else {
-      return helper::opcode_with_memory(0xFF, dest);
+      return helper::opcode_with_memory<0xFF>(dest);
     }
   }
 
@@ -25,10 +25,10 @@ namespace assembly::instructions {
   constexpr Instruction inc(Register<VT, Idx, RexReq> dest)
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register(0xFE, dest);
+      return helper::opcode_with_register<0xFE>(dest);
     }
     else {
-      return helper::opcode_with_register(0xFF, dest);
+      return helper::opcode_with_register<0xFF>(dest);
     }
   }
 
@@ -42,10 +42,10 @@ namespace assembly::instructions {
   constexpr Instruction dec(Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> dest)
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_memory(0xFE, dest, 1u);
+      return helper::opcode_with_memory<0xFE>(dest, 1u);
     }
     else {
-      return helper::opcode_with_memory(0xFF, dest, 1u);
+      return helper::opcode_with_memory<0xFF>(dest, 1u);
     }
   }
 
@@ -54,10 +54,10 @@ namespace assembly::instructions {
   constexpr Instruction dec(Register<VT, Idx, RexReq> dest)
   {
     if constexpr (sizeof(VT)==1u) {
-      return helper::opcode_with_register(0xFE, dest, 1u);
+      return helper::opcode_with_register<0xFE>(dest, 1u);
     }
     else {
-      return helper::opcode_with_register(0xFF, dest, 1u);
+      return helper::opcode_with_register<0xFF>(dest, 1u);
     }
   }
 }
