@@ -66,4 +66,60 @@ namespace assembly::instructions {
     helper::detail::set_rm(inst, r, true);
     return inst;
   }
+
+  constexpr Instruction je(std::int32_t displacement)
+  {
+    constexpr auto const instruction_size = 5; // opcode + disp32
+
+    assert(displacement>=std::numeric_limits<std::int32_t>::min()+instruction_size);
+    displacement -= instruction_size;
+
+    auto inst = helper::opcode<0x0F, 0x84>();
+    helper::detail::set_displacement(inst, displacement);
+    inst.mod_rm.mod = 0;
+    return inst;
+  }
+
+  constexpr Instruction je(std::int8_t displacement)
+  {
+    constexpr auto const instruction_size = 2; // opcode + disp8
+
+    if (displacement<std::numeric_limits<std::int8_t>::min()+instruction_size) {
+      return je(static_cast<std::int32_t>(displacement));
+    }
+    displacement -= 2;
+
+    auto inst = helper::opcode<0x74>();
+    helper::detail::set_displacement(inst, displacement);
+    inst.mod_rm.mod = 0;
+    return inst;
+  }
+
+  constexpr Instruction jne(std::int32_t displacement)
+  {
+    constexpr auto const instruction_size = 5; // opcode + disp32
+
+    assert(displacement>=std::numeric_limits<std::int32_t>::min()+instruction_size);
+    displacement -= instruction_size;
+
+    auto inst = helper::opcode<0x0F, 0x85>();
+    helper::detail::set_displacement(inst, displacement);
+    inst.mod_rm.mod = 0;
+    return inst;
+  }
+
+  constexpr Instruction jne(std::int8_t displacement)
+  {
+    constexpr auto const instruction_size = 2; // opcode + disp8
+
+    if (displacement<std::numeric_limits<std::int8_t>::min()+instruction_size) {
+      return jne(static_cast<std::int32_t>(displacement));
+    }
+    displacement -= 2;
+
+    auto inst = helper::opcode<0x75>();
+    helper::detail::set_displacement(inst, displacement);
+    inst.mod_rm.mod = 0;
+    return inst;
+  }
 }
