@@ -8,10 +8,10 @@ namespace assembly::instructions {
   constexpr Instruction mov(Register <T, Index, RexReq> r, T imm)
   {
     if constexpr (sizeof(T)==1u) {
-      return helper::opcode_with_register_and_immediate(0xB0, r, imm);
+      return helper::opcode_plus_register_with_immediate(0xB0, r, imm);
     }
     else {
-      return helper::opcode_with_register_and_immediate(0xB8, r, imm);
+      return helper::opcode_plus_register_with_immediate(0xB8, r, imm);
     }
   }
 

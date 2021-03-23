@@ -193,6 +193,19 @@ namespace assembly::helper {
     return inst;
   }
 
+  template<typename VT, std::uint8_t Idx, REXRequirement RexReq>
+  constexpr Instruction opcode_with_register(
+      std::uint8_t opcode,
+      Register<VT, Idx, RexReq> r,
+      std::uint8_t reg = 0u
+  )
+  {
+    auto inst = helper::opcode(opcode);
+    inst.mod_rm.reg = reg;
+    detail::set_rm(inst, r);
+    return inst;
+  }
+
   template<
       typename RT,
       std::uint8_t BaseIdx, REXRequirement BaseRexReq,
@@ -243,8 +256,21 @@ namespace assembly::helper {
     return inst;
   }
 
-  template<typename T, std::uint8_t Index, REXRequirement RexReq>
+  template<typename VT, typename RT, std::uint8_t Idx, REXRequirement RexReq>
   constexpr Instruction opcode_with_register_and_immediate(
+      std::uint8_t opcode,
+      Register<RT, Idx, RexReq> r,
+      VT imm,
+      std::uint8_t reg = 0u
+  )
+  {
+    auto inst = opcode_with_register(opcode, r, reg);
+    detail::set_immediate(inst, imm);
+    return inst;
+  }
+
+  template<typename T, std::uint8_t Index, REXRequirement RexReq>
+  constexpr Instruction opcode_plus_register_with_immediate(
       std::uint8_t opcode,
       Register<T, Index, RexReq>,
       T imm

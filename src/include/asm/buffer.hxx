@@ -35,6 +35,24 @@ namespace assembly {
       }
     }
 
+    inline void append_zeroes(std::uint16_t count)
+    {
+      for (; count--;) {
+        bytes.push_back(static_cast<std::byte>(0u));
+      }
+    }
+
+    inline void append_string(char const* str, bool including_null = true)
+    {
+      while (*str) {
+        bytes.push_back(*reinterpret_cast<std::byte const*>(str));
+        ++str;
+      }
+      if (including_null) {
+        bytes.push_back(static_cast<std::byte>(0u));
+      }
+    }
+
     std::int32_t set_symbol(std::string const& name);
 
     [[nodiscard]] std::optional<std::int32_t> get_symbol(std::string const& name) const;
