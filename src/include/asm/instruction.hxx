@@ -142,5 +142,73 @@ namespace assembly {
     SIB sib{};
     Displacement displacement{};
     Immediate immediate{};
+
+    constexpr std::size_t size() const
+    {
+      std::size_t bytes = 0u;
+      if (legacy_prefixes.prefix1!=LegacyPrefix1::None) {
+        ++bytes;
+      }
+      if (legacy_prefixes.prefix2!=LegacyPrefix2::None) {
+        ++bytes;
+      }
+      if (legacy_prefixes.prefix3!=LegacyPrefix3::None) {
+        ++bytes;
+      }
+      if (legacy_prefixes.prefix4!=LegacyPrefix4::None) {
+        ++bytes;
+      }
+
+      if (opcode.mandatory_prefix!=MandatoryPrefix::None) {
+        ++bytes;
+      }
+      if (opcode.rex_prefix!=REXPrefix::None) {
+        ++bytes;
+      }
+      bytes += opcode.opcode_size;
+
+      if (mod_rm.value!=0u) {
+        ++bytes;
+      }
+      if (sib.value!=0u) {
+        ++bytes;
+      }
+
+      switch (displacement.type) {
+      default:
+        break;
+      case DisplacementType::Disp8:
+        ++bytes;
+        break;
+      case DisplacementType::Disp16:
+        bytes += 2;
+        break;
+      case DisplacementType::Disp32:
+        bytes += 4;
+        break;
+      case DisplacementType::Disp64:
+        bytes += 8;
+        break;
+      }
+
+      switch (immediate.type) {
+      default:
+        break;
+      case ImmediateType::Imm8:
+        ++bytes;
+        break;
+      case ImmediateType::Imm16:
+        bytes += 2;
+        break;
+      case ImmediateType::Imm32:
+        bytes += 4;
+        break;
+      case ImmediateType::Imm64:
+        bytes += 8;
+        break;
+      }
+
+      return bytes;
+    }
   };
 }
