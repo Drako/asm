@@ -127,17 +127,19 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     std::string const message{"Hello world!"};
 
     assembly::Buffer memory{};
-    memory.append_bytes(&std::strcpy); // relative address: 0
+    memory.append_bytes(&std::strncpy); // relative address: 0
 
     memory.append_string(message.c_str(), true); // relative address: 8
 
     memory.append(i::sub64(r::RSP{}, 40u)); // relative address: 21
 #ifdef _WIN32
-    memory.append(i::lea_rip(r::RDX{}, -27));
+    memory.append(i::mov(r::R8{}, r::RDX{}));
+    memory.append(i::lea_rip(r::RDX{}, -30));
 #else
-    memory.append(i::lea_rip(r::RSI{}, -27));
+    memory.append(i::mov(r::RDX{}, r::RSI{}));
+    memory.append(i::lea_rip(r::RSI{}, -30));
 #endif
-    memory.append(i::call_rip(-41));
+    memory.append(i::call_rip(-44));
     memory.append(i::add64(r::RSP{}, 40u));
     memory.append(i::retn());
 
@@ -148,7 +150,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     auto const hello = memory.to_callable();
 
     char buffer[16];
-    hello.call_addr<void>(21, buffer);
+    hello.call_addr<void>(21, buffer, sizeof(buffer));
     REQUIRE(buffer==message);
   }
 }

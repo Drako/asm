@@ -34,3 +34,4 @@ add_library(asm STATIC
     ${asm_HEADERS}
     )
 target_include_directories(asm PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_compile_definitions(asm PUBLIC -D_CRT_SECURE_NO_WARNINGS)
