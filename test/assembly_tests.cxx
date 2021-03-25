@@ -131,16 +131,15 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     memory.append_string(message.c_str(), true); // relative address: 8
 
-    memory.append(i::sub64(r::RSP{}, 40u)); // relative address: 21
+    // relative address: 21
 #ifdef _WIN32
     memory.append(i::mov(r::R8{}, r::RDX{}));
-    memory.append(i::lea_rip(r::RDX{}, -30));
+    memory.append(i::lea_rip(r::RDX{}, -23));
 #else
     memory.append(i::mov(r::RDX{}, r::RSI{}));
-    memory.append(i::lea_rip(r::RSI{}, -30));
+    memory.append(i::lea_rip(r::RSI{}, -23));
 #endif
-    memory.append(i::call_rip(-44));
-    memory.append(i::add64(r::RSP{}, 40u));
+    memory.append(i::jmp_rip(-37));
     memory.append(i::retn());
 
     std::ostringstream bytes;
