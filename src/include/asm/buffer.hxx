@@ -5,7 +5,6 @@
 #include <iosfwd>
 #include <optional>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 namespace assembly {
@@ -53,19 +52,12 @@ namespace assembly {
       }
     }
 
-    std::int32_t set_symbol(std::string const& name);
-
-    [[nodiscard]] std::optional<std::int32_t> get_symbol(std::string const& name) const;
-
-    [[nodiscard]] std::int32_t here() const;
-
     [[nodiscard]] Callable to_callable() const;
 
     void dump(std::ostream& out) const;
 
   private:
     std::vector<std::byte> bytes{};
-    std::unordered_map<std::string, std::size_t> symbols;
 
     void append_legacy_prefix(Instruction const& inst);
 

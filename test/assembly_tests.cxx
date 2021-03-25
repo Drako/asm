@@ -100,11 +100,12 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
   {
     // [](char const *str) -> int { return std::atoi(str); }
     assembly::Buffer memory{};
-    auto const atoi_symbol = memory.set_symbol("atoi");
     memory.append_bytes(&std::atoi);
 
-    auto const fn_symbol = memory.set_symbol("fn");
-    memory.append(i::jmp_rip(atoi_symbol-memory.here()));
+    // 14 = 8 (size of the std::atoi pointer) + 6 (size of the jump instruction)
+    // because the target address is taken from [RIP+disp32]
+    // but RIP at that point is already after the jmp
+    memory.append(i::jmp_rip(-14));
 
     std::ostringstream bytes;
     memory.dump(bytes);
@@ -112,7 +113,8 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     auto const fn = memory.to_callable();
 
-    auto const result = fn.call_addr<int>(fn_symbol, "23");
+    // just skip the pointer (8 bytes) and call our function
+    auto const result = fn.call_addr<int>(8, "23");
     REQUIRE(result==23);
   }
 }

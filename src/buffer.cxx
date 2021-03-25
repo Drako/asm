@@ -127,25 +127,4 @@ namespace assembly {
     }
     out << "\" }" << std::endl;
   }
-
-  std::int32_t Buffer::set_symbol(std::string const& name)
-  {
-    return static_cast<std::int32_t>(symbols[name] = bytes.size());
-  }
-
-  std::optional<std::int32_t> Buffer::get_symbol(std::string const& name) const
-  {
-    auto it = symbols.find(name);
-    if (it==symbols.end()) {
-      return {};
-    }
-    else {
-      return static_cast<std::int32_t>(it->second);
-    }
-  }
-
-  std::int32_t Buffer::here() const
-  {
-    return static_cast<std::int32_t>(bytes.size());
-  }
 }
