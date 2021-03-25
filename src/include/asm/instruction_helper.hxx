@@ -206,6 +206,7 @@ namespace assembly::helper {
   )
   {
     auto inst = helper::opcode<Opcode...>();
+    inst.mod_rm.mod = 0x3;
     inst.mod_rm.reg = reg;
     detail::set_rm(inst, r);
     return inst;
@@ -261,15 +262,14 @@ namespace assembly::helper {
     return inst;
   }
 
-  template<typename VT, typename RT, std::uint8_t Idx, REXRequirement RexReq>
+  template<std::uint8_t... Opcode, typename VT, typename RT, std::uint8_t Idx, REXRequirement RexReq>
   constexpr Instruction opcode_with_register_and_immediate(
-      std::uint8_t opcode,
       Register<RT, Idx, RexReq> r,
       VT imm,
       std::uint8_t reg = 0u
   )
   {
-    auto inst = opcode_with_register(opcode, r, reg);
+    auto inst = opcode_with_register<Opcode...>(r, reg);
     detail::set_immediate(inst, imm);
     return inst;
   }
@@ -281,7 +281,7 @@ namespace assembly::helper {
   )
   {
     // TODO: might need adjustment if there are multibyte opcodes which add the register
-    auto inst = helper::opcode<Opcode+(Index&7u)>();
+    auto inst = helper::opcode<Opcode+(Index & 7u)>();
 
     if constexpr (RexReq==REXRequirement::Required) {
       inst.opcode.rex_prefix |= REXPrefix::Marker;

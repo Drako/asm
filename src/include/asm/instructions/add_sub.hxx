@@ -20,7 +20,7 @@ namespace assembly::instructions {
   }
 
   /// add imm32 sign extended to rax
-  constexpr Instruction add_a(Register<std::uint64_t, 0u, REXRequirement, std::uint32_t imm32)
+  constexpr Instruction add_a(Register<std::uint64_t, 0u, REXRequirement::DontCare>, std::uint32_t imm32)
   {
     auto inst = helper::opcode_with_immediate<0x05>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
@@ -69,7 +69,7 @@ namespace assembly::instructions {
   template<typename T, std::uint8_t Index, REXRequirement RexReq>
   constexpr auto add(Register<T, Index, RexReq> r, T imm)
   // the 64 bit takes a 32 bit value and does a sign extend
-  -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
+  -> std::enable_if_t<!std::is_same_v<std::uint64_t, T>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
       return helper::opcode_with_register_and_immediate<0x80>(r, imm);
@@ -164,7 +164,7 @@ namespace assembly::instructions {
   }
 
   /// subtract imm32 sign extended from rax
-  constexpr Instruction sub_a(Register<std::uint64_t, 0u, REXRequirement, std::uint32_t imm32)
+  constexpr Instruction sub_a(Register<std::uint64_t, 0u, REXRequirement::DontCare>, std::uint32_t imm32)
   {
     auto inst = helper::opcode_with_immediate<0x2D>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
@@ -213,7 +213,7 @@ namespace assembly::instructions {
   template<typename T, std::uint8_t Index, REXRequirement RexReq>
   constexpr auto sub(Register<T, Index, RexReq> r, T imm)
   // the 64 bit takes a 32 bit value and does a sign extend
-  -> std::enable_if_t<!std::is_same_v<std::uint64_t, VT>, Instruction>
+  -> std::enable_if_t<!std::is_same_v<std::uint64_t, T>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
       return helper::opcode_with_register_and_immediate<0x80>(r, imm, 5u);

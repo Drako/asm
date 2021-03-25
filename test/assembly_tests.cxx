@@ -2,11 +2,15 @@
 
 #include <asm/buffer.hxx>
 #include <asm/callable.hxx>
+#include <asm/instructions/add_sub.hxx>
 #include <asm/instructions/call.hxx>
 #include <asm/instructions/jmp.hxx>
 #include <asm/instructions/lea.hxx>
 #include <asm/instructions/mov.hxx>
 #include <asm/instructions/ret.hxx>
+
+#include <cstdlib>
+#include <cstring>
 
 #include <sstream>
 
@@ -116,5 +120,35 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     // just skip the pointer (8 bytes) and call our function
     auto const result = fn.call_addr<int>(8, "23");
     REQUIRE(result==23);
+  }
+
+  SECTION("hello world")
+  {
+    std::string const message{"Hello world!"};
+
+    assembly::Buffer memory{};
+    memory.append_bytes(&std::strcpy); // relative address: 0
+
+    memory.append_string(message.c_str(), true); // relative address: 8
+
+    memory.append(i::sub64(r::RSP{}, 40u)); // relative address: 21
+#ifdef _WIN32
+    memory.append(i::lea_rip(r::RDX{}, -27));
+#else
+    memory.append(i::lea_rip(r::RSI{}, -27));
+#endif
+    memory.append(i::call_rip(-41));
+    memory.append(i::add64(r::RSP{}, 40u));
+    memory.append(i::retn());
+
+    std::ostringstream bytes;
+    memory.dump(bytes);
+    INFO("Generated code: " << bytes.str());
+
+    auto const hello = memory.to_callable();
+
+    char buffer[16];
+    hello.call_addr<void>(21, buffer);
+    REQUIRE(buffer==message);
   }
 }
