@@ -38,7 +38,7 @@ namespace assembly::instructions {
       std::int32_t disp
   )
   {
-    auto inst = helper::opcode_with_register_and_memory<0x8D>(r, addr(registers::RBP{}, disp));
+    auto inst = helper::opcode_with_register_and_memory<0x8D>(r, addr(registers::RIP{}, disp));
     inst.mod_rm.mod = 0;
     return inst;
   }

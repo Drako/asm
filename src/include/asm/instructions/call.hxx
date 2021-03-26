@@ -13,7 +13,7 @@ namespace assembly::instructions {
 
   constexpr Instruction call_rip(std::int32_t displacement)
   {
-    auto inst = helper::opcode_with_memory<0xFF>(addr(registers::RBP{}, displacement), 2u);
+    auto inst = helper::opcode_with_memory<0xFF>(addr(registers::RIP{}, displacement), 2u);
     inst.mod_rm.mod = 0;
     return inst;
   }

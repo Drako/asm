@@ -41,6 +41,13 @@ namespace assembly {
       }
     }
 
+    inline void append_nops(std::uint16_t count)
+    {
+      for (; count--;) {
+        bytes.push_back(static_cast<std::byte>(0x90));
+      }
+    }
+
     inline void append_string(char const* str, bool including_null = true)
     {
       while (*str) {

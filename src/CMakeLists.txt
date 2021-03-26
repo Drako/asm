@@ -9,6 +9,7 @@ set(asm_HEADERS
     include/asm/instructions/add_sub.hxx
     include/asm/instructions/bitwise.hxx
     include/asm/instructions/call.hxx
+    include/asm/instructions/float.hxx
     include/asm/instructions/inc_dec.hxx
     include/asm/instructions/jmp.hxx
     include/asm/instructions/lea.hxx

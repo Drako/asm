@@ -31,7 +31,7 @@ namespace assembly::instructions {
 
   constexpr Instruction jmp_rip(std::int32_t displacement)
   {
-    auto inst = helper::opcode_with_memory<0xFF>(addr(registers::RBP{}, displacement), 4u);
+    auto inst = helper::opcode_with_memory<0xFF>(addr(registers::RIP{}, displacement), 4u);
     inst.mod_rm.mod = 0;
     return inst;
   }

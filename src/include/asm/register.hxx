@@ -22,6 +22,11 @@ namespace assembly {
     constexpr static REXRequirement const rex = Rex;
   };
 
+  template<std::uint8_t Index>
+  struct XMM {
+    constexpr static std::uint8_t const index = Index;
+  };
+
   namespace registers {
 #define ASM_BASE_REGISTERS(letter, idx) \
     using letter##L = Register<std::uint8_t, idx>; \
@@ -46,7 +51,8 @@ namespace assembly {
     ASM_POINTER_REGISTERS(DI, 7u)
 #undef ASM_POINTER_REGISTERS
 
-    // special for jumps
+    // special case
+    // [rbp+disp32] turns into [rip+disp32] by having ModR/M.mod = 0
     using RIP = RBP;
 
 #define ASM_EXTENDED_REGISTERS(idx) \
@@ -63,5 +69,22 @@ namespace assembly {
     ASM_EXTENDED_REGISTERS(14)
     ASM_EXTENDED_REGISTERS(15)
 #undef ASM_EXTENDED_REGISTERS
+
+    using XMM0 = XMM<0u>;
+    using XMM1 = XMM<1u>;
+    using XMM2 = XMM<2u>;
+    using XMM3 = XMM<3u>;
+    using XMM4 = XMM<4u>;
+    using XMM5 = XMM<5u>;
+    using XMM6 = XMM<6u>;
+    using XMM7 = XMM<7u>;
+    using XMM8 = XMM<8u>;
+    using XMM9 = XMM<9u>;
+    using XMM10 = XMM<10u>;
+    using XMM11 = XMM<11u>;
+    using XMM12 = XMM<12u>;
+    using XMM13 = XMM<13u>;
+    using XMM14 = XMM<14u>;
+    using XMM15 = XMM<15u>;
   }
 }

@@ -5,6 +5,7 @@
 #include <asm/instructions/add_sub.hxx>
 #include <asm/instructions/bitwise.hxx>
 #include <asm/instructions/call.hxx>
+#include <asm/instructions/float.hxx>
 #include <asm/instructions/inc_dec.hxx>
 #include <asm/instructions/jmp.hxx>
 #include <asm/instructions/lea.hxx>
@@ -185,7 +186,6 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append_zeroes(49u); // offset: 35
     memory.append_string("U G   C            A", false); // offset: 84
 
-
     std::ostringstream bytes;
     memory.dump(bytes);
     INFO("Generated code: " << bytes.str());
@@ -197,5 +197,39 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     // void rna_transcribe(char * dest, char const * src);
     rna_transcribe.call<void>(rna, dna);
     REQUIRE(rna==expected);
+  }
+
+  SECTION("space age") {
+#ifdef _WIN32
+    auto const age_in_seconds = r::ECX{};
+    auto const planet_idx = r::RDX{};
+#else
+    auto const age_in_seconds = r::EDI{};
+    auto const planet_idx = r::RSI{};
+#endif
+
+    assembly::Buffer memory{};
+    memory.append(i::cvtsi2ss(r::XMM0{}, age_in_seconds));
+    memory.append(i::lea_rip(r::RAX{}, 6));
+    memory.append(i::mulss(r::XMM0{}, assembly::addr(r::RAX{}, planet_idx, assembly::IndexScale::Scale4)));
+    memory.append(i::retn());
+    memory.append_bytes(873285007u); // Mercury
+    memory.append_bytes(861747854u); // Venus
+    memory.append_bytes(856168812u); // Earth
+    memory.append_bytes(848345412u); // Mars
+    memory.append_bytes(825725246u); // Jupiter
+    memory.append_bytes(814998904u); // Saturn
+    memory.append_bytes(802117899u); // Uranus
+    memory.append_bytes(793996658u); // Neptune
+
+    std::ostringstream bytes;
+    memory.dump(bytes);
+    INFO("Generated code: " << bytes.str());
+
+    auto const space_age = memory.to_callable();
+
+    // float spage_age(uint32_t age_in_seconds, uint32_t planet);
+    auto const earth_age = space_age.call<float>(946728000u, 2u);
+    REQUIRE(earth_age==30.f);
   }
 }
