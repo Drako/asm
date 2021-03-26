@@ -64,8 +64,8 @@ namespace assembly {
 
   void Buffer::append_sib(Instruction const& inst)
   {
-    if (inst.sib.value!=0u) {
-      bytes.push_back(static_cast<std::byte>(inst.sib.value));
+    if (inst.sib.has_value()) {
+      bytes.push_back(static_cast<std::byte>(inst.sib.value().value));
     }
   }
 

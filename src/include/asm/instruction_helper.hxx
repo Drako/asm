@@ -64,17 +64,21 @@ namespace assembly::helper {
         IndexScale scale
     )
     {
-      inst.sib.base = BaseIdx & 7u;
+      SIB sib{};
+
+      sib.base = BaseIdx & 7u;
       if constexpr ((BaseIdx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::B;
       }
 
-      inst.sib.index = IndexIdx & 7u;
+      sib.index = IndexIdx & 7u;
       if constexpr ((IndexIdx & 8u)!=0u) {
         inst.opcode.rex_prefix |= REXPrefix::X;
       }
 
-      inst.sib.scale = static_cast<std::uint8_t>(scale);
+      sib.scale = static_cast<std::uint8_t>(scale);
+
+      inst.sib = sib;
     }
 
     template<typename T, std::uint8_t Idx, REXRequirement RexReq>

@@ -3,11 +3,14 @@
 #include <asm/buffer.hxx>
 #include <asm/callable.hxx>
 #include <asm/instructions/add_sub.hxx>
+#include <asm/instructions/bitwise.hxx>
 #include <asm/instructions/call.hxx>
+#include <asm/instructions/inc_dec.hxx>
 #include <asm/instructions/jmp.hxx>
 #include <asm/instructions/lea.hxx>
 #include <asm/instructions/mov.hxx>
 #include <asm/instructions/ret.hxx>
+#include <asm/instructions/test.hxx>
 
 #include <cstdlib>
 #include <cstring>
@@ -129,7 +132,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     assembly::Buffer memory{};
     memory.append_bytes(&std::strncpy); // relative address: 0
 
-    memory.append_string(message.c_str(), true); // relative address: 8
+    memory.append_string(message.c_str()); // relative address: 8
 
     // relative address: 21
 #ifdef _WIN32
@@ -140,7 +143,6 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append(i::lea_rip(r::RSI{}, -23));
 #endif
     memory.append(i::jmp_rip(-37));
-    memory.append(i::retn());
 
     std::ostringstream bytes;
     memory.dump(bytes);
@@ -151,5 +153,49 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     char buffer[16];
     hello.call_addr<void>(21, buffer, sizeof(buffer));
     REQUIRE(buffer==message);
+  }
+
+  SECTION("rna transcription") {
+    std::string const expected{"CAUACUUGAGUA"};
+
+#ifdef _WIN32
+    auto const src = r::RDX{};
+    auto const dest = r::RCX{};
+#else
+    auto const src = r::RSI{};
+    auto const dest = r::RDI{};
+#endif
+    auto const current = r::RAX{};
+    auto const current_char = r::AL{};
+    auto const index = r::RBX{};
+    auto const mapping = r::R8{};
+
+    assembly::Buffer memory{};
+    memory.append(i::xor_(current, current)); // offset: 0
+    memory.append(i::xor_(index, index)); // offset: 3
+    memory.append(i::lea_rip(mapping, 22)); // offset: 6
+    // .loop:
+    memory.append(i::mov(current_char, assembly::addr(src, index))); // offset: 13
+    memory.append(i::mov(current_char, assembly::addr(mapping, current))); // offset: 16
+    memory.append(i::mov(assembly::addr(dest, index), current_char)); // offset: 20
+    memory.append(i::inc(index)); // offset: 23
+    memory.append(i::test(current_char, current_char)); // offset: 26
+    memory.append(i::jne(-21)); // jne .loop -- offset: 28
+    memory.append(i::retn()); // offset: 34
+    memory.append_zeroes(65u); // offset: 35
+    memory.append_string("U G   C            A", false); // offset: 100
+
+
+    std::ostringstream bytes;
+    memory.dump(bytes);
+    INFO("Generated code: " << bytes.str());
+
+    auto const rna_transcribe = memory.to_callable();
+
+    char const dna[] = "GTATGAACTCAT";
+    char rna[sizeof(dna)] = {0};
+    // void rna_transcribe(char * dest, char const * src);
+    rna_transcribe.call<void>(rna, dna);
+    REQUIRE(rna==expected);
   }
 }

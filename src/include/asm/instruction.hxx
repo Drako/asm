@@ -139,7 +139,7 @@ namespace assembly {
     LegacyPrefixes legacy_prefixes{};
     LegacyOpcode opcode{};
     ModRM mod_rm{};
-    SIB sib{};
+    std::optional<SIB> sib{};
     Displacement displacement{};
     Immediate immediate{};
 
@@ -170,7 +170,7 @@ namespace assembly {
       if (mod_rm.value!=0u) {
         ++bytes;
       }
-      if (sib.value!=0u) {
+      if (sib.has_value()) {
         ++bytes;
       }
 

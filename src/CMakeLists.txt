@@ -7,6 +7,7 @@ set(asm_HEADERS
     include/asm/instruction.hxx
     include/asm/instruction_helper.hxx
     include/asm/instructions/add_sub.hxx
+    include/asm/instructions/bitwise.hxx
     include/asm/instructions/call.hxx
     include/asm/instructions/inc_dec.hxx
     include/asm/instructions/jmp.hxx
@@ -14,6 +15,7 @@ set(asm_HEADERS
     include/asm/instructions/leave.hxx
     include/asm/instructions/mov.hxx
     include/asm/instructions/ret.hxx
+    include/asm/instructions/test.hxx
     )
 set(asm_SOURCES
     buffer.cxx
