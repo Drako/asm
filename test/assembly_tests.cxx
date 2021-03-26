@@ -173,7 +173,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     assembly::Buffer memory{};
     memory.append(i::xor_(current, current)); // offset: 0
     memory.append(i::xor_(index, index)); // offset: 3
-    memory.append(i::lea_rip(mapping, 22)); // offset: 6
+    memory.append(i::lea_rip(mapping, 6)); // offset: 6
     // .loop:
     memory.append(i::mov(current_char, assembly::addr(src, index))); // offset: 13
     memory.append(i::mov(current_char, assembly::addr(mapping, current))); // offset: 16
@@ -182,8 +182,8 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append(i::test(current_char, current_char)); // offset: 26
     memory.append(i::jne(-21)); // jne .loop -- offset: 28
     memory.append(i::retn()); // offset: 34
-    memory.append_zeroes(65u); // offset: 35
-    memory.append_string("U G   C            A", false); // offset: 100
+    memory.append_zeroes(49u); // offset: 35
+    memory.append_string("U G   C            A", false); // offset: 84
 
 
     std::ostringstream bytes;
