@@ -4,7 +4,6 @@
 #include <asm/callable.hxx>
 #include <asm/instructions/add_sub.hxx>
 #include <asm/instructions/bitwise.hxx>
-#include <asm/instructions/call.hxx>
 #include <asm/instructions/float.hxx>
 #include <asm/instructions/inc_dec.hxx>
 #include <asm/instructions/jmp.hxx>
@@ -32,7 +31,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const answer = memory.to_callable();
 
@@ -53,7 +52,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const identity = memory.to_callable();
 
@@ -74,7 +73,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const add = memory.to_callable();
 
@@ -96,7 +95,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const apply = memory.to_callable();
 
@@ -117,7 +116,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const fn = memory.to_callable();
 
@@ -147,7 +146,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const hello = memory.to_callable();
 
@@ -188,7 +187,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const rna_transcribe = memory.to_callable();
 
@@ -224,11 +223,11 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     std::ostringstream bytes;
     memory.dump(bytes);
-    INFO("Generated code: " << bytes.str());
+    INFO("Generated code: " << bytes.str())
 
     auto const space_age = memory.to_callable();
 
-    // float spage_age(uint32_t age_in_seconds, uint32_t planet);
+    // float space_age(uint32_t age_in_seconds, uint32_t planet);
     auto const earth_age = space_age.call<float>(946728000u, 2u);
     REQUIRE(earth_age==30.f);
   }
