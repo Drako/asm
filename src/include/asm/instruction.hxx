@@ -4,6 +4,8 @@
 #include <cstdint>
 
 #include <array>
+#include <optional>
+#include <vector>
 
 namespace assembly {
   enum class LegacyPrefix1 : std::uint8_t {
@@ -143,72 +145,21 @@ namespace assembly {
     Displacement displacement{};
     Immediate immediate{};
 
-    constexpr std::size_t size() const
-    {
-      std::size_t bytes = 0u;
-      if (legacy_prefixes.prefix1!=LegacyPrefix1::None) {
-        ++bytes;
-      }
-      if (legacy_prefixes.prefix2!=LegacyPrefix2::None) {
-        ++bytes;
-      }
-      if (legacy_prefixes.prefix3!=LegacyPrefix3::None) {
-        ++bytes;
-      }
-      if (legacy_prefixes.prefix4!=LegacyPrefix4::None) {
-        ++bytes;
-      }
+    [[nodiscard]] std::vector<std::byte> encode() const;
 
-      if (opcode.mandatory_prefix!=MandatoryPrefix::None) {
-        ++bytes;
-      }
-      if (opcode.rex_prefix!=REXPrefix::None) {
-        ++bytes;
-      }
-      bytes += opcode.opcode_size;
+    [[nodiscard]] std::size_t size() const;
 
-      if (mod_rm.value!=0u) {
-        ++bytes;
-      }
-      if (sib.has_value()) {
-        ++bytes;
-      }
+  private:
+    void append_legacy_prefix(std::vector<std::byte>& bytes) const;
 
-      switch (displacement.type) {
-      default:
-        break;
-      case DisplacementType::Disp8:
-        ++bytes;
-        break;
-      case DisplacementType::Disp16:
-        bytes += 2;
-        break;
-      case DisplacementType::Disp32:
-        bytes += 4;
-        break;
-      case DisplacementType::Disp64:
-        bytes += 8;
-        break;
-      }
+    void append_opcode(std::vector<std::byte>& bytes) const;
 
-      switch (immediate.type) {
-      default:
-        break;
-      case ImmediateType::Imm8:
-        ++bytes;
-        break;
-      case ImmediateType::Imm16:
-        bytes += 2;
-        break;
-      case ImmediateType::Imm32:
-        bytes += 4;
-        break;
-      case ImmediateType::Imm64:
-        bytes += 8;
-        break;
-      }
+    void append_modrm(std::vector<std::byte>& bytes) const;
 
-      return bytes;
-    }
+    void append_sib(std::vector<std::byte>& bytes) const;
+
+    void append_displacement(std::vector<std::byte>& bytes) const;
+
+    void append_immediate(std::vector<std::byte>& bytes) const;
   };
 }

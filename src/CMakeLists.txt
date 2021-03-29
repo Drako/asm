@@ -20,6 +20,7 @@ set(asm_HEADERS
     )
 set(asm_SOURCES
     buffer.cxx
+    instruction.cxx
     )
 
 if (WIN32)

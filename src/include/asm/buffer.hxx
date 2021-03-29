@@ -65,17 +65,5 @@ namespace assembly {
 
   private:
     std::vector<std::byte> bytes{};
-
-    void append_legacy_prefix(Instruction const& inst);
-
-    void append_opcode(Instruction const& inst);
-
-    void append_modrm(Instruction const& inst);
-
-    void append_sib(Instruction const& inst);
-
-    void append_displacement(Instruction const& inst);
-
-    void append_immediate(Instruction const& inst);
   };
 }
