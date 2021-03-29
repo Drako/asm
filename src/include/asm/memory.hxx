@@ -72,4 +72,9 @@ namespace assembly {
   {
     return BaseWithScalableIndex<T, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq>{scale, displacement};
   }
+
+  constexpr auto addr(std::int32_t displacement)
+  {
+    return addr(registers::RBP{}, registers::RSP{}, IndexScale::Scale1, displacement);
+  }
 }

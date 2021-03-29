@@ -27,8 +27,7 @@ namespace assembly::instructions {
       std::int32_t disp
   )
   {
-    return helper::opcode_with_register_and_memory<0x8D>(r,
-        addr(registers::RBP{}, registers::RSP{}, IndexScale::Scale1, disp));
+    return helper::opcode_with_register_and_memory<0x8D>(r, addr(disp));
   }
 
   /// Store absolute address in register.
