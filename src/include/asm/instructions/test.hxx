@@ -4,7 +4,7 @@
 
 namespace assembly::instructions {
   template<typename T>
-  constexpr auto test_a(Register<T, 0u, REXRequirement::DontCare>, T imm)
+  constexpr auto test_a(Register<T, 0u>, T imm)
   -> std::enable_if_t<!std::is_same_v<T, std::uint64_t>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
@@ -18,7 +18,7 @@ namespace assembly::instructions {
     return inst;
   }
 
-  constexpr Instruction test_a(Register<std::uint64_t, 0u, REXRequirement::DontCare>, std::uint32_t imm32)
+  constexpr Instruction test_a(Register<std::uint64_t, 0u>, std::uint32_t imm32)
   {
     auto inst = helper::opcode_with_immediate<0xA9>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
@@ -76,7 +76,7 @@ namespace assembly::instructions {
 
   template<std::uint8_t Idx>
   constexpr Instruction test64(
-      Register<std::uint64_t, Idx, REXRequirement::DontCare> dest,
+      Register<std::uint64_t, Idx> dest,
       std::uint32_t imm32
   )
   {

@@ -23,7 +23,7 @@ namespace assembly::instructions {
   /// Store absolute address in register.
   template<std::uint8_t Idx>
   constexpr Instruction lea(
-      Register <std::uint64_t, Idx, REXRequirement::DontCare> r,
+      Register <std::uint64_t, Idx> r,
       std::int32_t disp
   )
   {
@@ -33,7 +33,7 @@ namespace assembly::instructions {
   /// Store absolute address in register.
   template<std::uint8_t Idx>
   constexpr Instruction lea_rip(
-      Register <std::uint64_t, Idx, REXRequirement::DontCare> r,
+      Register <std::uint64_t, Idx> r,
       std::int32_t disp
   )
   {

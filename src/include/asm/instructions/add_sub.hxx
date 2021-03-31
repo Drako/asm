@@ -5,7 +5,7 @@
 namespace assembly::instructions {
   /// add immediate to al, ax, eax
   template<typename T>
-  constexpr auto add_a(Register<T, 0u, REXRequirement::DontCare>, T imm)
+  constexpr auto add_a(Register<T, 0u>, T imm)
   -> std::enable_if_t<!std::is_same_v<T, std::uint64_t>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
@@ -20,7 +20,7 @@ namespace assembly::instructions {
   }
 
   /// add imm32 sign extended to rax
-  constexpr Instruction add_a(Register<std::uint64_t, 0u, REXRequirement::DontCare>, std::uint32_t imm32)
+  constexpr Instruction add_a(Register<std::uint64_t, 0u>, std::uint32_t imm32)
   {
     auto inst = helper::opcode_with_immediate<0x05>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
@@ -82,7 +82,7 @@ namespace assembly::instructions {
   /// Add imm32 to m64.
   template<std::uint8_t Idx>
   constexpr Instruction add64(
-      Register<std::uint64_t, Idx, REXRequirement::DontCare> dest,
+      Register<std::uint64_t, Idx> dest,
       std::uint32_t imm32
   )
   {
@@ -149,7 +149,7 @@ namespace assembly::instructions {
 
   /// subtract immediate from al, ax, eax
   template<typename T>
-  constexpr auto sub_a(Register<T, 0u, REXRequirement::DontCare>, T imm)
+  constexpr auto sub_a(Register<T, 0u>, T imm)
   -> std::enable_if_t<!std::is_same_v<T, std::uint64_t>, Instruction>
   {
     if constexpr (sizeof(T)==1u) {
@@ -164,7 +164,7 @@ namespace assembly::instructions {
   }
 
   /// subtract imm32 sign extended from rax
-  constexpr Instruction sub_a(Register<std::uint64_t, 0u, REXRequirement::DontCare>, std::uint32_t imm32)
+  constexpr Instruction sub_a(Register<std::uint64_t, 0u>, std::uint32_t imm32)
   {
     auto inst = helper::opcode_with_immediate<0x2D>(imm32);
     inst.opcode.rex_prefix |= REXPrefix::W;
@@ -226,7 +226,7 @@ namespace assembly::instructions {
   /// Subtract imm32 from m64.
   template<std::uint8_t Idx>
   constexpr Instruction sub64(
-      Register<std::uint64_t, Idx, REXRequirement::DontCare> dest,
+      Register<std::uint64_t, Idx> dest,
       std::uint32_t imm32
   )
   {

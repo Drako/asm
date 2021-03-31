@@ -29,7 +29,7 @@ namespace assembly::instructions {
   }
 
   template<std::uint8_t Idx>
-  constexpr Instruction call(Register<std::uint64_t, Idx, REXRequirement::DontCare> r)
+  constexpr Instruction call(Register<std::uint64_t, Idx> r)
   {
     return helper::opcode_with_register<0xFF>(r, 2u);
   }

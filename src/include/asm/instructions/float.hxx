@@ -11,8 +11,8 @@ namespace assembly::instructions {
   constexpr Instruction mulss(XMM <DestIndex>, XMM <SrcIndex>)
   {
     auto inst = helper::opcode_with_register_and_register<0x0F, 0x59>(
-        Register<std::uint32_t, SrcIndex, REXRequirement::DontCare>{},
-        Register<std::uint32_t, DestIndex, REXRequirement::DontCare>{}
+        Register<std::uint32_t, SrcIndex>{},
+        Register<std::uint32_t, DestIndex>{}
     );
     inst.opcode.mandatory_prefix = MandatoryPrefix::Mandatory3;
     return inst;
@@ -31,7 +31,7 @@ namespace assembly::instructions {
   )
   {
     auto inst = helper::opcode_with_register_and_memory<0x0F, 0x59>(
-        Register<std::uint32_t, DestIndex, REXRequirement::DontCare>{},
+        Register<std::uint32_t, DestIndex>{},
         src
     );
     inst.opcode.mandatory_prefix = MandatoryPrefix::Mandatory3;
@@ -43,10 +43,10 @@ namespace assembly::instructions {
       std::uint8_t XmmIndex,
       std::uint8_t RegIndex
   >
-  constexpr Instruction cvtsi2ss(XMM <XmmIndex>, Register <std::uint32_t, RegIndex, REXRequirement::DontCare> src)
+  constexpr Instruction cvtsi2ss(XMM <XmmIndex>, Register <std::uint32_t, RegIndex> src)
   {
     auto inst = helper::opcode_with_register_and_register<0x0F, 0x2A>(
-        src, Register<std::uint32_t, XmmIndex, REXRequirement::DontCare>{}
+        src, Register<std::uint32_t, XmmIndex>{}
     );
     inst.opcode.mandatory_prefix = MandatoryPrefix::Mandatory3;
     return inst;
@@ -65,7 +65,7 @@ namespace assembly::instructions {
   )
   {
     auto inst = helper::opcode_with_register_and_memory<0x0F, 0x2A>(
-        Register<std::uint32_t, XmmIndex, REXRequirement::DontCare>{},
+        Register<std::uint32_t, XmmIndex>{},
         src
     );
     inst.opcode.mandatory_prefix = MandatoryPrefix::Mandatory3;

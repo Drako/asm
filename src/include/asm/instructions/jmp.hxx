@@ -37,7 +37,7 @@ namespace assembly::instructions {
   }
 
   template<std::uint8_t Idx>
-  constexpr Instruction jmp(Register <std::uint64_t, Idx, REXRequirement::DontCare> r)
+  constexpr Instruction jmp(Register <std::uint64_t, Idx> r)
   {
     auto inst = helper::opcode<0xFF>();
     inst.mod_rm.mod = 0x3;
