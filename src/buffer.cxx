@@ -5,7 +5,7 @@
 #include <cassert>
 
 #include <iomanip>
-#include <ostream>
+#include <sstream>
 
 namespace assembly {
   void Buffer::append(const Instruction& inst)
@@ -22,11 +22,11 @@ namespace assembly {
 
   void Buffer::dump(std::ostream& out) const
   {
-    out << "Buffer { \"";
+    out << "\"";
     for (auto const b : bytes) {
       out << "\\x" << std::hex << std::setfill('0') << std::setw(2) << static_cast<unsigned>(b);
     }
-    out << "\" }" << std::endl;
+    out << "\"" << std::endl;
   }
 
   void Buffer::append_zeroes(std::uint16_t count)
@@ -52,5 +52,12 @@ namespace assembly {
     if (including_null) {
       bytes.push_back(static_cast<std::byte>(0u));
     }
+  }
+
+  std::string Buffer::to_string() const
+  {
+    std::ostringstream builder;
+    dump(builder);
+    return builder.str();
   }
 }

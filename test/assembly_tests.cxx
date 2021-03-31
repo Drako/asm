@@ -15,8 +15,6 @@
 #include <cstdlib>
 #include <cstring>
 
-#include <sstream>
-
 namespace r = assembly::registers;
 namespace i = assembly::instructions;
 
@@ -29,9 +27,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append(i::mov(r::EAX{}, 42u));
     memory.append(i::retn());
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const answer = memory.to_callable();
 
@@ -50,9 +46,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 #endif
     memory.append(i::retn());
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const identity = memory.to_callable();
 
@@ -71,9 +65,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 #endif
     memory.append(i::retn());
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const add = memory.to_callable();
 
@@ -93,9 +85,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append(i::jmp(r::RDX{}));
 #endif
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const apply = memory.to_callable();
 
@@ -114,9 +104,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     // but RIP at that point is already after the jmp
     memory.append(i::jmp_rip(-14));
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const fn = memory.to_callable();
 
@@ -144,9 +132,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 #endif
     memory.append(i::jmp_rip(-37));
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const hello = memory.to_callable();
 
@@ -185,9 +171,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append_zeroes(49u); // offset: 35
     memory.append_string("U G   C            A", false); // offset: 84
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const rna_transcribe = memory.to_callable();
 
@@ -221,9 +205,7 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     memory.append_bytes(802117899u); // Uranus
     memory.append_bytes(793996658u); // Neptune
 
-    std::ostringstream bytes;
-    memory.dump(bytes);
-    INFO("Generated code: " << bytes.str())
+    INFO("Generated code: " << memory.to_string())
 
     auto const space_age = memory.to_callable();
 

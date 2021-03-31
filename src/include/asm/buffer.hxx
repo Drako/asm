@@ -44,6 +44,8 @@ namespace assembly {
 
     void dump(std::ostream& out) const;
 
+    [[nodiscard]] std::string to_string() const;
+
   private:
     std::vector<std::byte> bytes{};
   };
