@@ -28,4 +28,29 @@ namespace assembly {
     }
     out << "\" }" << std::endl;
   }
+
+  void Buffer::append_zeroes(std::uint16_t count)
+  {
+    for (; count--;) {
+      bytes.push_back(static_cast<std::byte>(0u));
+    }
+  }
+
+  void Buffer::append_nops(std::uint16_t count)
+  {
+    for (; count--;) {
+      bytes.push_back(static_cast<std::byte>(0x90));
+    }
+  }
+
+  void Buffer::append_string(char const* str, bool including_null)
+  {
+    while (*str) {
+      bytes.push_back(*reinterpret_cast<std::byte const*>(str));
+      ++str;
+    }
+    if (including_null) {
+      bytes.push_back(static_cast<std::byte>(0u));
+    }
+  }
 }

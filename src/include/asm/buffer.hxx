@@ -34,30 +34,11 @@ namespace assembly {
       }
     }
 
-    inline void append_zeroes(std::uint16_t count)
-    {
-      for (; count--;) {
-        bytes.push_back(static_cast<std::byte>(0u));
-      }
-    }
+    void append_zeroes(std::uint16_t count);
 
-    inline void append_nops(std::uint16_t count)
-    {
-      for (; count--;) {
-        bytes.push_back(static_cast<std::byte>(0x90));
-      }
-    }
+    void append_nops(std::uint16_t count);
 
-    inline void append_string(char const* str, bool including_null = true)
-    {
-      while (*str) {
-        bytes.push_back(*reinterpret_cast<std::byte const*>(str));
-        ++str;
-      }
-      if (including_null) {
-        bytes.push_back(static_cast<std::byte>(0u));
-      }
-    }
+    void append_string(char const* str, bool including_null = true);
 
     [[nodiscard]] Callable to_callable() const;
 
