@@ -115,7 +115,7 @@ namespace bf {
     auto const zero_check = i::test<std::uint32_t>(memory, 0xFFFFFFFF);
 
     std::vector<assembly::Instruction> const body = operator()(loop.scope);
-    auto const size = std::accumulate(std::cbegin(body), std::cend(body), 0u,
+    auto const size = std::accumulate(std::cbegin(body), std::cend(body), static_cast<std::size_t>(0u),
         [](std::size_t acc, assembly::Instruction const& inst) {
           return acc+inst.size();
         });

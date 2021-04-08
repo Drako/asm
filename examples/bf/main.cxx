@@ -2,6 +2,8 @@
 
 int main()
 {
+  // equivalent to BF code:
+  // +[,.----------]
   bf::Instruction const echo_program = bf::Scope{{
                                                      bf::ModifyValue{1},
                                                      bf::Loop{{{
