@@ -211,6 +211,6 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
 
     // float space_age(uint32_t age_in_seconds, uint32_t planet);
     auto const earth_age = space_age.call<float>(946728000u, 2u);
-    REQUIRE(earth_age==30.f);
+    REQUIRE_THAT(earth_age, Catch::Matchers::WithinRel(30.f));
   }
 }

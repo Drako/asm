@@ -29,8 +29,8 @@ namespace assembly::instructions {
 
   /// Add immediate to memory.
   template<
-      typename RT,
       typename VT,
+      typename RT,
       std::uint8_t BaseIdx, REXRequirement BaseRexReq,
       std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
   >

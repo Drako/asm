@@ -249,19 +249,19 @@ namespace assembly::helper {
   }
 
   template<
-      typename RT,
+      std::uint8_t... Opcode,
       typename VT,
+      typename RT,
       std::uint8_t BaseIdx, REXRequirement BaseRexReq,
       std::uint8_t IndexIdx = 0u, REXRequirement IndexRexReq = REXRequirement::DontCare
   >
   constexpr Instruction opcode_with_memory_and_immediate(
-      std::uint8_t opcode,
       Memory<RT, BaseIdx, BaseRexReq, IndexIdx, IndexRexReq> mem,
       VT imm,
       std::uint8_t reg = 0u
   )
   {
-    auto inst = opcode_with_memory(opcode, mem, reg);
+    auto inst = opcode_with_memory<Opcode...>(mem, reg);
     detail::set_immediate(inst, imm);
     return inst;
   }

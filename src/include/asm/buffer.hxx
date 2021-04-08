@@ -24,6 +24,14 @@ namespace assembly {
   public:
     void append(Instruction const& inst);
 
+    template<typename Container>
+    inline void append(Container const& instances)
+    {
+      for (auto const& inst : instances) {
+        append(inst);
+      }
+    }
+
     template<typename T>
     inline void append_bytes(T data)
     {
