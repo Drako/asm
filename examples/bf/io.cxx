@@ -6,7 +6,7 @@
 
 #include <conio.h>
 
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
 
 #include <termios.h>
 
@@ -32,7 +32,7 @@ namespace bf::io {
     return input;
   }
 
-#elif defined(__linux__)
+#elif defined(__linux__) || defined(__APPLE__)
 
   int scan_char()
   {
