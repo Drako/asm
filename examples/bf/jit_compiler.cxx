@@ -8,10 +8,12 @@
 #include <iterator>
 #include <numeric>
 
-#include <iostream>
-
 namespace i = assembly::instructions;
 namespace r = assembly::registers;
+
+#ifdef _WIN32
+extern "C" void __chkstk();
+#endif
 
 namespace bf {
   constexpr static auto const pointer = r::BX{}; // used when modifying pointer
@@ -161,6 +163,11 @@ namespace bf {
     constexpr static std::uint32_t const MEM_SIZE = 65536u << 2u;
 
     buffer.append(i::push(pointer64));
+#ifdef _WIN32
+    buffer.append(i::mov(pointer64, reinterpret_cast<std::uint64_t>(&__chkstk)));
+    buffer.append(i::mov(r::RAX{}, MEM_SIZE+64ull));
+    buffer.append(i::call(pointer64));
+#endif
     buffer.append(i::sub64(r::RSP{}, MEM_SIZE));
 
     // make sure pointer is initialized with 0
@@ -179,8 +186,6 @@ namespace bf {
     buffer.append(i::add64(r::RSP{}, MEM_SIZE));
     buffer.append(i::pop(pointer64));
     buffer.append(i::retn());
-
-    std::cerr << buffer.to_string() << std::endl;
 
     return buffer.to_callable();
   }
