@@ -1,6 +1,8 @@
 #pragma once
 
 #include "../instruction_helper.hxx"
+#include "add_sub.hxx"
+#include "mov.hxx"
 
 namespace assembly::instructions {
   constexpr Instruction call(std::int32_t displacement)
@@ -31,6 +33,32 @@ namespace assembly::instructions {
   template<std::uint8_t Idx>
   constexpr Instruction call(Register<std::uint64_t, Idx> r)
   {
-    return helper::opcode_with_register<0xFF>(r, 2u);
+    return helper::opcode_with_register<0xFF>(r, 2u, true);
   }
+
+#ifdef _WIN32
+
+  template<typename Result, typename... Args>
+  constexpr std::array<Instruction, 4u> call(Result (* ptr)(Args...))
+  {
+    constexpr auto const SHADOW_SPACE_SIZE = 32;
+
+    return {
+        sub64(registers::RSP{}, SHADOW_SPACE_SIZE),
+        mov(registers::RAX{}, reinterpret_cast<std::uint64_t>(ptr)),
+        call(registers::RAX{}),
+        add64(registers::RSP{}, SHADOW_SPACE_SIZE),
+    };
+  }
+
+#else
+  template<typename Result, typename... Args>
+  constexpr std::array<Instruction, 2u> call(Result (* ptr)(Args...))
+  {
+    return {
+        mov(registers::RAX{}, reinterpret_cast<std::uint64_t>(ptr)),
+        call(registers::RAX{}),
+    };
+  }
+#endif
 }

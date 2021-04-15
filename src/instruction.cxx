@@ -74,8 +74,13 @@ namespace assembly {
 
   void Instruction::append_displacement(std::vector<std::byte>& bytes) const
   {
+    if (!displacement.has_value())
+      return;
+
+    auto const& disp = displacement.value();
+
     std::size_t count;
-    switch (displacement.type) {
+    switch (disp.type) {
     case DisplacementType::Disp8:
       count = 1u;
       break;
@@ -93,14 +98,19 @@ namespace assembly {
     }
 
     for (std::size_t n = 0u; n<count; ++n) {
-      bytes.push_back(displacement.bytes[n]);
+      bytes.push_back(disp.bytes[n]);
     }
   }
 
   void Instruction::append_immediate(std::vector<std::byte>& bytes) const
   {
+    if (!immediate.has_value())
+      return;
+
+    auto const& imm = immediate.value();
+
     std::size_t count;
-    switch (immediate.type) {
+    switch (imm.type) {
     case ImmediateType::Imm8:
       count = 1u;
       break;
@@ -118,7 +128,7 @@ namespace assembly {
     }
 
     for (std::size_t n = 0u; n<count; ++n) {
-      bytes.push_back(immediate.bytes[n]);
+      bytes.push_back(imm.bytes[n]);
     }
   }
 }

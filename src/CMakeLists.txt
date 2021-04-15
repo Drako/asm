@@ -7,6 +7,7 @@ set(asm_HEADERS
     include/asm/instruction.hxx
     include/asm/instruction_helper.hxx
     include/asm/instructions/add_sub.hxx
+    include/asm/instructions/all.hxx
     include/asm/instructions/bitwise.hxx
     include/asm/instructions/call.hxx
     include/asm/instructions/float.hxx
@@ -15,6 +16,7 @@ set(asm_HEADERS
     include/asm/instructions/lea.hxx
     include/asm/instructions/leave.hxx
     include/asm/instructions/mov.hxx
+    include/asm/instructions/push_pop.hxx
     include/asm/instructions/ret.hxx
     include/asm/instructions/test.hxx
     )

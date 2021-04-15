@@ -142,8 +142,8 @@ namespace assembly {
     LegacyOpcode opcode{};
     ModRM mod_rm{};
     std::optional<SIB> sib{};
-    Displacement displacement{};
-    Immediate immediate{};
+    std::optional<Displacement> displacement{};
+    std::optional<Immediate> immediate{};
 
     [[nodiscard]] std::vector<std::byte> encode() const;
 

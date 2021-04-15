@@ -13,22 +13,26 @@ namespace assembly::helper {
     constexpr auto set_immediate(Instruction& inst, T imm)
     -> std::enable_if_t<types::IsOneOfV<T, std::uint8_t, std::uint16_t, std::uint32_t, std::uint64_t>>
     {
+      Immediate i;
+
       if constexpr (sizeof(T)==1u) {
-        inst.immediate.type = ImmediateType::Imm8;
-        inst.immediate.imm8 = imm;
+        i.type = ImmediateType::Imm8;
+        i.imm8 = imm;
       }
       else if constexpr (sizeof(T)==2u) {
-        inst.immediate.type = ImmediateType::Imm16;
-        inst.immediate.imm16 = imm;
+        i.type = ImmediateType::Imm16;
+        i.imm16 = imm;
       }
       if constexpr (sizeof(T)==4u) {
-        inst.immediate.type = ImmediateType::Imm32;
-        inst.immediate.imm32 = imm;
+        i.type = ImmediateType::Imm32;
+        i.imm32 = imm;
       }
       else if constexpr (sizeof(T)==8u) {
-        inst.immediate.type = ImmediateType::Imm64;
-        inst.immediate.imm64 = imm;
+        i.type = ImmediateType::Imm64;
+        i.imm64 = imm;
       }
+
+      inst.immediate = i;
     }
 
     constexpr void set_displacement(
@@ -39,16 +43,18 @@ namespace assembly::helper {
       inst.mod_rm.mod = 0;
       if (displacement.has_value()) {
         auto const d = displacement.value();
+        Displacement disp;
         if (std::holds_alternative<std::int8_t>(d)) {
           inst.mod_rm.mod = 0x1;
-          inst.displacement.type = DisplacementType::Disp8;
-          inst.displacement.disp8 = std::get<std::int8_t>(d);
+          disp.type = DisplacementType::Disp8;
+          disp.disp8 = std::get<std::int8_t>(d);
         }
         else if (std::holds_alternative<std::int32_t>(d)) {
           inst.mod_rm.mod = 0x2;
-          inst.displacement.type = DisplacementType::Disp32;
-          inst.displacement.disp32 = std::get<std::int32_t>(d);
+          disp.type = DisplacementType::Disp32;
+          disp.disp32 = std::get<std::int32_t>(d);
         }
+        inst.displacement = disp;
       }
     }
 
@@ -206,13 +212,14 @@ namespace assembly::helper {
   template<std::uint8_t... Opcode, typename VT, std::uint8_t Idx, REXRequirement RexReq>
   constexpr Instruction opcode_with_register(
       Register<VT, Idx, RexReq> r,
-      std::uint8_t reg = 0u
+      std::uint8_t reg = 0u,
+      bool is_address = false
   )
   {
     auto inst = helper::opcode<Opcode...>();
     inst.mod_rm.mod = 0x3;
     inst.mod_rm.reg = reg;
-    detail::set_rm(inst, r);
+    detail::set_rm(inst, r, is_address);
     return inst;
   }
 
@@ -279,9 +286,8 @@ namespace assembly::helper {
   }
 
   template<std::uint8_t Opcode, typename T, std::uint8_t Index, REXRequirement RexReq>
-  constexpr Instruction opcode_plus_register_with_immediate(
-      Register<T, Index, RexReq>,
-      T imm
+  constexpr Instruction opcode_plus_register(
+      Register<T, Index, RexReq>
   )
   {
     // TODO: might need adjustment if there are multibyte opcodes which add the register
@@ -300,7 +306,16 @@ namespace assembly::helper {
     else if constexpr (sizeof(T)==8u) {
       inst.opcode.rex_prefix |= REXPrefix::W;
     }
+    return inst;
+  }
 
+  template<std::uint8_t Opcode, typename T, std::uint8_t Index, REXRequirement RexReq>
+  constexpr Instruction opcode_plus_register_with_immediate(
+      Register<T, Index, RexReq> r,
+      T imm
+  )
+  {
+    auto inst = helper::opcode_plus_register<Opcode>(r);
     detail::set_immediate(inst, imm);
     return inst;
   }

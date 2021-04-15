@@ -1,33 +1,34 @@
 #include "jit_compiler.hxx"
 #include "io.hxx"
 
-#include <asm/instructions/inc_dec.hxx>
-#include <asm/instructions/add_sub.hxx>
-#include <asm/instructions/mov.hxx>
-#include <asm/instructions/jmp.hxx>
-#include <asm/instructions/call.hxx>
-#include <asm/instructions/test.hxx>
+#include <asm/instructions/all.hxx>
+#include <asm/buffer.hxx>
 
+#include <cstring>
 #include <iterator>
 #include <numeric>
+
+#include <iostream>
 
 namespace i = assembly::instructions;
 namespace r = assembly::registers;
 
 namespace bf {
-  constexpr static auto const pointer = r::AX{}; // used when modifying pointer
-  constexpr static auto const pointer64 = r::RAX{}; // used when accessing value through pointer
-
-  constexpr static auto const pointer_backup = r::BX{}; // used when calling functions to save AX
-  constexpr static auto const pointer64_backup = r::RBX{};
+  constexpr static auto const pointer = r::BX{}; // used when modifying pointer
+  constexpr static auto const pointer64 = r::RBX{}; // used when accessing value through pointer
 
   constexpr static auto const memory = assembly::addr(r::RSP{}, pointer64, assembly::IndexScale::Scale4);
-  constexpr static auto const memory_backup = assembly::addr(r::RSP{}, pointer64_backup, assembly::IndexScale::Scale4);
 
 #ifdef _WIN32
   constexpr static auto const output = r::ECX{};
+  constexpr static auto const dest = r::RCX{};
+  constexpr static auto const ch = r::EDX{};
+  constexpr static auto const count = r::R8{};
 #else
   constexpr static auto const output = r::EDI{};
+  constexpr static auto const dest = r::RDI{};
+  constexpr static auto const ch = r::ESI{};
+  constexpr static auto const count = r::RDX{};
 #endif
   constexpr static auto const input = r::EAX{};
 
@@ -45,7 +46,7 @@ namespace bf {
       result.push_back(i::dec(pointer));
       break;
     default:
-      result.push_back(i::add_a(pointer, static_cast<std::uint16_t>(inst.delta%65536u)));
+      result.push_back(i::add(pointer, static_cast<std::uint16_t>(inst.delta%65536u)));
     }
 
     return result;
@@ -73,24 +74,28 @@ namespace bf {
 
   std::vector<assembly::Instruction> JitCompiler::operator()(PrintValue const&) const
   {
-    return {
-        i::mov(pointer_backup, pointer),
-        i::mov(output, memory),
-        i::mov(pointer64, reinterpret_cast<std::uint64_t>(&io::print_char)),
-        i::call(pointer64),
-        i::mov(pointer, pointer_backup),
-    };
+    std::vector<assembly::Instruction> instructions;
+    instructions.reserve(5u);
+
+    instructions.push_back(i::mov(output, memory));
+    for (auto const& inst : i::call(io::print_char)) {
+      instructions.push_back(inst);
+    }
+
+    return instructions;
   }
 
   std::vector<assembly::Instruction> JitCompiler::operator()(ScanValue const&) const
   {
-    return {
-        i::mov(pointer_backup, pointer),
-        i::mov(pointer64, reinterpret_cast<std::uint64_t>(&io::scan_char)),
-        i::call(pointer64),
-        i::mov(memory_backup, input),
-        i::mov(pointer, pointer_backup),
-    };
+    std::vector<assembly::Instruction> instructions;
+    instructions.reserve(5u);
+
+    for (auto const& inst : i::call(io::scan_char)) {
+      instructions.push_back(inst);
+    }
+    instructions.push_back(i::mov(memory, input));
+
+    return instructions;
   }
 
   std::vector<assembly::Instruction> JitCompiler::operator()(Scope const& scope) const
@@ -147,5 +152,36 @@ namespace bf {
     }
 
     return result;
+  }
+
+  assembly::Callable JitCompiler::compile(std::vector<assembly::Instruction> const& instructions)
+  {
+    assembly::Buffer buffer;
+
+    constexpr static std::uint32_t const MEM_SIZE = 65536u << 2u;
+
+    buffer.append(i::push(pointer64));
+    buffer.append(i::sub64(r::RSP{}, MEM_SIZE));
+
+    // make sure pointer is initialized with 0
+    buffer.append(i::xor_(pointer64, pointer64));
+
+    // make sure memory is filled with zeroes
+    buffer.append(i::mov(dest, r::RSP{}));
+    buffer.append(i::xor_(ch, ch));
+    buffer.append(i::mov(r::R8D{}, MEM_SIZE));
+    buffer.append(i::call(std::memset));
+
+    // actual body
+    buffer.append(instructions);
+
+    // cleanup
+    buffer.append(i::add64(r::RSP{}, MEM_SIZE));
+    buffer.append(i::pop(pointer64));
+    buffer.append(i::retn());
+
+    std::cerr << buffer.to_string() << std::endl;
+
+    return buffer.to_callable();
   }
 }

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <asm/callable.hxx>
 #include <asm/instruction.hxx>
 
 #include <vector>
@@ -21,5 +22,8 @@ namespace bf {
     std::vector<assembly::Instruction> operator()(Scope const& scope) const;
 
     std::vector<assembly::Instruction> operator()(Loop const& loop) const;
+
+    // this function actually wraps the instructions into an actual callable function
+    static assembly::Callable compile(std::vector<assembly::Instruction> const& instructions);
   };
 }

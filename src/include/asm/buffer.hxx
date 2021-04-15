@@ -25,9 +25,9 @@ namespace assembly {
     void append(Instruction const& inst);
 
     template<typename Container>
-    inline void append(Container const& instances)
+    inline void append(Container const& instructions)
     {
-      for (auto const& inst : instances) {
+      for (auto const& inst : instructions) {
         append(inst);
       }
     }

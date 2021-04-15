@@ -2,15 +2,7 @@
 
 #include <asm/buffer.hxx>
 #include <asm/callable.hxx>
-#include <asm/instructions/add_sub.hxx>
-#include <asm/instructions/bitwise.hxx>
-#include <asm/instructions/float.hxx>
-#include <asm/instructions/inc_dec.hxx>
-#include <asm/instructions/jmp.hxx>
-#include <asm/instructions/lea.hxx>
-#include <asm/instructions/mov.hxx>
-#include <asm/instructions/ret.hxx>
-#include <asm/instructions/test.hxx>
+#include <asm/instructions/all.hxx>
 
 #include <cstdlib>
 #include <cstring>
@@ -111,6 +103,21 @@ TEST_CASE("Assembling and running", "[buffer][callable][instruction]")
     // just skip the pointer (8 bytes) and call our function
     auto const result = fn.call_addr<int>(8, "23");
     REQUIRE(result==23);
+  }
+
+  SECTION("can generate code for function calling function via absolute address in register and then run it")
+  {
+    // [](char const *str) -> int { return std::atoi(str); }
+    assembly::Buffer memory{};
+    memory.append(i::call(std::atoi));
+    memory.append(i::retn());
+
+    INFO("Generated code: " << memory.to_string())
+
+    auto const fn = memory.to_callable();
+
+    auto const result = fn.call<int>("42");
+    REQUIRE(result==42);
   }
 
   SECTION("hello world")
