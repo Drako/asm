@@ -4,5 +4,6 @@ add_executable(bf main.cxx
     jit_compiler.cxx jit_compiler.hxx
     io.cxx io.hxx
     token.hxx
-    lexer.hxx lexer.cxx)
+    lexer.hxx lexer.cxx
+    parser.hxx parser.cxx)
 target_link_libraries(bf PRIVATE asm)
