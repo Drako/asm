@@ -89,7 +89,7 @@ namespace bf {
               "Unexpected end of file. Loop '[' started at "s+start->filename+":"+std::to_string(start->line)+":"
                   +std::to_string(start->column)};
         };
-        instructions.emplace_back();
+        instructions.emplace_back(loop);
         break;
       }
     }

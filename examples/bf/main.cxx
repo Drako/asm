@@ -53,17 +53,17 @@ int main(int argc, char** argv)
         auto const program = bf::Parser::parse(tokens);
 
         if (use_jit) {
-          bf::VM vm{};
-          bf::Executor executor{vm};
-
-          std::visit(executor, program);
-        }
-        else {
           bf::JitCompiler compiler;
 
           auto const instructions = std::visit(compiler, program);
           auto const compiled = bf::JitCompiler::compile(instructions);
           compiled.call<void>();
+        }
+        else {
+          bf::VM vm{};
+          bf::Executor executor{vm};
+
+          std::visit(executor, program);
         }
       }
       catch (bf::UnexpectedLoopEnd const& ex) {
