@@ -18,6 +18,7 @@ namespace bf::io {
   void print_char(int c)
   {
     std::putchar(c);
+    std::fflush(stdout);
   }
 
 #if defined(_WIN32)
