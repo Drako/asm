@@ -176,7 +176,7 @@ namespace bf {
     // make sure memory is filled with zeroes
     buffer.append(i::mov(dest, r::RSP{}));
     buffer.append(i::xor_(ch, ch));
-    buffer.append(i::mov(r::R8D{}, MEM_SIZE));
+    buffer.append(i::mov(count, static_cast<std::uint64_t>(MEM_SIZE)));
     buffer.append(i::call(std::memset));
 
     // actual body
