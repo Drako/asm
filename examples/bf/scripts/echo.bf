@@ -1,2 +1,0 @@
-echo until newline
-+[,.----------]
