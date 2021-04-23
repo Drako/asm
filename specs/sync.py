@@ -70,14 +70,19 @@ def mode_reader(columns: dict[str, int]):
         combined = next((columns[name] for name in combined_columns if name in columns))
 
         def single_col_reader(contents, inst):
-            support = contents[combined].text.split('/')
+            support = contents[combined].split('/')
             if len(support) == 1:
                 support = support[0]
             try:
                 inst.available_64 = support[0] == 'V'
                 inst.available_legacy = support[1] == 'V'
             except IndexError:
-                print(f'{inst.instruction} supported on "{support}"')
+                # funnily there are some comment lines in some instructions
+                # which get parsed into the instruction 3A
+                # as these lines are no instructions anyway, just ignore
+                if inst.instruction != '3A.':
+                    # in other cases I still want the print for debugging
+                    print(f'"{inst.instruction}" supported on "{support}"')
 
         return single_col_reader
 
@@ -86,21 +91,25 @@ def mode_reader(columns: dict[str, int]):
         col_legacy = columns['compat/leg mode']
 
         def multi_col_reader(contents, inst):
-            inst.available_64 = contents[col_64].text == 'Valid'
-            inst.available_legacy = contents[col_legacy].text == 'Valid'
+            inst.available_64 = contents[col_64] == 'Valid'
+            inst.available_legacy = contents[col_legacy] == 'Valid'
 
         return multi_col_reader
 
 
 def op_en_reader(columns: dict[str, int]):
     try:
-        col = columns['op/en']
+        col_names = [
+            'op/en',
+            'op / en'
+        ]
+        col = next((columns[name] for name in col_names if name in columns))
 
         def reader(contents, inst):
-            inst.operand_encoding = contents[col].text
+            inst.operand_encoding = contents[col]
 
         return reader
-    except KeyError:
+    except StopIteration:
         def constant(_, inst):
             inst.operand_encoding = 'ZO'
 
@@ -118,7 +127,7 @@ def opcode_instruction_reader(columns: dict[str, int]):
         combined = next((columns[name] for name in combined_columns if name in columns))
 
         def single_col_reader(contents, inst):
-            opcode_inst = contents[combined].text.split(' ')
+            opcode_inst = contents[combined].split(' ')
             inst.opcode = opcode_inst[0]
             is_instruction = False
             for item in opcode_inst[1:]:
@@ -139,8 +148,8 @@ def opcode_instruction_reader(columns: dict[str, int]):
         instruction = columns['instruction']
 
         def multi_col_reader(contents, inst):
-            inst.opcode = contents[opcode].text
-            inst.instruction = contents[instruction].text
+            inst.opcode = contents[opcode]
+            inst.instruction = contents[instruction]
 
         return multi_col_reader
 
@@ -149,8 +158,11 @@ def read_instruction_table(table) -> list[Instruction]:
     result = []
 
     columns = {}
+    modifier = 0
     for idx, tag in enumerate(table.find_all('th')):
-        columns[tag.text.replace('*', '').lower()] = idx
+        columns[tag.text.replace('*', '').lower()] = idx + modifier
+        if tag.has_attr('colspan'):
+            modifier += int(tag['colspan']) - 1
 
     read_opcode_instruction = opcode_instruction_reader(columns)
     if read_opcode_instruction is None:
@@ -164,15 +176,20 @@ def read_instruction_table(table) -> list[Instruction]:
 
     for row in tbody.find_all('tr')[1:]:
         inst = Instruction()
-        contents = row.find_all('td')
+        contents = []
+        for col in row.find_all('td'):
+            contents.append(col.text)
+            if col.has_attr('colspan'):
+                for _ in range(int(col['colspan']) - 1):
+                    contents.append('')
         if len(contents) <= 1:
             continue
         read_opcode_instruction(contents, inst)
         read_op_en(contents, inst)
         read_mode(contents, inst)
-        inst.description = contents[columns['description']].text
+        inst.description = contents[columns['description']]
         if inst.available_64:
-            # we only want 64 bits instructions
+            # I only want 64 bits instructions
             result.append(inst)
 
     return result
