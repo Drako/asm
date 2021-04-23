@@ -1,0 +1,1 @@
+[{"opcode": "0F 21/r", "instruction": "DR0\u2013DR7", "operand_encoding": "MR", "description": "Move extended debug register to r64."}, {"opcode": "0F 23 /r", "instruction": "DR0\u2013DR7, r64", "operand_encoding": "RM", "description": "Move r64 to extended debug register."}]

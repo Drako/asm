@@ -1,0 +1,1 @@
+[{"opcode": "9C", "instruction": "PUSHF", "operand_encoding": "ZO", "description": "Push lower 16 bits of EFLAGS."}, {"opcode": "9C", "instruction": "PUSHFQ", "operand_encoding": "ZO", "description": "Push RFLAGS."}]

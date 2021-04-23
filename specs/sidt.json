@@ -1,0 +1,1 @@
+[{"opcode": "0F 01 /1", "instruction": "SIDT m", "operand_encoding": "M", "description": "Store IDTR to m."}]

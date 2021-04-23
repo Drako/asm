@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F AE /1", "instruction": "FXRSTOR m512byte", "operand_encoding": "M", "description": "Restore the x87 FPU, MMX, XMM, and MXCSR register state from m512byte."}, {"opcode": "NP", "instruction": "FXRSTOR64 m512byte", "operand_encoding": "M", "description": "Restore the x87 FPU, MMX, XMM, and MXCSR register state from m512byte."}]

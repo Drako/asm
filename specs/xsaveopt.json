@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F AE /6", "instruction": "XSAVEOPT mem", "operand_encoding": "M", "description": "Save state components specified by EDX:EAX to mem, optimizing if possible."}, {"opcode": "NP", "instruction": "XSAVEOPT64 mem", "operand_encoding": "M", "description": "Save state components specified by EDX:EAX to mem, optimizing if possible."}]

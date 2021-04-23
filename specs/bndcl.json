@@ -1,0 +1,1 @@
+[{"opcode": "F3 0F 1A /r", "instruction": "BNDCL bnd, r/m64", "operand_encoding": "RM", "description": "Generate a #BR if the address in r/m64 is lower than the lower bound in bnd.LB."}]

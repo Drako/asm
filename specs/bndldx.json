@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F 1A /r", "instruction": "BNDLDX bnd, mib", "operand_encoding": "RM", "description": "Load the bounds stored in a bound table entry (BTE) into bnd with address translation using the base of mib and conditional on the index of mib matching the pointer value in the BTE."}]

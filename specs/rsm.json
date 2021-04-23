@@ -1,0 +1,1 @@
+[{"opcode": "0F AA", "instruction": "RSM", "operand_encoding": "ZO", "description": "Resume operation of interrupted program."}]

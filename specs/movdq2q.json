@@ -1,0 +1,1 @@
+[{"opcode": "F2 0F D6 /r", "instruction": "MOVDQ2Q mm, xmm", "operand_encoding": "RM", "description": "Move low quadword from xmm to mmx register."}]

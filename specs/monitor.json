@@ -1,0 +1,1 @@
+[{"opcode": "0F 01 C8", "instruction": "MONITOR", "operand_encoding": "ZO", "description": "Sets up a linear address range to be monitored by hardware and activates the monitor. The address range should be a write-back memory caching type. The address is DS:RAX/EAX/AX."}]

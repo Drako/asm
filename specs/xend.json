@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F 01 D5", "instruction": "XEND", "operand_encoding": "A", "description": "Specifies the end of an RTM code region."}]

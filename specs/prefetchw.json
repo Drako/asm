@@ -1,0 +1,1 @@
+[{"opcode": "0F 0D /1", "instruction": "PREFETCHW m8", "operand_encoding": "A", "description": "Move data from m8 closer to the processor in anticipation of a write."}]

@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F 1B /r", "instruction": "BNDSTX mib, bnd", "operand_encoding": "MR", "description": "Store the bounds in bnd and the pointer value in the index register of mib to a bound table entry (BTE) with address translation using the base of mib."}]

@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F 01 EE", "instruction": "RDPKRU", "operand_encoding": "ZO", "description": "Reads PKRU into EAX."}]

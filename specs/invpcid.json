@@ -1,0 +1,1 @@
+[{"opcode": "66 0F 38 82 /r", "instruction": "INVPCID r64, m128", "operand_encoding": "RM", "description": "Invalidates entries in the TLBs and paging-structure caches based on invalidation type in r64 and descriptor in m128."}]

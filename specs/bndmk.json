@@ -1,0 +1,1 @@
+[{"opcode": "F3 0F 1B /r", "instruction": "BNDMK bnd, m64", "operand_encoding": "RM", "description": "Make lower and upper bounds from m64 and store them in bnd."}]

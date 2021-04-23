@@ -1,0 +1,1 @@
+[{"opcode": "0F 01 F9", "instruction": "RDTSCP", "operand_encoding": "ZO", "description": "Read 64-bit time-stamp counter and IA32_TSC_AUX value into EDX:EAX and ECX."}]

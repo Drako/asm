@@ -1,0 +1,1 @@
+[{"opcode": "F3 0F C7 /7", "instruction": "RDPID r64", "operand_encoding": "R", "description": "Read IA32_TSC_AUX into r64."}]

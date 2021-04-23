@@ -1,0 +1,1 @@
+[{"opcode": "0F 33", "instruction": "RDPMC", "operand_encoding": "ZO", "description": "Read performance-monitoring counter specified by ECX into EDX:EAX."}]

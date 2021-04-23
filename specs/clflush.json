@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F AE /7", "instruction": "CLFLUSH m8", "operand_encoding": "M", "description": "Flushes cache line containing m8."}]

@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F AE /3", "instruction": "STMXCSR m32", "operand_encoding": "M", "description": "Store contents of MXCSR register to m32."}, {"opcode": "VEX.LZ.0F.WIG AE /3", "instruction": "VSTMXCSR m32", "operand_encoding": "M", "description": "Store contents of MXCSR register to m32."}]

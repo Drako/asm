@@ -1,0 +1,1 @@
+[{"opcode": "66 0F 2A /r", "instruction": "CVTPI2PD xmm, mm/m64", "operand_encoding": "RM", "description": "Convert two packed signed doubleword integers from mm/mem64 to two packed double-precision floating-point values in xmm."}]
