@@ -1,0 +1,1 @@
+[{"opcode": "F9", "instruction": "STC", "operand_encoding": "ZO", "description": "Set CF flag."}]

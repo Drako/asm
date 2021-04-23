@@ -1,0 +1,1 @@
+[{"opcode": "F0", "instruction": "LOCK", "operand_encoding": "ZO", "description": "Asserts LOCK# signal for duration of the accompanying instruction."}]

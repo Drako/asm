@@ -1,0 +1,1 @@
+[{"opcode": "CC", "instruction": "INT3", "operand_encoding": "ZO", "description": "Generate breakpoint trap."}, {"opcode": "CD ib", "instruction": "INT imm8", "operand_encoding": "I", "description": "Generate software interrupt with vector specified by immediate byte."}, {"opcode": "F1", "instruction": "INT1", "operand_encoding": "ZO", "description": "Generate debug trap."}]

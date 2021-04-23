@@ -1,0 +1,1 @@
+[{"opcode": "D9 F7", "instruction": "FINCSTP", "operand_encoding": "ZO", "description": "Increment the TOP field in the FPU status register."}]

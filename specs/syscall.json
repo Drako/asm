@@ -1,0 +1,1 @@
+[{"opcode": "0F 05", "instruction": "SYSCALL", "operand_encoding": "ZO", "description": "Fast call to privilege level 0 system procedures."}]

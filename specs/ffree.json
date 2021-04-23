@@ -1,0 +1,1 @@
+[{"opcode": "DD C0+i", "instruction": "FFREE ST(i)", "operand_encoding": "ZO", "description": "Sets tag for ST(i) to empty."}]

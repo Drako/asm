@@ -1,0 +1,1 @@
+[{"opcode": "D9 FF", "instruction": "FCOS", "operand_encoding": "ZO", "description": "Replace ST(0) with its approximate cosine."}]

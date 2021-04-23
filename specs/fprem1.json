@@ -1,0 +1,1 @@
+[{"opcode": "D9 F5", "instruction": "FPREM1", "operand_encoding": "ZO", "description": "Replace ST(0) with the IEEE remainder obtained from dividing ST(0) by ST(1)."}]

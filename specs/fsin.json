@@ -1,0 +1,1 @@
+[{"opcode": "D9 FE", "instruction": "FSIN", "operand_encoding": "ZO", "description": "Replace ST(0) with the approximate of its sine."}]

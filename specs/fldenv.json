@@ -1,0 +1,1 @@
+[{"opcode": "D9 /4", "instruction": "FLDENV m14/28byte", "operand_encoding": "ZO", "description": "Load FPU environment from m14byte or m28byte."}]

@@ -1,0 +1,1 @@
+[{"opcode": "98", "instruction": "CBW", "operand_encoding": "ZO", "description": "AX \u2190 sign-extend of AL."}, {"opcode": "98", "instruction": "CWDE", "operand_encoding": "ZO", "description": "EAX \u2190 sign-extend of AX."}, {"opcode": "REX.W + 98", "instruction": "CDQE", "operand_encoding": "ZO", "description": "RAX \u2190 sign-extend of EAX."}]

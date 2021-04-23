@@ -1,0 +1,1 @@
+[{"opcode": "D9 E5", "instruction": "FXAM", "operand_encoding": "ZO", "description": "Classify value or number in ST(0)."}]

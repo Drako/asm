@@ -1,0 +1,1 @@
+[{"opcode": "D9 E0", "instruction": "FCHS", "operand_encoding": "ZO", "description": "Complements sign of ST(0)."}]

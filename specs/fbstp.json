@@ -1,0 +1,1 @@
+[{"opcode": "DF /6", "instruction": "FBSTP m80bcd", "operand_encoding": "ZO", "description": "Store ST(0) in m80bcd and pop ST(0)."}]

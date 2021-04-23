@@ -1,0 +1,1 @@
+[{"opcode": "D9 /5", "instruction": "FLDCW m2byte", "operand_encoding": "ZO", "description": "Load FPU control word from m2byte."}]

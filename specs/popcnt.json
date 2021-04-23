@@ -1,0 +1,1 @@
+[{"opcode": "F3 0F B8 /r", "instruction": "POPCNT r16, r/m16", "operand_encoding": "RM", "description": "POPCNT on r/m16"}, {"opcode": "F3 0F B8 /r", "instruction": "POPCNT r32, r/m32", "operand_encoding": "RM", "description": "POPCNT on r/m32"}, {"opcode": "F3 REX.W 0F B8 /r", "instruction": "POPCNT r64, r/m64", "operand_encoding": "RM", "description": "POPCNT on r/m64"}]

@@ -1,0 +1,1 @@
+[{"opcode": "FA", "instruction": "CLI", "operand_encoding": "ZO", "description": "Clear interrupt flag; interrupts disabled when interrupt flag cleared."}]

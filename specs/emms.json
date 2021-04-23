@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F 77", "instruction": "EMMS", "operand_encoding": "ZO", "description": "Set the x87 FPU tag word to empty."}]

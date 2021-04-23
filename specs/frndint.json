@@ -1,0 +1,1 @@
+[{"opcode": "D9 FC", "instruction": "FRNDINT", "operand_encoding": "ZO", "description": "Round ST(0) to an integer."}]

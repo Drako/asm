@@ -1,0 +1,1 @@
+[{"opcode": "D9 F1", "instruction": "FYL2X", "operand_encoding": "ZO", "description": "Replace ST(1) with (ST(1) \u2217 log2ST(0)) and pop the register stack."}]

@@ -1,0 +1,1 @@
+[{"opcode": "FB", "instruction": "STI", "operand_encoding": "ZO", "description": "Set interrupt flag; external, maskable interrupts enabled at the end of the next instruction."}]

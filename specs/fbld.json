@@ -1,0 +1,1 @@
+[{"opcode": "DF /4", "instruction": "FBLD m80bcd", "operand_encoding": "ZO", "description": "Convert BCD value to floating-point and push onto the FPU stack."}]

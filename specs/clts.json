@@ -1,0 +1,1 @@
+[{"opcode": "0F 06", "instruction": "CLTS", "operand_encoding": "ZO", "description": "Clears TS flag in CR0."}]

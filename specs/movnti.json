@@ -1,0 +1,1 @@
+[{"opcode": "NP 0F C3 /r", "instruction": "MOVNTI m32, r32", "operand_encoding": "MR", "description": "Move doubleword from r32 to m32 using non-temporal hint."}, {"opcode": "NP REX.W + 0F C3 /r", "instruction": "MOVNTI m64, r64", "operand_encoding": "MR", "description": "Move quadword from r64 to m64 using non-temporal hint."}]

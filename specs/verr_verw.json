@@ -1,0 +1,1 @@
+[{"opcode": "0F 00 /4", "instruction": "VERR r/m16", "operand_encoding": "M", "description": "Set ZF=1 if segment specified with r/m16 can be read."}, {"opcode": "0F 00 /5", "instruction": "VERW r/m16", "operand_encoding": "M", "description": "Set ZF=1 if segment specified with r/m16 can be written."}]

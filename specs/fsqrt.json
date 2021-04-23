@@ -1,0 +1,1 @@
+[{"opcode": "D9 FA", "instruction": "FSQRT", "operand_encoding": "ZO", "description": "Computes square root of ST(0) and stores the result in ST(0)."}]

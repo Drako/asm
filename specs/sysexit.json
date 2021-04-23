@@ -1,0 +1,1 @@
+[{"opcode": "0F 35", "instruction": "SYSEXIT", "operand_encoding": "ZO", "description": "Fast return to privilege level 3 user code."}, {"opcode": "REX.W + 0F 35", "instruction": "SYSEXIT", "operand_encoding": "ZO", "description": "Fast return to 64-bit mode privilege level 3 user code."}]

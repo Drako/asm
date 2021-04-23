@@ -1,0 +1,1 @@
+[{"opcode": "0F 07", "instruction": "SYSRET", "operand_encoding": "ZO", "description": "Return to compatibility mode from fast system call"}, {"opcode": "REX.W + 0F 07", "instruction": "SYSRET", "operand_encoding": "ZO", "description": "Return to 64-bit mode from fast system call"}]

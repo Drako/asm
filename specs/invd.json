@@ -1,0 +1,1 @@
+[{"opcode": "0F 08", "instruction": "INVD", "operand_encoding": "ZO", "description": "Flush internal caches; initiate flushing of external caches."}]

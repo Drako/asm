@@ -9,3 +9,7 @@
 # CMake
 build/
 cmake-build-*/
+
+# Python
+venv/
+*.pyc

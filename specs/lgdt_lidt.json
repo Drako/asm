@@ -1,0 +1,1 @@
+[{"opcode": "0F 01 /2", "instruction": "LGDT m16&64", "operand_encoding": "M", "description": "Load m into GDTR."}, {"opcode": "0F 01 /3", "instruction": "LIDT m16&64", "operand_encoding": "M", "description": "Load m into IDTR."}]

@@ -1,0 +1,1 @@
+[{"opcode": "0F 01 C9", "instruction": "MWAIT", "operand_encoding": "ZO", "description": "A hint that allows the processor to stop instruction execution and enter an implementation-dependent optimized state until occurrence of a class of events."}]

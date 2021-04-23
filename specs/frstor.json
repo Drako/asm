@@ -1,0 +1,1 @@
+[{"opcode": "DD /4", "instruction": "FRSTOR m94/108byte", "operand_encoding": "ZO", "description": "Load FPU state from m94byte or m108byte."}]

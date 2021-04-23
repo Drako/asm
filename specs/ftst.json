@@ -1,0 +1,1 @@
+[{"opcode": "D9 E4", "instruction": "FTST", "operand_encoding": "ZO", "description": "Compare ST(0) with 0.0."}]
