@@ -1,1 +1,182 @@
-[{"opcode": "VEX.128.66.0F38.W0 78 /r", "instruction": "VPBROADCASTB xmm1, xmm2/m8", "operand_encoding": "A", "description": "Broadcast a byte integer in the source operand to sixteen locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 78 /r", "instruction": "VPBROADCASTB ymm1, xmm2/m8", "operand_encoding": "A", "description": "Broadcast a byte integer in the source operand to thirty-two locations in ymm1."}, {"opcode": "EVEX.128.66.0F38.W0 78 /r", "instruction": "VPBROADCASTB xmm1{k1}{z}, xmm2/m8", "operand_encoding": "B", "description": "Broadcast a byte integer in the source operand to locations in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 78 /r", "instruction": "VPBROADCASTB ymm1{k1}{z}, xmm2/m8", "operand_encoding": "B", "description": "Broadcast a byte integer in the source operand to locations in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 78 /r", "instruction": "VPBROADCASTB zmm1{k1}{z}, xmm2/m8", "operand_encoding": "B", "description": "Broadcast a byte integer in the source operand to 64 locations in zmm1 subject to writemask k1."}, {"opcode": "VEX.128.66.0F38.W0 79 /r", "instruction": "VPBROADCASTW xmm1, xmm2/m16", "operand_encoding": "A", "description": "Broadcast a word integer in the source operand to eight locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 79 /r", "instruction": "VPBROADCASTW ymm1, xmm2/m16", "operand_encoding": "A", "description": "Broadcast a word integer in the source operand to sixteen locations in ymm1."}, {"opcode": "EVEX.128.66.0F38.W0 79 /r", "instruction": "VPBROADCASTW xmm1{k1}{z}, xmm2/m16", "operand_encoding": "B", "description": "Broadcast a word integer in the source operand to locations in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 79 /r", "instruction": "VPBROADCASTW ymm1{k1}{z}, xmm2/m16", "operand_encoding": "B", "description": "Broadcast a word integer in the source operand to locations in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 79 /r", "instruction": "VPBROADCASTW zmm1{k1}{z}, xmm2/m16", "operand_encoding": "B", "description": "Broadcast a word integer in the source operand to 32 locations in zmm1 subject to writemask k1."}, {"opcode": "VEX.128.66.0F38.W0 58 /r", "instruction": "VPBROADCASTD xmm1, xmm2/m32", "operand_encoding": "A", "description": "Broadcast a dword integer in the source operand to four locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 58 /r", "instruction": "VPBROADCASTD ymm1, xmm2/m32", "operand_encoding": "A", "description": "Broadcast a dword integer in the source operand to eight locations in ymm1."}, {"opcode": "EVEX.128.66.0F38.W0 58 /r", "instruction": "VPBROADCASTD xmm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast a dword integer in the source operand to locations in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 58 /r", "instruction": "VPBROADCASTD ymm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast a dword integer in the source operand to locations in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 58 /r", "instruction": "VPBROADCASTD zmm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast a dword integer in the source operand to locations in zmm1 subject to writemask k1."}, {"opcode": "VEX.128.66.0F38.W0 59 /r", "instruction": "VPBROADCASTQ xmm1, xmm2/m64", "operand_encoding": "A", "description": "Broadcast a qword element in source operand to two locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 59 /r", "instruction": "VPBROADCASTQ ymm1, xmm2/m64", "operand_encoding": "A", "description": "Broadcast a qword element in source operand to four locations in ymm1."}, {"opcode": "EVEX.128.66.0F38.W1 59 /r", "instruction": "VPBROADCASTQ xmm1 {k1}{z}, xmm2/m64", "operand_encoding": "B", "description": "Broadcast a qword element in source operand to locations in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 59 /r", "instruction": "VPBROADCASTQ ymm1 {k1}{z}, xmm2/m64", "operand_encoding": "B", "description": "Broadcast a qword element in source operand to locations in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 59 /r", "instruction": "VPBROADCASTQ zmm1 {k1}{z}, xmm2/m64", "operand_encoding": "B", "description": "Broadcast a qword element in source operand to locations in zmm1 subject to writemask k1."}, {"opcode": "EVEX.128.66.0F38.W0 59 /r VBROADCASTI32x2 xmm1 {k1}{z}, xmm2/m64", "instruction": "", "operand_encoding": "C", "description": "Broadcast two dword elements in source operand to locations in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 59 /r VBROADCASTI32x2 ymm1 {k1}{z}, xmm2/m64", "instruction": "", "operand_encoding": "C", "description": "Broadcast two dword elements in source operand to locations in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 59 /r VBROADCASTI32x2 zmm1 {k1}{z}, xmm2/m64", "instruction": "", "operand_encoding": "C", "description": "Broadcast two dword elements in source operand to locations in zmm1 subject to writemask k1."}, {"opcode": "VEX.256.66.0F38.W0 5A /r", "instruction": "VBROADCASTI128 ymm1, m128", "operand_encoding": "A", "description": "Broadcast 128 bits of integer data in mem to low and high 128-bits in ymm1."}, {"opcode": "EVEX.256.66.0F38.W0 5A /r", "instruction": "VBROADCASTI32X4 ymm1 {k1}{z}, m128", "operand_encoding": "D", "description": "Broadcast 128 bits of 4 doubleword integer data in mem to locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 5A /r", "instruction": "VBROADCASTI32X4 zmm1 {k1}{z}, m128", "operand_encoding": "D", "description": "Broadcast 128 bits of 4 doubleword integer data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 5A /r", "instruction": "VBROADCASTI64X2 ymm1 {k1}{z}, m128", "operand_encoding": "C", "description": "Broadcast 128 bits of 2 quadword integer data in mem to locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 5A /r", "instruction": "VBROADCASTI64X2 zmm1 {k1}{z}, m128", "operand_encoding": "C", "description": "Broadcast 128 bits of 2 quadword integer data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 5B /r", "instruction": "VBROADCASTI32X8 zmm1 {k1}{z}, m256", "operand_encoding": "E", "description": "Broadcast 256 bits of 8 doubleword integer data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 5B /r", "instruction": "VBROADCASTI64X4 zmm1 {k1}{z}, m256", "operand_encoding": "D", "description": "Broadcast 256 bits of 4 quadword integer data in mem to locations in zmm1 using writemask k1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 78 /r",
+    "instruction": "VPBROADCASTB xmm1, xmm2/m8",
+    "operand_encoding": "A",
+    "description": "Broadcast a byte integer in the source operand to sixteen locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 78 /r",
+    "instruction": "VPBROADCASTB ymm1, xmm2/m8",
+    "operand_encoding": "A",
+    "description": "Broadcast a byte integer in the source operand to thirty-two locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 78 /r",
+    "instruction": "VPBROADCASTB xmm1{k1}{z}, xmm2/m8",
+    "operand_encoding": "B",
+    "description": "Broadcast a byte integer in the source operand to locations in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 78 /r",
+    "instruction": "VPBROADCASTB ymm1{k1}{z}, xmm2/m8",
+    "operand_encoding": "B",
+    "description": "Broadcast a byte integer in the source operand to locations in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 78 /r",
+    "instruction": "VPBROADCASTB zmm1{k1}{z}, xmm2/m8",
+    "operand_encoding": "B",
+    "description": "Broadcast a byte integer in the source operand to 64 locations in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 79 /r",
+    "instruction": "VPBROADCASTW xmm1, xmm2/m16",
+    "operand_encoding": "A",
+    "description": "Broadcast a word integer in the source operand to eight locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 79 /r",
+    "instruction": "VPBROADCASTW ymm1, xmm2/m16",
+    "operand_encoding": "A",
+    "description": "Broadcast a word integer in the source operand to sixteen locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 79 /r",
+    "instruction": "VPBROADCASTW xmm1{k1}{z}, xmm2/m16",
+    "operand_encoding": "B",
+    "description": "Broadcast a word integer in the source operand to locations in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 79 /r",
+    "instruction": "VPBROADCASTW ymm1{k1}{z}, xmm2/m16",
+    "operand_encoding": "B",
+    "description": "Broadcast a word integer in the source operand to locations in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 79 /r",
+    "instruction": "VPBROADCASTW zmm1{k1}{z}, xmm2/m16",
+    "operand_encoding": "B",
+    "description": "Broadcast a word integer in the source operand to 32 locations in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 58 /r",
+    "instruction": "VPBROADCASTD xmm1, xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Broadcast a dword integer in the source operand to four locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 58 /r",
+    "instruction": "VPBROADCASTD ymm1, xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Broadcast a dword integer in the source operand to eight locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 58 /r",
+    "instruction": "VPBROADCASTD xmm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast a dword integer in the source operand to locations in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 58 /r",
+    "instruction": "VPBROADCASTD ymm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast a dword integer in the source operand to locations in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 58 /r",
+    "instruction": "VPBROADCASTD zmm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast a dword integer in the source operand to locations in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 59 /r",
+    "instruction": "VPBROADCASTQ xmm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Broadcast a qword element in source operand to two locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 59 /r",
+    "instruction": "VPBROADCASTQ ymm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Broadcast a qword element in source operand to four locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 59 /r",
+    "instruction": "VPBROADCASTQ xmm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "B",
+    "description": "Broadcast a qword element in source operand to locations in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 59 /r",
+    "instruction": "VPBROADCASTQ ymm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "B",
+    "description": "Broadcast a qword element in source operand to locations in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 59 /r",
+    "instruction": "VPBROADCASTQ zmm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "B",
+    "description": "Broadcast a qword element in source operand to locations in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 59 /r VBROADCASTI32x2 xmm1 {k1}{z}, xmm2/m64",
+    "instruction": "",
+    "operand_encoding": "C",
+    "description": "Broadcast two dword elements in source operand to locations in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 59 /r VBROADCASTI32x2 ymm1 {k1}{z}, xmm2/m64",
+    "instruction": "",
+    "operand_encoding": "C",
+    "description": "Broadcast two dword elements in source operand to locations in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 59 /r VBROADCASTI32x2 zmm1 {k1}{z}, xmm2/m64",
+    "instruction": "",
+    "operand_encoding": "C",
+    "description": "Broadcast two dword elements in source operand to locations in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 5A /r",
+    "instruction": "VBROADCASTI128 ymm1, m128",
+    "operand_encoding": "A",
+    "description": "Broadcast 128 bits of integer data in mem to low and high 128-bits in ymm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 5A /r",
+    "instruction": "VBROADCASTI32X4 ymm1 {k1}{z}, m128",
+    "operand_encoding": "D",
+    "description": "Broadcast 128 bits of 4 doubleword integer data in mem to locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 5A /r",
+    "instruction": "VBROADCASTI32X4 zmm1 {k1}{z}, m128",
+    "operand_encoding": "D",
+    "description": "Broadcast 128 bits of 4 doubleword integer data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 5A /r",
+    "instruction": "VBROADCASTI64X2 ymm1 {k1}{z}, m128",
+    "operand_encoding": "C",
+    "description": "Broadcast 128 bits of 2 quadword integer data in mem to locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 5A /r",
+    "instruction": "VBROADCASTI64X2 zmm1 {k1}{z}, m128",
+    "operand_encoding": "C",
+    "description": "Broadcast 128 bits of 2 quadword integer data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 5B /r",
+    "instruction": "VBROADCASTI32X8 zmm1 {k1}{z}, m256",
+    "operand_encoding": "E",
+    "description": "Broadcast 256 bits of 8 doubleword integer data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 5B /r",
+    "instruction": "VBROADCASTI64X4 zmm1 {k1}{z}, m256",
+    "operand_encoding": "D",
+    "description": "Broadcast 256 bits of 4 quadword integer data in mem to locations in zmm1 using writemask k1."
+  }
+]

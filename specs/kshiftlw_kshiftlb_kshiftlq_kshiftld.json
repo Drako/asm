@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L0.66.0F3A.W1 32 /r", "instruction": "KSHIFTLW k1, k2, imm8", "operand_encoding": "RRI", "description": "Shift left 16 bits in k2 by immediate and write result in k1."}, {"opcode": "VEX.L0.66.0F3A.W0 32 /r", "instruction": "KSHIFTLB k1, k2, imm8", "operand_encoding": "RRI", "description": "Shift left 8 bits in k2 by immediate and write result in k1."}, {"opcode": "VEX.L0.66.0F3A.W1 33 /r", "instruction": "KSHIFTLQ k1, k2, imm8", "operand_encoding": "RRI", "description": "Shift left 64 bits in k2 by immediate and write result in k1."}, {"opcode": "VEX.L0.66.0F3A.W0 33 /r", "instruction": "KSHIFTLD k1, k2, imm8", "operand_encoding": "RRI", "description": "Shift left 32 bits in k2 by immediate and write result in k1."}]
+[
+  {
+    "opcode": "VEX.L0.66.0F3A.W1 32 /r",
+    "instruction": "KSHIFTLW k1, k2, imm8",
+    "operand_encoding": "RRI",
+    "description": "Shift left 16 bits in k2 by immediate and write result in k1."
+  },
+  {
+    "opcode": "VEX.L0.66.0F3A.W0 32 /r",
+    "instruction": "KSHIFTLB k1, k2, imm8",
+    "operand_encoding": "RRI",
+    "description": "Shift left 8 bits in k2 by immediate and write result in k1."
+  },
+  {
+    "opcode": "VEX.L0.66.0F3A.W1 33 /r",
+    "instruction": "KSHIFTLQ k1, k2, imm8",
+    "operand_encoding": "RRI",
+    "description": "Shift left 64 bits in k2 by immediate and write result in k1."
+  },
+  {
+    "opcode": "VEX.L0.66.0F3A.W0 33 /r",
+    "instruction": "KSHIFTLD k1, k2, imm8",
+    "operand_encoding": "RRI",
+    "description": "Shift left 32 bits in k2 by immediate and write result in k1."
+  }
+]

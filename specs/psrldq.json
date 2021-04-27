@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 73 /3 ib", "instruction": "PSRLDQ xmm1, imm8", "operand_encoding": "A", "description": "Shift xmm1 right by imm8 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG 73 /3 ib", "instruction": "VPSRLDQ xmm1, xmm2, imm8", "operand_encoding": "B", "description": "Shift xmm2 right by imm8 bytes while shifting in 0s."}, {"opcode": "VEX.256.66.0F.WIG 73 /3 ib", "instruction": "VPSRLDQ ymm1, ymm2, imm8", "operand_encoding": "B", "description": "Shift ymm1 right by imm8 bytes while shifting in 0s."}, {"opcode": "EVEX.128.66.0F.WIG 73 /3 ib", "instruction": "VPSRLDQ xmm1, xmm2/m128, imm8", "operand_encoding": "C", "description": "Shift xmm2/m128 right by imm8 bytes while shifting in 0s and store result in xmm1."}, {"opcode": "EVEX.256.66.0F.WIG 73 /3 ib", "instruction": "VPSRLDQ ymm1, ymm2/m256, imm8", "operand_encoding": "C", "description": "Shift ymm2/m256 right by imm8 bytes while shifting in 0s and store result in ymm1."}, {"opcode": "EVEX.512.66.0F.WIG 73 /3 ib", "instruction": "VPSRLDQ zmm1, zmm2/m512, imm8", "operand_encoding": "C", "description": "Shift zmm2/m512 right by imm8 bytes while shifting in 0s and store result in zmm1."}]
+[
+  {
+    "opcode": "66 0F 73 /3 ib",
+    "instruction": "PSRLDQ xmm1, imm8",
+    "operand_encoding": "A",
+    "description": "Shift xmm1 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 73 /3 ib",
+    "instruction": "VPSRLDQ xmm1, xmm2, imm8",
+    "operand_encoding": "B",
+    "description": "Shift xmm2 right by imm8 bytes while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 73 /3 ib",
+    "instruction": "VPSRLDQ ymm1, ymm2, imm8",
+    "operand_encoding": "B",
+    "description": "Shift ymm1 right by imm8 bytes while shifting in 0s."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG 73 /3 ib",
+    "instruction": "VPSRLDQ xmm1, xmm2/m128, imm8",
+    "operand_encoding": "C",
+    "description": "Shift xmm2/m128 right by imm8 bytes while shifting in 0s and store result in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.WIG 73 /3 ib",
+    "instruction": "VPSRLDQ ymm1, ymm2/m256, imm8",
+    "operand_encoding": "C",
+    "description": "Shift ymm2/m256 right by imm8 bytes while shifting in 0s and store result in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.WIG 73 /3 ib",
+    "instruction": "VPSRLDQ zmm1, zmm2/m512, imm8",
+    "operand_encoding": "C",
+    "description": "Shift zmm2/m512 right by imm8 bytes while shifting in 0s and store result in zmm1."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 38 C9 /r", "instruction": "SHA1MSG1 xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Performs an intermediate calculation for the next four SHA1 message dwords using previous message dwords from xmm1 and xmm2/m128, storing the result in xmm1."}]
+[
+  {
+    "opcode": "NP 0F 38 C9 /r",
+    "instruction": "SHA1MSG1 xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Performs an intermediate calculation for the next four SHA1 message dwords using previous message dwords from xmm1 and xmm2/m128, storing the result in xmm1."
+  }
+]

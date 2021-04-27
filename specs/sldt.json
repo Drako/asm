@@ -1,1 +1,14 @@
-[{"opcode": "0F 00 /0", "instruction": "SLDT r/m16", "operand_encoding": "M", "description": "Stores segment selector from LDTR in r/m16."}, {"opcode": "REX.W + 0F 00 /0", "instruction": "SLDT r64/m16", "operand_encoding": "M", "description": "Stores segment selector from LDTR in r64/m16."}]
+[
+  {
+    "opcode": "0F 00 /0",
+    "instruction": "SLDT r/m16",
+    "operand_encoding": "M",
+    "description": "Stores segment selector from LDTR in r/m16."
+  },
+  {
+    "opcode": "REX.W + 0F 00 /0",
+    "instruction": "SLDT r64/m16",
+    "operand_encoding": "M",
+    "description": "Stores segment selector from LDTR in r64/m16."
+  }
+]

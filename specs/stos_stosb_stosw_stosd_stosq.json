@@ -1,1 +1,50 @@
-[{"opcode": "AA", "instruction": "STOS m8", "operand_encoding": "NA", "description": "For legacy mode, store AL at address ES:(E)DI; For 64-bit mode store AL at address RDI or EDI."}, {"opcode": "AB", "instruction": "STOS m16", "operand_encoding": "NA", "description": "For legacy mode, store AX at address ES:(E)DI; For 64-bit mode store AX at address RDI or EDI."}, {"opcode": "AB", "instruction": "STOS m32", "operand_encoding": "NA", "description": "For legacy mode, store EAX at address ES:(E)DI; For 64-bit mode store EAX at address RDI or EDI."}, {"opcode": "REX.W + AB", "instruction": "STOS m64", "operand_encoding": "NA", "description": "Store RAX at address RDI or EDI."}, {"opcode": "AA", "instruction": "STOSB", "operand_encoding": "NA", "description": "For legacy mode, store AL at address ES:(E)DI; For 64-bit mode store AL at address RDI or EDI."}, {"opcode": "AB", "instruction": "STOSW", "operand_encoding": "NA", "description": "For legacy mode, store AX at address ES:(E)DI; For 64-bit mode store AX at address RDI or EDI."}, {"opcode": "AB", "instruction": "STOSD", "operand_encoding": "NA", "description": "For legacy mode, store EAX at address ES:(E)DI; For 64-bit mode store EAX at address RDI or EDI."}, {"opcode": "REX.W + AB", "instruction": "STOSQ", "operand_encoding": "NA", "description": "Store RAX at address RDI or EDI."}]
+[
+  {
+    "opcode": "AA",
+    "instruction": "STOS m8",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store AL at address ES:(E)DI; For 64-bit mode store AL at address RDI or EDI."
+  },
+  {
+    "opcode": "AB",
+    "instruction": "STOS m16",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store AX at address ES:(E)DI; For 64-bit mode store AX at address RDI or EDI."
+  },
+  {
+    "opcode": "AB",
+    "instruction": "STOS m32",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store EAX at address ES:(E)DI; For 64-bit mode store EAX at address RDI or EDI."
+  },
+  {
+    "opcode": "REX.W + AB",
+    "instruction": "STOS m64",
+    "operand_encoding": "NA",
+    "description": "Store RAX at address RDI or EDI."
+  },
+  {
+    "opcode": "AA",
+    "instruction": "STOSB",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store AL at address ES:(E)DI; For 64-bit mode store AL at address RDI or EDI."
+  },
+  {
+    "opcode": "AB",
+    "instruction": "STOSW",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store AX at address ES:(E)DI; For 64-bit mode store AX at address RDI or EDI."
+  },
+  {
+    "opcode": "AB",
+    "instruction": "STOSD",
+    "operand_encoding": "NA",
+    "description": "For legacy mode, store EAX at address ES:(E)DI; For 64-bit mode store EAX at address RDI or EDI."
+  },
+  {
+    "opcode": "REX.W + AB",
+    "instruction": "STOSQ",
+    "operand_encoding": "NA",
+    "description": "Store RAX at address RDI or EDI."
+  }
+]

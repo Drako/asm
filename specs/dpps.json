@@ -1,1 +1,20 @@
-[{"opcode": "66 0F 3A 40 /r ib", "instruction": "DPPS xmm1, xmm2/m128, imm8", "operand_encoding": "RMI", "description": "Selectively multiply packed SP floating-point values from xmm1 with packed SP floating-point values from xmm2, add and selectively store the packed SP floating-point values or zero values to xmm1."}, {"opcode": "VEX.128.66.0F3A.WIG 40 /r ib", "instruction": "VDPPS xmm1,xmm2, xmm3/m128, imm8", "operand_encoding": "RVMI", "description": "Multiply packed SP floating point values from xmm1 with packed SP floating point values from xmm2/mem selectively add and store to xmm1."}, {"opcode": "VEX.256.66.0F3A.WIG 40 /r ib", "instruction": "VDPPS ymm1, ymm2, ymm3/m256, imm8", "operand_encoding": "RVMI", "description": "Multiply packed single-precision floating-point values from ymm2 with packed SP floating point values from ymm3/mem, selectively add pairs of elements and store to ymm1."}]
+[
+  {
+    "opcode": "66 0F 3A 40 /r ib",
+    "instruction": "DPPS xmm1, xmm2/m128, imm8",
+    "operand_encoding": "RMI",
+    "description": "Selectively multiply packed SP floating-point values from xmm1 with packed SP floating-point values from xmm2, add and selectively store the packed SP floating-point values or zero values to xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.WIG 40 /r ib",
+    "instruction": "VDPPS xmm1,xmm2, xmm3/m128, imm8",
+    "operand_encoding": "RVMI",
+    "description": "Multiply packed SP floating point values from xmm1 with packed SP floating point values from xmm2/mem selectively add and store to xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F3A.WIG 40 /r ib",
+    "instruction": "VDPPS ymm1, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "RVMI",
+    "description": "Multiply packed single-precision floating-point values from ymm2 with packed SP floating point values from ymm3/mem, selectively add pairs of elements and store to ymm1."
+  }
+]

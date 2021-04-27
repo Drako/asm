@@ -1,1 +1,44 @@
-[{"opcode": "NP 0F 3A 0F /r ib1", "instruction": "PALIGNR mm1, mm2/m64, imm8", "operand_encoding": "A", "description": "Concatenate destination and source operands, extract byte-aligned result shifted to the right by constant value in imm8 into mm1."}, {"opcode": "66 0F 3A 0F /r ib", "instruction": "PALIGNR xmm1, xmm2/m128, imm8", "operand_encoding": "A", "description": "Concatenate destination and source operands, extract byte-aligned result shifted to the right by constant value in imm8 into xmm1."}, {"opcode": "VEX.128.66.0F3A.WIG 0F /r ib", "instruction": "VPALIGNR xmm1, xmm2, xmm3/m128, imm8", "operand_encoding": "B", "description": "Concatenate xmm2 and xmm3/m128, extract byte aligned result shifted to the right by constant value in imm8 and result is stored in xmm1."}, {"opcode": "VEX.256.66.0F3A.WIG 0F /r ib", "instruction": "VPALIGNR ymm1, ymm2, ymm3/m256, imm8", "operand_encoding": "B", "description": "Concatenate pairs of 16 bytes in ymm2 and ymm3/m256 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and two 16-byte results are stored in ymm1."}, {"opcode": "EVEX.128.66.0F3A.WIG 0F /r ib", "instruction": "VPALIGNR xmm1 {k1}{z}, xmm2, xmm3/m128, imm8", "operand_encoding": "C", "description": "Concatenate xmm2 and xmm3/m128 into a 32-byte intermediate result, extract byte aligned result shifted to the right by constant value in imm8 and result is stored in xmm1."}, {"opcode": "EVEX.256.66.0F3A.WIG 0F /r ib", "instruction": "VPALIGNR ymm1 {k1}{z}, ymm2, ymm3/m256, imm8", "operand_encoding": "C", "description": "Concatenate pairs of 16 bytes in ymm2 and ymm3/m256 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and two 16-byte results are stored in ymm1."}, {"opcode": "EVEX.512.66.0F3A.WIG 0F /r ib", "instruction": "VPALIGNR zmm1 {k1}{z}, zmm2, zmm3/m512, imm8", "operand_encoding": "C", "description": "Concatenate pairs of 16 bytes in zmm2 and zmm3/m512 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and four 16-byte results are stored in zmm1."}]
+[
+  {
+    "opcode": "NP 0F 3A 0F /r ib1",
+    "instruction": "PALIGNR mm1, mm2/m64, imm8",
+    "operand_encoding": "A",
+    "description": "Concatenate destination and source operands, extract byte-aligned result shifted to the right by constant value in imm8 into mm1."
+  },
+  {
+    "opcode": "66 0F 3A 0F /r ib",
+    "instruction": "PALIGNR xmm1, xmm2/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Concatenate destination and source operands, extract byte-aligned result shifted to the right by constant value in imm8 into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.WIG 0F /r ib",
+    "instruction": "VPALIGNR xmm1, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "B",
+    "description": "Concatenate xmm2 and xmm3/m128, extract byte aligned result shifted to the right by constant value in imm8 and result is stored in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F3A.WIG 0F /r ib",
+    "instruction": "VPALIGNR ymm1, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "B",
+    "description": "Concatenate pairs of 16 bytes in ymm2 and ymm3/m256 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and two 16-byte results are stored in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.WIG 0F /r ib",
+    "instruction": "VPALIGNR xmm1 {k1}{z}, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "C",
+    "description": "Concatenate xmm2 and xmm3/m128 into a 32-byte intermediate result, extract byte aligned result shifted to the right by constant value in imm8 and result is stored in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.WIG 0F /r ib",
+    "instruction": "VPALIGNR ymm1 {k1}{z}, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "C",
+    "description": "Concatenate pairs of 16 bytes in ymm2 and ymm3/m256 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and two 16-byte results are stored in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.WIG 0F /r ib",
+    "instruction": "VPALIGNR zmm1 {k1}{z}, zmm2, zmm3/m512, imm8",
+    "operand_encoding": "C",
+    "description": "Concatenate pairs of 16 bytes in zmm2 and zmm3/m512 into 32-byte intermediate result, extract byte-aligned, 16-byte result shifted to the right by constant values in imm8 from each intermediate result, and four 16-byte results are stored in zmm1."
+  }
+]

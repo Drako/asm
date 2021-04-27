@@ -1,1 +1,14 @@
-[{"opcode": "EVEX.LIG.F3.0F.W0 7B /r", "instruction": "VCVTUSI2SS xmm1, xmm2, r/m32{er}", "operand_encoding": "A", "description": "Convert one signed doubleword integer from r/m32 to one single-precision floating-point value in xmm1."}, {"opcode": "EVEX.LIG.F3.0F.W1 7B /r", "instruction": "VCVTUSI2SS xmm1, xmm2, r/m64{er}", "operand_encoding": "A", "description": "Convert one signed quadword integer from r/m64 to one single-precision floating-point value in xmm1."}]
+[
+  {
+    "opcode": "EVEX.LIG.F3.0F.W0 7B /r",
+    "instruction": "VCVTUSI2SS xmm1, xmm2, r/m32{er}",
+    "operand_encoding": "A",
+    "description": "Convert one signed doubleword integer from r/m32 to one single-precision floating-point value in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.F3.0F.W1 7B /r",
+    "instruction": "VCVTUSI2SS xmm1, xmm2, r/m64{er}",
+    "operand_encoding": "A",
+    "description": "Convert one signed quadword integer from r/m64 to one single-precision floating-point value in xmm1."
+  }
+]

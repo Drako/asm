@@ -1,1 +1,8 @@
-[{"opcode": "0F 00 /1", "instruction": "STR r/m16", "operand_encoding": "M", "description": "Stores segment selector from TR in r/m16."}]
+[
+  {
+    "opcode": "0F 00 /1",
+    "instruction": "STR r/m16",
+    "operand_encoding": "M",
+    "description": "Stores segment selector from TR in r/m16."
+  }
+]

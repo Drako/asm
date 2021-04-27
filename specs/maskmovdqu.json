@@ -1,1 +1,14 @@
-[{"opcode": "66 0F F7 /r", "instruction": "MASKMOVDQU xmm1, xmm2", "operand_encoding": "RM", "description": "Selectively write bytes from xmm1 to memory location using the byte mask in xmm2. The default memory location is specified by DS:DI/EDI/RDI."}, {"opcode": "VEX.128.66.0F.WIG F7 /r", "instruction": "VMASKMOVDQU xmm1, xmm2", "operand_encoding": "RM", "description": "Selectively write bytes from xmm1 to memory location using the byte mask in xmm2. The default memory location is specified by DS:DI/EDI/RDI."}]
+[
+  {
+    "opcode": "66 0F F7 /r",
+    "instruction": "MASKMOVDQU xmm1, xmm2",
+    "operand_encoding": "RM",
+    "description": "Selectively write bytes from xmm1 to memory location using the byte mask in xmm2. The default memory location is specified by DS:DI/EDI/RDI."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG F7 /r",
+    "instruction": "VMASKMOVDQU xmm1, xmm2",
+    "operand_encoding": "RM",
+    "description": "Selectively write bytes from xmm1 to memory location using the byte mask in xmm2. The default memory location is specified by DS:DI/EDI/RDI."
+  }
+]

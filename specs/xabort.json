@@ -1,1 +1,8 @@
-[{"opcode": "C6 F8 ib", "instruction": "XABORT imm8", "operand_encoding": "A", "description": "Causes an RTM abort if in RTM execution"}]
+[
+  {
+    "opcode": "C6 F8 ib",
+    "instruction": "XABORT imm8",
+    "operand_encoding": "A",
+    "description": "Causes an RTM abort if in RTM execution"
+  }
+]

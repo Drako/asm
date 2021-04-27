@@ -1,1 +1,44 @@
-[{"opcode": "NP 0F 38 00 /r1", "instruction": "PSHUFB mm1, mm2/m64", "operand_encoding": "A", "description": "Shuffle bytes in mm1 according to contents of mm2/m64."}, {"opcode": "66 0F 38 00 /r", "instruction": "PSHUFB xmm1, xmm2/m128", "operand_encoding": "A", "description": "Shuffle bytes in xmm1 according to contents of xmm2/m128."}, {"opcode": "VEX.128.66.0F38.WIG 00 /r", "instruction": "VPSHUFB xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Shuffle bytes in xmm2 according to contents of xmm3/m128."}, {"opcode": "VEX.256.66.0F38.WIG 00 /r", "instruction": "VPSHUFB ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Shuffle bytes in ymm2 according to contents of ymm3/m256."}, {"opcode": "EVEX.128.66.0F38.WIG 00 /r", "instruction": "VPSHUFB xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Shuffle bytes in xmm2 according to contents of xmm3/m128 under write mask k1."}, {"opcode": "EVEX.256.66.0F38.WIG 00 /r", "instruction": "VPSHUFB ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Shuffle bytes in ymm2 according to contents of ymm3/m256 under write mask k1."}, {"opcode": "EVEX.512.66.0F38.WIG 00 /r", "instruction": "VPSHUFB zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Shuffle bytes in zmm2 according to contents of zmm3/m512 under write mask k1."}]
+[
+  {
+    "opcode": "NP 0F 38 00 /r1",
+    "instruction": "PSHUFB mm1, mm2/m64",
+    "operand_encoding": "A",
+    "description": "Shuffle bytes in mm1 according to contents of mm2/m64."
+  },
+  {
+    "opcode": "66 0F 38 00 /r",
+    "instruction": "PSHUFB xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Shuffle bytes in xmm1 according to contents of xmm2/m128."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 00 /r",
+    "instruction": "VPSHUFB xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Shuffle bytes in xmm2 according to contents of xmm3/m128."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 00 /r",
+    "instruction": "VPSHUFB ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Shuffle bytes in ymm2 according to contents of ymm3/m256."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.WIG 00 /r",
+    "instruction": "VPSHUFB xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Shuffle bytes in xmm2 according to contents of xmm3/m128 under write mask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.WIG 00 /r",
+    "instruction": "VPSHUFB ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Shuffle bytes in ymm2 according to contents of ymm3/m256 under write mask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.WIG 00 /r",
+    "instruction": "VPSHUFB zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Shuffle bytes in zmm2 according to contents of zmm3/m512 under write mask k1."
+  }
+]

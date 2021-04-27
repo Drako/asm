@@ -1,1 +1,26 @@
-[{"opcode": "NP 0F 38 03 /r1", "instruction": "PHADDSW mm1, mm2/m64", "operand_encoding": "RM", "description": "Add 16-bit signed integers horizontally, pack saturated integers to mm1."}, {"opcode": "66 0F 38 03 /r", "instruction": "PHADDSW xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Add 16-bit signed integers horizontally, pack saturated integers to xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 03 /r", "instruction": "VPHADDSW xmm1, xmm2, xmm3/m128", "operand_encoding": "RVM", "description": "Add 16-bit signed integers horizontally, pack saturated integers to xmm1."}, {"opcode": "VEX.256.66.0F38.WIG 03 /r", "instruction": "VPHADDSW ymm1, ymm2, ymm3/m256", "operand_encoding": "RVM", "description": "Add 16-bit signed integers horizontally, pack saturated integers to ymm1."}]
+[
+  {
+    "opcode": "NP 0F 38 03 /r1",
+    "instruction": "PHADDSW mm1, mm2/m64",
+    "operand_encoding": "RM",
+    "description": "Add 16-bit signed integers horizontally, pack saturated integers to mm1."
+  },
+  {
+    "opcode": "66 0F 38 03 /r",
+    "instruction": "PHADDSW xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Add 16-bit signed integers horizontally, pack saturated integers to xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 03 /r",
+    "instruction": "VPHADDSW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "RVM",
+    "description": "Add 16-bit signed integers horizontally, pack saturated integers to xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 03 /r",
+    "instruction": "VPHADDSW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "RVM",
+    "description": "Add 16-bit signed integers horizontally, pack saturated integers to ymm1."
+  }
+]

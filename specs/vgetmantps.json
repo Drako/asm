@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F3A.W0 26 /r ib", "instruction": "VGETMANTPS xmm1 {k1}{z}, xmm2/m128/m32bcst, imm8", "operand_encoding": "A", "description": "Get normalized mantissa from float32 vector xmm2/m128/m32bcst and store the result in xmm1, using imm8 for sign control and mantissa interval normalization, under writemask."}, {"opcode": "EVEX.256.66.0F3A.W0 26 /r ib", "instruction": "VGETMANTPS ymm1 {k1}{z}, ymm2/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Get normalized mantissa from float32 vector ymm2/m256/m32bcst and store the result in ymm1, using imm8 for sign control and mantissa interval normalization, under writemask."}, {"opcode": "EVEX.512.66.0F3A.W0 26 /r ib", "instruction": "VGETMANTPS zmm1 {k1}{z}, zmm2/m512/m32bcst{sae}, imm8", "operand_encoding": "A", "description": "Get normalized mantissa from float32 vector zmm2/m512/m32bcst and store the result in zmm1, using imm8 for sign control and mantissa interval normalization, under writemask."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 26 /r ib",
+    "instruction": "VGETMANTPS xmm1 {k1}{z}, xmm2/m128/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Get normalized mantissa from float32 vector xmm2/m128/m32bcst and store the result in xmm1, using imm8 for sign control and mantissa interval normalization, under writemask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 26 /r ib",
+    "instruction": "VGETMANTPS ymm1 {k1}{z}, ymm2/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Get normalized mantissa from float32 vector ymm2/m256/m32bcst and store the result in ymm1, using imm8 for sign control and mantissa interval normalization, under writemask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 26 /r ib",
+    "instruction": "VGETMANTPS zmm1 {k1}{z}, zmm2/m512/m32bcst{sae}, imm8",
+    "operand_encoding": "A",
+    "description": "Get normalized mantissa from float32 vector zmm2/m512/m32bcst and store the result in zmm1, using imm8 for sign control and mantissa interval normalization, under writemask."
+  }
+]

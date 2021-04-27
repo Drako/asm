@@ -1,1 +1,14 @@
-[{"opcode": "0F 02 /r", "instruction": "LAR r16, r16/m16", "operand_encoding": "RM", "description": "r16 \u2190 access rights referenced by r16/m16"}, {"opcode": "0F 02 /r", "instruction": "LAR reg, r32/m161", "operand_encoding": "RM", "description": "reg \u2190 access rights referenced by r32/m16"}]
+[
+  {
+    "opcode": "0F 02 /r",
+    "instruction": "LAR r16, r16/m16",
+    "operand_encoding": "RM",
+    "description": "r16 \u2190 access rights referenced by r16/m16"
+  },
+  {
+    "opcode": "0F 02 /r",
+    "instruction": "LAR reg, r32/m161",
+    "operand_encoding": "RM",
+    "description": "reg \u2190 access rights referenced by r32/m16"
+  }
+]

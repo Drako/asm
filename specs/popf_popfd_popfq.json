@@ -1,1 +1,14 @@
-[{"opcode": "9D", "instruction": "POPF", "operand_encoding": "ZO", "description": "Pop top of stack into lower 16 bits of EFLAGS."}, {"opcode": "9D", "instruction": "POPFQ", "operand_encoding": "ZO", "description": "Pop top of stack and zero-extend into RFLAGS."}]
+[
+  {
+    "opcode": "9D",
+    "instruction": "POPF",
+    "operand_encoding": "ZO",
+    "description": "Pop top of stack into lower 16 bits of EFLAGS."
+  },
+  {
+    "opcode": "9D",
+    "instruction": "POPFQ",
+    "operand_encoding": "ZO",
+    "description": "Pop top of stack and zero-extend into RFLAGS."
+  }
+]

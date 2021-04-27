@@ -1,1 +1,8 @@
-[{"opcode": "F2 0F AE /6", "instruction": "UMWAIT r32, <edx>, <eax>", "operand_encoding": "A", "description": "A hint that allows the processor to stop instruction execution and enter an implementation-dependent optimized state until occurrence of a class of events."}]
+[
+  {
+    "opcode": "F2 0F AE /6",
+    "instruction": "UMWAIT r32, <edx>, <eax>",
+    "operand_encoding": "A",
+    "description": "A hint that allows the processor to stop instruction execution and enter an implementation-dependent optimized state until occurrence of a class of events."
+  }
+]

@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F38.W1 8B /r", "instruction": "VPCOMPRESSQ xmm1/m128 {k1}{z}, xmm2", "operand_encoding": "A", "description": "Compress packed quadword integer values from xmm2 to xmm1/m128 using controlmask k1."}, {"opcode": "EVEX.256.66.0F38.W1 8B /r", "instruction": "VPCOMPRESSQ ymm1/m256 {k1}{z}, ymm2", "operand_encoding": "A", "description": "Compress packed quadword integer values from ymm2 to ymm1/m256 using controlmask k1."}, {"opcode": "EVEX.512.66.0F38.W1 8B /r", "instruction": "VPCOMPRESSQ zmm1/m512 {k1}{z}, zmm2", "operand_encoding": "A", "description": "Compress packed quadword integer values from zmm2 to zmm1/m512 using controlmask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W1 8B /r",
+    "instruction": "VPCOMPRESSQ xmm1/m128 {k1}{z}, xmm2",
+    "operand_encoding": "A",
+    "description": "Compress packed quadword integer values from xmm2 to xmm1/m128 using controlmask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 8B /r",
+    "instruction": "VPCOMPRESSQ ymm1/m256 {k1}{z}, ymm2",
+    "operand_encoding": "A",
+    "description": "Compress packed quadword integer values from ymm2 to ymm1/m256 using controlmask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 8B /r",
+    "instruction": "VPCOMPRESSQ zmm1/m512 {k1}{z}, zmm2",
+    "operand_encoding": "A",
+    "description": "Compress packed quadword integer values from zmm2 to zmm1/m512 using controlmask k1."
+  }
+]

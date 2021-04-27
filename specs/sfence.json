@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F AE F8", "instruction": "SFENCE", "operand_encoding": "ZO", "description": "Serializes store operations."}]
+[
+  {
+    "opcode": "NP 0F AE F8",
+    "instruction": "SFENCE",
+    "operand_encoding": "ZO",
+    "description": "Serializes store operations."
+  }
+]

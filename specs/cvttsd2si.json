@@ -1,1 +1,38 @@
-[{"opcode": "F2 0F 2C /r", "instruction": "CVTTSD2SI r32, xmm1/m64", "operand_encoding": "A", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."}, {"opcode": "F2", "instruction": "CVTTSD2SI r64, xmm1/m64", "operand_encoding": "A", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."}, {"opcode": "VEX.LIG.F2.0F.W0 2C /r 1", "instruction": "VCVTTSD2SI r32, xmm1/m64", "operand_encoding": "A", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."}, {"opcode": "VEX.LIG.F2.0F.W1 2C /r 1", "instruction": "VCVTTSD2SI r64, xmm1/m64", "operand_encoding": "B", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."}, {"opcode": "EVEX.LIG.F2.0F.W0 2C /r", "instruction": "VCVTTSD2SI r32, xmm1/m64{sae}", "operand_encoding": "B", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."}, {"opcode": "EVEX.LIG.F2.0F.W1 2C /r", "instruction": "VCVTTSD2SI r64, xmm1/m64{sae}", "operand_encoding": "B", "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."}]
+[
+  {
+    "opcode": "F2 0F 2C /r",
+    "instruction": "CVTTSD2SI r32, xmm1/m64",
+    "operand_encoding": "A",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."
+  },
+  {
+    "opcode": "F2",
+    "instruction": "CVTTSD2SI r64, xmm1/m64",
+    "operand_encoding": "A",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."
+  },
+  {
+    "opcode": "VEX.LIG.F2.0F.W0 2C /r 1",
+    "instruction": "VCVTTSD2SI r32, xmm1/m64",
+    "operand_encoding": "A",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."
+  },
+  {
+    "opcode": "VEX.LIG.F2.0F.W1 2C /r 1",
+    "instruction": "VCVTTSD2SI r64, xmm1/m64",
+    "operand_encoding": "B",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."
+  },
+  {
+    "opcode": "EVEX.LIG.F2.0F.W0 2C /r",
+    "instruction": "VCVTTSD2SI r32, xmm1/m64{sae}",
+    "operand_encoding": "B",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed doubleword integer in r32 using truncation."
+  },
+  {
+    "opcode": "EVEX.LIG.F2.0F.W1 2C /r",
+    "instruction": "VCVTTSD2SI r64, xmm1/m64{sae}",
+    "operand_encoding": "B",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one signed quadword integer in r64 using truncation."
+  }
+]

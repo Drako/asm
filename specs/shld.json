@@ -1,1 +1,38 @@
-[{"opcode": "0F A4 /r ib", "instruction": "SHLD r/m16, r16, imm8", "operand_encoding": "MRI", "description": "Shift r/m16 to left imm8 places while shifting bits from r16 in from the right."}, {"opcode": "0F A5 /r", "instruction": "SHLD r/m16, r16, CL", "operand_encoding": "MRC", "description": "Shift r/m16 to left CL places while shifting bits from r16 in from the right."}, {"opcode": "0F A4 /r ib", "instruction": "SHLD r/m32, r32, imm8", "operand_encoding": "MRI", "description": "Shift r/m32 to left imm8 places while shifting bits from r32 in from the right."}, {"opcode": "REX.W + 0F A4 /r ib", "instruction": "SHLD r/m64, r64, imm8", "operand_encoding": "MRI", "description": "Shift r/m64 to left imm8 places while shifting bits from r64 in from the right."}, {"opcode": "0F A5 /r", "instruction": "SHLD r/m32, r32, CL", "operand_encoding": "MRC", "description": "Shift r/m32 to left CL places while shifting bits from r32 in from the right."}, {"opcode": "REX.W + 0F A5 /r", "instruction": "SHLD r/m64, r64, CL", "operand_encoding": "MRC", "description": "Shift r/m64 to left CL places while shifting bits from r64 in from the right."}]
+[
+  {
+    "opcode": "0F A4 /r ib",
+    "instruction": "SHLD r/m16, r16, imm8",
+    "operand_encoding": "MRI",
+    "description": "Shift r/m16 to left imm8 places while shifting bits from r16 in from the right."
+  },
+  {
+    "opcode": "0F A5 /r",
+    "instruction": "SHLD r/m16, r16, CL",
+    "operand_encoding": "MRC",
+    "description": "Shift r/m16 to left CL places while shifting bits from r16 in from the right."
+  },
+  {
+    "opcode": "0F A4 /r ib",
+    "instruction": "SHLD r/m32, r32, imm8",
+    "operand_encoding": "MRI",
+    "description": "Shift r/m32 to left imm8 places while shifting bits from r32 in from the right."
+  },
+  {
+    "opcode": "REX.W + 0F A4 /r ib",
+    "instruction": "SHLD r/m64, r64, imm8",
+    "operand_encoding": "MRI",
+    "description": "Shift r/m64 to left imm8 places while shifting bits from r64 in from the right."
+  },
+  {
+    "opcode": "0F A5 /r",
+    "instruction": "SHLD r/m32, r32, CL",
+    "operand_encoding": "MRC",
+    "description": "Shift r/m32 to left CL places while shifting bits from r32 in from the right."
+  },
+  {
+    "opcode": "REX.W + 0F A5 /r",
+    "instruction": "SHLD r/m64, r64, CL",
+    "operand_encoding": "MRC",
+    "description": "Shift r/m64 to left CL places while shifting bits from r64 in from the right."
+  }
+]

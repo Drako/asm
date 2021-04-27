@@ -1,1 +1,14 @@
-[{"opcode": "66 0F 38 DF /r", "instruction": "AESDECLAST xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Perform the last round of an AES decryption flow, using the Equivalent Inverse Cipher, operating on a 128-bit data (state) from xmm1 with a 128-bit round key from xmm2/m128."}, {"opcode": "VEX.128.66.0F38.WIG DF /r", "instruction": "VAESDECLAST xmm1, xmm2, xmm3/m128", "operand_encoding": "RVM", "description": "Perform the last round of an AES decryption flow, using the Equivalent Inverse Cipher, operating on a 128-bit data (state) from xmm2 with a 128-bit round key from xmm3/m128; store the result in xmm1."}]
+[
+  {
+    "opcode": "66 0F 38 DF /r",
+    "instruction": "AESDECLAST xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Perform the last round of an AES decryption flow, using the Equivalent Inverse Cipher, operating on a 128-bit data (state) from xmm1 with a 128-bit round key from xmm2/m128."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG DF /r",
+    "instruction": "VAESDECLAST xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "RVM",
+    "description": "Perform the last round of an AES decryption flow, using the Equivalent Inverse Cipher, operating on a 128-bit data (state) from xmm2 with a 128-bit round key from xmm3/m128; store the result in xmm1."
+  }
+]

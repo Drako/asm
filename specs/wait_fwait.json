@@ -1,1 +1,14 @@
-[{"opcode": "9B", "instruction": "WAIT", "operand_encoding": "ZO", "description": "Check pending unmasked floating-point exceptions."}, {"opcode": "9B", "instruction": "FWAIT", "operand_encoding": "ZO", "description": "Check pending unmasked floating-point exceptions."}]
+[
+  {
+    "opcode": "9B",
+    "instruction": "WAIT",
+    "operand_encoding": "ZO",
+    "description": "Check pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "9B",
+    "instruction": "FWAIT",
+    "operand_encoding": "ZO",
+    "description": "Check pending unmasked floating-point exceptions."
+  }
+]

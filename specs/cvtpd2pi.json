@@ -1,1 +1,8 @@
-[{"opcode": "66 0F 2D /r", "instruction": "CVTPD2PI mm, xmm/m128", "operand_encoding": "RM", "description": "Convert two packed double-precision floating-point values from xmm/m128 to two packed signed doubleword integers in mm."}]
+[
+  {
+    "opcode": "66 0F 2D /r",
+    "instruction": "CVTPD2PI mm, xmm/m128",
+    "operand_encoding": "RM",
+    "description": "Convert two packed double-precision floating-point values from xmm/m128 to two packed signed doubleword integers in mm."
+  }
+]

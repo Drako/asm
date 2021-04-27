@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.F3.0F38.W1 2A /r", "instruction": "VPBROADCASTMB2Q xmm1, k1", "operand_encoding": "RM", "description": "Broadcast low byte value in k1 to two locations in xmm1."}, {"opcode": "EVEX.256.F3.0F38.W1 2A /r", "instruction": "VPBROADCASTMB2Q ymm1, k1", "operand_encoding": "RM", "description": "Broadcast low byte value in k1 to four locations in ymm1."}, {"opcode": "EVEX.512.F3.0F38.W1 2A /r", "instruction": "VPBROADCASTMB2Q zmm1, k1", "operand_encoding": "RM", "description": "Broadcast low byte value in k1 to eight locations in zmm1."}, {"opcode": "EVEX.128.F3.0F38.W0 3A /r", "instruction": "VPBROADCASTMW2D xmm1, k1", "operand_encoding": "RM", "description": "Broadcast low word value in k1 to four locations in xmm1."}, {"opcode": "EVEX.256.F3.0F38.W0 3A /r", "instruction": "VPBROADCASTMW2D ymm1, k1", "operand_encoding": "RM", "description": "Broadcast low word value in k1 to eight locations in ymm1."}, {"opcode": "EVEX.512.F3.0F38.W0 3A /r", "instruction": "VPBROADCASTMW2D zmm1, k1", "operand_encoding": "RM", "description": "Broadcast low word value in k1 to sixteen locations in zmm1."}]
+[
+  {
+    "opcode": "EVEX.128.F3.0F38.W1 2A /r",
+    "instruction": "VPBROADCASTMB2Q xmm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low byte value in k1 to two locations in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F38.W1 2A /r",
+    "instruction": "VPBROADCASTMB2Q ymm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low byte value in k1 to four locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F38.W1 2A /r",
+    "instruction": "VPBROADCASTMB2Q zmm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low byte value in k1 to eight locations in zmm1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F38.W0 3A /r",
+    "instruction": "VPBROADCASTMW2D xmm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low word value in k1 to four locations in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F38.W0 3A /r",
+    "instruction": "VPBROADCASTMW2D ymm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low word value in k1 to eight locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F38.W0 3A /r",
+    "instruction": "VPBROADCASTMW2D zmm1, k1",
+    "operand_encoding": "RM",
+    "description": "Broadcast low word value in k1 to sixteen locations in zmm1."
+  }
+]

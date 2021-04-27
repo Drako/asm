@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F AE E8", "instruction": "LFENCE", "operand_encoding": "ZO", "description": "Serializes load operations."}]
+[
+  {
+    "opcode": "NP 0F AE E8",
+    "instruction": "LFENCE",
+    "operand_encoding": "ZO",
+    "description": "Serializes load operations."
+  }
+]

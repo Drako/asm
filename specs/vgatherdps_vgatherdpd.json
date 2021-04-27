@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F38.W0 92 /vsib", "instruction": "VGATHERDPS xmm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.256.66.0F38.W0 92 /vsib", "instruction": "VGATHERDPS ymm1 {k1}, vm32y", "operand_encoding": "A", "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.512.66.0F38.W0 92 /vsib", "instruction": "VGATHERDPS zmm1 {k1}, vm32z", "operand_encoding": "A", "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.128.66.0F38.W1 92 /vsib", "instruction": "VGATHERDPD xmm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather float64 vector into float64 vector xmm1 using k1 as completion mask."}, {"opcode": "EVEX.256.66.0F38.W1 92 /vsib", "instruction": "VGATHERDPD ymm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather float64 vector into float64 vector ymm1 using k1 as completion mask."}, {"opcode": "EVEX.512.66.0F38.W1 92 /vsib", "instruction": "VGATHERDPD zmm1 {k1}, vm32y", "operand_encoding": "A", "description": "Using signed dword indices, gather float64 vector into float64 vector zmm1 using k1 as completion mask."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 92 /vsib",
+    "instruction": "VGATHERDPS xmm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 92 /vsib",
+    "instruction": "VGATHERDPS ymm1 {k1}, vm32y",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 92 /vsib",
+    "instruction": "VGATHERDPS zmm1 {k1}, vm32z",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 92 /vsib",
+    "instruction": "VGATHERDPD xmm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather float64 vector into float64 vector xmm1 using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 92 /vsib",
+    "instruction": "VGATHERDPD ymm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather float64 vector into float64 vector ymm1 using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 92 /vsib",
+    "instruction": "VGATHERDPD zmm1 {k1}, vm32y",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather float64 vector into float64 vector zmm1 using k1 as completion mask."
+  }
+]

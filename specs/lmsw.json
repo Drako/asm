@@ -1,1 +1,8 @@
-[{"opcode": "0F 01 /6", "instruction": "LMSW r/m16", "operand_encoding": "M", "description": "Loads r/m16 in machine status word of CR0."}]
+[
+  {
+    "opcode": "0F 01 /6",
+    "instruction": "LMSW r/m16",
+    "operand_encoding": "M",
+    "description": "Loads r/m16 in machine status word of CR0."
+  }
+]

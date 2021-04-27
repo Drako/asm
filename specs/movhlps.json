@@ -1,1 +1,20 @@
-[{"opcode": "NP 0F 12 /r", "instruction": "MOVHLPS xmm1, xmm2", "operand_encoding": "RM", "description": "Move two packed single-precision floating-point values from high quadword of xmm2 to low quadword of xmm1."}, {"opcode": "VEX.128.0F.WIG 12 /r", "instruction": "VMOVHLPS xmm1, xmm2, xmm3", "operand_encoding": "RVM", "description": "Merge two packed single-precision floating-point values from high quadword of xmm3 and low quadword of xmm2."}, {"opcode": "EVEX.128.0F.W0 12 /r", "instruction": "VMOVHLPS xmm1, xmm2, xmm3", "operand_encoding": "RVM", "description": "Merge two packed single-precision floating-point values from high quadword of xmm3 and low quadword of xmm2."}]
+[
+  {
+    "opcode": "NP 0F 12 /r",
+    "instruction": "MOVHLPS xmm1, xmm2",
+    "operand_encoding": "RM",
+    "description": "Move two packed single-precision floating-point values from high quadword of xmm2 to low quadword of xmm1."
+  },
+  {
+    "opcode": "VEX.128.0F.WIG 12 /r",
+    "instruction": "VMOVHLPS xmm1, xmm2, xmm3",
+    "operand_encoding": "RVM",
+    "description": "Merge two packed single-precision floating-point values from high quadword of xmm3 and low quadword of xmm2."
+  },
+  {
+    "opcode": "EVEX.128.0F.W0 12 /r",
+    "instruction": "VMOVHLPS xmm1, xmm2, xmm3",
+    "operand_encoding": "RVM",
+    "description": "Merge two packed single-precision floating-point values from high quadword of xmm3 and low quadword of xmm2."
+  }
+]

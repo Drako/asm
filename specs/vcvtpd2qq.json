@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F.W1 7B /r", "instruction": "VCVTPD2QQ xmm1 {k1}{z}, xmm2/m128/m64bcst", "operand_encoding": "A", "description": "Convert two packed double-precision floating-point values from xmm2/m128/m64bcst to two packed quadword integers in xmm1 with writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 7B /r", "instruction": "VCVTPD2QQ ymm1 {k1}{z}, ymm2/m256/m64bcst", "operand_encoding": "A", "description": "Convert four packed double-precision floating-point values from ymm2/m256/m64bcst to four packed quadword integers in ymm1 with writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 7B /r", "instruction": "VCVTPD2QQ zmm1 {k1}{z}, zmm2/m512/m64bcst{er}", "operand_encoding": "A", "description": "Convert eight packed double-precision floating-point values from zmm2/m512/m64bcst to eight packed quadword integers in zmm1 with writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F.W1 7B /r",
+    "instruction": "VCVTPD2QQ xmm1 {k1}{z}, xmm2/m128/m64bcst",
+    "operand_encoding": "A",
+    "description": "Convert two packed double-precision floating-point values from xmm2/m128/m64bcst to two packed quadword integers in xmm1 with writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 7B /r",
+    "instruction": "VCVTPD2QQ ymm1 {k1}{z}, ymm2/m256/m64bcst",
+    "operand_encoding": "A",
+    "description": "Convert four packed double-precision floating-point values from ymm2/m256/m64bcst to four packed quadword integers in ymm1 with writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 7B /r",
+    "instruction": "VCVTPD2QQ zmm1 {k1}{z}, zmm2/m512/m64bcst{er}",
+    "operand_encoding": "A",
+    "description": "Convert eight packed double-precision floating-point values from zmm2/m512/m64bcst to eight packed quadword integers in zmm1 with writemask k1."
+  }
+]

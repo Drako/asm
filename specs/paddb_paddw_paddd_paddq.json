@@ -1,1 +1,170 @@
-[{"opcode": "NP 0F FC /r1", "instruction": "PADDB mm, mm/m64", "operand_encoding": "A", "description": "Add packed byte integers from mm/m64 and mm."}, {"opcode": "NP 0F FD /r1", "instruction": "PADDW mm, mm/m64", "operand_encoding": "A", "description": "Add packed word integers from mm/m64 and mm."}, {"opcode": "NP 0F FE /r1", "instruction": "PADDD mm, mm/m64", "operand_encoding": "A", "description": "Add packed doubleword integers from mm/m64 and mm."}, {"opcode": "NP 0F D4 /r1", "instruction": "PADDQ mm, mm/m64", "operand_encoding": "A", "description": "Add packed quadword integers from mm/m64 and mm."}, {"opcode": "66 0F FC /r", "instruction": "PADDB xmm1, xmm2/m128", "operand_encoding": "A", "description": "Add packed byte integers from xmm2/m128 and xmm1."}, {"opcode": "66 0F FD /r", "instruction": "PADDW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Add packed word integers from xmm2/m128 and xmm1."}, {"opcode": "66 0F FE /r", "instruction": "PADDD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Add packed doubleword integers from xmm2/m128 and xmm1."}, {"opcode": "66 0F D4 /r", "instruction": "PADDQ xmm1, xmm2/m128", "operand_encoding": "A", "description": "Add packed quadword integers from xmm2/m128 and xmm1."}, {"opcode": "VEX.128.66.0F.WIG FC /r", "instruction": "VPADDB xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Add packed byte integers from xmm2, and xmm3/m128 and store in xmm1."}, {"opcode": "VEX.128.66.0F.WIG FD /r", "instruction": "VPADDW xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Add packed word integers from xmm2, xmm3/m128 and store in xmm1."}, {"opcode": "VEX.128.66.0F.WIG FE /r", "instruction": "VPADDD xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Add packed doubleword integers from xmm2, xmm3/m128 and store in xmm1."}, {"opcode": "VEX.128.66.0F.WIG D4 /r", "instruction": "VPADDQ xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Add packed quadword integers from xmm2, xmm3/m128 and store in xmm1."}, {"opcode": "VEX.256.66.0F.WIG FC /r", "instruction": "VPADDB ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Add packed byte integers from ymm2, and ymm3/m256 and store in ymm1."}, {"opcode": "VEX.256.66.0F.WIG FD /r", "instruction": "VPADDW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Add packed word integers from ymm2, ymm3/m256 and store in ymm1."}, {"opcode": "VEX.256.66.0F.WIG FE /r", "instruction": "VPADDD ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Add packed doubleword integers from ymm2, ymm3/m256 and store in ymm1."}, {"opcode": "VEX.256.66.0F.WIG D4 /r", "instruction": "VPADDQ ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Add packed quadword integers from ymm2, ymm3/m256 and store in ymm1."}, {"opcode": "EVEX.128.66.0F.WIG FC /r", "instruction": "VPADDB xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Add packed byte integers from xmm2, and xmm3/m128 and store in xmm1 using writemask k1."}, {"opcode": "EVEX.128.66.0F.WIG FD /r", "instruction": "VPADDW xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Add packed word integers from xmm2, and xmm3/m128 and store in xmm1 using writemask k1."}, {"opcode": "EVEX.128.66.0F.W0 FE /r", "instruction": "VPADDD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "D", "description": "Add packed doubleword integers from xmm2, and xmm3/m128/m32bcst and store in xmm1 using writemask k1."}, {"opcode": "EVEX.128.66.0F.W1 D4 /r", "instruction": "VPADDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "D", "description": "Add packed quadword integers from xmm2, and xmm3/m128/m64bcst and store in xmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F.WIG FC /r", "instruction": "VPADDB ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Add packed byte integers from ymm2, and ymm3/m256 and store in ymm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F.WIG FD /r", "instruction": "VPADDW ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Add packed word integers from ymm2, and ymm3/m256 and store in ymm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F.W0 FE /r", "instruction": "VPADDD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "D", "description": "Add packed doubleword integers from ymm2, ymm3/m256/m32bcst and store in ymm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 D4 /r", "instruction": "VPADDQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "D", "description": "Add packed quadword integers from ymm2, ymm3/m256/m64bcst and store in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F.WIG FC /r", "instruction": "VPADDB zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Add packed byte integers from zmm2, and zmm3/m512 and store in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F.WIG FD /r", "instruction": "VPADDW zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Add packed word integers from zmm2, and zmm3/m512 and store in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F.W0 FE /r", "instruction": "VPADDD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "D", "description": "Add packed doubleword integers from zmm2, zmm3/m512/m32bcst and store in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 D4 /r", "instruction": "VPADDQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "D", "description": "Add packed quadword integers from zmm2, zmm3/m512/m64bcst and store in zmm1 using writemask k1."}]
+[
+  {
+    "opcode": "NP 0F FC /r1",
+    "instruction": "PADDB mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Add packed byte integers from mm/m64 and mm."
+  },
+  {
+    "opcode": "NP 0F FD /r1",
+    "instruction": "PADDW mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Add packed word integers from mm/m64 and mm."
+  },
+  {
+    "opcode": "NP 0F FE /r1",
+    "instruction": "PADDD mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Add packed doubleword integers from mm/m64 and mm."
+  },
+  {
+    "opcode": "NP 0F D4 /r1",
+    "instruction": "PADDQ mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Add packed quadword integers from mm/m64 and mm."
+  },
+  {
+    "opcode": "66 0F FC /r",
+    "instruction": "PADDB xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Add packed byte integers from xmm2/m128 and xmm1."
+  },
+  {
+    "opcode": "66 0F FD /r",
+    "instruction": "PADDW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Add packed word integers from xmm2/m128 and xmm1."
+  },
+  {
+    "opcode": "66 0F FE /r",
+    "instruction": "PADDD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Add packed doubleword integers from xmm2/m128 and xmm1."
+  },
+  {
+    "opcode": "66 0F D4 /r",
+    "instruction": "PADDQ xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Add packed quadword integers from xmm2/m128 and xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG FC /r",
+    "instruction": "VPADDB xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Add packed byte integers from xmm2, and xmm3/m128 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG FD /r",
+    "instruction": "VPADDW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Add packed word integers from xmm2, xmm3/m128 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG FE /r",
+    "instruction": "VPADDD xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Add packed doubleword integers from xmm2, xmm3/m128 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG D4 /r",
+    "instruction": "VPADDQ xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Add packed quadword integers from xmm2, xmm3/m128 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG FC /r",
+    "instruction": "VPADDB ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Add packed byte integers from ymm2, and ymm3/m256 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG FD /r",
+    "instruction": "VPADDW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Add packed word integers from ymm2, ymm3/m256 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG FE /r",
+    "instruction": "VPADDD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Add packed doubleword integers from ymm2, ymm3/m256 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG D4 /r",
+    "instruction": "VPADDQ ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Add packed quadword integers from ymm2, ymm3/m256 and store in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG FC /r",
+    "instruction": "VPADDB xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Add packed byte integers from xmm2, and xmm3/m128 and store in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG FD /r",
+    "instruction": "VPADDW xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Add packed word integers from xmm2, and xmm3/m128 and store in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W0 FE /r",
+    "instruction": "VPADDD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "D",
+    "description": "Add packed doubleword integers from xmm2, and xmm3/m128/m32bcst and store in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 D4 /r",
+    "instruction": "VPADDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "D",
+    "description": "Add packed quadword integers from xmm2, and xmm3/m128/m64bcst and store in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.WIG FC /r",
+    "instruction": "VPADDB ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Add packed byte integers from ymm2, and ymm3/m256 and store in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.WIG FD /r",
+    "instruction": "VPADDW ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Add packed word integers from ymm2, and ymm3/m256 and store in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W0 FE /r",
+    "instruction": "VPADDD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "D",
+    "description": "Add packed doubleword integers from ymm2, ymm3/m256/m32bcst and store in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 D4 /r",
+    "instruction": "VPADDQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "D",
+    "description": "Add packed quadword integers from ymm2, ymm3/m256/m64bcst and store in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.WIG FC /r",
+    "instruction": "VPADDB zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Add packed byte integers from zmm2, and zmm3/m512 and store in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.WIG FD /r",
+    "instruction": "VPADDW zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Add packed word integers from zmm2, and zmm3/m512 and store in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W0 FE /r",
+    "instruction": "VPADDD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "D",
+    "description": "Add packed doubleword integers from zmm2, zmm3/m512/m32bcst and store in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 D4 /r",
+    "instruction": "VPADDQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "D",
+    "description": "Add packed quadword integers from zmm2, zmm3/m512/m64bcst and store in zmm1 using writemask k1."
+  }
+]

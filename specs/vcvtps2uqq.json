@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F.W0 79 /r", "instruction": "VCVTPS2UQQ xmm1 {k1}{z}, xmm2/m64/m32bcst", "operand_encoding": "A", "description": "Convert two packed single precision floating-point values from zmm2/m64/m32bcst to two packed unsigned quadword values in zmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F.W0 79 /r", "instruction": "VCVTPS2UQQ ymm1 {k1}{z}, xmm2/m128/m32bcst", "operand_encoding": "A", "description": "Convert four packed single precision floating-point values from xmm2/m128/m32bcst to four packed unsigned quadword values in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F.W0 79 /r", "instruction": "VCVTPS2UQQ zmm1 {k1}{z}, ymm2/m256/m32bcst{er}", "operand_encoding": "A", "description": "Convert eight packed single precision floating-point values from ymm2/m256/m32bcst to eight packed unsigned quadword values in zmm1 subject to writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F.W0 79 /r",
+    "instruction": "VCVTPS2UQQ xmm1 {k1}{z}, xmm2/m64/m32bcst",
+    "operand_encoding": "A",
+    "description": "Convert two packed single precision floating-point values from zmm2/m64/m32bcst to two packed unsigned quadword values in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W0 79 /r",
+    "instruction": "VCVTPS2UQQ ymm1 {k1}{z}, xmm2/m128/m32bcst",
+    "operand_encoding": "A",
+    "description": "Convert four packed single precision floating-point values from xmm2/m128/m32bcst to four packed unsigned quadword values in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W0 79 /r",
+    "instruction": "VCVTPS2UQQ zmm1 {k1}{z}, ymm2/m256/m32bcst{er}",
+    "operand_encoding": "A",
+    "description": "Convert eight packed single precision floating-point values from ymm2/m256/m32bcst to eight packed unsigned quadword values in zmm1 subject to writemask k1."
+  }
+]

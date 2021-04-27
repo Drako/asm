@@ -1,1 +1,8 @@
-[{"opcode": "F3 0F AE /6", "instruction": "UMONITOR r16/r32/r64", "operand_encoding": "A", "description": "Sets up a linear address range to be monitored by hardware and activates the monitor. The address range should be a write-back memory caching type. The address is contained in r16/r32/r64."}]
+[
+  {
+    "opcode": "F3 0F AE /6",
+    "instruction": "UMONITOR r16/r32/r64",
+    "operand_encoding": "A",
+    "description": "Sets up a linear address range to be monitored by hardware and activates the monitor. The address range should be a write-back memory caching type. The address is contained in r16/r32/r64."
+  }
+]

@@ -1,1 +1,50 @@
-[{"opcode": "66 0F 3A 14 /r ib", "instruction": "PEXTRB reg/m8, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a byte integer value from xmm2 at the source byte offset specified by imm8 into reg or m8. The upper bits of r32 or r64 are zeroed."}, {"opcode": "66 0F 3A 16 /r ib", "instruction": "PEXTRD r/m32, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r/m32."}, {"opcode": "66", "instruction": "PEXTRQ r/m64, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a qword integer value from xmm2 at the source qword offset specified by imm8 into r/m64."}, {"opcode": "VEX.128.66.0F3A.W0 16 /r ib", "instruction": "VPEXTRD r32/m32, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r32/m32."}, {"opcode": "VEX.128.66.0F3A.W1 16 /r ib", "instruction": "VPEXTRQ r64/m64, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a qword integer value from xmm2 at the source dword offset specified by imm8 into r64/m64."}, {"opcode": "EVEX.128.66.0F3A.WIG 14 /r ib", "instruction": "VPEXTRB reg/m8, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a byte integer value from xmm2 at the source byte offset specified by imm8 into reg or m8. The upper bits of r64/r32 is filled with zeros."}, {"opcode": "EVEX.128.66.0F3A.W0 16 /r ib", "instruction": "VPEXTRD r32/m32, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r32/m32."}, {"opcode": "EVEX.128.66.0F3A.W1 16 /r ib", "instruction": "VPEXTRQ r64/m64, xmm2, imm8", "operand_encoding": "ZO", "description": "Extract a qword integer value from xmm2 at the source dword offset specified by imm8 into r64/m64."}]
+[
+  {
+    "opcode": "66 0F 3A 14 /r ib",
+    "instruction": "PEXTRB reg/m8, xmm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract a byte integer value from xmm2 at the source byte offset specified by imm8 into reg or m8. The upper bits of r32 or r64 are zeroed."
+  },
+  {
+    "opcode": "66 0F 3A 16 /r ib",
+    "instruction": "PEXTRD r/m32, xmm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r/m32."
+  },
+  {
+    "opcode": "66",
+    "instruction": "PEXTRQ r/m64, xmm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract a qword integer value from xmm2 at the source qword offset specified by imm8 into r/m64."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.W0 16 /r ib",
+    "instruction": "VPEXTRD r32/m32, xmm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r32/m32."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.W1 16 /r ib",
+    "instruction": "VPEXTRQ r64/m64, xmm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract a qword integer value from xmm2 at the source dword offset specified by imm8 into r64/m64."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.WIG 14 /r ib",
+    "instruction": "VPEXTRB reg/m8, xmm2, imm8",
+    "operand_encoding": "B",
+    "description": "Extract a byte integer value from xmm2 at the source byte offset specified by imm8 into reg or m8. The upper bits of r64/r32 is filled with zeros."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 16 /r ib",
+    "instruction": "VPEXTRD r32/m32, xmm2, imm8",
+    "operand_encoding": "B",
+    "description": "Extract a dword integer value from xmm2 at the source dword offset specified by imm8 into r32/m32."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 16 /r ib",
+    "instruction": "VPEXTRQ r64/m64, xmm2, imm8",
+    "operand_encoding": "B",
+    "description": "Extract a qword integer value from xmm2 at the source dword offset specified by imm8 into r64/m64."
+  }
+]

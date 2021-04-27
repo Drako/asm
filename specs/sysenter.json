@@ -1,1 +1,8 @@
-[{"opcode": "0F 34", "instruction": "SYSENTER", "operand_encoding": "ZO", "description": "Fast call to privilege level 0 system procedures."}]
+[
+  {
+    "opcode": "0F 34",
+    "instruction": "SYSENTER",
+    "operand_encoding": "ZO",
+    "description": "Fast call to privilege level 0 system procedures."
+  }
+]

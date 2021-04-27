@@ -1,1 +1,38 @@
-[{"opcode": "VEX.LIG.66.0F38.W1 9F /r", "instruction": "VFNMSUB132SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/mem, negate the multiplication result and subtract xmm2 and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W1 AF /r", "instruction": "VFNMSUB213SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, negate the multiplication result and subtract xmm3/mem and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W1 BF /r", "instruction": "VFNMSUB231SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/mem, negate the multiplication result and subtract xmm1 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 9F /r", "instruction": "VFNMSUB132SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, negate the multiplication result and subtract xmm2 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 AF /r", "instruction": "VFNMSUB213SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, negate the multiplication result and subtract xmm3/m64 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 BF /r", "instruction": "VFNMSUB231SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, negate the multiplication result and subtract xmm1 and put result in xmm1."}]
+[
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 9F /r",
+    "instruction": "VFNMSUB132SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/mem, negate the multiplication result and subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 AF /r",
+    "instruction": "VFNMSUB213SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, negate the multiplication result and subtract xmm3/mem and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 BF /r",
+    "instruction": "VFNMSUB231SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/mem, negate the multiplication result and subtract xmm1 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 9F /r",
+    "instruction": "VFNMSUB132SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, negate the multiplication result and subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 AF /r",
+    "instruction": "VFNMSUB213SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, negate the multiplication result and subtract xmm3/m64 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 BF /r",
+    "instruction": "VFNMSUB231SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, negate the multiplication result and subtract xmm1 and put result in xmm1."
+  }
+]

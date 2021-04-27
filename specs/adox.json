@@ -1,1 +1,14 @@
-[{"opcode": "F3 0F 38 F6 /r", "instruction": "ADOX r32, r/m32", "operand_encoding": "RM", "description": "Unsigned addition of r32 with OF, r/m32 to r32, writes OF."}, {"opcode": "F3 REX.w 0F 38 F6 /r", "instruction": "ADOX r64, r/m64", "operand_encoding": "RM", "description": "Unsigned addition of r64 with OF, r/m64 to r64, writes OF."}]
+[
+  {
+    "opcode": "F3 0F 38 F6 /r",
+    "instruction": "ADOX r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "Unsigned addition of r32 with OF, r/m32 to r32, writes OF."
+  },
+  {
+    "opcode": "F3 REX.w 0F 38 F6 /r",
+    "instruction": "ADOX r64, r/m64",
+    "operand_encoding": "RM",
+    "description": "Unsigned addition of r64 with OF, r/m64 to r64, writes OF."
+  }
+]

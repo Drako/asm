@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 38 CB /r", "instruction": "<XMM0>", "operand_encoding": "RM0", "description": "Perform 2 rounds of SHA256 operation using an initial SHA256 state (C,D,G,H) from xmm1, an initial SHA256 state (A,B,E,F) from xmm2/m128, and a pre-computed sum of the next 2 round message dwords and the corresponding round constants from the implicit operand XMM0, storing the updated SHA256 state (A,B,E,F) result in xmm1."}]
+[
+  {
+    "opcode": "NP 0F 38 CB /r",
+    "instruction": "<XMM0>",
+    "operand_encoding": "RM0",
+    "description": "Perform 2 rounds of SHA256 operation using an initial SHA256 state (C,D,G,H) from xmm1, an initial SHA256 state (A,B,E,F) from xmm2/m128, and a pre-computed sum of the next 2 round message dwords and the corresponding round constants from the implicit operand XMM0, storing the updated SHA256 state (A,B,E,F) result in xmm1."
+  }
+]

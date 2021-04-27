@@ -1,1 +1,86 @@
-[{"opcode": "A8 ib", "instruction": "TEST AL, imm8", "operand_encoding": "I", "description": "AND imm8 with AL; set SF, ZF, PF according to result."}, {"opcode": "A9 iw", "instruction": "TEST AX, imm16", "operand_encoding": "I", "description": "AND imm16 with AX; set SF, ZF, PF according to result."}, {"opcode": "A9 id", "instruction": "TEST EAX, imm32", "operand_encoding": "I", "description": "AND imm32 with EAX; set SF, ZF, PF according to result."}, {"opcode": "REX.W + A9 id", "instruction": "TEST RAX, imm32", "operand_encoding": "I", "description": "AND imm32 sign-extended to 64-bits with RAX; set SF, ZF, PF according to result."}, {"opcode": "F6 /0 ib", "instruction": "TEST r/m8, imm8", "operand_encoding": "MI", "description": "AND imm8 with r/m8; set SF, ZF, PF according to result."}, {"opcode": "REX + F6 /0 ib", "instruction": "TEST r/m8*, imm8", "operand_encoding": "MI", "description": "AND imm8 with r/m8; set SF, ZF, PF according to result."}, {"opcode": "F7 /0 iw", "instruction": "TEST r/m16, imm16", "operand_encoding": "MI", "description": "AND imm16 with r/m16; set SF, ZF, PF according to result."}, {"opcode": "F7 /0 id", "instruction": "TEST r/m32, imm32", "operand_encoding": "MI", "description": "AND imm32 with r/m32; set SF, ZF, PF according to result."}, {"opcode": "REX.W + F7 /0 id", "instruction": "TEST r/m64, imm32", "operand_encoding": "MI", "description": "AND imm32 sign-extended to 64-bits with r/m64; set SF, ZF, PF according to result."}, {"opcode": "84 /r", "instruction": "TEST r/m8, r8", "operand_encoding": "MR", "description": "AND r8 with r/m8; set SF, ZF, PF according to result."}, {"opcode": "REX + 84 /r", "instruction": "TEST r/m8*, r8*", "operand_encoding": "MR", "description": "AND r8 with r/m8; set SF, ZF, PF according to result."}, {"opcode": "85 /r", "instruction": "TEST r/m16, r16", "operand_encoding": "MR", "description": "AND r16 with r/m16; set SF, ZF, PF according to result."}, {"opcode": "85 /r", "instruction": "TEST r/m32, r32", "operand_encoding": "MR", "description": "AND r32 with r/m32; set SF, ZF, PF according to result."}, {"opcode": "REX.W + 85 /r", "instruction": "TEST r/m64, r64", "operand_encoding": "MR", "description": "AND r64 with r/m64; set SF, ZF, PF according to result."}]
+[
+  {
+    "opcode": "A8 ib",
+    "instruction": "TEST AL, imm8",
+    "operand_encoding": "I",
+    "description": "AND imm8 with AL; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "A9 iw",
+    "instruction": "TEST AX, imm16",
+    "operand_encoding": "I",
+    "description": "AND imm16 with AX; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "A9 id",
+    "instruction": "TEST EAX, imm32",
+    "operand_encoding": "I",
+    "description": "AND imm32 with EAX; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "REX.W + A9 id",
+    "instruction": "TEST RAX, imm32",
+    "operand_encoding": "I",
+    "description": "AND imm32 sign-extended to 64-bits with RAX; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "F6 /0 ib",
+    "instruction": "TEST r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "AND imm8 with r/m8; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "REX + F6 /0 ib",
+    "instruction": "TEST r/m8*, imm8",
+    "operand_encoding": "MI",
+    "description": "AND imm8 with r/m8; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "F7 /0 iw",
+    "instruction": "TEST r/m16, imm16",
+    "operand_encoding": "MI",
+    "description": "AND imm16 with r/m16; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "F7 /0 id",
+    "instruction": "TEST r/m32, imm32",
+    "operand_encoding": "MI",
+    "description": "AND imm32 with r/m32; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "REX.W + F7 /0 id",
+    "instruction": "TEST r/m64, imm32",
+    "operand_encoding": "MI",
+    "description": "AND imm32 sign-extended to 64-bits with r/m64; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "84 /r",
+    "instruction": "TEST r/m8, r8",
+    "operand_encoding": "MR",
+    "description": "AND r8 with r/m8; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "REX + 84 /r",
+    "instruction": "TEST r/m8*, r8*",
+    "operand_encoding": "MR",
+    "description": "AND r8 with r/m8; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "85 /r",
+    "instruction": "TEST r/m16, r16",
+    "operand_encoding": "MR",
+    "description": "AND r16 with r/m16; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "85 /r",
+    "instruction": "TEST r/m32, r32",
+    "operand_encoding": "MR",
+    "description": "AND r32 with r/m32; set SF, ZF, PF according to result."
+  },
+  {
+    "opcode": "REX.W + 85 /r",
+    "instruction": "TEST r/m64, r64",
+    "operand_encoding": "MR",
+    "description": "AND r64 with r/m64; set SF, ZF, PF according to result."
+  }
+]

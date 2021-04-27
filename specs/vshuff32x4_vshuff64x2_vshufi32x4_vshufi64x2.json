@@ -1,1 +1,50 @@
-[{"opcode": "EVEX.256.66.0F3A.W0 23 /r ib", "instruction": "VSHUFF32X4 ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Shuffle 128-bit packed single-precision floating-point values selected by imm8 from ymm2 and ymm3/m256/m32bcst and place results in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 23 /r ib VSHUFF32x4 zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst, imm8", "instruction": "", "operand_encoding": "A", "description": "Shuffle 128-bit packed single-precision floating-point values selected by imm8 from zmm2 and zmm3/m512/m32bcst and place results in zmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 23 /r ib", "instruction": "VSHUFF64X2 ymm1{k1}{z}, ymm2, ymm3/m256/m64bcst, imm8", "operand_encoding": "A", "description": "Shuffle 128-bit packed double-precision floating-point values selected by imm8 from ymm2 and ymm3/m256/m64bcst and place results in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 23 /r ib VSHUFF64x2 zmm1{k1}{z}, zmm2, zmm3/m512/m64bcst, imm8", "instruction": "", "operand_encoding": "A", "description": "Shuffle 128-bit packed double-precision floating-point values selected by imm8 from zmm2 and zmm3/m512/m64bcst and place results in zmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W0 43 /r ib", "instruction": "VSHUFI32X4 ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Shuffle 128-bit packed double-word values selected by imm8 from ymm2 and ymm3/m256/m32bcst and place results in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 43 /r ib VSHUFI32x4 zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst, imm8", "instruction": "", "operand_encoding": "A", "description": "Shuffle 128-bit packed double-word values selected by imm8 from zmm2 and zmm3/m512/m32bcst and place results in zmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 43 /r ib", "instruction": "VSHUFI64X2 ymm1{k1}{z}, ymm2, ymm3/m256/m64bcst, imm8", "operand_encoding": "A", "description": "Shuffle 128-bit packed quad-word values selected by imm8 from ymm2 and ymm3/m256/m64bcst and place results in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 43 /r ib VSHUFI64x2 zmm1{k1}{z}, zmm2, zmm3/m512/m64bcst, imm8", "instruction": "", "operand_encoding": "A", "description": "Shuffle 128-bit packed quad-word values selected by imm8 from zmm2 and zmm3/m512/m64bcst and place results in zmm1 subject to writemask k1."}]
+[
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 23 /r ib",
+    "instruction": "VSHUFF32X4 ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed single-precision floating-point values selected by imm8 from ymm2 and ymm3/m256/m32bcst and place results in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 23 /r ib VSHUFF32x4 zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst, imm8",
+    "instruction": "",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed single-precision floating-point values selected by imm8 from zmm2 and zmm3/m512/m32bcst and place results in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 23 /r ib",
+    "instruction": "VSHUFF64X2 ymm1{k1}{z}, ymm2, ymm3/m256/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed double-precision floating-point values selected by imm8 from ymm2 and ymm3/m256/m64bcst and place results in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 23 /r ib VSHUFF64x2 zmm1{k1}{z}, zmm2, zmm3/m512/m64bcst, imm8",
+    "instruction": "",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed double-precision floating-point values selected by imm8 from zmm2 and zmm3/m512/m64bcst and place results in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 43 /r ib",
+    "instruction": "VSHUFI32X4 ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed double-word values selected by imm8 from ymm2 and ymm3/m256/m32bcst and place results in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 43 /r ib VSHUFI32x4 zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst, imm8",
+    "instruction": "",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed double-word values selected by imm8 from zmm2 and zmm3/m512/m32bcst and place results in zmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 43 /r ib",
+    "instruction": "VSHUFI64X2 ymm1{k1}{z}, ymm2, ymm3/m256/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed quad-word values selected by imm8 from ymm2 and ymm3/m256/m64bcst and place results in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 43 /r ib VSHUFI64x2 zmm1{k1}{z}, zmm2, zmm3/m512/m64bcst, imm8",
+    "instruction": "",
+    "operand_encoding": "A",
+    "description": "Shuffle 128-bit packed quad-word values selected by imm8 from zmm2 and zmm3/m512/m64bcst and place results in zmm1 subject to writemask k1."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "66 0F AE /6", "instruction": "CLWB m8", "operand_encoding": "M", "description": "Writes back modified cache line containing m8, and may retain the line in cache hierarchy in non-modified state."}]
+[
+  {
+    "opcode": "66 0F AE /6",
+    "instruction": "CLWB m8",
+    "operand_encoding": "M",
+    "description": "Writes back modified cache line containing m8, and may retain the line in cache hierarchy in non-modified state."
+  }
+]

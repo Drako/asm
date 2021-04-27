@@ -1,1 +1,20 @@
-[{"opcode": "NFx 0F C7 /6", "instruction": "RDRAND r16", "operand_encoding": "M", "description": "Read a 16-bit random number and store in the destination register."}, {"opcode": "NFx 0F C7 /6", "instruction": "RDRAND r32", "operand_encoding": "M", "description": "Read a 32-bit random number and store in the destination register."}, {"opcode": "NFx", "instruction": "RDRAND r64", "operand_encoding": "M", "description": "Read a 64-bit random number and store in the destination register."}]
+[
+  {
+    "opcode": "NFx 0F C7 /6",
+    "instruction": "RDRAND r16",
+    "operand_encoding": "M",
+    "description": "Read a 16-bit random number and store in the destination register."
+  },
+  {
+    "opcode": "NFx 0F C7 /6",
+    "instruction": "RDRAND r32",
+    "operand_encoding": "M",
+    "description": "Read a 32-bit random number and store in the destination register."
+  },
+  {
+    "opcode": "NFx",
+    "instruction": "RDRAND r64",
+    "operand_encoding": "M",
+    "description": "Read a 64-bit random number and store in the destination register."
+  }
+]

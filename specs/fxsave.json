@@ -1,1 +1,14 @@
-[{"opcode": "NP 0F AE /0", "instruction": "FXSAVE m512byte", "operand_encoding": "M", "description": "Save the x87 FPU, MMX, XMM, and MXCSR register state to m512byte."}, {"opcode": "NP", "instruction": "FXSAVE64 m512byte", "operand_encoding": "M", "description": "Save the x87 FPU, MMX, XMM, and MXCSR register state to m512byte."}]
+[
+  {
+    "opcode": "NP 0F AE /0",
+    "instruction": "FXSAVE m512byte",
+    "operand_encoding": "M",
+    "description": "Save the x87 FPU, MMX, XMM, and MXCSR register state to m512byte."
+  },
+  {
+    "opcode": "NP",
+    "instruction": "FXSAVE64 m512byte",
+    "operand_encoding": "M",
+    "description": "Save the x87 FPU, MMX, XMM, and MXCSR register state to m512byte."
+  }
+]

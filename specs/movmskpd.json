@@ -1,1 +1,20 @@
-[{"opcode": "66 0F 50 /r", "instruction": "MOVMSKPD reg, xmm", "operand_encoding": "RM", "description": "Extract 2-bit sign mask from xmm and store in reg. The upper bits of r32 or r64 are filled with zeros."}, {"opcode": "VEX.128.66.0F.WIG 50 /r", "instruction": "VMOVMSKPD reg, xmm2", "operand_encoding": "RM", "description": "Extract 2-bit sign mask from xmm2 and store in reg. The upper bits of r32 or r64 are zeroed."}, {"opcode": "VEX.256.66.0F.WIG 50 /r", "instruction": "VMOVMSKPD reg, ymm2", "operand_encoding": "RM", "description": "Extract 4-bit sign mask from ymm2 and store in reg. The upper bits of r32 or r64 are zeroed."}]
+[
+  {
+    "opcode": "66 0F 50 /r",
+    "instruction": "MOVMSKPD reg, xmm",
+    "operand_encoding": "RM",
+    "description": "Extract 2-bit sign mask from xmm and store in reg. The upper bits of r32 or r64 are filled with zeros."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 50 /r",
+    "instruction": "VMOVMSKPD reg, xmm2",
+    "operand_encoding": "RM",
+    "description": "Extract 2-bit sign mask from xmm2 and store in reg. The upper bits of r32 or r64 are zeroed."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 50 /r",
+    "instruction": "VMOVMSKPD reg, ymm2",
+    "operand_encoding": "RM",
+    "description": "Extract 4-bit sign mask from ymm2 and store in reg. The upper bits of r32 or r64 are zeroed."
+  }
+]

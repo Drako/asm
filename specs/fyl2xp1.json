@@ -1,1 +1,8 @@
-[{"opcode": "D9 F9", "instruction": "FYL2XP1", "operand_encoding": "ZO", "description": "Replace ST(1) with ST(1) \u2217 log2(ST(0) + 1.0) and pop the register stack."}]
+[
+  {
+    "opcode": "D9 F9",
+    "instruction": "FYL2XP1",
+    "operand_encoding": "ZO",
+    "description": "Replace ST(1) with ST(1) \u2217 log2(ST(0) + 1.0) and pop the register stack."
+  }
+]

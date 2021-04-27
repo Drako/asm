@@ -1,1 +1,20 @@
-[{"opcode": "F3 0F BD /r", "instruction": "LZCNT r16, r/m16", "operand_encoding": "RM", "description": "Count the number of leading zero bits in r/m16, return result in r16."}, {"opcode": "F3 0F BD /r", "instruction": "LZCNT r32, r/m32", "operand_encoding": "RM", "description": "Count the number of leading zero bits in r/m32, return result in r32."}, {"opcode": "F3 REX.W 0F BD /r", "instruction": "LZCNT r64, r/m64", "operand_encoding": "RM", "description": "Count the number of leading zero bits in r/m64, return result in r64."}]
+[
+  {
+    "opcode": "F3 0F BD /r",
+    "instruction": "LZCNT r16, r/m16",
+    "operand_encoding": "RM",
+    "description": "Count the number of leading zero bits in r/m16, return result in r16."
+  },
+  {
+    "opcode": "F3 0F BD /r",
+    "instruction": "LZCNT r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "Count the number of leading zero bits in r/m32, return result in r32."
+  },
+  {
+    "opcode": "F3 REX.W 0F BD /r",
+    "instruction": "LZCNT r64, r/m64",
+    "operand_encoding": "RM",
+    "description": "Count the number of leading zero bits in r/m64, return result in r64."
+  }
+]

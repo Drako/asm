@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 01 D6", "instruction": "XTEST", "operand_encoding": "A", "description": "Test if executing in a transactional region"}]
+[
+  {
+    "opcode": "NP 0F 01 D6",
+    "instruction": "XTEST",
+    "operand_encoding": "A",
+    "description": "Test if executing in a transactional region"
+  }
+]

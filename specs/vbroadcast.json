@@ -1,1 +1,122 @@
-[{"opcode": "VEX.128.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS xmm1, m32", "operand_encoding": "A", "description": "Broadcast single-precision floating-point element in mem to four locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS ymm1, m32", "operand_encoding": "A", "description": "Broadcast single-precision floating-point element in mem to eight locations in ymm1."}, {"opcode": "VEX.256.66.0F38.W0 19 /r", "instruction": "VBROADCASTSD ymm1, m64", "operand_encoding": "A", "description": "Broadcast double-precision floating-point element in mem to four locations in ymm1."}, {"opcode": "VEX.256.66.0F38.W0 1A /r", "instruction": "VBROADCASTF128 ymm1, m128", "operand_encoding": "A", "description": "Broadcast 128 bits of floating-point data in mem to low and high 128-bits in ymm1."}, {"opcode": "VEX.128.66.0F38.W0 18/r", "instruction": "VBROADCASTSS xmm1, xmm2", "operand_encoding": "A", "description": "Broadcast the low single-precision floating-point element in the source operand to four locations in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS ymm1, xmm2", "operand_encoding": "A", "description": "Broadcast low single-precision floating-point element in the source operand to eight locations in ymm1."}, {"opcode": "VEX.256.66.0F38.W0 19 /r", "instruction": "VBROADCASTSD ymm1, xmm2", "operand_encoding": "A", "description": "Broadcast low double-precision floating-point element in the source operand to four locations in ymm1."}, {"opcode": "EVEX.256.66.0F38.W1 19 /r", "instruction": "VBROADCASTSD ymm1 {k1}{z}, xmm2/m64", "operand_encoding": "B", "description": "Broadcast low double-precision floating-point element in xmm2/m64 to four locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 19 /r", "instruction": "VBROADCASTSD zmm1 {k1}{z}, xmm2/m64", "operand_encoding": "B", "description": "Broadcast low double-precision floating-point element in xmm2/m64 to eight locations in zmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 19 /r", "instruction": "VBROADCASTF32X2 ymm1 {k1}{z}, xmm2/m64", "operand_encoding": "C", "description": "Broadcast two single-precision floating-point elements in xmm2/m64 to locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 19 /r", "instruction": "VBROADCASTF32X2 zmm1 {k1}{z}, xmm2/m64", "operand_encoding": "C", "description": "Broadcast two single-precision floating-point elements in xmm2/m64 to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.128.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS xmm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in xmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS ymm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 18 /r", "instruction": "VBROADCASTSS zmm1 {k1}{z}, xmm2/m32", "operand_encoding": "B", "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in zmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 1A /r", "instruction": "VBROADCASTF32X4 ymm1 {k1}{z}, m128", "operand_encoding": "D", "description": "Broadcast 128 bits of 4 single-precision floating-point data in mem to locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 1A /r", "instruction": "VBROADCASTF32X4 zmm1 {k1}{z}, m128", "operand_encoding": "D", "description": "Broadcast 128 bits of 4 single-precision floating-point data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 1A /r", "instruction": "VBROADCASTF64X2 ymm1 {k1}{z}, m128", "operand_encoding": "C", "description": "Broadcast 128 bits of 2 double-precision floating-point data in mem to locations in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 1A /r", "instruction": "VBROADCASTF64X2 zmm1 {k1}{z}, m128", "operand_encoding": "C", "description": "Broadcast 128 bits of 2 double-precision floating-point data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 1B /r", "instruction": "VBROADCASTF32X8 zmm1 {k1}{z}, m256", "operand_encoding": "E", "description": "Broadcast 256 bits of 8 single-precision floating-point data in mem to locations in zmm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 1B /r", "instruction": "VBROADCASTF64X4 zmm1 {k1}{z}, m256", "operand_encoding": "D", "description": "Broadcast 256 bits of 4 double-precision floating-point data in mem to locations in zmm1 using writemask k1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS xmm1, m32",
+    "operand_encoding": "A",
+    "description": "Broadcast single-precision floating-point element in mem to four locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS ymm1, m32",
+    "operand_encoding": "A",
+    "description": "Broadcast single-precision floating-point element in mem to eight locations in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 19 /r",
+    "instruction": "VBROADCASTSD ymm1, m64",
+    "operand_encoding": "A",
+    "description": "Broadcast double-precision floating-point element in mem to four locations in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 1A /r",
+    "instruction": "VBROADCASTF128 ymm1, m128",
+    "operand_encoding": "A",
+    "description": "Broadcast 128 bits of floating-point data in mem to low and high 128-bits in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 18/r",
+    "instruction": "VBROADCASTSS xmm1, xmm2",
+    "operand_encoding": "A",
+    "description": "Broadcast the low single-precision floating-point element in the source operand to four locations in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS ymm1, xmm2",
+    "operand_encoding": "A",
+    "description": "Broadcast low single-precision floating-point element in the source operand to eight locations in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 19 /r",
+    "instruction": "VBROADCASTSD ymm1, xmm2",
+    "operand_encoding": "A",
+    "description": "Broadcast low double-precision floating-point element in the source operand to four locations in ymm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 19 /r",
+    "instruction": "VBROADCASTSD ymm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "B",
+    "description": "Broadcast low double-precision floating-point element in xmm2/m64 to four locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 19 /r",
+    "instruction": "VBROADCASTSD zmm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "B",
+    "description": "Broadcast low double-precision floating-point element in xmm2/m64 to eight locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 19 /r",
+    "instruction": "VBROADCASTF32X2 ymm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "C",
+    "description": "Broadcast two single-precision floating-point elements in xmm2/m64 to locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 19 /r",
+    "instruction": "VBROADCASTF32X2 zmm1 {k1}{z}, xmm2/m64",
+    "operand_encoding": "C",
+    "description": "Broadcast two single-precision floating-point elements in xmm2/m64 to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS xmm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS ymm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 18 /r",
+    "instruction": "VBROADCASTSS zmm1 {k1}{z}, xmm2/m32",
+    "operand_encoding": "B",
+    "description": "Broadcast low single-precision floating-point element in xmm2/m32 to all locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 1A /r",
+    "instruction": "VBROADCASTF32X4 ymm1 {k1}{z}, m128",
+    "operand_encoding": "D",
+    "description": "Broadcast 128 bits of 4 single-precision floating-point data in mem to locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 1A /r",
+    "instruction": "VBROADCASTF32X4 zmm1 {k1}{z}, m128",
+    "operand_encoding": "D",
+    "description": "Broadcast 128 bits of 4 single-precision floating-point data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 1A /r",
+    "instruction": "VBROADCASTF64X2 ymm1 {k1}{z}, m128",
+    "operand_encoding": "C",
+    "description": "Broadcast 128 bits of 2 double-precision floating-point data in mem to locations in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 1A /r",
+    "instruction": "VBROADCASTF64X2 zmm1 {k1}{z}, m128",
+    "operand_encoding": "C",
+    "description": "Broadcast 128 bits of 2 double-precision floating-point data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 1B /r",
+    "instruction": "VBROADCASTF32X8 zmm1 {k1}{z}, m256",
+    "operand_encoding": "E",
+    "description": "Broadcast 256 bits of 8 single-precision floating-point data in mem to locations in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 1B /r",
+    "instruction": "VBROADCASTF64X4 zmm1 {k1}{z}, m256",
+    "operand_encoding": "D",
+    "description": "Broadcast 256 bits of 4 double-precision floating-point data in mem to locations in zmm1 using writemask k1."
+  }
+]

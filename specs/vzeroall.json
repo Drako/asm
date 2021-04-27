@@ -1,1 +1,8 @@
-[{"opcode": "VEX.256.0F.WIG 77", "instruction": "VZEROALL", "operand_encoding": "ZO", "description": "Zero all YMM registers."}]
+[
+  {
+    "opcode": "VEX.256.0F.WIG 77",
+    "instruction": "VZEROALL",
+    "operand_encoding": "ZO",
+    "description": "Zero all YMM registers."
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "F2 0F 38 F0 /r", "instruction": "CRC32 r32, r/m8", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m8."}, {"opcode": "F2", "instruction": "CRC32 r32, r/m8", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m8."}, {"opcode": "F2 0F 38 F1 /r", "instruction": "CRC32 r32, r/m16", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m16."}, {"opcode": "F2 0F 38 F1 /r", "instruction": "CRC32 r32, r/m32", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m32."}, {"opcode": "F2", "instruction": "CRC32 r64, r/m8", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m8."}, {"opcode": "F2", "instruction": "CRC32 r64, r/m64", "operand_encoding": "RM", "description": "Accumulate CRC32 on r/m64."}]
+[
+  {
+    "opcode": "F2 0F 38 F0 /r",
+    "instruction": "CRC32 r32, r/m8",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m8."
+  },
+  {
+    "opcode": "F2",
+    "instruction": "CRC32 r32, r/m8",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m8."
+  },
+  {
+    "opcode": "F2 0F 38 F1 /r",
+    "instruction": "CRC32 r32, r/m16",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m16."
+  },
+  {
+    "opcode": "F2 0F 38 F1 /r",
+    "instruction": "CRC32 r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m32."
+  },
+  {
+    "opcode": "F2",
+    "instruction": "CRC32 r64, r/m8",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m8."
+  },
+  {
+    "opcode": "F2",
+    "instruction": "CRC32 r64, r/m64",
+    "operand_encoding": "RM",
+    "description": "Accumulate CRC32 on r/m64."
+  }
+]

@@ -1,1 +1,62 @@
-[{"opcode": "VEX.128.66.0F38.W0 0D /r", "instruction": "VPERMILPD xmm1, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Permute double-precision floating-point values in xmm2 using controls from xmm3/m128 and store result in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 0D /r", "instruction": "VPERMILPD ymm1, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Permute double-precision floating-point values in ymm2 using controls from ymm3/m256 and store result in ymm1."}, {"opcode": "EVEX.128.66.0F38.W1 0D /r", "instruction": "VPERMILPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "C", "description": "Permute double-precision floating-point values in xmm2 using control from xmm3/m128/m64bcst and store the result in xmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 0D /r", "instruction": "VPERMILPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "C", "description": "Permute double-precision floating-point values in ymm2 using control from ymm3/m256/m64bcst and store the result in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 0D /r", "instruction": "VPERMILPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "C", "description": "Permute double-precision floating-point values in zmm2 using control from zmm3/m512/m64bcst and store the result in zmm1 using writemask k1."}, {"opcode": "VEX.128.66.0F3A.W0 05 /r ib", "instruction": "VPERMILPD xmm1, xmm2/m128, imm8", "operand_encoding": "B", "description": "Permute double-precision floating-point values in xmm2/m128 using controls from imm8."}, {"opcode": "VEX.256.66.0F3A.W0 05 /r ib", "instruction": "VPERMILPD ymm1, ymm2/m256, imm8", "operand_encoding": "B", "description": "Permute double-precision floating-point values in ymm2/m256 using controls from imm8."}, {"opcode": "EVEX.128.66.0F3A.W1 05 /r ib", "instruction": "VPERMILPD xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8", "operand_encoding": "D", "description": "Permute double-precision floating-point values in xmm2/m128/m64bcst using controls from imm8 and store the result in xmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 05 /r ib", "instruction": "VPERMILPD ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8", "operand_encoding": "D", "description": "Permute double-precision floating-point values in ymm2/m256/m64bcst using controls from imm8 and store the result in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 05 /r ib", "instruction": "VPERMILPD zmm1 {k1}{z}, zmm2/m512/m64bcst, imm8", "operand_encoding": "D", "description": "Permute double-precision floating-point values in zmm2/m512/m64bcst using controls from imm8 and store the result in zmm1 using writemask k1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 0D /r",
+    "instruction": "VPERMILPD xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Permute double-precision floating-point values in xmm2 using controls from xmm3/m128 and store result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 0D /r",
+    "instruction": "VPERMILPD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Permute double-precision floating-point values in ymm2 using controls from ymm3/m256 and store result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 0D /r",
+    "instruction": "VPERMILPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "C",
+    "description": "Permute double-precision floating-point values in xmm2 using control from xmm3/m128/m64bcst and store the result in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 0D /r",
+    "instruction": "VPERMILPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "C",
+    "description": "Permute double-precision floating-point values in ymm2 using control from ymm3/m256/m64bcst and store the result in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 0D /r",
+    "instruction": "VPERMILPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "C",
+    "description": "Permute double-precision floating-point values in zmm2 using control from zmm3/m512/m64bcst and store the result in zmm1 using writemask k1."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.W0 05 /r ib",
+    "instruction": "VPERMILPD xmm1, xmm2/m128, imm8",
+    "operand_encoding": "B",
+    "description": "Permute double-precision floating-point values in xmm2/m128 using controls from imm8."
+  },
+  {
+    "opcode": "VEX.256.66.0F3A.W0 05 /r ib",
+    "instruction": "VPERMILPD ymm1, ymm2/m256, imm8",
+    "operand_encoding": "B",
+    "description": "Permute double-precision floating-point values in ymm2/m256 using controls from imm8."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 05 /r ib",
+    "instruction": "VPERMILPD xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8",
+    "operand_encoding": "D",
+    "description": "Permute double-precision floating-point values in xmm2/m128/m64bcst using controls from imm8 and store the result in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 05 /r ib",
+    "instruction": "VPERMILPD ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8",
+    "operand_encoding": "D",
+    "description": "Permute double-precision floating-point values in ymm2/m256/m64bcst using controls from imm8 and store the result in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 05 /r ib",
+    "instruction": "VPERMILPD zmm1 {k1}{z}, zmm2/m512/m64bcst, imm8",
+    "operand_encoding": "D",
+    "description": "Permute double-precision floating-point values in zmm2/m512/m64bcst using controls from imm8 and store the result in zmm1 using writemask k1."
+  }
+]

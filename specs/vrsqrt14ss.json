@@ -1,1 +1,8 @@
-[{"opcode": "EVEX.LIG.66.0F38.W0 4F /r", "instruction": "VRSQRT14SS xmm1 {k1}{z}, xmm2, xmm3/m32", "operand_encoding": "A", "description": "Computes the approximate reciprocal square root of the scalar single-precision floating-point value in xmm3/m32 and stores the result in the low doubleword element of xmm1 using writemask k1. Bits[127:32] of xmm2 is copied to xmm1[127:32]."}]
+[
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 4F /r",
+    "instruction": "VRSQRT14SS xmm1 {k1}{z}, xmm2, xmm3/m32",
+    "operand_encoding": "A",
+    "description": "Computes the approximate reciprocal square root of the scalar single-precision floating-point value in xmm3/m32 and stores the result in the low doubleword element of xmm1 using writemask k1. Bits[127:32] of xmm2 is copied to xmm1[127:32]."
+  }
+]

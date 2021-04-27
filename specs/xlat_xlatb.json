@@ -1,1 +1,20 @@
-[{"opcode": "D7", "instruction": "XLAT m8", "operand_encoding": "ZO", "description": "Set AL to memory byte DS:[(E)BX + unsigned AL]."}, {"opcode": "D7", "instruction": "XLATB", "operand_encoding": "ZO", "description": "Set AL to memory byte DS:[(E)BX + unsigned AL]."}, {"opcode": "REX.W + D7", "instruction": "XLATB", "operand_encoding": "ZO", "description": "Set AL to memory byte [RBX + unsigned AL]."}]
+[
+  {
+    "opcode": "D7",
+    "instruction": "XLAT m8",
+    "operand_encoding": "ZO",
+    "description": "Set AL to memory byte DS:[(E)BX + unsigned AL]."
+  },
+  {
+    "opcode": "D7",
+    "instruction": "XLATB",
+    "operand_encoding": "ZO",
+    "description": "Set AL to memory byte DS:[(E)BX + unsigned AL]."
+  },
+  {
+    "opcode": "REX.W + D7",
+    "instruction": "XLATB",
+    "operand_encoding": "ZO",
+    "description": "Set AL to memory byte [RBX + unsigned AL]."
+  }
+]

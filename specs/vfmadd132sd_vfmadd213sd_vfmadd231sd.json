@@ -1,1 +1,38 @@
-[{"opcode": "VEX.LIG.66.0F38.W1 99 /r", "instruction": "VFMADD132SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, add to xmm2 and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W1 A9 /r", "instruction": "VFMADD213SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, add to xmm3/m64 and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W1 B9 /r", "instruction": "VFMADD231SD xmm1, xmm2, xmm3/m64", "operand_encoding": "A", "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, add to xmm1 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 99 /r", "instruction": "VFMADD132SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, add to xmm2 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 A9 /r", "instruction": "VFMADD213SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, add to xmm3/m64 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W1 B9 /r", "instruction": "VFMADD231SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "B", "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, add to xmm1 and put result in xmm1."}]
+[
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 99 /r",
+    "instruction": "VFMADD132SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, add to xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 A9 /r",
+    "instruction": "VFMADD213SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, add to xmm3/m64 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W1 B9 /r",
+    "instruction": "VFMADD231SD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "A",
+    "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, add to xmm1 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 99 /r",
+    "instruction": "VFMADD132SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm3/m64, add to xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 A9 /r",
+    "instruction": "VFMADD213SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm1 and xmm2, add to xmm3/m64 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W1 B9 /r",
+    "instruction": "VFMADD231SD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar double-precision floating-point value from xmm2 and xmm3/m64, add to xmm1 and put result in xmm1."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 70 /r ib", "instruction": "PSHUFW mm1, mm2/m64, imm8", "operand_encoding": "RMI", "description": "Shuffle the words in mm2/m64 based on the encoding in imm8 and store the result in mm1."}]
+[
+  {
+    "opcode": "NP 0F 70 /r ib",
+    "instruction": "PSHUFW mm1, mm2/m64, imm8",
+    "operand_encoding": "RMI",
+    "description": "Shuffle the words in mm2/m64 based on the encoding in imm8 and store the result in mm1."
+  }
+]

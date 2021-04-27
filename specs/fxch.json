@@ -1,1 +1,14 @@
-[{"opcode": "D9 C8+i", "instruction": "FXCH ST(i)", "operand_encoding": "ZO", "description": "Exchange the contents of ST(0) and ST(i)."}, {"opcode": "D9 C9", "instruction": "FXCH", "operand_encoding": "ZO", "description": "Exchange the contents of ST(0) and ST(1)."}]
+[
+  {
+    "opcode": "D9 C8+i",
+    "instruction": "FXCH ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Exchange the contents of ST(0) and ST(i)."
+  },
+  {
+    "opcode": "D9 C9",
+    "instruction": "FXCH",
+    "operand_encoding": "ZO",
+    "description": "Exchange the contents of ST(0) and ST(1)."
+  }
+]

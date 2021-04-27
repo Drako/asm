@@ -1,1 +1,8 @@
-[{"opcode": "EVEX.LIG.66.0F38.W0 4D /r", "instruction": "VRCP14SS xmm1 {k1}{z}, xmm2, xmm3/m32", "operand_encoding": "A", "description": "Computes the approximate reciprocal of the scalar single-precision floating-point value in xmm3/m32 and stores the results in xmm1 using writemask k1. Also, upper double-precision floating-point value (bits[127:32]) from xmm2 is copied to xmm1[127:32]."}]
+[
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 4D /r",
+    "instruction": "VRCP14SS xmm1 {k1}{z}, xmm2, xmm3/m32",
+    "operand_encoding": "A",
+    "description": "Computes the approximate reciprocal of the scalar single-precision floating-point value in xmm3/m32 and stores the results in xmm1 using writemask k1. Also, upper double-precision floating-point value (bits[127:32]) from xmm2 is copied to xmm1[127:32]."
+  }
+]

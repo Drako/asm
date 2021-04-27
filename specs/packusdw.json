@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 38 2B /r", "instruction": "PACKUSDW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Convert 4 packed signed doubleword integers from xmm1 and 4 packed signed doubleword integers from xmm2/m128 into 8 packed unsigned word integers in xmm1 using unsigned saturation."}, {"opcode": "VEX.128.66.0F38 2B /r", "instruction": "VPACKUSDW xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Convert 4 packed signed doubleword integers from xmm2 and 4 packed signed doubleword integers from xmm3/m128 into 8 packed unsigned word integers in xmm1 using unsigned saturation."}, {"opcode": "VEX.256.66.0F38 2B /r", "instruction": "VPACKUSDW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Convert 8 packed signed doubleword integers from ymm2 and 8 packed signed doubleword integers from ymm3/m256 into 16 packed unsigned word integers in ymm1 using unsigned saturation."}, {"opcode": "EVEX.128.66.0F38.W0 2B /r", "instruction": "VPACKUSDW xmm1{k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "C", "description": "Convert packed signed doubleword integers from xmm2 and packed signed doubleword integers from xmm3/m128/m32bcst into packed unsigned word integers in xmm1 using unsigned saturation under writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 2B /r", "instruction": "VPACKUSDW ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "C", "description": "Convert packed signed doubleword integers from ymm2 and packed signed doubleword integers from ymm3/m256/m32bcst into packed unsigned word integers in ymm1 using unsigned saturation under writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 2B /r", "instruction": "VPACKUSDW zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "C", "description": "Convert packed signed doubleword integers from zmm2 and packed signed doubleword integers from zmm3/m512/m32bcst into packed unsigned word integers in zmm1 using unsigned saturation under writemask k1."}]
+[
+  {
+    "opcode": "66 0F 38 2B /r",
+    "instruction": "PACKUSDW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Convert 4 packed signed doubleword integers from xmm1 and 4 packed signed doubleword integers from xmm2/m128 into 8 packed unsigned word integers in xmm1 using unsigned saturation."
+  },
+  {
+    "opcode": "VEX.128.66.0F38 2B /r",
+    "instruction": "VPACKUSDW xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Convert 4 packed signed doubleword integers from xmm2 and 4 packed signed doubleword integers from xmm3/m128 into 8 packed unsigned word integers in xmm1 using unsigned saturation."
+  },
+  {
+    "opcode": "VEX.256.66.0F38 2B /r",
+    "instruction": "VPACKUSDW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Convert 8 packed signed doubleword integers from ymm2 and 8 packed signed doubleword integers from ymm3/m256 into 16 packed unsigned word integers in ymm1 using unsigned saturation."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 2B /r",
+    "instruction": "VPACKUSDW xmm1{k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "C",
+    "description": "Convert packed signed doubleword integers from xmm2 and packed signed doubleword integers from xmm3/m128/m32bcst into packed unsigned word integers in xmm1 using unsigned saturation under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 2B /r",
+    "instruction": "VPACKUSDW ymm1{k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "C",
+    "description": "Convert packed signed doubleword integers from ymm2 and packed signed doubleword integers from ymm3/m256/m32bcst into packed unsigned word integers in ymm1 using unsigned saturation under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 2B /r",
+    "instruction": "VPACKUSDW zmm1{k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "C",
+    "description": "Convert packed signed doubleword integers from zmm2 and packed signed doubleword integers from zmm3/m512/m32bcst into packed unsigned word integers in zmm1 using unsigned saturation under writemask k1."
+  }
+]

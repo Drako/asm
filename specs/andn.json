@@ -1,1 +1,14 @@
-[{"opcode": "VEX.LZ.0F38.W0 F2 /r", "instruction": "ANDN r32a, r32b, r/m32", "operand_encoding": "RVM", "description": "Bitwise AND of inverted r32b with r/m32, store result in r32a."}, {"opcode": "VEX.LZ.", "instruction": "ANDN r64a, r64b, r/m64", "operand_encoding": "RVM", "description": "Bitwise AND of inverted r64b with r/m64, store result in r64a."}]
+[
+  {
+    "opcode": "VEX.LZ.0F38.W0 F2 /r",
+    "instruction": "ANDN r32a, r32b, r/m32",
+    "operand_encoding": "RVM",
+    "description": "Bitwise AND of inverted r32b with r/m32, store result in r32a."
+  },
+  {
+    "opcode": "VEX.LZ.",
+    "instruction": "ANDN r64a, r64b, r/m64",
+    "operand_encoding": "RVM",
+    "description": "Bitwise AND of inverted r64b with r/m64, store result in r64a."
+  }
+]

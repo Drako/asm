@@ -1,1 +1,38 @@
-[{"opcode": "VEX.LZ.F3.0F38.W0 F7 /r", "instruction": "SARX r32a, r/m32, r32b", "operand_encoding": "RMV", "description": "Shift r/m32 arithmetically right with count specified in r32b."}, {"opcode": "VEX.LZ.66.0F38.W0 F7 /r", "instruction": "SHLX r32a, r/m32, r32b", "operand_encoding": "RMV", "description": "Shift r/m32 logically left with count specified in r32b."}, {"opcode": "VEX.LZ.F2.0F38.W0 F7 /r", "instruction": "SHRX r32a, r/m32, r32b", "operand_encoding": "RMV", "description": "Shift r/m32 logically right with count specified in r32b."}, {"opcode": "VEX.LZ.F3.0F38.W1 F7 /r", "instruction": "SARX r64a, r/m64, r64b", "operand_encoding": "RMV", "description": "Shift r/m64 arithmetically right with count specified in r64b."}, {"opcode": "VEX.LZ.66.0F38.W1 F7 /r", "instruction": "SHLX r64a, r/m64, r64b", "operand_encoding": "RMV", "description": "Shift r/m64 logically left with count specified in r64b."}, {"opcode": "VEX.LZ.F2.0F38.W1 F7 /r", "instruction": "SHRX r64a, r/m64, r64b", "operand_encoding": "RMV", "description": "Shift r/m64 logically right with count specified in r64b."}]
+[
+  {
+    "opcode": "VEX.LZ.F3.0F38.W0 F7 /r",
+    "instruction": "SARX r32a, r/m32, r32b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m32 arithmetically right with count specified in r32b."
+  },
+  {
+    "opcode": "VEX.LZ.66.0F38.W0 F7 /r",
+    "instruction": "SHLX r32a, r/m32, r32b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m32 logically left with count specified in r32b."
+  },
+  {
+    "opcode": "VEX.LZ.F2.0F38.W0 F7 /r",
+    "instruction": "SHRX r32a, r/m32, r32b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m32 logically right with count specified in r32b."
+  },
+  {
+    "opcode": "VEX.LZ.F3.0F38.W1 F7 /r",
+    "instruction": "SARX r64a, r/m64, r64b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m64 arithmetically right with count specified in r64b."
+  },
+  {
+    "opcode": "VEX.LZ.66.0F38.W1 F7 /r",
+    "instruction": "SHLX r64a, r/m64, r64b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m64 logically left with count specified in r64b."
+  },
+  {
+    "opcode": "VEX.LZ.F2.0F38.W1 F7 /r",
+    "instruction": "SHRX r64a, r/m64, r64b",
+    "operand_encoding": "RMV",
+    "description": "Shift r/m64 logically right with count specified in r64b."
+  }
+]

@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F38.W0 2C /r", "instruction": "VSCALEFPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "A", "description": "Scale the packed single-precision floating-point values in xmm2 using values from xmm3/m128/m32bcst. Under writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 2C /r", "instruction": "VSCALEFPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "A", "description": "Scale the packed single-precision values in ymm2 using floating point values from ymm3/m256/m32bcst. Under writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 2C /r", "instruction": "VSCALEFPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}", "operand_encoding": "A", "description": "Scale the packed single-precision floating-point values in zmm2 using floating-point values from zmm3/m512/m32bcst. Under writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 2C /r",
+    "instruction": "VSCALEFPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "A",
+    "description": "Scale the packed single-precision floating-point values in xmm2 using values from xmm3/m128/m32bcst. Under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 2C /r",
+    "instruction": "VSCALEFPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "A",
+    "description": "Scale the packed single-precision values in ymm2 using floating point values from ymm3/m256/m32bcst. Under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 2C /r",
+    "instruction": "VSCALEFPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}",
+    "operand_encoding": "A",
+    "description": "Scale the packed single-precision floating-point values in zmm2 using floating-point values from zmm3/m512/m32bcst. Under writemask k1."
+  }
+]

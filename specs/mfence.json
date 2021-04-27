@@ -1,1 +1,8 @@
-[{"opcode": "0F AE 0F", "instruction": "MFENCE", "operand_encoding": "ZO", "description": "Serializes load and store operations."}]
+[
+  {
+    "opcode": "0F AE 0F",
+    "instruction": "MFENCE",
+    "operand_encoding": "ZO",
+    "description": "Serializes load and store operations."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "F3 90", "instruction": "PAUSE", "operand_encoding": "ZO", "description": "Gives hint to processor that improves performance of spin-wait loops."}]
+[
+  {
+    "opcode": "F3 90",
+    "instruction": "PAUSE",
+    "operand_encoding": "ZO",
+    "description": "Gives hint to processor that improves performance of spin-wait loops."
+  }
+]

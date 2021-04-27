@@ -1,1 +1,56 @@
-[{"opcode": "FF /6", "instruction": "PUSH r/m16", "operand_encoding": "M", "description": "Push r/m16."}, {"opcode": "FF /6", "instruction": "PUSH r/m64", "operand_encoding": "M", "description": "Push r/m64."}, {"opcode": "50+rw", "instruction": "PUSH r16", "operand_encoding": "O", "description": "Push r16."}, {"opcode": "50+rd", "instruction": "PUSH r64", "operand_encoding": "O", "description": "Push r64."}, {"opcode": "6A ib", "instruction": "PUSH imm8", "operand_encoding": "I", "description": "Push imm8."}, {"opcode": "68 iw", "instruction": "PUSH imm16", "operand_encoding": "I", "description": "Push imm16."}, {"opcode": "68 id", "instruction": "PUSH imm32", "operand_encoding": "I", "description": "Push imm32."}, {"opcode": "0F A0", "instruction": "PUSH FS", "operand_encoding": "ZO", "description": "Push FS."}, {"opcode": "0F A8", "instruction": "PUSH GS", "operand_encoding": "ZO", "description": "Push GS."}]
+[
+  {
+    "opcode": "FF /6",
+    "instruction": "PUSH r/m16",
+    "operand_encoding": "M",
+    "description": "Push r/m16."
+  },
+  {
+    "opcode": "FF /6",
+    "instruction": "PUSH r/m64",
+    "operand_encoding": "M",
+    "description": "Push r/m64."
+  },
+  {
+    "opcode": "50+rw",
+    "instruction": "PUSH r16",
+    "operand_encoding": "O",
+    "description": "Push r16."
+  },
+  {
+    "opcode": "50+rd",
+    "instruction": "PUSH r64",
+    "operand_encoding": "O",
+    "description": "Push r64."
+  },
+  {
+    "opcode": "6A ib",
+    "instruction": "PUSH imm8",
+    "operand_encoding": "I",
+    "description": "Push imm8."
+  },
+  {
+    "opcode": "68 iw",
+    "instruction": "PUSH imm16",
+    "operand_encoding": "I",
+    "description": "Push imm16."
+  },
+  {
+    "opcode": "68 id",
+    "instruction": "PUSH imm32",
+    "operand_encoding": "I",
+    "description": "Push imm32."
+  },
+  {
+    "opcode": "0F A0",
+    "instruction": "PUSH FS",
+    "operand_encoding": "ZO",
+    "description": "Push FS."
+  },
+  {
+    "opcode": "0F A8",
+    "instruction": "PUSH GS",
+    "operand_encoding": "ZO",
+    "description": "Push GS."
+  }
+]

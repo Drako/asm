@@ -1,1 +1,56 @@
-[{"opcode": "66 0F 38 40 /r", "instruction": "PMULLD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Multiply the packed dword signed integers in xmm1 and xmm2/m128 and store the low 32 bits of each product in xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 40 /r", "instruction": "VPMULLD xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128 and store the low 32 bits of each product in xmm1."}, {"opcode": "VEX.256.66.0F38.WIG 40 /r", "instruction": "VPMULLD ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Multiply the packed dword signed integers in ymm2 and ymm3/m256 and store the low 32 bits of each product in ymm1."}, {"opcode": "EVEX.128.66.0F38.W0 40 /r", "instruction": "VPMULLD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "C", "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128/m32bcst and store the low 32 bits of each product in xmm1 under writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 40 /r", "instruction": "VPMULLD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "C", "description": "Multiply the packed dword signed integers in ymm2 and ymm3/m256/m32bcst and store the low 32 bits of each product in ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 40 /r", "instruction": "VPMULLD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "C", "description": "Multiply the packed dword signed integers in zmm2 and zmm3/m512/m32bcst and store the low 32 bits of each product in zmm1 under writemask k1."}, {"opcode": "EVEX.128.66.0F38.W1 40 /r", "instruction": "VPMULLQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "C", "description": "Multiply the packed qword signed integers in xmm2 and xmm3/m128/m64bcst and store the low 64 bits of each product in xmm1 under writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 40 /r", "instruction": "VPMULLQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "C", "description": "Multiply the packed qword signed integers in ymm2 and ymm3/m256/m64bcst and store the low 64 bits of each product in ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 40 /r", "instruction": "VPMULLQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "C", "description": "Multiply the packed qword signed integers in zmm2 and zmm3/m512/m64bcst and store the low 64 bits of each product in zmm1 under writemask k1."}]
+[
+  {
+    "opcode": "66 0F 38 40 /r",
+    "instruction": "PMULLD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Multiply the packed dword signed integers in xmm1 and xmm2/m128 and store the low 32 bits of each product in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 40 /r",
+    "instruction": "VPMULLD xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128 and store the low 32 bits of each product in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 40 /r",
+    "instruction": "VPMULLD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Multiply the packed dword signed integers in ymm2 and ymm3/m256 and store the low 32 bits of each product in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 40 /r",
+    "instruction": "VPMULLD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128/m32bcst and store the low 32 bits of each product in xmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 40 /r",
+    "instruction": "VPMULLD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed dword signed integers in ymm2 and ymm3/m256/m32bcst and store the low 32 bits of each product in ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 40 /r",
+    "instruction": "VPMULLD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed dword signed integers in zmm2 and zmm3/m512/m32bcst and store the low 32 bits of each product in zmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 40 /r",
+    "instruction": "VPMULLQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed qword signed integers in xmm2 and xmm3/m128/m64bcst and store the low 64 bits of each product in xmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 40 /r",
+    "instruction": "VPMULLQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed qword signed integers in ymm2 and ymm3/m256/m64bcst and store the low 64 bits of each product in ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 40 /r",
+    "instruction": "VPMULLQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "C",
+    "description": "Multiply the packed qword signed integers in zmm2 and zmm3/m512/m64bcst and store the low 64 bits of each product in zmm1 under writemask k1."
+  }
+]

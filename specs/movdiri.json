@@ -1,1 +1,14 @@
-[{"opcode": "NP 0F 38 F9 /r", "instruction": "MOVDIRI m32, r32", "operand_encoding": "A", "description": "Move doubleword from r32 to m32 using direct store."}, {"opcode": "NP", "instruction": "MOVDIRI m64, r64", "operand_encoding": "A", "description": "Move quadword from r64 to m64 using direct store."}]
+[
+  {
+    "opcode": "NP 0F 38 F9 /r",
+    "instruction": "MOVDIRI m32, r32",
+    "operand_encoding": "A",
+    "description": "Move doubleword from r32 to m32 using direct store."
+  },
+  {
+    "opcode": "NP",
+    "instruction": "MOVDIRI m64, r64",
+    "operand_encoding": "A",
+    "description": "Move quadword from r64 to m64 using direct store."
+  }
+]

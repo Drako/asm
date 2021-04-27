@@ -1,1 +1,8 @@
-[{"opcode": "F3 0F D6 /r", "instruction": "MOVQ2DQ xmm, mm", "operand_encoding": "RM", "description": "Move quadword from mmx to low quadword of xmm."}]
+[
+  {
+    "opcode": "F3 0F D6 /r",
+    "instruction": "MOVQ2DQ xmm, mm",
+    "operand_encoding": "RM",
+    "description": "Move quadword from mmx to low quadword of xmm."
+  }
+]

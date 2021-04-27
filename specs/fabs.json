@@ -1,1 +1,8 @@
-[{"opcode": "D9 E1", "instruction": "FABS", "operand_encoding": "ZO", "description": "Replace ST with its absolute value."}]
+[
+  {
+    "opcode": "D9 E1",
+    "instruction": "FABS",
+    "operand_encoding": "ZO",
+    "description": "Replace ST with its absolute value."
+  }
+]

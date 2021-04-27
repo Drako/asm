@@ -1,1 +1,38 @@
-[{"opcode": "0F A3 /r", "instruction": "BT r/m16, r16", "operand_encoding": "MR", "description": "Store selected bit in CF flag."}, {"opcode": "0F A3 /r", "instruction": "BT r/m32, r32", "operand_encoding": "MR", "description": "Store selected bit in CF flag."}, {"opcode": "REX.W + 0F A3 /r", "instruction": "BT r/m64, r64", "operand_encoding": "MR", "description": "Store selected bit in CF flag."}, {"opcode": "0F BA /4 ib", "instruction": "BT r/m16, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag."}, {"opcode": "0F BA /4 ib", "instruction": "BT r/m32, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag."}, {"opcode": "REX.W + 0F BA /4 ib", "instruction": "BT r/m64, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag."}]
+[
+  {
+    "opcode": "0F A3 /r",
+    "instruction": "BT r/m16, r16",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag."
+  },
+  {
+    "opcode": "0F A3 /r",
+    "instruction": "BT r/m32, r32",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag."
+  },
+  {
+    "opcode": "REX.W + 0F A3 /r",
+    "instruction": "BT r/m64, r64",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag."
+  },
+  {
+    "opcode": "0F BA /4 ib",
+    "instruction": "BT r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag."
+  },
+  {
+    "opcode": "0F BA /4 ib",
+    "instruction": "BT r/m32, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag."
+  },
+  {
+    "opcode": "REX.W + 0F BA /4 ib",
+    "instruction": "BT r/m64, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag."
+  }
+]

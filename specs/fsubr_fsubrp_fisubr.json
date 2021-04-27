@@ -1,1 +1,50 @@
-[{"opcode": "D8 /5", "instruction": "FSUBR m32fp", "operand_encoding": "ZO", "description": "Subtract ST(0) from m32fp and store result in ST(0)."}, {"opcode": "DC /5", "instruction": "FSUBR m64fp", "operand_encoding": "ZO", "description": "Subtract ST(0) from m64fp and store result in ST(0)."}, {"opcode": "D8 E8+i", "instruction": "FSUBR ST(0), ST(i)", "operand_encoding": "ZO", "description": "Subtract ST(0) from ST(i) and store result in ST(0)."}, {"opcode": "DC E0+i", "instruction": "FSUBR ST(i), ST(0)", "operand_encoding": "ZO", "description": "Subtract ST(i) from ST(0) and store result in ST(i)."}, {"opcode": "DE E0+i", "instruction": "FSUBRP ST(i), ST(0)", "operand_encoding": "ZO", "description": "Subtract ST(i) from ST(0), store result in ST(i), and pop register stack."}, {"opcode": "DE E1", "instruction": "FSUBRP", "operand_encoding": "ZO", "description": "Subtract ST(1) from ST(0), store result in ST(1), and pop register stack."}, {"opcode": "DA /5", "instruction": "FISUBR m32int", "operand_encoding": "ZO", "description": "Subtract ST(0) from m32int and store result in ST(0)."}, {"opcode": "DE /5", "instruction": "FISUBR m16int", "operand_encoding": "ZO", "description": "Subtract ST(0) from m16int and store result in ST(0)."}]
+[
+  {
+    "opcode": "D8 /5",
+    "instruction": "FSUBR m32fp",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(0) from m32fp and store result in ST(0)."
+  },
+  {
+    "opcode": "DC /5",
+    "instruction": "FSUBR m64fp",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(0) from m64fp and store result in ST(0)."
+  },
+  {
+    "opcode": "D8 E8+i",
+    "instruction": "FSUBR ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(0) from ST(i) and store result in ST(0)."
+  },
+  {
+    "opcode": "DC E0+i",
+    "instruction": "FSUBR ST(i), ST(0)",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(i) from ST(0) and store result in ST(i)."
+  },
+  {
+    "opcode": "DE E0+i",
+    "instruction": "FSUBRP ST(i), ST(0)",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(i) from ST(0), store result in ST(i), and pop register stack."
+  },
+  {
+    "opcode": "DE E1",
+    "instruction": "FSUBRP",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(1) from ST(0), store result in ST(1), and pop register stack."
+  },
+  {
+    "opcode": "DA /5",
+    "instruction": "FISUBR m32int",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(0) from m32int and store result in ST(0)."
+  },
+  {
+    "opcode": "DE /5",
+    "instruction": "FISUBR m16int",
+    "operand_encoding": "ZO",
+    "description": "Subtract ST(0) from m16int and store result in ST(0)."
+  }
+]

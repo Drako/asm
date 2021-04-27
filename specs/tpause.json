@@ -1,1 +1,8 @@
-[{"opcode": "66 0F AE /6", "instruction": "TPAUSE r32, <edx>, <eax>", "operand_encoding": "A", "description": "Directs the processor to enter an implementation-dependent optimized state until the TSC reaches the value in EDX:EAX."}]
+[
+  {
+    "opcode": "66 0F AE /6",
+    "instruction": "TPAUSE r32, <edx>, <eax>",
+    "operand_encoding": "A",
+    "description": "Directs the processor to enter an implementation-dependent optimized state until the TSC reaches the value in EDX:EAX."
+  }
+]

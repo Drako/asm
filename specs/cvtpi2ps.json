@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 2A /r", "instruction": "CVTPI2PS xmm, mm/m64", "operand_encoding": "RM", "description": "Convert two signed doubleword integers from mm/m64 to two single-precision floating-point values in xmm."}]
+[
+  {
+    "opcode": "NP 0F 2A /r",
+    "instruction": "CVTPI2PS xmm, mm/m64",
+    "operand_encoding": "RM",
+    "description": "Convert two signed doubleword integers from mm/m64 to two single-precision floating-point values in xmm."
+  }
+]

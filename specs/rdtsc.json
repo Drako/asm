@@ -1,1 +1,8 @@
-[{"opcode": "0F 31", "instruction": "RDTSC", "operand_encoding": "ZO", "description": "Read time-stamp counter into EDX:EAX."}]
+[
+  {
+    "opcode": "0F 31",
+    "instruction": "RDTSC",
+    "operand_encoding": "ZO",
+    "description": "Read time-stamp counter into EDX:EAX."
+  }
+]

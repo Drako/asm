@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L0.0F.W0 98 /r", "instruction": "KORTESTW k1, k2", "operand_encoding": "RR", "description": "Bitwise OR 16 bits masks k1 and k2 and update ZF and CF accordingly."}, {"opcode": "VEX.L0.66.0F.W0 98 /r", "instruction": "KORTESTB k1, k2", "operand_encoding": "RR", "description": "Bitwise OR 8 bits masks k1 and k2 and update ZF and CF accordingly."}, {"opcode": "VEX.L0.0F.W1 98 /r", "instruction": "KORTESTQ k1, k2", "operand_encoding": "RR", "description": "Bitwise OR 64 bits masks k1 and k2 and update ZF and CF accordingly."}, {"opcode": "VEX.L0.66.0F.W1 98 /r", "instruction": "KORTESTD k1, k2", "operand_encoding": "RR", "description": "Bitwise OR 32 bits masks k1 and k2 and update ZF and CF accordingly."}]
+[
+  {
+    "opcode": "VEX.L0.0F.W0 98 /r",
+    "instruction": "KORTESTW k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise OR 16 bits masks k1 and k2 and update ZF and CF accordingly."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W0 98 /r",
+    "instruction": "KORTESTB k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise OR 8 bits masks k1 and k2 and update ZF and CF accordingly."
+  },
+  {
+    "opcode": "VEX.L0.0F.W1 98 /r",
+    "instruction": "KORTESTQ k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise OR 64 bits masks k1 and k2 and update ZF and CF accordingly."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W1 98 /r",
+    "instruction": "KORTESTD k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise OR 32 bits masks k1 and k2 and update ZF and CF accordingly."
+  }
+]

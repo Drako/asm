@@ -1,1 +1,8 @@
-[{"opcode": "EVEX.LIG.66.0F3A.W1 55 /r ib", "instruction": "VFIXUPIMMSD xmm1 {k1}{z}, xmm2, xmm3/m64{sae}, imm8", "operand_encoding": "A", "description": "Fix up a float64 number in the low quadword element of xmm2 using scalar int32 table in xmm3/m64 and store the result in xmm1."}]
+[
+  {
+    "opcode": "EVEX.LIG.66.0F3A.W1 55 /r ib",
+    "instruction": "VFIXUPIMMSD xmm1 {k1}{z}, xmm2, xmm3/m64{sae}, imm8",
+    "operand_encoding": "A",
+    "description": "Fix up a float64 number in the low quadword element of xmm2 using scalar int32 table in xmm3/m64 and store the result in xmm1."
+  }
+]

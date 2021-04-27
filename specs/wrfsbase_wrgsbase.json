@@ -1,1 +1,26 @@
-[{"opcode": "F3 0F AE /2", "instruction": "WRFSBASE r32", "operand_encoding": "M", "description": "Load the FS base address with the 32-bit value in the source register."}, {"opcode": "F3", "instruction": "WRFSBASE r64", "operand_encoding": "M", "description": "Load the FS base address with the 64-bit value in the source register."}, {"opcode": "F3 0F AE /3", "instruction": "WRGSBASE r32", "operand_encoding": "M", "description": "Load the GS base address with the 32-bit value in the source register."}, {"opcode": "F3", "instruction": "WRGSBASE r64", "operand_encoding": "M", "description": "Load the GS base address with the 64-bit value in the source register."}]
+[
+  {
+    "opcode": "F3 0F AE /2",
+    "instruction": "WRFSBASE r32",
+    "operand_encoding": "M",
+    "description": "Load the FS base address with the 32-bit value in the source register."
+  },
+  {
+    "opcode": "F3",
+    "instruction": "WRFSBASE r64",
+    "operand_encoding": "M",
+    "description": "Load the FS base address with the 64-bit value in the source register."
+  },
+  {
+    "opcode": "F3 0F AE /3",
+    "instruction": "WRGSBASE r32",
+    "operand_encoding": "M",
+    "description": "Load the GS base address with the 32-bit value in the source register."
+  },
+  {
+    "opcode": "F3",
+    "instruction": "WRGSBASE r64",
+    "operand_encoding": "M",
+    "description": "Load the GS base address with the 64-bit value in the source register."
+  }
+]

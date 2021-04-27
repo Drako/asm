@@ -1,1 +1,8 @@
-[{"opcode": "0F 09", "instruction": "WBINVD", "operand_encoding": "ZO", "description": "Write back and flush Internal caches; initiate writing-back and flushing of external caches."}]
+[
+  {
+    "opcode": "0F 09",
+    "instruction": "WBINVD",
+    "operand_encoding": "ZO",
+    "description": "Write back and flush Internal caches; initiate writing-back and flushing of external caches."
+  }
+]

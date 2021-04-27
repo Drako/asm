@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 01 D1", "instruction": "XSETBV", "operand_encoding": "ZO", "description": "Write the value in EDX:EAX to the XCR specified by ECX."}]
+[
+  {
+    "opcode": "NP 0F 01 D1",
+    "instruction": "XSETBV",
+    "operand_encoding": "ZO",
+    "description": "Write the value in EDX:EAX to the XCR specified by ECX."
+  }
+]

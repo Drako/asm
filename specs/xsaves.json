@@ -1,1 +1,14 @@
-[{"opcode": "NP 0F C7 /5", "instruction": "XSAVES mem", "operand_encoding": "M", "description": "Save state components specified by EDX:EAX to mem with compaction, optimizing if possible."}, {"opcode": "NP", "instruction": "XSAVES64 mem", "operand_encoding": "M", "description": "Save state components specified by EDX:EAX to mem with compaction, optimizing if possible."}]
+[
+  {
+    "opcode": "NP 0F C7 /5",
+    "instruction": "XSAVES mem",
+    "operand_encoding": "M",
+    "description": "Save state components specified by EDX:EAX to mem with compaction, optimizing if possible."
+  },
+  {
+    "opcode": "NP",
+    "instruction": "XSAVES64 mem",
+    "operand_encoding": "M",
+    "description": "Save state components specified by EDX:EAX to mem with compaction, optimizing if possible."
+  }
+]

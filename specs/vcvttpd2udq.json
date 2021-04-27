@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.0F.W1 78 /r", "instruction": "VCVTTPD2UDQ xmm1 {k1}{z}, xmm2/m128/m64bcst", "operand_encoding": "A", "description": "Convert two packed double-precision floating-point values in xmm2/m128/m64bcst to two unsigned doubleword integers in xmm1 using truncation subject to writemask k1."}, {"opcode": "EVEX.256.0F.W1 78 02 /r", "instruction": "VCVTTPD2UDQ xmm1 {k1}{z}, ymm2/m256/m64bcst", "operand_encoding": "A", "description": "Convert four packed double-precision floating-point values in ymm2/m256/m64bcst to four unsigned doubleword integers in xmm1 using truncation subject to writemask k1."}, {"opcode": "EVEX.512.0F.W1 78 /r", "instruction": "VCVTTPD2UDQ ymm1 {k1}{z}, zmm2/m512/m64bcst{sae}", "operand_encoding": "A", "description": "Convert eight packed double-precision floating-point values in zmm2/m512/m64bcst to eight unsigned doubleword integers in ymm1 using truncation subject to writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.0F.W1 78 /r",
+    "instruction": "VCVTTPD2UDQ xmm1 {k1}{z}, xmm2/m128/m64bcst",
+    "operand_encoding": "A",
+    "description": "Convert two packed double-precision floating-point values in xmm2/m128/m64bcst to two unsigned doubleword integers in xmm1 using truncation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.0F.W1 78 02 /r",
+    "instruction": "VCVTTPD2UDQ xmm1 {k1}{z}, ymm2/m256/m64bcst",
+    "operand_encoding": "A",
+    "description": "Convert four packed double-precision floating-point values in ymm2/m256/m64bcst to four unsigned doubleword integers in xmm1 using truncation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.0F.W1 78 /r",
+    "instruction": "VCVTTPD2UDQ ymm1 {k1}{z}, zmm2/m512/m64bcst{sae}",
+    "operand_encoding": "A",
+    "description": "Convert eight packed double-precision floating-point values in zmm2/m512/m64bcst to eight unsigned doubleword integers in ymm1 using truncation subject to writemask k1."
+  }
+]

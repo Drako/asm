@@ -1,1 +1,8 @@
-[{"opcode": "D9 F6", "instruction": "FDECSTP", "operand_encoding": "ZO", "description": "Decrement TOP field in FPU status word."}]
+[
+  {
+    "opcode": "D9 F6",
+    "instruction": "FDECSTP",
+    "operand_encoding": "ZO",
+    "description": "Decrement TOP field in FPU status word."
+  }
+]

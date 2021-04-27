@@ -1,1 +1,14 @@
-[{"opcode": "VEX.LZ.0F38.W0 F3 /2", "instruction": "BLSMSK r32, r/m32", "operand_encoding": "VM", "description": "Set all lower bits in r32 to \u201c1\u201d starting from bit 0 to lowest set bit in r/m32."}, {"opcode": "VEX.LZ.0F38.W1 F3 /2", "instruction": "BLSMSK r64, r/m64", "operand_encoding": "VM", "description": "Set all lower bits in r64 to \u201c1\u201d starting from bit 0 to lowest set bit in r/m64."}]
+[
+  {
+    "opcode": "VEX.LZ.0F38.W0 F3 /2",
+    "instruction": "BLSMSK r32, r/m32",
+    "operand_encoding": "VM",
+    "description": "Set all lower bits in r32 to \u201c1\u201d starting from bit 0 to lowest set bit in r/m32."
+  },
+  {
+    "opcode": "VEX.LZ.0F38.W1 F3 /2",
+    "instruction": "BLSMSK r64, r/m64",
+    "operand_encoding": "VM",
+    "description": "Set all lower bits in r64 to \u201c1\u201d starting from bit 0 to lowest set bit in r/m64."
+  }
+]

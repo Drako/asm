@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F38.W0 8D /r", "instruction": "VPERMB xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Permute bytes in xmm3/m128 using byte indexes in xmm2 and store the result in xmm1 using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 8D /r", "instruction": "VPERMB ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Permute bytes in ymm3/m256 using byte indexes in ymm2 and store the result in ymm1 using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 8D /r", "instruction": "VPERMB zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "A", "description": "Permute bytes in zmm3/m512 using byte indexes in zmm2 and store the result in zmm1 using writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 8D /r",
+    "instruction": "VPERMB xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Permute bytes in xmm3/m128 using byte indexes in xmm2 and store the result in xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 8D /r",
+    "instruction": "VPERMB ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Permute bytes in ymm3/m256 using byte indexes in ymm2 and store the result in ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 8D /r",
+    "instruction": "VPERMB zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "A",
+    "description": "Permute bytes in zmm3/m512 using byte indexes in zmm2 and store the result in zmm1 using writemask k1."
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F38.W0 93 /vsib", "instruction": "VGATHERQPS xmm1 {k1}, vm64x", "operand_encoding": "A", "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.256.66.0F38.W0 93 /vsib", "instruction": "VGATHERQPS xmm1 {k1}, vm64y", "operand_encoding": "A", "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.512.66.0F38.W0 93 /vsib", "instruction": "VGATHERQPS ymm1 {k1}, vm64z", "operand_encoding": "A", "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."}, {"opcode": "EVEX.128.66.0F38.W1 93 /vsib", "instruction": "VGATHERQPD xmm1 {k1}, vm64x", "operand_encoding": "A", "description": "Using signed qword indices, gather float64 vector into float64 vector xmm1 using k1 as completion mask."}, {"opcode": "EVEX.256.66.0F38.W1 93 /vsib", "instruction": "VGATHERQPD ymm1 {k1}, vm64y", "operand_encoding": "A", "description": "Using signed qword indices, gather float64 vector into float64 vector ymm1 using k1 as completion mask."}, {"opcode": "EVEX.512.66.0F38.W1 93 /vsib", "instruction": "VGATHERQPD zmm1 {k1}, vm64z", "operand_encoding": "A", "description": "Using signed qword indices, gather float64 vector into float64 vector zmm1 using k1 as completion mask."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 93 /vsib",
+    "instruction": "VGATHERQPS xmm1 {k1}, vm64x",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 93 /vsib",
+    "instruction": "VGATHERQPS xmm1 {k1}, vm64y",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 93 /vsib",
+    "instruction": "VGATHERQPS ymm1 {k1}, vm64z",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather single-precision floating-point values from memory using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 93 /vsib",
+    "instruction": "VGATHERQPD xmm1 {k1}, vm64x",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather float64 vector into float64 vector xmm1 using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 93 /vsib",
+    "instruction": "VGATHERQPD ymm1 {k1}, vm64y",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather float64 vector into float64 vector ymm1 using k1 as completion mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 93 /vsib",
+    "instruction": "VGATHERQPD zmm1 {k1}, vm64z",
+    "operand_encoding": "A",
+    "description": "Using signed qword indices, gather float64 vector into float64 vector zmm1 using k1 as completion mask."
+  }
+]

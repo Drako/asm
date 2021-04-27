@@ -1,1 +1,116 @@
-[{"opcode": "NP 0F 60 /r1", "instruction": "PUNPCKLBW mm, mm/m32", "operand_encoding": "A", "description": "Interleave low-order bytes from mm and mm/m32 into mm."}, {"opcode": "66 0F 60 /r", "instruction": "PUNPCKLBW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Interleave low-order bytes from xmm1 and xmm2/m128 into xmm1."}, {"opcode": "NP 0F 61 /r1", "instruction": "PUNPCKLWD mm, mm/m32", "operand_encoding": "A", "description": "Interleave low-order words from mm and mm/m32 into mm."}, {"opcode": "66 0F 61 /r", "instruction": "PUNPCKLWD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Interleave low-order words from xmm1 and xmm2/m128 into xmm1."}, {"opcode": "NP 0F 62 /r1", "instruction": "PUNPCKLDQ mm, mm/m32", "operand_encoding": "A", "description": "Interleave low-order doublewords from mm and mm/m32 into mm."}, {"opcode": "66 0F 62 /r", "instruction": "PUNPCKLDQ xmm1, xmm2/m128", "operand_encoding": "A", "description": "Interleave low-order doublewords from xmm1 and xmm2/m128 into xmm1."}, {"opcode": "66 0F 6C /r", "instruction": "PUNPCKLQDQ xmm1, xmm2/m128", "operand_encoding": "A", "description": "Interleave low-order quadword from xmm1 and xmm2/m128 into xmm1 register."}, {"opcode": "VEX.128.66.0F.WIG 60/r", "instruction": "VPUNPCKLBW xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Interleave low-order bytes from xmm2 and xmm3/m128 into xmm1."}, {"opcode": "VEX.128.66.0F.WIG 61/r", "instruction": "VPUNPCKLWD xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Interleave low-order words from xmm2 and xmm3/m128 into xmm1."}, {"opcode": "VEX.128.66.0F.WIG 62/r", "instruction": "VPUNPCKLDQ xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Interleave low-order doublewords from xmm2 and xmm3/m128 into xmm1."}, {"opcode": "VEX.128.66.0F.WIG 6C/r", "instruction": "VPUNPCKLQDQ xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Interleave low-order quadword from xmm2 and xmm3/m128 into xmm1 register."}, {"opcode": "VEX.256.66.0F.WIG 60 /r", "instruction": "VPUNPCKLBW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Interleave low-order bytes from ymm2 and ymm3/m256 into ymm1 register."}, {"opcode": "VEX.256.66.0F.WIG 61 /r", "instruction": "VPUNPCKLWD ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Interleave low-order words from ymm2 and ymm3/m256 into ymm1 register."}, {"opcode": "VEX.256.66.0F.WIG 62 /r", "instruction": "VPUNPCKLDQ ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Interleave low-order doublewords from ymm2 and ymm3/m256 into ymm1 register."}, {"opcode": "VEX.256.66.0F.WIG 6C /r", "instruction": "VPUNPCKLQDQ ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Interleave low-order quadword from ymm2 and ymm3/m256 into ymm1 register."}, {"opcode": "EVEX.128.66.0F.WIG 60 /r", "instruction": "VPUNPCKLBW xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Interleave low-order bytes from xmm2 and xmm3/m128 into xmm1 register subject to write mask k1."}, {"opcode": "EVEX.128.66.0F.WIG 61 /r", "instruction": "VPUNPCKLWD xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Interleave low-order words from xmm2 and xmm3/m128 into xmm1 register subject to write mask k1."}, {"opcode": "EVEX.128.66.0F.W0 62 /r", "instruction": "VPUNPCKLDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "D", "description": "Interleave low-order doublewords from xmm2 and xmm3/m128/m32bcst into xmm1 register subject to write mask k1."}, {"opcode": "EVEX.128.66.0F.W1 6C /r", "instruction": "VPUNPCKLQDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "D", "description": "Interleave low-order quadword from zmm2 and zmm3/m512/m64bcst into zmm1 register subject to write mask k1."}]
+[
+  {
+    "opcode": "NP 0F 60 /r1",
+    "instruction": "PUNPCKLBW mm, mm/m32",
+    "operand_encoding": "A",
+    "description": "Interleave low-order bytes from mm and mm/m32 into mm."
+  },
+  {
+    "opcode": "66 0F 60 /r",
+    "instruction": "PUNPCKLBW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Interleave low-order bytes from xmm1 and xmm2/m128 into xmm1."
+  },
+  {
+    "opcode": "NP 0F 61 /r1",
+    "instruction": "PUNPCKLWD mm, mm/m32",
+    "operand_encoding": "A",
+    "description": "Interleave low-order words from mm and mm/m32 into mm."
+  },
+  {
+    "opcode": "66 0F 61 /r",
+    "instruction": "PUNPCKLWD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Interleave low-order words from xmm1 and xmm2/m128 into xmm1."
+  },
+  {
+    "opcode": "NP 0F 62 /r1",
+    "instruction": "PUNPCKLDQ mm, mm/m32",
+    "operand_encoding": "A",
+    "description": "Interleave low-order doublewords from mm and mm/m32 into mm."
+  },
+  {
+    "opcode": "66 0F 62 /r",
+    "instruction": "PUNPCKLDQ xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Interleave low-order doublewords from xmm1 and xmm2/m128 into xmm1."
+  },
+  {
+    "opcode": "66 0F 6C /r",
+    "instruction": "PUNPCKLQDQ xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Interleave low-order quadword from xmm1 and xmm2/m128 into xmm1 register."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 60/r",
+    "instruction": "VPUNPCKLBW xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Interleave low-order bytes from xmm2 and xmm3/m128 into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 61/r",
+    "instruction": "VPUNPCKLWD xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Interleave low-order words from xmm2 and xmm3/m128 into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 62/r",
+    "instruction": "VPUNPCKLDQ xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Interleave low-order doublewords from xmm2 and xmm3/m128 into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 6C/r",
+    "instruction": "VPUNPCKLQDQ xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Interleave low-order quadword from xmm2 and xmm3/m128 into xmm1 register."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 60 /r",
+    "instruction": "VPUNPCKLBW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Interleave low-order bytes from ymm2 and ymm3/m256 into ymm1 register."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 61 /r",
+    "instruction": "VPUNPCKLWD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Interleave low-order words from ymm2 and ymm3/m256 into ymm1 register."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 62 /r",
+    "instruction": "VPUNPCKLDQ ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Interleave low-order doublewords from ymm2 and ymm3/m256 into ymm1 register."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 6C /r",
+    "instruction": "VPUNPCKLQDQ ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Interleave low-order quadword from ymm2 and ymm3/m256 into ymm1 register."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG 60 /r",
+    "instruction": "VPUNPCKLBW xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Interleave low-order bytes from xmm2 and xmm3/m128 into xmm1 register subject to write mask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG 61 /r",
+    "instruction": "VPUNPCKLWD xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Interleave low-order words from xmm2 and xmm3/m128 into xmm1 register subject to write mask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W0 62 /r",
+    "instruction": "VPUNPCKLDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "D",
+    "description": "Interleave low-order doublewords from xmm2 and xmm3/m128/m32bcst into xmm1 register subject to write mask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 6C /r",
+    "instruction": "VPUNPCKLQDQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "D",
+    "description": "Interleave low-order quadword from zmm2 and zmm3/m512/m64bcst into zmm1 register subject to write mask k1."
+  }
+]

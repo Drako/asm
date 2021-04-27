@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F3A.W1 3F /r ib", "instruction": "VPCMPW k1 {k2}, xmm2, xmm3/m128, imm8", "operand_encoding": "A", "description": "Compare packed signed word integers in xmm3/m128 and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.256.66.0F3A.W1 3F /r ib", "instruction": "VPCMPW k1 {k2}, ymm2, ymm3/m256, imm8", "operand_encoding": "A", "description": "Compare packed signed word integers in ymm3/m256 and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.512.66.0F3A.W1 3F /r ib", "instruction": "VPCMPW k1 {k2}, zmm2, zmm3/m512, imm8", "operand_encoding": "A", "description": "Compare packed signed word integers in zmm3/m512 and zmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.128.66.0F3A.W1 3E /r ib", "instruction": "VPCMPUW k1 {k2}, xmm2, xmm3/m128, imm8", "operand_encoding": "A", "description": "Compare packed unsigned word integers in xmm3/m128 and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.256.66.0F3A.W1 3E /r ib", "instruction": "VPCMPUW k1 {k2}, ymm2, ymm3/m256, imm8", "operand_encoding": "A", "description": "Compare packed unsigned word integers in ymm3/m256 and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "VPCMPUW k1 {k2}, zmm2, zmm3/m512, imm8", "instruction": "", "operand_encoding": "A", "description": "Compare packed unsigned word integers in zmm3/m512 and zmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 3F /r ib",
+    "instruction": "VPCMPW k1 {k2}, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed word integers in xmm3/m128 and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 3F /r ib",
+    "instruction": "VPCMPW k1 {k2}, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed word integers in ymm3/m256 and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 3F /r ib",
+    "instruction": "VPCMPW k1 {k2}, zmm2, zmm3/m512, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed word integers in zmm3/m512 and zmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 3E /r ib",
+    "instruction": "VPCMPUW k1 {k2}, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned word integers in xmm3/m128 and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 3E /r ib",
+    "instruction": "VPCMPUW k1 {k2}, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned word integers in ymm3/m256 and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "VPCMPUW k1 {k2}, zmm2, zmm3/m512, imm8",
+    "instruction": "",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned word integers in zmm3/m512 and zmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  }
+]

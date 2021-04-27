@@ -1,1 +1,50 @@
-[{"opcode": "D8 /7", "instruction": "FDIVR m32fp", "operand_encoding": "ZO", "description": "Divide m32fp by ST(0) and store result in ST(0)."}, {"opcode": "DC /7", "instruction": "FDIVR m64fp", "operand_encoding": "ZO", "description": "Divide m64fp by ST(0) and store result in ST(0)."}, {"opcode": "D8 F8+i", "instruction": "FDIVR ST(0), ST(i)", "operand_encoding": "ZO", "description": "Divide ST(i) by ST(0) and store result in ST(0)."}, {"opcode": "DC F0+i", "instruction": "FDIVR ST(i), ST(0)", "operand_encoding": "ZO", "description": "Divide ST(0) by ST(i) and store result in ST(i)."}, {"opcode": "DE F0+i", "instruction": "FDIVRP ST(i), ST(0)", "operand_encoding": "ZO", "description": "Divide ST(0) by ST(i), store result in ST(i), and pop the register stack."}, {"opcode": "DE F1", "instruction": "FDIVRP", "operand_encoding": "ZO", "description": "Divide ST(0) by ST(1), store result in ST(1), and pop the register stack."}, {"opcode": "DA /7", "instruction": "FIDIVR m32int", "operand_encoding": "ZO", "description": "Divide m32int by ST(0) and store result in ST(0)."}, {"opcode": "DE /7", "instruction": "FIDIVR m16int", "operand_encoding": "ZO", "description": "Divide m16int by ST(0) and store result in ST(0)."}]
+[
+  {
+    "opcode": "D8 /7",
+    "instruction": "FDIVR m32fp",
+    "operand_encoding": "ZO",
+    "description": "Divide m32fp by ST(0) and store result in ST(0)."
+  },
+  {
+    "opcode": "DC /7",
+    "instruction": "FDIVR m64fp",
+    "operand_encoding": "ZO",
+    "description": "Divide m64fp by ST(0) and store result in ST(0)."
+  },
+  {
+    "opcode": "D8 F8+i",
+    "instruction": "FDIVR ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Divide ST(i) by ST(0) and store result in ST(0)."
+  },
+  {
+    "opcode": "DC F0+i",
+    "instruction": "FDIVR ST(i), ST(0)",
+    "operand_encoding": "ZO",
+    "description": "Divide ST(0) by ST(i) and store result in ST(i)."
+  },
+  {
+    "opcode": "DE F0+i",
+    "instruction": "FDIVRP ST(i), ST(0)",
+    "operand_encoding": "ZO",
+    "description": "Divide ST(0) by ST(i), store result in ST(i), and pop the register stack."
+  },
+  {
+    "opcode": "DE F1",
+    "instruction": "FDIVRP",
+    "operand_encoding": "ZO",
+    "description": "Divide ST(0) by ST(1), store result in ST(1), and pop the register stack."
+  },
+  {
+    "opcode": "DA /7",
+    "instruction": "FIDIVR m32int",
+    "operand_encoding": "ZO",
+    "description": "Divide m32int by ST(0) and store result in ST(0)."
+  },
+  {
+    "opcode": "DE /7",
+    "instruction": "FIDIVR m16int",
+    "operand_encoding": "ZO",
+    "description": "Divide m16int by ST(0) and store result in ST(0)."
+  }
+]

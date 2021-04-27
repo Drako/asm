@@ -1,1 +1,26 @@
-[{"opcode": "VEX.128.66.0F38.W0 92 /r", "instruction": "VGATHERDPS xmm1, vm32x, xmm2", "operand_encoding": "A", "description": "Using dword indices specified in vm32x, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}, {"opcode": "VEX.128.66.0F38.W0 93 /r", "instruction": "VGATHERQPS xmm1, vm64x, xmm2", "operand_encoding": "A", "description": "Using qword indices specified in vm64x, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}, {"opcode": "VEX.256.66.0F38.W0 92 /r", "instruction": "VGATHERDPS ymm1, vm32y, ymm2", "operand_encoding": "A", "description": "Using dword indices specified in vm32y, gather single-precision FP values from memory conditioned on mask specified by ymm2. Conditionally gathered elements are merged into ymm1."}, {"opcode": "VEX.256.66.0F38.W0 93 /r", "instruction": "VGATHERQPS xmm1, vm64y, xmm2", "operand_encoding": "A", "description": "Using qword indices specified in vm64y, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 92 /r",
+    "instruction": "VGATHERDPS xmm1, vm32x, xmm2",
+    "operand_encoding": "A",
+    "description": "Using dword indices specified in vm32x, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 93 /r",
+    "instruction": "VGATHERQPS xmm1, vm64x, xmm2",
+    "operand_encoding": "A",
+    "description": "Using qword indices specified in vm64x, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 92 /r",
+    "instruction": "VGATHERDPS ymm1, vm32y, ymm2",
+    "operand_encoding": "A",
+    "description": "Using dword indices specified in vm32y, gather single-precision FP values from memory conditioned on mask specified by ymm2. Conditionally gathered elements are merged into ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 93 /r",
+    "instruction": "VGATHERQPS xmm1, vm64y, xmm2",
+    "operand_encoding": "A",
+    "description": "Using qword indices specified in vm64y, gather single-precision FP values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  }
+]

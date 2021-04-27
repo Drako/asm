@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F E7 /r", "instruction": "MOVNTQ m64, mm", "operand_encoding": "MR", "description": "Move quadword from mm to m64 using non-temporal hint."}]
+[
+  {
+    "opcode": "NP 0F E7 /r",
+    "instruction": "MOVNTQ m64, mm",
+    "operand_encoding": "MR",
+    "description": "Move quadword from mm to m64 using non-temporal hint."
+  }
+]

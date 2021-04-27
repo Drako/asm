@@ -1,1 +1,20 @@
-[{"opcode": "99", "instruction": "CWD", "operand_encoding": "ZO", "description": "DX:AX \u2190 sign-extend of AX."}, {"opcode": "99", "instruction": "CDQ", "operand_encoding": "ZO", "description": "EDX:EAX \u2190 sign-extend of EAX."}, {"opcode": "REX.W + 99", "instruction": "CQO", "operand_encoding": "ZO", "description": "RDX:RAX\u2190 sign-extend of RAX."}]
+[
+  {
+    "opcode": "99",
+    "instruction": "CWD",
+    "operand_encoding": "ZO",
+    "description": "DX:AX \u2190 sign-extend of AX."
+  },
+  {
+    "opcode": "99",
+    "instruction": "CDQ",
+    "operand_encoding": "ZO",
+    "description": "EDX:EAX \u2190 sign-extend of EAX."
+  },
+  {
+    "opcode": "REX.W + 99",
+    "instruction": "CQO",
+    "operand_encoding": "ZO",
+    "description": "RDX:RAX\u2190 sign-extend of RAX."
+  }
+]

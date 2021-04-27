@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F38.W1 65 /r", "instruction": "VBLENDMPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "A", "description": "Blend double-precision vector xmm2 and double-precision vector xmm3/m128/m64bcst and store the result in xmm1, under control mask."}, {"opcode": "EVEX.256.66.0F38.W1 65 /r", "instruction": "VBLENDMPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "A", "description": "Blend double-precision vector ymm2 and double-precision vector ymm3/m256/m64bcst and store the result in ymm1, under control mask."}, {"opcode": "EVEX.512.66.0F38.W1 65 /r", "instruction": "VBLENDMPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "A", "description": "Blend double-precision vector zmm2 and double-precision vector zmm3/m512/m64bcst and store the result in zmm1, under control mask."}, {"opcode": "EVEX.128.66.0F38.W0 65 /r", "instruction": "VBLENDMPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "A", "description": "Blend single-precision vector xmm2 and single-precision vector xmm3/m128/m32bcst and store the result in xmm1, under control mask."}, {"opcode": "EVEX.256.66.0F38.W0 65 /r", "instruction": "VBLENDMPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "A", "description": "Blend single-precision vector ymm2 and single-precision vector ymm3/m256/m32bcst and store the result in ymm1, under control mask."}, {"opcode": "EVEX.512.66.0F38.W0 65 /r", "instruction": "VBLENDMPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "A", "description": "Blend single-precision vector zmm2 and single-precision vector zmm3/m512/m32bcst using k1 as select control and store the result in zmm1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W1 65 /r",
+    "instruction": "VBLENDMPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "A",
+    "description": "Blend double-precision vector xmm2 and double-precision vector xmm3/m128/m64bcst and store the result in xmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 65 /r",
+    "instruction": "VBLENDMPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "A",
+    "description": "Blend double-precision vector ymm2 and double-precision vector ymm3/m256/m64bcst and store the result in ymm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 65 /r",
+    "instruction": "VBLENDMPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "A",
+    "description": "Blend double-precision vector zmm2 and double-precision vector zmm3/m512/m64bcst and store the result in zmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 65 /r",
+    "instruction": "VBLENDMPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "A",
+    "description": "Blend single-precision vector xmm2 and single-precision vector xmm3/m128/m32bcst and store the result in xmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 65 /r",
+    "instruction": "VBLENDMPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "A",
+    "description": "Blend single-precision vector ymm2 and single-precision vector ymm3/m256/m32bcst and store the result in ymm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 65 /r",
+    "instruction": "VBLENDMPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "A",
+    "description": "Blend single-precision vector zmm2 and single-precision vector zmm3/m512/m32bcst using k1 as select control and store the result in zmm1."
+  }
+]

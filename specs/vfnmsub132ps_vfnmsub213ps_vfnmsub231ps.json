@@ -1,1 +1,92 @@
-[{"opcode": "VEX.128.66.0F38.W0 9E /r", "instruction": "VFNMSUB132PS xmm1, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from xmm1 and xmm3/mem, negate the multiplication result and subtract xmm2 and put result in xmm1."}, {"opcode": "VEX.128.66.0F38.W0 AE /r", "instruction": "VFNMSUB213PS xmm1, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from xmm1 and xmm2, negate the multiplication result and subtract xmm3/mem and put result in xmm1."}, {"opcode": "VEX.128.66.0F38.W0 BE /r", "instruction": "VFNMSUB231PS xmm1, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from xmm2 and xmm3/mem, negate the multiplication result and subtract xmm1 and put result in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 9E /r", "instruction": "VFNMSUB132PS ymm1, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from ymm1 and ymm3/mem, negate the multiplication result and subtract ymm2 and put result in ymm1."}, {"opcode": "VEX.256.66.0F38.W0 AE /r", "instruction": "VFNMSUB213PS ymm1, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from ymm1 and ymm2, negate the multiplication result and subtract ymm3/mem and put result in ymm1."}, {"opcode": "VEX.256.66.0F38.0 BE /r", "instruction": "VFNMSUB231PS ymm1, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Multiply packed single-precision floating-point values from ymm2 and ymm3/mem, negate the multiplication result and subtract ymm1 and put result in ymm1."}, {"opcode": "EVEX.128.66.0F38.W0 9E /r", "instruction": "VFNMSUB132PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from xmm1 and xmm3/m128/m32bcst, negate the multiplication result and subtract xmm2 and put result in xmm1."}, {"opcode": "EVEX.128.66.0F38.W0 AE /r", "instruction": "VFNMSUB213PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from xmm1 and xmm2, negate the multiplication result and subtract xmm3/m128/m32bcst and put result in xmm1."}, {"opcode": "EVEX.128.66.0F38.W0 BE /r", "instruction": "VFNMSUB231PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from xmm2 and xmm3/m128/m32bcst, negate the multiplication result subtract add to xmm1 and put result in xmm1."}, {"opcode": "EVEX.256.66.0F38.W0 9E /r", "instruction": "VFNMSUB132PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from ymm1 and ymm3/m256/m32bcst, negate the multiplication result and subtract ymm2 and put result in ymm1."}, {"opcode": "EVEX.256.66.0F38.W0 AE /r", "instruction": "VFNMSUB213PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from ymm1 and ymm2, negate the multiplication result and subtract ymm3/m256/m32bcst and put result in ymm1."}, {"opcode": "EVEX.256.66.0F38.W0 BE /r", "instruction": "VFNMSUB231PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from ymm2 and ymm3/m256/m32bcst, negate the multiplication result subtract add to ymm1 and put result in ymm1."}, {"opcode": "EVEX.512.66.0F38.W0 9E /r", "instruction": "VFNMSUB132PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from zmm1 and zmm3/m512/m32bcst, negate the multiplication result and subtract zmm2 and put result in zmm1."}, {"opcode": "EVEX.512.66.0F38.W0 AE /r", "instruction": "VFNMSUB213PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from zmm1 and zmm2, negate the multiplication result and subtract zmm3/m512/m32bcst and put result in zmm1."}, {"opcode": "EVEX.512.66.0F38.W0 BE /r", "instruction": "VFNMSUB231PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}", "operand_encoding": "B", "description": "Multiply packed single-precision floating-point values from zmm2 and zmm3/m512/m32bcst, negate the multiplication result subtract add to zmm1 and put result in zmm1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 9E /r",
+    "instruction": "VFNMSUB132PS xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from xmm1 and xmm3/mem, negate the multiplication result and subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 AE /r",
+    "instruction": "VFNMSUB213PS xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from xmm1 and xmm2, negate the multiplication result and subtract xmm3/mem and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 BE /r",
+    "instruction": "VFNMSUB231PS xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from xmm2 and xmm3/mem, negate the multiplication result and subtract xmm1 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 9E /r",
+    "instruction": "VFNMSUB132PS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from ymm1 and ymm3/mem, negate the multiplication result and subtract ymm2 and put result in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 AE /r",
+    "instruction": "VFNMSUB213PS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from ymm1 and ymm2, negate the multiplication result and subtract ymm3/mem and put result in ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.0 BE /r",
+    "instruction": "VFNMSUB231PS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Multiply packed single-precision floating-point values from ymm2 and ymm3/mem, negate the multiplication result and subtract ymm1 and put result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 9E /r",
+    "instruction": "VFNMSUB132PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from xmm1 and xmm3/m128/m32bcst, negate the multiplication result and subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 AE /r",
+    "instruction": "VFNMSUB213PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from xmm1 and xmm2, negate the multiplication result and subtract xmm3/m128/m32bcst and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W0 BE /r",
+    "instruction": "VFNMSUB231PS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from xmm2 and xmm3/m128/m32bcst, negate the multiplication result subtract add to xmm1 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 9E /r",
+    "instruction": "VFNMSUB132PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from ymm1 and ymm3/m256/m32bcst, negate the multiplication result and subtract ymm2 and put result in ymm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 AE /r",
+    "instruction": "VFNMSUB213PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from ymm1 and ymm2, negate the multiplication result and subtract ymm3/m256/m32bcst and put result in ymm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 BE /r",
+    "instruction": "VFNMSUB231PS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from ymm2 and ymm3/m256/m32bcst, negate the multiplication result subtract add to ymm1 and put result in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 9E /r",
+    "instruction": "VFNMSUB132PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from zmm1 and zmm3/m512/m32bcst, negate the multiplication result and subtract zmm2 and put result in zmm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 AE /r",
+    "instruction": "VFNMSUB213PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from zmm1 and zmm2, negate the multiplication result and subtract zmm3/m512/m32bcst and put result in zmm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 BE /r",
+    "instruction": "VFNMSUB231PS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}",
+    "operand_encoding": "B",
+    "description": "Multiply packed single-precision floating-point values from zmm2 and zmm3/m512/m32bcst, negate the multiplication result subtract add to zmm1 and put result in zmm1."
+  }
+]

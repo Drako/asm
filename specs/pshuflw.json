@@ -1,1 +1,38 @@
-[{"opcode": "F2 0F 70 /r ib", "instruction": "PSHUFLW xmm1, xmm2/m128, imm8", "operand_encoding": "A", "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1."}, {"opcode": "VEX.128.F2.0F.WIG 70 /r ib", "instruction": "VPSHUFLW xmm1, xmm2/m128, imm8", "operand_encoding": "A", "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1."}, {"opcode": "VEX.256.F2.0F.WIG 70 /r ib", "instruction": "VPSHUFLW ymm1, ymm2/m256, imm8", "operand_encoding": "A", "description": "Shuffle the low words in ymm2/m256 based on the encoding in imm8 and store the result in ymm1."}, {"opcode": "EVEX.128.F2.0F.WIG 70 /r ib", "instruction": "VPSHUFLW xmm1 {k1}{z}, xmm2/m128, imm8", "operand_encoding": "B", "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1 under write mask k1."}, {"opcode": "EVEX.256.F2.0F.WIG 70 /r ib", "instruction": "VPSHUFLW ymm1 {k1}{z}, ymm2/m256, imm8", "operand_encoding": "B", "description": "Shuffle the low words in ymm2/m256 based on the encoding in imm8 and store the result in ymm1 under write mask k1."}, {"opcode": "EVEX.512.F2.0F.WIG 70 /r ib", "instruction": "VPSHUFLW zmm1 {k1}{z}, zmm2/m512, imm8", "operand_encoding": "B", "description": "Shuffle the low words in zmm2/m512 based on the encoding in imm8 and store the result in zmm1 under write mask k1."}]
+[
+  {
+    "opcode": "F2 0F 70 /r ib",
+    "instruction": "PSHUFLW xmm1, xmm2/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.F2.0F.WIG 70 /r ib",
+    "instruction": "VPSHUFLW xmm1, xmm2/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.F2.0F.WIG 70 /r ib",
+    "instruction": "VPSHUFLW ymm1, ymm2/m256, imm8",
+    "operand_encoding": "A",
+    "description": "Shuffle the low words in ymm2/m256 based on the encoding in imm8 and store the result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.F2.0F.WIG 70 /r ib",
+    "instruction": "VPSHUFLW xmm1 {k1}{z}, xmm2/m128, imm8",
+    "operand_encoding": "B",
+    "description": "Shuffle the low words in xmm2/m128 based on the encoding in imm8 and store the result in xmm1 under write mask k1."
+  },
+  {
+    "opcode": "EVEX.256.F2.0F.WIG 70 /r ib",
+    "instruction": "VPSHUFLW ymm1 {k1}{z}, ymm2/m256, imm8",
+    "operand_encoding": "B",
+    "description": "Shuffle the low words in ymm2/m256 based on the encoding in imm8 and store the result in ymm1 under write mask k1."
+  },
+  {
+    "opcode": "EVEX.512.F2.0F.WIG 70 /r ib",
+    "instruction": "VPSHUFLW zmm1 {k1}{z}, zmm2/m512, imm8",
+    "operand_encoding": "B",
+    "description": "Shuffle the low words in zmm2/m512 based on the encoding in imm8 and store the result in zmm1 under write mask k1."
+  }
+]

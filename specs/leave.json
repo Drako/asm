@@ -1,1 +1,14 @@
-[{"opcode": "C9", "instruction": "LEAVE", "operand_encoding": "ZO", "description": "Set SP to BP, then pop BP."}, {"opcode": "C9", "instruction": "LEAVE", "operand_encoding": "ZO", "description": "Set RSP to RBP, then pop RBP."}]
+[
+  {
+    "opcode": "C9",
+    "instruction": "LEAVE",
+    "operand_encoding": "ZO",
+    "description": "Set SP to BP, then pop BP."
+  },
+  {
+    "opcode": "C9",
+    "instruction": "LEAVE",
+    "operand_encoding": "ZO",
+    "description": "Set RSP to RBP, then pop RBP."
+  }
+]

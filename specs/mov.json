@@ -1,1 +1,212 @@
-[{"opcode": "88 /r", "instruction": "MOV r/m8,r8", "operand_encoding": "MR", "description": "Move r8 to r/m8."}, {"opcode": "REX + 88 /r", "instruction": "MOV r/m8***,r8***", "operand_encoding": "MR", "description": "Move r8 to r/m8."}, {"opcode": "89 /r", "instruction": "MOV r/m16,r16", "operand_encoding": "MR", "description": "Move r16 to r/m16."}, {"opcode": "89 /r", "instruction": "MOV r/m32,r32", "operand_encoding": "MR", "description": "Move r32 to r/m32."}, {"opcode": "REX.W + 89 /r", "instruction": "MOV r/m64,r64", "operand_encoding": "MR", "description": "Move r64 to r/m64."}, {"opcode": "8A /r", "instruction": "MOV r8,r/m8", "operand_encoding": "RM", "description": "Move r/m8 to r8."}, {"opcode": "REX + 8A /r", "instruction": "MOV r8***,r/m8***", "operand_encoding": "RM", "description": "Move r/m8 to r8."}, {"opcode": "8B /r", "instruction": "MOV r16,r/m16", "operand_encoding": "RM", "description": "Move r/m16 to r16."}, {"opcode": "8B /r", "instruction": "MOV r32,r/m32", "operand_encoding": "RM", "description": "Move r/m32 to r32."}, {"opcode": "REX.W + 8B /r", "instruction": "MOV r64,r/m64", "operand_encoding": "RM", "description": "Move r/m64 to r64."}, {"opcode": "8C /r", "instruction": "MOV r/m16,Sreg**", "operand_encoding": "MR", "description": "Move segment register to r/m16."}, {"opcode": "REX.W + 8C /r", "instruction": "MOV r16/r32/m16, Sreg**", "operand_encoding": "MR", "description": "Move zero extended 16-bit segment register to r16/r32/r64/m16."}, {"opcode": "REX.W + 8C /r", "instruction": "MOV r64/m16, Sreg**", "operand_encoding": "MR", "description": "Move zero extended 16-bit segment register to r64/m16."}, {"opcode": "8E /r", "instruction": "MOV Sreg,r/m16**", "operand_encoding": "RM", "description": "Move r/m16 to segment register."}, {"opcode": "REX.W + 8E /r", "instruction": "MOV Sreg,r/m64**", "operand_encoding": "RM", "description": "Move lower 16 bits of r/m64 to segment register."}, {"opcode": "A0", "instruction": "MOV AL,moffs8*", "operand_encoding": "FD", "description": "Move byte at (seg:offset) to AL."}, {"opcode": "REX.W + A0", "instruction": "MOV AL,moffs8*", "operand_encoding": "FD", "description": "Move byte at (offset) to AL."}, {"opcode": "A1", "instruction": "MOV AX,moffs16*", "operand_encoding": "FD", "description": "Move word at (seg:offset) to AX."}, {"opcode": "A1", "instruction": "MOV EAX,moffs32*", "operand_encoding": "FD", "description": "Move doubleword at (seg:offset) to EAX."}, {"opcode": "REX.W + A1", "instruction": "MOV RAX,moffs64*", "operand_encoding": "FD", "description": "Move quadword at (offset) to RAX."}, {"opcode": "A2", "instruction": "MOV moffs8,AL", "operand_encoding": "TD", "description": "Move AL to (seg:offset)."}, {"opcode": "REX.W + A2", "instruction": "MOV moffs8***,AL", "operand_encoding": "TD", "description": "Move AL to (offset)."}, {"opcode": "A3", "instruction": "MOV moffs16*,AX", "operand_encoding": "TD", "description": "Move AX to (seg:offset)."}, {"opcode": "A3", "instruction": "MOV moffs32*,EAX", "operand_encoding": "TD", "description": "Move EAX to (seg:offset)."}, {"opcode": "REX.W + A3", "instruction": "MOV moffs64*,RAX", "operand_encoding": "TD", "description": "Move RAX to (offset)."}, {"opcode": "B0+ rb ib", "instruction": "MOV r8, imm8", "operand_encoding": "OI", "description": "Move imm8 to r8."}, {"opcode": "REX + B0+ rb ib", "instruction": "MOV r8***, imm8", "operand_encoding": "OI", "description": "Move imm8 to r8."}, {"opcode": "B8+ rw iw", "instruction": "MOV r16, imm16", "operand_encoding": "OI", "description": "Move imm16 to r16."}, {"opcode": "B8+ rd id", "instruction": "MOV r32, imm32", "operand_encoding": "OI", "description": "Move imm32 to r32."}, {"opcode": "REX.W + B8+ rd io", "instruction": "MOV r64, imm64", "operand_encoding": "OI", "description": "Move imm64 to r64."}, {"opcode": "C6 /0 ib", "instruction": "MOV r/m8, imm8", "operand_encoding": "MI", "description": "Move imm8 to r/m8."}, {"opcode": "REX + C6 /0 ib", "instruction": "MOV r/m8***, imm8", "operand_encoding": "MI", "description": "Move imm8 to r/m8."}, {"opcode": "C7 /0 iw", "instruction": "MOV r/m16, imm16", "operand_encoding": "MI", "description": "Move imm16 to r/m16."}, {"opcode": "C7 /0 id", "instruction": "MOV r/m32, imm32", "operand_encoding": "MI", "description": "Move imm32 to r/m32."}, {"opcode": "REX.W + C7 /0 id", "instruction": "MOV r/m64, imm32", "operand_encoding": "MI", "description": "Move imm32 sign extended to 64-bits to r/m64."}]
+[
+  {
+    "opcode": "88 /r",
+    "instruction": "MOV r/m8,r8",
+    "operand_encoding": "MR",
+    "description": "Move r8 to r/m8."
+  },
+  {
+    "opcode": "REX + 88 /r",
+    "instruction": "MOV r/m8***,r8***",
+    "operand_encoding": "MR",
+    "description": "Move r8 to r/m8."
+  },
+  {
+    "opcode": "89 /r",
+    "instruction": "MOV r/m16,r16",
+    "operand_encoding": "MR",
+    "description": "Move r16 to r/m16."
+  },
+  {
+    "opcode": "89 /r",
+    "instruction": "MOV r/m32,r32",
+    "operand_encoding": "MR",
+    "description": "Move r32 to r/m32."
+  },
+  {
+    "opcode": "REX.W + 89 /r",
+    "instruction": "MOV r/m64,r64",
+    "operand_encoding": "MR",
+    "description": "Move r64 to r/m64."
+  },
+  {
+    "opcode": "8A /r",
+    "instruction": "MOV r8,r/m8",
+    "operand_encoding": "RM",
+    "description": "Move r/m8 to r8."
+  },
+  {
+    "opcode": "REX + 8A /r",
+    "instruction": "MOV r8***,r/m8***",
+    "operand_encoding": "RM",
+    "description": "Move r/m8 to r8."
+  },
+  {
+    "opcode": "8B /r",
+    "instruction": "MOV r16,r/m16",
+    "operand_encoding": "RM",
+    "description": "Move r/m16 to r16."
+  },
+  {
+    "opcode": "8B /r",
+    "instruction": "MOV r32,r/m32",
+    "operand_encoding": "RM",
+    "description": "Move r/m32 to r32."
+  },
+  {
+    "opcode": "REX.W + 8B /r",
+    "instruction": "MOV r64,r/m64",
+    "operand_encoding": "RM",
+    "description": "Move r/m64 to r64."
+  },
+  {
+    "opcode": "8C /r",
+    "instruction": "MOV r/m16,Sreg**",
+    "operand_encoding": "MR",
+    "description": "Move segment register to r/m16."
+  },
+  {
+    "opcode": "REX.W + 8C /r",
+    "instruction": "MOV r16/r32/m16, Sreg**",
+    "operand_encoding": "MR",
+    "description": "Move zero extended 16-bit segment register to r16/r32/r64/m16."
+  },
+  {
+    "opcode": "REX.W + 8C /r",
+    "instruction": "MOV r64/m16, Sreg**",
+    "operand_encoding": "MR",
+    "description": "Move zero extended 16-bit segment register to r64/m16."
+  },
+  {
+    "opcode": "8E /r",
+    "instruction": "MOV Sreg,r/m16**",
+    "operand_encoding": "RM",
+    "description": "Move r/m16 to segment register."
+  },
+  {
+    "opcode": "REX.W + 8E /r",
+    "instruction": "MOV Sreg,r/m64**",
+    "operand_encoding": "RM",
+    "description": "Move lower 16 bits of r/m64 to segment register."
+  },
+  {
+    "opcode": "A0",
+    "instruction": "MOV AL,moffs8*",
+    "operand_encoding": "FD",
+    "description": "Move byte at (seg:offset) to AL."
+  },
+  {
+    "opcode": "REX.W + A0",
+    "instruction": "MOV AL,moffs8*",
+    "operand_encoding": "FD",
+    "description": "Move byte at (offset) to AL."
+  },
+  {
+    "opcode": "A1",
+    "instruction": "MOV AX,moffs16*",
+    "operand_encoding": "FD",
+    "description": "Move word at (seg:offset) to AX."
+  },
+  {
+    "opcode": "A1",
+    "instruction": "MOV EAX,moffs32*",
+    "operand_encoding": "FD",
+    "description": "Move doubleword at (seg:offset) to EAX."
+  },
+  {
+    "opcode": "REX.W + A1",
+    "instruction": "MOV RAX,moffs64*",
+    "operand_encoding": "FD",
+    "description": "Move quadword at (offset) to RAX."
+  },
+  {
+    "opcode": "A2",
+    "instruction": "MOV moffs8,AL",
+    "operand_encoding": "TD",
+    "description": "Move AL to (seg:offset)."
+  },
+  {
+    "opcode": "REX.W + A2",
+    "instruction": "MOV moffs8***,AL",
+    "operand_encoding": "TD",
+    "description": "Move AL to (offset)."
+  },
+  {
+    "opcode": "A3",
+    "instruction": "MOV moffs16*,AX",
+    "operand_encoding": "TD",
+    "description": "Move AX to (seg:offset)."
+  },
+  {
+    "opcode": "A3",
+    "instruction": "MOV moffs32*,EAX",
+    "operand_encoding": "TD",
+    "description": "Move EAX to (seg:offset)."
+  },
+  {
+    "opcode": "REX.W + A3",
+    "instruction": "MOV moffs64*,RAX",
+    "operand_encoding": "TD",
+    "description": "Move RAX to (offset)."
+  },
+  {
+    "opcode": "B0+ rb ib",
+    "instruction": "MOV r8, imm8",
+    "operand_encoding": "OI",
+    "description": "Move imm8 to r8."
+  },
+  {
+    "opcode": "REX + B0+ rb ib",
+    "instruction": "MOV r8***, imm8",
+    "operand_encoding": "OI",
+    "description": "Move imm8 to r8."
+  },
+  {
+    "opcode": "B8+ rw iw",
+    "instruction": "MOV r16, imm16",
+    "operand_encoding": "OI",
+    "description": "Move imm16 to r16."
+  },
+  {
+    "opcode": "B8+ rd id",
+    "instruction": "MOV r32, imm32",
+    "operand_encoding": "OI",
+    "description": "Move imm32 to r32."
+  },
+  {
+    "opcode": "REX.W + B8+ rd io",
+    "instruction": "MOV r64, imm64",
+    "operand_encoding": "OI",
+    "description": "Move imm64 to r64."
+  },
+  {
+    "opcode": "C6 /0 ib",
+    "instruction": "MOV r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "Move imm8 to r/m8."
+  },
+  {
+    "opcode": "REX + C6 /0 ib",
+    "instruction": "MOV r/m8***, imm8",
+    "operand_encoding": "MI",
+    "description": "Move imm8 to r/m8."
+  },
+  {
+    "opcode": "C7 /0 iw",
+    "instruction": "MOV r/m16, imm16",
+    "operand_encoding": "MI",
+    "description": "Move imm16 to r/m16."
+  },
+  {
+    "opcode": "C7 /0 id",
+    "instruction": "MOV r/m32, imm32",
+    "operand_encoding": "MI",
+    "description": "Move imm32 to r/m32."
+  },
+  {
+    "opcode": "REX.W + C7 /0 id",
+    "instruction": "MOV r/m64, imm32",
+    "operand_encoding": "MI",
+    "description": "Move imm32 sign extended to 64-bits to r/m64."
+  }
+]

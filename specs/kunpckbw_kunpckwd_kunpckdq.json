@@ -1,1 +1,20 @@
-[{"opcode": "VEX.L1.66.0F.W0 4B /r", "instruction": "KUNPCKBW k1, k2, k3", "operand_encoding": "RVR", "description": "Unpack 8-bit masks in k2 and k3 and write word result in k1."}, {"opcode": "VEX.L1.0F.W0 4B /r", "instruction": "KUNPCKWD k1, k2, k3", "operand_encoding": "RVR", "description": "Unpack 16-bit masks in k2 and k3 and write doubleword result in k1."}, {"opcode": "VEX.L1.0F.W1 4B /r", "instruction": "KUNPCKDQ k1, k2, k3", "operand_encoding": "RVR", "description": "Unpack 32-bit masks in k2 and k3 and write quadword result in k1."}]
+[
+  {
+    "opcode": "VEX.L1.66.0F.W0 4B /r",
+    "instruction": "KUNPCKBW k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Unpack 8-bit masks in k2 and k3 and write word result in k1."
+  },
+  {
+    "opcode": "VEX.L1.0F.W0 4B /r",
+    "instruction": "KUNPCKWD k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Unpack 16-bit masks in k2 and k3 and write doubleword result in k1."
+  },
+  {
+    "opcode": "VEX.L1.0F.W1 4B /r",
+    "instruction": "KUNPCKDQ k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Unpack 32-bit masks in k2 and k3 and write quadword result in k1."
+  }
+]

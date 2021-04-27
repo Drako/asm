@@ -1,1 +1,20 @@
-[{"opcode": "F3 0F 5D /r", "instruction": "MINSS xmm1,xmm2/m32", "operand_encoding": "A", "description": "Return the minimum scalar single-precision floating-point value between xmm2/m32 and xmm1."}, {"opcode": "VEX.LIG.F3.0F.WIG 5D /r", "instruction": "VMINSS xmm1,xmm2, xmm3/m32", "operand_encoding": "B", "description": "Return the minimum scalar single-precision floating-point value between xmm3/m32 and xmm2."}, {"opcode": "EVEX.LIG.F3.0F.W0 5D /r", "instruction": "VMINSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}", "operand_encoding": "C", "description": "Return the minimum scalar single-precision floating-point value between xmm3/m32 and xmm2."}]
+[
+  {
+    "opcode": "F3 0F 5D /r",
+    "instruction": "MINSS xmm1,xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Return the minimum scalar single-precision floating-point value between xmm2/m32 and xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.F3.0F.WIG 5D /r",
+    "instruction": "VMINSS xmm1,xmm2, xmm3/m32",
+    "operand_encoding": "B",
+    "description": "Return the minimum scalar single-precision floating-point value between xmm3/m32 and xmm2."
+  },
+  {
+    "opcode": "EVEX.LIG.F3.0F.W0 5D /r",
+    "instruction": "VMINSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}",
+    "operand_encoding": "C",
+    "description": "Return the minimum scalar single-precision floating-point value between xmm3/m32 and xmm2."
+  }
+]

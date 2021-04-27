@@ -1,1 +1,182 @@
-[{"opcode": "F3 0F 6F /r", "instruction": "MOVDQU xmm1, xmm2/m128", "operand_encoding": "A", "description": "Move unaligned packed integer values from xmm2/m128 to xmm1."}, {"opcode": "F3 0F 7F /r", "instruction": "MOVDQU xmm2/m128, xmm1", "operand_encoding": "B", "description": "Move unaligned packed integer values from xmm1 to xmm2/m128."}, {"opcode": "VEX.128.F3.0F.WIG 6F /r", "instruction": "VMOVDQU xmm1, xmm2/m128", "operand_encoding": "A", "description": "Move unaligned packed integer values from xmm2/m128 to xmm1."}, {"opcode": "VEX.128.F3.0F.WIG 7F /r", "instruction": "VMOVDQU xmm2/m128, xmm1", "operand_encoding": "B", "description": "Move unaligned packed integer values from xmm1 to xmm2/m128."}, {"opcode": "VEX.256.F3.0F.WIG 6F /r", "instruction": "VMOVDQU ymm1, ymm2/m256", "operand_encoding": "A", "description": "Move unaligned packed integer values from ymm2/m256 to ymm1."}, {"opcode": "VEX.256.F3.0F.WIG 7F /r", "instruction": "VMOVDQU ymm2/m256, ymm1", "operand_encoding": "B", "description": "Move unaligned packed integer values from ymm1 to ymm2/m256."}, {"opcode": "EVEX.128.F2.0F.W0 6F /r", "instruction": "VMOVDQU8 xmm1 {k1}{z}, xmm2/m128", "operand_encoding": "C", "description": "Move unaligned packed byte integer values from xmm2/m128 to xmm1 using writemask k1."}, {"opcode": "EVEX.256.F2.0F.W0 6F /r", "instruction": "VMOVDQU8 ymm1 {k1}{z}, ymm2/m256", "operand_encoding": "C", "description": "Move unaligned packed byte integer values from ymm2/m256 to ymm1 using writemask k1."}, {"opcode": "EVEX.512.F2.0F.W0 6F /r", "instruction": "VMOVDQU8 zmm1 {k1}{z}, zmm2/m512", "operand_encoding": "C", "description": "Move unaligned packed byte integer values from zmm2/m512 to zmm1 using writemask k1."}, {"opcode": "EVEX.128.F2.0F.W0 7F /r", "instruction": "VMOVDQU8 xmm2/m128 {k1}{z}, xmm1", "operand_encoding": "D", "description": "Move unaligned packed byte integer values from xmm1 to xmm2/m128 using writemask k1."}, {"opcode": "EVEX.256.F2.0F.W0 7F /r", "instruction": "VMOVDQU8 ymm2/m256 {k1}{z}, ymm1", "operand_encoding": "D", "description": "Move unaligned packed byte integer values from ymm1 to ymm2/m256 using writemask k1."}, {"opcode": "EVEX.512.F2.0F.W0 7F /r", "instruction": "VMOVDQU8 zmm2/m512 {k1}{z}, zmm1", "operand_encoding": "D", "description": "Move unaligned packed byte integer values from zmm1 to zmm2/m512 using writemask k1."}, {"opcode": "EVEX.128.F2.0F.W1 6F /r", "instruction": "VMOVDQU16 xmm1 {k1}{z}, xmm2/m128", "operand_encoding": "C", "description": "Move unaligned packed word integer values from xmm2/m128 to xmm1 using writemask k1."}, {"opcode": "EVEX.256.F2.0F.W1 6F /r", "instruction": "VMOVDQU16 ymm1 {k1}{z}, ymm2/m256", "operand_encoding": "C", "description": "Move unaligned packed word integer values from ymm2/m256 to ymm1 using writemask k1."}, {"opcode": "EVEX.512.F2.0F.W1 6F /r", "instruction": "VMOVDQU16 zmm1 {k1}{z}, zmm2/m512", "operand_encoding": "C", "description": "Move unaligned packed word integer values from zmm2/m512 to zmm1 using writemask k1."}, {"opcode": "EVEX.128.F2.0F.W1 7F /r", "instruction": "VMOVDQU16 xmm2/m128 {k1}{z}, xmm1", "operand_encoding": "D", "description": "Move unaligned packed word integer values from xmm1 to xmm2/m128 using writemask k1."}, {"opcode": "EVEX.256.F2.0F.W1 7F /r", "instruction": "VMOVDQU16 ymm2/m256 {k1}{z}, ymm1", "operand_encoding": "D", "description": "Move unaligned packed word integer values from ymm1 to ymm2/m256 using writemask k1."}, {"opcode": "EVEX.512.F2.0F.W1 7F /r", "instruction": "VMOVDQU16 zmm2/m512 {k1}{z}, zmm1", "operand_encoding": "D", "description": "Move unaligned packed word integer values from zmm1 to zmm2/m512 using writemask k1."}, {"opcode": "EVEX.128.F3.0F.W0 6F /r", "instruction": "VMOVDQU32 xmm1 {k1}{z}, xmm2/mm128", "operand_encoding": "C", "description": "Move unaligned packed doubleword integer values from xmm2/m128 to xmm1 using writemask k1."}, {"opcode": "EVEX.256.F3.0F.W0 6F /r", "instruction": "VMOVDQU32 ymm1 {k1}{z}, ymm2/m256", "operand_encoding": "C", "description": "Move unaligned packed doubleword integer values from ymm2/m256 to ymm1 using writemask k1."}, {"opcode": "EVEX.512.F3.0F.W0 6F /r", "instruction": "VMOVDQU32 zmm1 {k1}{z}, zmm2/m512", "operand_encoding": "C", "description": "Move unaligned packed doubleword integer values from zmm2/m512 to zmm1 using writemask k1."}, {"opcode": "EVEX.128.F3.0F.W0 7F /r", "instruction": "VMOVDQU32 xmm2/m128 {k1}{z}, xmm1", "operand_encoding": "D", "description": "Move unaligned packed doubleword integer values from xmm1 to xmm2/m128 using writemask k1."}, {"opcode": "EVEX.256.F3.0F.W0 7F /r", "instruction": "VMOVDQU32 ymm2/m256 {k1}{z}, ymm1", "operand_encoding": "D", "description": "Move unaligned packed doubleword integer values from ymm1 to ymm2/m256 using writemask k1."}, {"opcode": "EVEX.512.F3.0F.W0 7F /r", "instruction": "VMOVDQU32 zmm2/m512 {k1}{z}, zmm1", "operand_encoding": "D", "description": "Move unaligned packed doubleword integer values from zmm1 to zmm2/m512 using writemask k1."}, {"opcode": "EVEX.128.F3.0F.W1 6F /r", "instruction": "VMOVDQU64 xmm1 {k1}{z}, xmm2/m128", "operand_encoding": "C", "description": "Move unaligned packed quadword integer values from xmm2/m128 to xmm1 using writemask k1."}, {"opcode": "EVEX.256.F3.0F.W1 6F /r", "instruction": "VMOVDQU64 ymm1 {k1}{z}, ymm2/m256", "operand_encoding": "C", "description": "Move unaligned packed quadword integer values from ymm2/m256 to ymm1 using writemask k1."}, {"opcode": "EVEX.512.F3.0F.W1 6F /r", "instruction": "VMOVDQU64 zmm1 {k1}{z}, zmm2/m512", "operand_encoding": "C", "description": "Move unaligned packed quadword integer values from zmm2/m512 to zmm1 using writemask k1."}, {"opcode": "EVEX.128.F3.0F.W1 7F /r", "instruction": "VMOVDQU64 xmm2/m128 {k1}{z}, xmm1", "operand_encoding": "D", "description": "Move unaligned packed quadword integer values from xmm1 to xmm2/m128 using writemask k1."}, {"opcode": "EVEX.256.F3.0F.W1 7F /r", "instruction": "VMOVDQU64 ymm2/m256 {k1}{z}, ymm1", "operand_encoding": "D", "description": "Move unaligned packed quadword integer values from ymm1 to ymm2/m256 using writemask k1."}, {"opcode": "EVEX.512.F3.0F.W1 7F /r", "instruction": "VMOVDQU64 zmm2/m512 {k1}{z}, zmm1", "operand_encoding": "D", "description": "Move unaligned packed quadword integer values from zmm1 to zmm2/m512 using writemask k1."}]
+[
+  {
+    "opcode": "F3 0F 6F /r",
+    "instruction": "MOVDQU xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Move unaligned packed integer values from xmm2/m128 to xmm1."
+  },
+  {
+    "opcode": "F3 0F 7F /r",
+    "instruction": "MOVDQU xmm2/m128, xmm1",
+    "operand_encoding": "B",
+    "description": "Move unaligned packed integer values from xmm1 to xmm2/m128."
+  },
+  {
+    "opcode": "VEX.128.F3.0F.WIG 6F /r",
+    "instruction": "VMOVDQU xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Move unaligned packed integer values from xmm2/m128 to xmm1."
+  },
+  {
+    "opcode": "VEX.128.F3.0F.WIG 7F /r",
+    "instruction": "VMOVDQU xmm2/m128, xmm1",
+    "operand_encoding": "B",
+    "description": "Move unaligned packed integer values from xmm1 to xmm2/m128."
+  },
+  {
+    "opcode": "VEX.256.F3.0F.WIG 6F /r",
+    "instruction": "VMOVDQU ymm1, ymm2/m256",
+    "operand_encoding": "A",
+    "description": "Move unaligned packed integer values from ymm2/m256 to ymm1."
+  },
+  {
+    "opcode": "VEX.256.F3.0F.WIG 7F /r",
+    "instruction": "VMOVDQU ymm2/m256, ymm1",
+    "operand_encoding": "B",
+    "description": "Move unaligned packed integer values from ymm1 to ymm2/m256."
+  },
+  {
+    "opcode": "EVEX.128.F2.0F.W0 6F /r",
+    "instruction": "VMOVDQU8 xmm1 {k1}{z}, xmm2/m128",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed byte integer values from xmm2/m128 to xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F2.0F.W0 6F /r",
+    "instruction": "VMOVDQU8 ymm1 {k1}{z}, ymm2/m256",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed byte integer values from ymm2/m256 to ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F2.0F.W0 6F /r",
+    "instruction": "VMOVDQU8 zmm1 {k1}{z}, zmm2/m512",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed byte integer values from zmm2/m512 to zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F2.0F.W0 7F /r",
+    "instruction": "VMOVDQU8 xmm2/m128 {k1}{z}, xmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed byte integer values from xmm1 to xmm2/m128 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F2.0F.W0 7F /r",
+    "instruction": "VMOVDQU8 ymm2/m256 {k1}{z}, ymm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed byte integer values from ymm1 to ymm2/m256 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F2.0F.W0 7F /r",
+    "instruction": "VMOVDQU8 zmm2/m512 {k1}{z}, zmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed byte integer values from zmm1 to zmm2/m512 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F2.0F.W1 6F /r",
+    "instruction": "VMOVDQU16 xmm1 {k1}{z}, xmm2/m128",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed word integer values from xmm2/m128 to xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F2.0F.W1 6F /r",
+    "instruction": "VMOVDQU16 ymm1 {k1}{z}, ymm2/m256",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed word integer values from ymm2/m256 to ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F2.0F.W1 6F /r",
+    "instruction": "VMOVDQU16 zmm1 {k1}{z}, zmm2/m512",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed word integer values from zmm2/m512 to zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F2.0F.W1 7F /r",
+    "instruction": "VMOVDQU16 xmm2/m128 {k1}{z}, xmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed word integer values from xmm1 to xmm2/m128 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F2.0F.W1 7F /r",
+    "instruction": "VMOVDQU16 ymm2/m256 {k1}{z}, ymm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed word integer values from ymm1 to ymm2/m256 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F2.0F.W1 7F /r",
+    "instruction": "VMOVDQU16 zmm2/m512 {k1}{z}, zmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed word integer values from zmm1 to zmm2/m512 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F.W0 6F /r",
+    "instruction": "VMOVDQU32 xmm1 {k1}{z}, xmm2/mm128",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed doubleword integer values from xmm2/m128 to xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F.W0 6F /r",
+    "instruction": "VMOVDQU32 ymm1 {k1}{z}, ymm2/m256",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed doubleword integer values from ymm2/m256 to ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F.W0 6F /r",
+    "instruction": "VMOVDQU32 zmm1 {k1}{z}, zmm2/m512",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed doubleword integer values from zmm2/m512 to zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F.W0 7F /r",
+    "instruction": "VMOVDQU32 xmm2/m128 {k1}{z}, xmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed doubleword integer values from xmm1 to xmm2/m128 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F.W0 7F /r",
+    "instruction": "VMOVDQU32 ymm2/m256 {k1}{z}, ymm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed doubleword integer values from ymm1 to ymm2/m256 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F.W0 7F /r",
+    "instruction": "VMOVDQU32 zmm2/m512 {k1}{z}, zmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed doubleword integer values from zmm1 to zmm2/m512 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F.W1 6F /r",
+    "instruction": "VMOVDQU64 xmm1 {k1}{z}, xmm2/m128",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed quadword integer values from xmm2/m128 to xmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F.W1 6F /r",
+    "instruction": "VMOVDQU64 ymm1 {k1}{z}, ymm2/m256",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed quadword integer values from ymm2/m256 to ymm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F.W1 6F /r",
+    "instruction": "VMOVDQU64 zmm1 {k1}{z}, zmm2/m512",
+    "operand_encoding": "C",
+    "description": "Move unaligned packed quadword integer values from zmm2/m512 to zmm1 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F.W1 7F /r",
+    "instruction": "VMOVDQU64 xmm2/m128 {k1}{z}, xmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed quadword integer values from xmm1 to xmm2/m128 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F.W1 7F /r",
+    "instruction": "VMOVDQU64 ymm2/m256 {k1}{z}, ymm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed quadword integer values from ymm1 to ymm2/m256 using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F.W1 7F /r",
+    "instruction": "VMOVDQU64 zmm2/m512 {k1}{z}, zmm1",
+    "operand_encoding": "D",
+    "description": "Move unaligned packed quadword integer values from zmm1 to zmm2/m512 using writemask k1."
+  }
+]

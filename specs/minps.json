@@ -1,1 +1,38 @@
-[{"opcode": "NP 0F 5D /r", "instruction": "MINPS xmm1, xmm2/m128", "operand_encoding": "A", "description": "Return the minimum single-precision floating-point values between xmm1 and xmm2/mem."}, {"opcode": "VEX.128.0F.WIG 5D /r", "instruction": "VMINPS xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Return the minimum single-precision floating-point values between xmm2 and xmm3/mem."}, {"opcode": "VEX.256.0F.WIG 5D /r", "instruction": "VMINPS ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Return the minimum single double-precision floating-point values between ymm2 and ymm3/mem."}, {"opcode": "EVEX.128.0F.W0 5D /r", "instruction": "VMINPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "C", "description": "Return the minimum packed single-precision floating-point values between xmm2 and xmm3/m128/m32bcst and store result in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.0F.W0 5D /r", "instruction": "VMINPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "C", "description": "Return the minimum packed single-precision floating-point values between ymm2 and ymm3/m256/m32bcst and store result in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.0F.W0 5D /r", "instruction": "VMINPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{sae}", "operand_encoding": "C", "description": "Return the minimum packed single-precision floating-point values between zmm2 and zmm3/m512/m32bcst and store result in zmm1 subject to writemask k1."}]
+[
+  {
+    "opcode": "NP 0F 5D /r",
+    "instruction": "MINPS xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Return the minimum single-precision floating-point values between xmm1 and xmm2/mem."
+  },
+  {
+    "opcode": "VEX.128.0F.WIG 5D /r",
+    "instruction": "VMINPS xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Return the minimum single-precision floating-point values between xmm2 and xmm3/mem."
+  },
+  {
+    "opcode": "VEX.256.0F.WIG 5D /r",
+    "instruction": "VMINPS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Return the minimum single double-precision floating-point values between ymm2 and ymm3/mem."
+  },
+  {
+    "opcode": "EVEX.128.0F.W0 5D /r",
+    "instruction": "VMINPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "C",
+    "description": "Return the minimum packed single-precision floating-point values between xmm2 and xmm3/m128/m32bcst and store result in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.0F.W0 5D /r",
+    "instruction": "VMINPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "C",
+    "description": "Return the minimum packed single-precision floating-point values between ymm2 and ymm3/m256/m32bcst and store result in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.0F.W0 5D /r",
+    "instruction": "VMINPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{sae}",
+    "operand_encoding": "C",
+    "description": "Return the minimum packed single-precision floating-point values between zmm2 and zmm3/m512/m32bcst and store result in zmm1 subject to writemask k1."
+  }
+]

@@ -1,1 +1,20 @@
-[{"opcode": "F3 0F 51 /r", "instruction": "SQRTSS xmm1, xmm2/m32", "operand_encoding": "A", "description": "Computes square root of the low single-precision floating-point value in xmm2/m32 and stores the results in xmm1."}, {"opcode": "VEX.LIG.F3.0F.WIG 51 /r", "instruction": "VSQRTSS xmm1, xmm2, xmm3/m32", "operand_encoding": "B", "description": "Computes square root of the low single-precision floating-point value in xmm3/m32 and stores the results in xmm1. Also, upper single-precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."}, {"opcode": "EVEX.LIG.F3.0F.W0 51 /r", "instruction": "VSQRTSS xmm1 {k1}{z}, xmm2, xmm3/m32{er}", "operand_encoding": "C", "description": "Computes square root of the low single-precision floating-point value in xmm3/m32 and stores the results in xmm1 under writemask k1. Also, upper single-precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."}]
+[
+  {
+    "opcode": "F3 0F 51 /r",
+    "instruction": "SQRTSS xmm1, xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Computes square root of the low single-precision floating-point value in xmm2/m32 and stores the results in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.F3.0F.WIG 51 /r",
+    "instruction": "VSQRTSS xmm1, xmm2, xmm3/m32",
+    "operand_encoding": "B",
+    "description": "Computes square root of the low single-precision floating-point value in xmm3/m32 and stores the results in xmm1. Also, upper single-precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."
+  },
+  {
+    "opcode": "EVEX.LIG.F3.0F.W0 51 /r",
+    "instruction": "VSQRTSS xmm1 {k1}{z}, xmm2, xmm3/m32{er}",
+    "operand_encoding": "C",
+    "description": "Computes square root of the low single-precision floating-point value in xmm3/m32 and stores the results in xmm1 under writemask k1. Also, upper single-precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."
+  }
+]

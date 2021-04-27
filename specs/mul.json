@@ -1,1 +1,32 @@
-[{"opcode": "F6 /4", "instruction": "MUL r/m8", "operand_encoding": "M", "description": "Unsigned multiply (AX \u2190 AL \u2217 r/m8)."}, {"opcode": "REX + F6 /4", "instruction": "MUL r/m8*", "operand_encoding": "M", "description": "Unsigned multiply (AX \u2190 AL \u2217 r/m8)."}, {"opcode": "F7 /4", "instruction": "MUL r/m16", "operand_encoding": "M", "description": "Unsigned multiply (DX:AX \u2190 AX \u2217 r/m16)."}, {"opcode": "F7 /4", "instruction": "MUL r/m32", "operand_encoding": "M", "description": "Unsigned multiply (EDX:EAX \u2190 EAX \u2217 r/m32)."}, {"opcode": "REX.W + F7 /4", "instruction": "MUL r/m64", "operand_encoding": "M", "description": "Unsigned multiply (RDX:RAX \u2190 RAX \u2217 r/m64)."}]
+[
+  {
+    "opcode": "F6 /4",
+    "instruction": "MUL r/m8",
+    "operand_encoding": "M",
+    "description": "Unsigned multiply (AX \u2190 AL \u2217 r/m8)."
+  },
+  {
+    "opcode": "REX + F6 /4",
+    "instruction": "MUL r/m8*",
+    "operand_encoding": "M",
+    "description": "Unsigned multiply (AX \u2190 AL \u2217 r/m8)."
+  },
+  {
+    "opcode": "F7 /4",
+    "instruction": "MUL r/m16",
+    "operand_encoding": "M",
+    "description": "Unsigned multiply (DX:AX \u2190 AX \u2217 r/m16)."
+  },
+  {
+    "opcode": "F7 /4",
+    "instruction": "MUL r/m32",
+    "operand_encoding": "M",
+    "description": "Unsigned multiply (EDX:EAX \u2190 EAX \u2217 r/m32)."
+  },
+  {
+    "opcode": "REX.W + F7 /4",
+    "instruction": "MUL r/m64",
+    "operand_encoding": "M",
+    "description": "Unsigned multiply (RDX:RAX \u2190 RAX \u2217 r/m64)."
+  }
+]

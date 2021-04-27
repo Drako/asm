@@ -1,1 +1,20 @@
-[{"opcode": "NP 0F 52 /r", "instruction": "RSQRTPS xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Computes the approximate reciprocals of the square roots of the packed single-precision floating-point values in xmm2/m128 and stores the results in xmm1."}, {"opcode": "VEX.128.0F.WIG 52 /r", "instruction": "VRSQRTPS xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Computes the approximate reciprocals of the square roots of packed single-precision values in xmm2/mem and stores the results in xmm1."}, {"opcode": "VEX.256.0F.WIG 52 /r", "instruction": "VRSQRTPS ymm1, ymm2/m256", "operand_encoding": "RM", "description": "Computes the approximate reciprocals of the square roots of packed single-precision values in ymm2/mem and stores the results in ymm1."}]
+[
+  {
+    "opcode": "NP 0F 52 /r",
+    "instruction": "RSQRTPS xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Computes the approximate reciprocals of the square roots of the packed single-precision floating-point values in xmm2/m128 and stores the results in xmm1."
+  },
+  {
+    "opcode": "VEX.128.0F.WIG 52 /r",
+    "instruction": "VRSQRTPS xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Computes the approximate reciprocals of the square roots of packed single-precision values in xmm2/mem and stores the results in xmm1."
+  },
+  {
+    "opcode": "VEX.256.0F.WIG 52 /r",
+    "instruction": "VRSQRTPS ymm1, ymm2/m256",
+    "operand_encoding": "RM",
+    "description": "Computes the approximate reciprocals of the square roots of packed single-precision values in ymm2/mem and stores the results in ymm1."
+  }
+]

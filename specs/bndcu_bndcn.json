@@ -1,1 +1,14 @@
-[{"opcode": "F2 0F 1A /r", "instruction": "BNDCU bnd, r/m64", "operand_encoding": "RM", "description": "Generate a #BR if the address in r/m64 is higher than the upper bound in bnd.UB (bnb.UB in 1's complement form)."}, {"opcode": "F2 0F 1B /r", "instruction": "BNDCN bnd, r/m64", "operand_encoding": "RM", "description": "Generate a #BR if the address in r/m64 is higher than the upper bound in bnd.UB (bnb.UB not in 1's complement form)."}]
+[
+  {
+    "opcode": "F2 0F 1A /r",
+    "instruction": "BNDCU bnd, r/m64",
+    "operand_encoding": "RM",
+    "description": "Generate a #BR if the address in r/m64 is higher than the upper bound in bnd.UB (bnb.UB in 1's complement form)."
+  },
+  {
+    "opcode": "F2 0F 1B /r",
+    "instruction": "BNDCN bnd, r/m64",
+    "operand_encoding": "RM",
+    "description": "Generate a #BR if the address in r/m64 is higher than the upper bound in bnd.UB (bnb.UB not in 1's complement form)."
+  }
+]

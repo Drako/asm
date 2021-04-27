@@ -1,1 +1,20 @@
-[{"opcode": "66 0F 3A 0D /r ib", "instruction": "BLENDPD xmm1, xmm2/m128, imm8", "operand_encoding": "RMI", "description": "Select packed DP-FP values from xmm1 and xmm2/m128 from mask specified in imm8 and store the values into xmm1."}, {"opcode": "VEX.128.66.0F3A.WIG 0D /r ib", "instruction": "VBLENDPD xmm1, xmm2, xmm3/m128, imm8", "operand_encoding": "RVMI", "description": "Select packed double-precision floating-point Values from xmm2 and xmm3/m128 from mask in imm8 and store the values in xmm1."}, {"opcode": "VEX.256.66.0F3A.WIG 0D /r ib", "instruction": "VBLENDPD ymm1, ymm2, ymm3/m256, imm8", "operand_encoding": "RVMI", "description": "Select packed double-precision floating-point Values from ymm2 and ymm3/m256 from mask in imm8 and store the values in ymm1."}]
+[
+  {
+    "opcode": "66 0F 3A 0D /r ib",
+    "instruction": "BLENDPD xmm1, xmm2/m128, imm8",
+    "operand_encoding": "RMI",
+    "description": "Select packed DP-FP values from xmm1 and xmm2/m128 from mask specified in imm8 and store the values into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.WIG 0D /r ib",
+    "instruction": "VBLENDPD xmm1, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "RVMI",
+    "description": "Select packed double-precision floating-point Values from xmm2 and xmm3/m128 from mask in imm8 and store the values in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F3A.WIG 0D /r ib",
+    "instruction": "VBLENDPD ymm1, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "RVMI",
+    "description": "Select packed double-precision floating-point Values from ymm2 and ymm3/m256 from mask in imm8 and store the values in ymm1."
+  }
+]

@@ -1,1 +1,14 @@
-[{"opcode": "VEX.LZ.0F38.W0 F5 /r", "instruction": "BZHI r32a, r/m32, r32b", "operand_encoding": "RMV", "description": "Zero bits in r/m32 starting with the position in r32b, write result to r32a."}, {"opcode": "VEX.LZ.0F38.W1 F5 /r", "instruction": "BZHI r64a, r/m64, r64b", "operand_encoding": "RMV", "description": "Zero bits in r/m64 starting with the position in r64b, write result to r64a."}]
+[
+  {
+    "opcode": "VEX.LZ.0F38.W0 F5 /r",
+    "instruction": "BZHI r32a, r/m32, r32b",
+    "operand_encoding": "RMV",
+    "description": "Zero bits in r/m32 starting with the position in r32b, write result to r32a."
+  },
+  {
+    "opcode": "VEX.LZ.0F38.W1 F5 /r",
+    "instruction": "BZHI r64a, r/m64, r64b",
+    "operand_encoding": "RMV",
+    "description": "Zero bits in r/m64 starting with the position in r64b, write result to r64a."
+  }
+]

@@ -1,1 +1,44 @@
-[{"opcode": "VEX.256.66.0F3A.W0 19 /r ib", "instruction": "VEXTRACTF128 xmm1/m128, ymm2, imm8", "operand_encoding": "A", "description": "Extract 128 bits of packed floating-point values from ymm2 and store results in xmm1/m128."}, {"opcode": "EVEX.256.66.0F3A.W0 19 /r ib", "instruction": "VEXTRACTF32X4 xmm1/m128 {k1}{z}, ymm2, imm8", "operand_encoding": "C", "description": "Extract 128 bits of packed single-precision floating-point values from ymm2 and store results in xmm1/m128 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 19 /r ib VEXTRACTF32x4 xmm1/m128 {k1}{z}, zmm2, imm8", "instruction": "", "operand_encoding": "C", "description": "Extract 128 bits of packed single-precision floating-point values from zmm2 and store results in xmm1/m128 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 19 /r ib", "instruction": "VEXTRACTF64X2 xmm1/m128 {k1}{z}, ymm2, imm8", "operand_encoding": "B", "description": "Extract 128 bits of packed double-precision floating-point values from ymm2 and store results in xmm1/m128 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 19 /r ib", "instruction": "VEXTRACTF64X2 xmm1/m128 {k1}{z}, zmm2, imm8", "operand_encoding": "B", "description": "Extract 128 bits of packed double-precision floating-point values from zmm2 and store results in xmm1/m128 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 1B /r ib", "instruction": "VEXTRACTF32X8 ymm1/m256 {k1}{z}, zmm2, imm8", "operand_encoding": "D", "description": "Extract 256 bits of packed single-precision floating-point values from zmm2 and store results in ymm1/m256 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 1B /r ib VEXTRACTF64x4 ymm1/m256 {k1}{z}, zmm2, imm8", "instruction": "", "operand_encoding": "C", "description": "Extract 256 bits of packed double-precision floating-point values from zmm2 and store results in ymm1/m256 subject to writemask k1."}]
+[
+  {
+    "opcode": "VEX.256.66.0F3A.W0 19 /r ib",
+    "instruction": "VEXTRACTF128 xmm1/m128, ymm2, imm8",
+    "operand_encoding": "A",
+    "description": "Extract 128 bits of packed floating-point values from ymm2 and store results in xmm1/m128."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 19 /r ib",
+    "instruction": "VEXTRACTF32X4 xmm1/m128 {k1}{z}, ymm2, imm8",
+    "operand_encoding": "C",
+    "description": "Extract 128 bits of packed single-precision floating-point values from ymm2 and store results in xmm1/m128 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 19 /r ib VEXTRACTF32x4 xmm1/m128 {k1}{z}, zmm2, imm8",
+    "instruction": "",
+    "operand_encoding": "C",
+    "description": "Extract 128 bits of packed single-precision floating-point values from zmm2 and store results in xmm1/m128 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 19 /r ib",
+    "instruction": "VEXTRACTF64X2 xmm1/m128 {k1}{z}, ymm2, imm8",
+    "operand_encoding": "B",
+    "description": "Extract 128 bits of packed double-precision floating-point values from ymm2 and store results in xmm1/m128 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 19 /r ib",
+    "instruction": "VEXTRACTF64X2 xmm1/m128 {k1}{z}, zmm2, imm8",
+    "operand_encoding": "B",
+    "description": "Extract 128 bits of packed double-precision floating-point values from zmm2 and store results in xmm1/m128 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 1B /r ib",
+    "instruction": "VEXTRACTF32X8 ymm1/m256 {k1}{z}, zmm2, imm8",
+    "operand_encoding": "D",
+    "description": "Extract 256 bits of packed single-precision floating-point values from zmm2 and store results in ymm1/m256 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 1B /r ib VEXTRACTF64x4 ymm1/m256 {k1}{z}, zmm2, imm8",
+    "instruction": "",
+    "operand_encoding": "C",
+    "description": "Extract 256 bits of packed double-precision floating-point values from zmm2 and store results in ymm1/m256 subject to writemask k1."
+  }
+]

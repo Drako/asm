@@ -1,1 +1,20 @@
-[{"opcode": "F2 0F 58 /r", "instruction": "ADDSD xmm1, xmm2/m64", "operand_encoding": "A", "description": "Add the low double-precision floating-point value from xmm2/mem to xmm1 and store the result in xmm1."}, {"opcode": "VEX.LIG.F2.0F.WIG 58 /r", "instruction": "VADDSD xmm1, xmm2, xmm3/m64", "operand_encoding": "B", "description": "Add the low double-precision floating-point value from xmm3/mem to xmm2 and store the result in xmm1."}, {"opcode": "EVEX.LIG.F2.0F.W1 58 /r", "instruction": "VADDSD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "C", "description": "Add the low double-precision floating-point value from xmm3/m64 to xmm2 and store the result in xmm1 with writemask k1."}]
+[
+  {
+    "opcode": "F2 0F 58 /r",
+    "instruction": "ADDSD xmm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Add the low double-precision floating-point value from xmm2/mem to xmm1 and store the result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.F2.0F.WIG 58 /r",
+    "instruction": "VADDSD xmm1, xmm2, xmm3/m64",
+    "operand_encoding": "B",
+    "description": "Add the low double-precision floating-point value from xmm3/mem to xmm2 and store the result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.F2.0F.W1 58 /r",
+    "instruction": "VADDSD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "C",
+    "description": "Add the low double-precision floating-point value from xmm3/m64 to xmm2 and store the result in xmm1 with writemask k1."
+  }
+]

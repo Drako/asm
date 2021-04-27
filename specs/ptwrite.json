@@ -1,1 +1,14 @@
-[{"opcode": "F3", "instruction": "PTWRITE r64/m64", "operand_encoding": "RM", "description": "Reads the data from r64/m64 to encode into a PTW packet if dependencies are met (see details below)."}, {"opcode": "F3 0F AE /4", "instruction": "PTWRITE r32/m32", "operand_encoding": "RM", "description": "Reads the data from r32/m32 to encode into a PTW packet if dependencies are met (see details below)."}]
+[
+  {
+    "opcode": "F3",
+    "instruction": "PTWRITE r64/m64",
+    "operand_encoding": "RM",
+    "description": "Reads the data from r64/m64 to encode into a PTW packet if dependencies are met (see details below)."
+  },
+  {
+    "opcode": "F3 0F AE /4",
+    "instruction": "PTWRITE r32/m32",
+    "operand_encoding": "RM",
+    "description": "Reads the data from r32/m32 to encode into a PTW packet if dependencies are met (see details below)."
+  }
+]

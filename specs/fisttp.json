@@ -1,1 +1,20 @@
-[{"opcode": "DF /1", "instruction": "FISTTP m16int", "operand_encoding": "ZO", "description": "Store ST(0) in m16int with truncation."}, {"opcode": "DB /1", "instruction": "FISTTP m32int", "operand_encoding": "ZO", "description": "Store ST(0) in m32int with truncation."}, {"opcode": "DD /1", "instruction": "FISTTP m64int", "operand_encoding": "ZO", "description": "Store ST(0) in m64int with truncation."}]
+[
+  {
+    "opcode": "DF /1",
+    "instruction": "FISTTP m16int",
+    "operand_encoding": "ZO",
+    "description": "Store ST(0) in m16int with truncation."
+  },
+  {
+    "opcode": "DB /1",
+    "instruction": "FISTTP m32int",
+    "operand_encoding": "ZO",
+    "description": "Store ST(0) in m32int with truncation."
+  },
+  {
+    "opcode": "DD /1",
+    "instruction": "FISTTP m64int",
+    "operand_encoding": "ZO",
+    "description": "Store ST(0) in m64int with truncation."
+  }
+]

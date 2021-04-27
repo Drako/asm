@@ -1,1 +1,26 @@
-[{"opcode": "DE /2", "instruction": "FICOM m16int", "operand_encoding": "ZO", "description": "Compare ST(0) with m16int."}, {"opcode": "DA /2", "instruction": "FICOM m32int", "operand_encoding": "ZO", "description": "Compare ST(0) with m32int."}, {"opcode": "DE /3", "instruction": "FICOMP m16int", "operand_encoding": "ZO", "description": "Compare ST(0) with m16int and pop stack register."}, {"opcode": "DA /3", "instruction": "FICOMP m32int", "operand_encoding": "ZO", "description": "Compare ST(0) with m32int and pop stack register."}]
+[
+  {
+    "opcode": "DE /2",
+    "instruction": "FICOM m16int",
+    "operand_encoding": "ZO",
+    "description": "Compare ST(0) with m16int."
+  },
+  {
+    "opcode": "DA /2",
+    "instruction": "FICOM m32int",
+    "operand_encoding": "ZO",
+    "description": "Compare ST(0) with m32int."
+  },
+  {
+    "opcode": "DE /3",
+    "instruction": "FICOMP m16int",
+    "operand_encoding": "ZO",
+    "description": "Compare ST(0) with m16int and pop stack register."
+  },
+  {
+    "opcode": "DA /3",
+    "instruction": "FICOMP m32int",
+    "operand_encoding": "ZO",
+    "description": "Compare ST(0) with m32int and pop stack register."
+  }
+]

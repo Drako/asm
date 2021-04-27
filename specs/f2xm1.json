@@ -1,1 +1,8 @@
-[{"opcode": "D9 F0", "instruction": "F2XM1", "operand_encoding": "ZO", "description": "Replace ST(0) with (2ST(0) \u2013 1)."}]
+[
+  {
+    "opcode": "D9 F0",
+    "instruction": "F2XM1",
+    "operand_encoding": "ZO",
+    "description": "Replace ST(0) with (2ST(0) \u2013 1)."
+  }
+]

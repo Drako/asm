@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 15 /r", "instruction": "UNPCKHPD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of xmm1 and xmm2/m128."}, {"opcode": "VEX.128.66.0F.WIG 15 /r", "instruction": "VUNPCKHPD xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of xmm2 and xmm3/m128."}, {"opcode": "VEX.256.66.0F.WIG 15 /r", "instruction": "VUNPCKHPD ymm1,ymm2, ymm3/m256", "operand_encoding": "B", "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of ymm2 and ymm3/m256."}, {"opcode": "EVEX.128.66.0F.W1 15 /r", "instruction": "VUNPCKHPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "C", "description": "Unpacks and Interleaves double precision floating-point values from high quadwords of xmm2 and xmm3/m128/m64bcst subject to writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 15 /r", "instruction": "VUNPCKHPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "C", "description": "Unpacks and Interleaves double precision floating-point values from high quadwords of ymm2 and ymm3/m256/m64bcst subject to writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 15 /r", "instruction": "VUNPCKHPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "C", "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of zmm2 and zmm3/m512/m64bcst subject to writemask k1."}]
+[
+  {
+    "opcode": "66 0F 15 /r",
+    "instruction": "UNPCKHPD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of xmm1 and xmm2/m128."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 15 /r",
+    "instruction": "VUNPCKHPD xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of xmm2 and xmm3/m128."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 15 /r",
+    "instruction": "VUNPCKHPD ymm1,ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of ymm2 and ymm3/m256."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 15 /r",
+    "instruction": "VUNPCKHPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "C",
+    "description": "Unpacks and Interleaves double precision floating-point values from high quadwords of xmm2 and xmm3/m128/m64bcst subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 15 /r",
+    "instruction": "VUNPCKHPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "C",
+    "description": "Unpacks and Interleaves double precision floating-point values from high quadwords of ymm2 and ymm3/m256/m64bcst subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 15 /r",
+    "instruction": "VUNPCKHPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "C",
+    "description": "Unpacks and Interleaves double-precision floating-point values from high quadwords of zmm2 and zmm3/m512/m64bcst subject to writemask k1."
+  }
+]

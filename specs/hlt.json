@@ -1,1 +1,8 @@
-[{"opcode": "F4", "instruction": "HLT", "operand_encoding": "ZO", "description": "Halt"}]
+[
+  {
+    "opcode": "F4",
+    "instruction": "HLT",
+    "operand_encoding": "ZO",
+    "description": "Halt"
+  }
+]

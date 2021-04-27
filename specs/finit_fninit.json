@@ -1,1 +1,14 @@
-[{"opcode": "9B DB E3", "instruction": "FINIT", "operand_encoding": "ZO", "description": "Initialize FPU after checking for pending unmasked floating-point exceptions."}, {"opcode": "DB E3", "instruction": "FNINIT*", "operand_encoding": "ZO", "description": "Initialize FPU without checking for pending unmasked floating-point exceptions."}]
+[
+  {
+    "opcode": "9B DB E3",
+    "instruction": "FINIT",
+    "operand_encoding": "ZO",
+    "description": "Initialize FPU after checking for pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "DB E3",
+    "instruction": "FNINIT*",
+    "operand_encoding": "ZO",
+    "description": "Initialize FPU without checking for pending unmasked floating-point exceptions."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "VEX.128.0F.WIG 77", "instruction": "VZEROUPPER", "operand_encoding": "ZO", "description": "Zero upper 128 bits of all YMM registers."}]
+[
+  {
+    "opcode": "VEX.128.0F.WIG 77",
+    "instruction": "VZEROUPPER",
+    "operand_encoding": "ZO",
+    "description": "Zero upper 128 bits of all YMM registers."
+  }
+]

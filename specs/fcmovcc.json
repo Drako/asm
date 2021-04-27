@@ -1,1 +1,50 @@
-[{"opcode": "DA C0+i", "instruction": "FCMOVB ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if below (CF=1)."}, {"opcode": "DA C8+i", "instruction": "FCMOVE ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if equal (ZF=1)."}, {"opcode": "DA D0+i", "instruction": "FCMOVBE ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if below or equal (CF=1 or ZF=1)."}, {"opcode": "DA D8+i", "instruction": "FCMOVU ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if unordered (PF=1)."}, {"opcode": "DB C0+i", "instruction": "FCMOVNB ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if not below (CF=0)."}, {"opcode": "DB C8+i", "instruction": "FCMOVNE ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if not equal (ZF=0)."}, {"opcode": "DB D0+i", "instruction": "FCMOVNBE ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if not below or equal (CF=0 and ZF=0)."}, {"opcode": "DB D8+i", "instruction": "FCMOVNU ST(0), ST(i)", "operand_encoding": "ZO", "description": "Move if not unordered (PF=0)."}]
+[
+  {
+    "opcode": "DA C0+i",
+    "instruction": "FCMOVB ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if below (CF=1)."
+  },
+  {
+    "opcode": "DA C8+i",
+    "instruction": "FCMOVE ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if equal (ZF=1)."
+  },
+  {
+    "opcode": "DA D0+i",
+    "instruction": "FCMOVBE ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if below or equal (CF=1 or ZF=1)."
+  },
+  {
+    "opcode": "DA D8+i",
+    "instruction": "FCMOVU ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if unordered (PF=1)."
+  },
+  {
+    "opcode": "DB C0+i",
+    "instruction": "FCMOVNB ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if not below (CF=0)."
+  },
+  {
+    "opcode": "DB C8+i",
+    "instruction": "FCMOVNE ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if not equal (ZF=0)."
+  },
+  {
+    "opcode": "DB D0+i",
+    "instruction": "FCMOVNBE ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if not below or equal (CF=0 and ZF=0)."
+  },
+  {
+    "opcode": "DB D8+i",
+    "instruction": "FCMOVNU ST(0), ST(i)",
+    "operand_encoding": "ZO",
+    "description": "Move if not unordered (PF=0)."
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "0F B3 /r", "instruction": "BTR r/m16, r16", "operand_encoding": "MR", "description": "Store selected bit in CF flag and clear."}, {"opcode": "0F B3 /r", "instruction": "BTR r/m32, r32", "operand_encoding": "MR", "description": "Store selected bit in CF flag and clear."}, {"opcode": "REX.W + 0F B3 /r", "instruction": "BTR r/m64, r64", "operand_encoding": "MR", "description": "Store selected bit in CF flag and clear."}, {"opcode": "0F BA /6 ib", "instruction": "BTR r/m16, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag and clear."}, {"opcode": "0F BA /6 ib", "instruction": "BTR r/m32, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag and clear."}, {"opcode": "REX.W + 0F BA /6 ib", "instruction": "BTR r/m64, imm8", "operand_encoding": "MI", "description": "Store selected bit in CF flag and clear."}]
+[
+  {
+    "opcode": "0F B3 /r",
+    "instruction": "BTR r/m16, r16",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag and clear."
+  },
+  {
+    "opcode": "0F B3 /r",
+    "instruction": "BTR r/m32, r32",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag and clear."
+  },
+  {
+    "opcode": "REX.W + 0F B3 /r",
+    "instruction": "BTR r/m64, r64",
+    "operand_encoding": "MR",
+    "description": "Store selected bit in CF flag and clear."
+  },
+  {
+    "opcode": "0F BA /6 ib",
+    "instruction": "BTR r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag and clear."
+  },
+  {
+    "opcode": "0F BA /6 ib",
+    "instruction": "BTR r/m32, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag and clear."
+  },
+  {
+    "opcode": "REX.W + 0F BA /6 ib",
+    "instruction": "BTR r/m64, imm8",
+    "operand_encoding": "MI",
+    "description": "Store selected bit in CF flag and clear."
+  }
+]

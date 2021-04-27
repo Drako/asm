@@ -1,1 +1,26 @@
-[{"opcode": "0F 20/r", "instruction": "CR0\u2013CR7", "operand_encoding": "MR", "description": "Move extended control register to r64."}, {"opcode": "REX.R + 0F 20 /0", "instruction": "CR8", "operand_encoding": "MR", "description": "Move extended CR8 to r64.1"}, {"opcode": "0F 22 /r", "instruction": "CR0\u2013CR7, r64", "operand_encoding": "RM", "description": "Move r64 to extended control register."}, {"opcode": "REX.R + 0F 22 /0", "instruction": "CR8, r64", "operand_encoding": "RM", "description": "Move r64 to extended CR8.1"}]
+[
+  {
+    "opcode": "0F 20/r",
+    "instruction": "CR0\u2013CR7",
+    "operand_encoding": "MR",
+    "description": "Move extended control register to r64."
+  },
+  {
+    "opcode": "REX.R + 0F 20 /0",
+    "instruction": "CR8",
+    "operand_encoding": "MR",
+    "description": "Move extended CR8 to r64.1"
+  },
+  {
+    "opcode": "0F 22 /r",
+    "instruction": "CR0\u2013CR7, r64",
+    "operand_encoding": "RM",
+    "description": "Move r64 to extended control register."
+  },
+  {
+    "opcode": "REX.R + 0F 22 /0",
+    "instruction": "CR8, r64",
+    "operand_encoding": "RM",
+    "description": "Move r64 to extended CR8.1"
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 59 /r", "instruction": "MULPD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Multiply packed double-precision floating-point values in xmm2/m128 with xmm1 and store result in xmm1."}, {"opcode": "VEX.128.66.0F.WIG 59 /r", "instruction": "VMULPD xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Multiply packed double-precision floating-point values in xmm3/m128 with xmm2 and store result in xmm1."}, {"opcode": "VEX.256.66.0F.WIG 59 /r", "instruction": "VMULPD ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Multiply packed double-precision floating-point values in ymm3/m256 with ymm2 and store result in ymm1."}, {"opcode": "EVEX.128.66.0F.W1 59 /r", "instruction": "VMULPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "C", "description": "Multiply packed double-precision floating-point values from xmm3/m128/m64bcst to xmm2 and store result in xmm1."}, {"opcode": "EVEX.256.66.0F.W1 59 /r", "instruction": "VMULPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "C", "description": "Multiply packed double-precision floating-point values from ymm3/m256/m64bcst to ymm2 and store result in ymm1."}, {"opcode": "EVEX.512.66.0F.W1 59 /r", "instruction": "VMULPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst{er}", "operand_encoding": "C", "description": "Multiply packed double-precision floating-point values in zmm3/m512/m64bcst with zmm2 and store result in zmm1."}]
+[
+  {
+    "opcode": "66 0F 59 /r",
+    "instruction": "MULPD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Multiply packed double-precision floating-point values in xmm2/m128 with xmm1 and store result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 59 /r",
+    "instruction": "VMULPD xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Multiply packed double-precision floating-point values in xmm3/m128 with xmm2 and store result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 59 /r",
+    "instruction": "VMULPD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Multiply packed double-precision floating-point values in ymm3/m256 with ymm2 and store result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 59 /r",
+    "instruction": "VMULPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "C",
+    "description": "Multiply packed double-precision floating-point values from xmm3/m128/m64bcst to xmm2 and store result in xmm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 59 /r",
+    "instruction": "VMULPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "C",
+    "description": "Multiply packed double-precision floating-point values from ymm3/m256/m64bcst to ymm2 and store result in ymm1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 59 /r",
+    "instruction": "VMULPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst{er}",
+    "operand_encoding": "C",
+    "description": "Multiply packed double-precision floating-point values in zmm3/m512/m64bcst with zmm2 and store result in zmm1."
+  }
+]

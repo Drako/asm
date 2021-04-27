@@ -1,1 +1,50 @@
-[{"opcode": "A4", "instruction": "MOVS m8, m8", "operand_encoding": "ZO", "description": "For legacy mode, Move byte from address DS:(E)SI to ES:(E)DI. For 64-bit mode move byte from address (R|E)SI to (R|E)DI."}, {"opcode": "A5", "instruction": "MOVS m16, m16", "operand_encoding": "ZO", "description": "For legacy mode, move word from address DS:(E)SI to ES:(E)DI. For 64-bit mode move word at address (R|E)SI to (R|E)DI."}, {"opcode": "A5", "instruction": "MOVS m32, m32", "operand_encoding": "ZO", "description": "For legacy mode, move dword from address DS:(E)SI to ES:(E)DI. For 64-bit mode move dword from address (R|E)SI to (R|E)DI."}, {"opcode": "REX.W + A5", "instruction": "MOVS m64, m64", "operand_encoding": "ZO", "description": "Move qword from address (R|E)SI to (R|E)DI."}, {"opcode": "A4", "instruction": "MOVSB", "operand_encoding": "ZO", "description": "For legacy mode, Move byte from address DS:(E)SI to ES:(E)DI. For 64-bit mode move byte from address (R|E)SI to (R|E)DI."}, {"opcode": "A5", "instruction": "MOVSW", "operand_encoding": "ZO", "description": "For legacy mode, move word from address DS:(E)SI to ES:(E)DI. For 64-bit mode move word at address (R|E)SI to (R|E)DI."}, {"opcode": "A5", "instruction": "MOVSD", "operand_encoding": "ZO", "description": "For legacy mode, move dword from address DS:(E)SI to ES:(E)DI. For 64-bit mode move dword from address (R|E)SI to (R|E)DI."}, {"opcode": "REX.W + A5", "instruction": "MOVSQ", "operand_encoding": "ZO", "description": "Move qword from address (R|E)SI to (R|E)DI."}]
+[
+  {
+    "opcode": "A4",
+    "instruction": "MOVS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, Move byte from address DS:(E)SI to ES:(E)DI. For 64-bit mode move byte from address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "A5",
+    "instruction": "MOVS m16, m16",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, move word from address DS:(E)SI to ES:(E)DI. For 64-bit mode move word at address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "A5",
+    "instruction": "MOVS m32, m32",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, move dword from address DS:(E)SI to ES:(E)DI. For 64-bit mode move dword from address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "REX.W + A5",
+    "instruction": "MOVS m64, m64",
+    "operand_encoding": "ZO",
+    "description": "Move qword from address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "A4",
+    "instruction": "MOVSB",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, Move byte from address DS:(E)SI to ES:(E)DI. For 64-bit mode move byte from address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "A5",
+    "instruction": "MOVSW",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, move word from address DS:(E)SI to ES:(E)DI. For 64-bit mode move word at address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "A5",
+    "instruction": "MOVSD",
+    "operand_encoding": "ZO",
+    "description": "For legacy mode, move dword from address DS:(E)SI to ES:(E)DI. For 64-bit mode move dword from address (R|E)SI to (R|E)DI."
+  },
+  {
+    "opcode": "REX.W + A5",
+    "instruction": "MOVSQ",
+    "operand_encoding": "ZO",
+    "description": "Move qword from address (R|E)SI to (R|E)DI."
+  }
+]

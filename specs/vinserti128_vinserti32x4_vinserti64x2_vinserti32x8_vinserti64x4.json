@@ -1,1 +1,44 @@
-[{"opcode": "VEX.256.66.0F3A.W0 38 /r ib", "instruction": "VINSERTI128 ymm1, ymm2, xmm3/m128, imm8", "operand_encoding": "A", "description": "Insert 128 bits of integer data from xmm3/m128 and the remaining values from ymm2 into ymm1."}, {"opcode": "EVEX.256.66.0F3A.W0 38 /r ib", "instruction": "VINSERTI32X4 ymm1 {k1}{z}, ymm2, xmm3/m128, imm8", "operand_encoding": "C", "description": "Insert 128 bits of packed doubleword integer values from xmm3/m128 and the remaining values from ymm2 into ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 38 /r ib", "instruction": "VINSERTI32X4 zmm1 {k1}{z}, zmm2, xmm3/m128, imm8", "operand_encoding": "C", "description": "Insert 128 bits of packed doubleword integer values from xmm3/m128 and the remaining values from zmm2 into zmm1 under writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 38 /r ib", "instruction": "VINSERTI64X2 ymm1 {k1}{z}, ymm2, xmm3/m128, imm8", "operand_encoding": "B", "description": "Insert 128 bits of packed quadword integer values from xmm3/m128 and the remaining values from ymm2 into ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 38 /r ib", "instruction": "VINSERTI64X2 zmm1 {k1}{z}, zmm2, xmm3/m128, imm8", "operand_encoding": "B", "description": "Insert 128 bits of packed quadword integer values from xmm3/m128 and the remaining values from zmm2 into zmm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 3A /r ib", "instruction": "VINSERTI32X8 zmm1 {k1}{z}, zmm2, ymm3/m256, imm8", "operand_encoding": "D", "description": "Insert 256 bits of packed doubleword integer values from ymm3/m256 and the remaining values from zmm2 into zmm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 3A /r ib", "instruction": "VINSERTI64X4 zmm1 {k1}{z}, zmm2, ymm3/m256, imm8", "operand_encoding": "C", "description": "Insert 256 bits of packed quadword integer values from ymm3/m256 and the remaining values from zmm2 into zmm1 under writemask k1."}]
+[
+  {
+    "opcode": "VEX.256.66.0F3A.W0 38 /r ib",
+    "instruction": "VINSERTI128 ymm1, ymm2, xmm3/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Insert 128 bits of integer data from xmm3/m128 and the remaining values from ymm2 into ymm1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 38 /r ib",
+    "instruction": "VINSERTI32X4 ymm1 {k1}{z}, ymm2, xmm3/m128, imm8",
+    "operand_encoding": "C",
+    "description": "Insert 128 bits of packed doubleword integer values from xmm3/m128 and the remaining values from ymm2 into ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 38 /r ib",
+    "instruction": "VINSERTI32X4 zmm1 {k1}{z}, zmm2, xmm3/m128, imm8",
+    "operand_encoding": "C",
+    "description": "Insert 128 bits of packed doubleword integer values from xmm3/m128 and the remaining values from zmm2 into zmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 38 /r ib",
+    "instruction": "VINSERTI64X2 ymm1 {k1}{z}, ymm2, xmm3/m128, imm8",
+    "operand_encoding": "B",
+    "description": "Insert 128 bits of packed quadword integer values from xmm3/m128 and the remaining values from ymm2 into ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 38 /r ib",
+    "instruction": "VINSERTI64X2 zmm1 {k1}{z}, zmm2, xmm3/m128, imm8",
+    "operand_encoding": "B",
+    "description": "Insert 128 bits of packed quadword integer values from xmm3/m128 and the remaining values from zmm2 into zmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 3A /r ib",
+    "instruction": "VINSERTI32X8 zmm1 {k1}{z}, zmm2, ymm3/m256, imm8",
+    "operand_encoding": "D",
+    "description": "Insert 256 bits of packed doubleword integer values from ymm3/m256 and the remaining values from zmm2 into zmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 3A /r ib",
+    "instruction": "VINSERTI64X4 zmm1 {k1}{z}, zmm2, ymm3/m256, imm8",
+    "operand_encoding": "C",
+    "description": "Insert 256 bits of packed quadword integer values from ymm3/m256 and the remaining values from zmm2 into zmm1 under writemask k1."
+  }
+]

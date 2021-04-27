@@ -1,1 +1,38 @@
-[{"opcode": "F3 0F 16 /r", "instruction": "MOVSHDUP xmm1, xmm2/m128", "operand_encoding": "A", "description": "Move odd index single-precision floating-point values from xmm2/mem and duplicate each element into xmm1."}, {"opcode": "VEX.128.F3.0F.WIG 16 /r", "instruction": "VMOVSHDUP xmm1, xmm2/m128", "operand_encoding": "A", "description": "Move odd index single-precision floating-point values from xmm2/mem and duplicate each element into xmm1."}, {"opcode": "VEX.256.F3.0F.WIG 16 /r", "instruction": "VMOVSHDUP ymm1, ymm2/m256", "operand_encoding": "A", "description": "Move odd index single-precision floating-point values from ymm2/mem and duplicate each element into ymm1."}, {"opcode": "EVEX.128.F3.0F.W0 16 /r", "instruction": "VMOVSHDUP xmm1 {k1}{z}, xmm2/m128", "operand_encoding": "B", "description": "Move odd index single-precision floating-point values from xmm2/m128 and duplicate each element into xmm1 under writemask."}, {"opcode": "EVEX.256.F3.0F.W0 16 /r", "instruction": "VMOVSHDUP ymm1 {k1}{z}, ymm2/m256", "operand_encoding": "B", "description": "Move odd index single-precision floating-point values from ymm2/m256 and duplicate each element into ymm1 under writemask."}, {"opcode": "EVEX.512.F3.0F.W0 16 /r", "instruction": "VMOVSHDUP zmm1 {k1}{z}, zmm2/m512", "operand_encoding": "B", "description": "Move odd index single-precision floating-point values from zmm2/m512 and duplicate each element into zmm1 under writemask."}]
+[
+  {
+    "opcode": "F3 0F 16 /r",
+    "instruction": "MOVSHDUP xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Move odd index single-precision floating-point values from xmm2/mem and duplicate each element into xmm1."
+  },
+  {
+    "opcode": "VEX.128.F3.0F.WIG 16 /r",
+    "instruction": "VMOVSHDUP xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Move odd index single-precision floating-point values from xmm2/mem and duplicate each element into xmm1."
+  },
+  {
+    "opcode": "VEX.256.F3.0F.WIG 16 /r",
+    "instruction": "VMOVSHDUP ymm1, ymm2/m256",
+    "operand_encoding": "A",
+    "description": "Move odd index single-precision floating-point values from ymm2/mem and duplicate each element into ymm1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F.W0 16 /r",
+    "instruction": "VMOVSHDUP xmm1 {k1}{z}, xmm2/m128",
+    "operand_encoding": "B",
+    "description": "Move odd index single-precision floating-point values from xmm2/m128 and duplicate each element into xmm1 under writemask."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F.W0 16 /r",
+    "instruction": "VMOVSHDUP ymm1 {k1}{z}, ymm2/m256",
+    "operand_encoding": "B",
+    "description": "Move odd index single-precision floating-point values from ymm2/m256 and duplicate each element into ymm1 under writemask."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F.W0 16 /r",
+    "instruction": "VMOVSHDUP zmm1 {k1}{z}, zmm2/m512",
+    "operand_encoding": "B",
+    "description": "Move odd index single-precision floating-point values from zmm2/m512 and duplicate each element into zmm1 under writemask."
+  }
+]

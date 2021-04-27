@@ -1,1 +1,134 @@
-[{"opcode": "34 ib", "instruction": "XOR AL, imm8", "operand_encoding": "I", "description": "AL XOR imm8."}, {"opcode": "35 iw", "instruction": "XOR AX, imm16", "operand_encoding": "I", "description": "AX XOR imm16."}, {"opcode": "35 id", "instruction": "XOR EAX, imm32", "operand_encoding": "I", "description": "EAX XOR imm32."}, {"opcode": "REX.W + 35 id", "instruction": "XOR RAX, imm32", "operand_encoding": "I", "description": "RAX XOR imm32 (sign-extended)."}, {"opcode": "80 /6 ib", "instruction": "XOR r/m8, imm8", "operand_encoding": "MI", "description": "r/m8 XOR imm8."}, {"opcode": "REX + 80 /6 ib", "instruction": "XOR r/m8*, imm8", "operand_encoding": "MI", "description": "r/m8 XOR imm8."}, {"opcode": "81 /6 iw", "instruction": "XOR r/m16, imm16", "operand_encoding": "MI", "description": "r/m16 XOR imm16."}, {"opcode": "81 /6 id", "instruction": "XOR r/m32, imm32", "operand_encoding": "MI", "description": "r/m32 XOR imm32."}, {"opcode": "REX.W + 81 /6 id", "instruction": "XOR r/m64, imm32", "operand_encoding": "MI", "description": "r/m64 XOR imm32 (sign-extended)."}, {"opcode": "83 /6 ib", "instruction": "XOR r/m16, imm8", "operand_encoding": "MI", "description": "r/m16 XOR imm8 (sign-extended)."}, {"opcode": "83 /6 ib", "instruction": "XOR r/m32, imm8", "operand_encoding": "MI", "description": "r/m32 XOR imm8 (sign-extended)."}, {"opcode": "REX.W + 83 /6 ib", "instruction": "XOR r/m64, imm8", "operand_encoding": "MI", "description": "r/m64 XOR imm8 (sign-extended)."}, {"opcode": "30 /r", "instruction": "XOR r/m8, r8", "operand_encoding": "MR", "description": "r/m8 XOR r8."}, {"opcode": "REX + 30 /r", "instruction": "XOR r/m8*, r8*", "operand_encoding": "MR", "description": "r/m8 XOR r8."}, {"opcode": "31 /r", "instruction": "XOR r/m16, r16", "operand_encoding": "MR", "description": "r/m16 XOR r16."}, {"opcode": "31 /r", "instruction": "XOR r/m32, r32", "operand_encoding": "MR", "description": "r/m32 XOR r32."}, {"opcode": "REX.W + 31 /r", "instruction": "XOR r/m64, r64", "operand_encoding": "MR", "description": "r/m64 XOR r64."}, {"opcode": "32 /r", "instruction": "XOR r8, r/m8", "operand_encoding": "RM", "description": "r8 XOR r/m8."}, {"opcode": "REX + 32 /r", "instruction": "XOR r8*, r/m8*", "operand_encoding": "RM", "description": "r8 XOR r/m8."}, {"opcode": "33 /r", "instruction": "XOR r16, r/m16", "operand_encoding": "RM", "description": "r16 XOR r/m16."}, {"opcode": "33 /r", "instruction": "XOR r32, r/m32", "operand_encoding": "RM", "description": "r32 XOR r/m32."}, {"opcode": "REX.W + 33 /r", "instruction": "XOR r64, r/m64", "operand_encoding": "RM", "description": "r64 XOR r/m64."}]
+[
+  {
+    "opcode": "34 ib",
+    "instruction": "XOR AL, imm8",
+    "operand_encoding": "I",
+    "description": "AL XOR imm8."
+  },
+  {
+    "opcode": "35 iw",
+    "instruction": "XOR AX, imm16",
+    "operand_encoding": "I",
+    "description": "AX XOR imm16."
+  },
+  {
+    "opcode": "35 id",
+    "instruction": "XOR EAX, imm32",
+    "operand_encoding": "I",
+    "description": "EAX XOR imm32."
+  },
+  {
+    "opcode": "REX.W + 35 id",
+    "instruction": "XOR RAX, imm32",
+    "operand_encoding": "I",
+    "description": "RAX XOR imm32 (sign-extended)."
+  },
+  {
+    "opcode": "80 /6 ib",
+    "instruction": "XOR r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "r/m8 XOR imm8."
+  },
+  {
+    "opcode": "REX + 80 /6 ib",
+    "instruction": "XOR r/m8*, imm8",
+    "operand_encoding": "MI",
+    "description": "r/m8 XOR imm8."
+  },
+  {
+    "opcode": "81 /6 iw",
+    "instruction": "XOR r/m16, imm16",
+    "operand_encoding": "MI",
+    "description": "r/m16 XOR imm16."
+  },
+  {
+    "opcode": "81 /6 id",
+    "instruction": "XOR r/m32, imm32",
+    "operand_encoding": "MI",
+    "description": "r/m32 XOR imm32."
+  },
+  {
+    "opcode": "REX.W + 81 /6 id",
+    "instruction": "XOR r/m64, imm32",
+    "operand_encoding": "MI",
+    "description": "r/m64 XOR imm32 (sign-extended)."
+  },
+  {
+    "opcode": "83 /6 ib",
+    "instruction": "XOR r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "r/m16 XOR imm8 (sign-extended)."
+  },
+  {
+    "opcode": "83 /6 ib",
+    "instruction": "XOR r/m32, imm8",
+    "operand_encoding": "MI",
+    "description": "r/m32 XOR imm8 (sign-extended)."
+  },
+  {
+    "opcode": "REX.W + 83 /6 ib",
+    "instruction": "XOR r/m64, imm8",
+    "operand_encoding": "MI",
+    "description": "r/m64 XOR imm8 (sign-extended)."
+  },
+  {
+    "opcode": "30 /r",
+    "instruction": "XOR r/m8, r8",
+    "operand_encoding": "MR",
+    "description": "r/m8 XOR r8."
+  },
+  {
+    "opcode": "REX + 30 /r",
+    "instruction": "XOR r/m8*, r8*",
+    "operand_encoding": "MR",
+    "description": "r/m8 XOR r8."
+  },
+  {
+    "opcode": "31 /r",
+    "instruction": "XOR r/m16, r16",
+    "operand_encoding": "MR",
+    "description": "r/m16 XOR r16."
+  },
+  {
+    "opcode": "31 /r",
+    "instruction": "XOR r/m32, r32",
+    "operand_encoding": "MR",
+    "description": "r/m32 XOR r32."
+  },
+  {
+    "opcode": "REX.W + 31 /r",
+    "instruction": "XOR r/m64, r64",
+    "operand_encoding": "MR",
+    "description": "r/m64 XOR r64."
+  },
+  {
+    "opcode": "32 /r",
+    "instruction": "XOR r8, r/m8",
+    "operand_encoding": "RM",
+    "description": "r8 XOR r/m8."
+  },
+  {
+    "opcode": "REX + 32 /r",
+    "instruction": "XOR r8*, r/m8*",
+    "operand_encoding": "RM",
+    "description": "r8 XOR r/m8."
+  },
+  {
+    "opcode": "33 /r",
+    "instruction": "XOR r16, r/m16",
+    "operand_encoding": "RM",
+    "description": "r16 XOR r/m16."
+  },
+  {
+    "opcode": "33 /r",
+    "instruction": "XOR r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "r32 XOR r/m32."
+  },
+  {
+    "opcode": "REX.W + 33 /r",
+    "instruction": "XOR r64, r/m64",
+    "operand_encoding": "RM",
+    "description": "r64 XOR r/m64."
+  }
+]

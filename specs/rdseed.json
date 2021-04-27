@@ -1,1 +1,20 @@
-[{"opcode": "NFx 0F C7 /7", "instruction": "RDSEED r16", "operand_encoding": "M", "description": "Read a 16-bit NIST SP800-90B & C compliant random value and store in the destination register."}, {"opcode": "NFx 0F C7 /7", "instruction": "RDSEED r32", "operand_encoding": "M", "description": "Read a 32-bit NIST SP800-90B & C compliant random value and store in the destination register."}, {"opcode": "NFx", "instruction": "RDSEED r64", "operand_encoding": "M", "description": "Read a 64-bit NIST SP800-90B & C compliant random value and store in the destination register."}]
+[
+  {
+    "opcode": "NFx 0F C7 /7",
+    "instruction": "RDSEED r16",
+    "operand_encoding": "M",
+    "description": "Read a 16-bit NIST SP800-90B & C compliant random value and store in the destination register."
+  },
+  {
+    "opcode": "NFx 0F C7 /7",
+    "instruction": "RDSEED r32",
+    "operand_encoding": "M",
+    "description": "Read a 32-bit NIST SP800-90B & C compliant random value and store in the destination register."
+  },
+  {
+    "opcode": "NFx",
+    "instruction": "RDSEED r64",
+    "operand_encoding": "M",
+    "description": "Read a 64-bit NIST SP800-90B & C compliant random value and store in the destination register."
+  }
+]

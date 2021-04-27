@@ -1,1 +1,8 @@
-[{"opcode": "EVEX.LIG.66.0F3A.W0 27 /r ib", "instruction": "VGETMANTSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}, imm8", "operand_encoding": "A", "description": "Extract the normalized mantissa from the low float32 element of xmm3/m32 using imm8 for sign control and mantissa interval normalization, store the mantissa to xmm1 under the writemask k1 and merge with the other elements of xmm2."}]
+[
+  {
+    "opcode": "EVEX.LIG.66.0F3A.W0 27 /r ib",
+    "instruction": "VGETMANTSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}, imm8",
+    "operand_encoding": "A",
+    "description": "Extract the normalized mantissa from the low float32 element of xmm3/m32 using imm8 for sign control and mantissa interval normalization, store the mantissa to xmm1 under the writemask k1 and merge with the other elements of xmm2."
+  }
+]

@@ -1,1 +1,14 @@
-[{"opcode": "9B D9 /6", "instruction": "FSTENV m14/28byte", "operand_encoding": "ZO", "description": "Store FPU environment to m14byte or m28byte after checking for pending unmasked floating-point exceptions. Then mask all floating-point exceptions."}, {"opcode": "D9 /6", "instruction": "FNSTENV* m14/28byte", "operand_encoding": "ZO", "description": "Store FPU environment to m14byte or m28byte without checking for pending unmasked floating-point exceptions. Then mask all floating-point exceptions."}]
+[
+  {
+    "opcode": "9B D9 /6",
+    "instruction": "FSTENV m14/28byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU environment to m14byte or m28byte after checking for pending unmasked floating-point exceptions. Then mask all floating-point exceptions."
+  },
+  {
+    "opcode": "D9 /6",
+    "instruction": "FNSTENV* m14/28byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU environment to m14byte or m28byte without checking for pending unmasked floating-point exceptions. Then mask all floating-point exceptions."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "NFx 66 0F AE /7", "instruction": "CLFLUSHOPT m8", "operand_encoding": "M", "description": "Flushes cache line containing m8."}]
+[
+  {
+    "opcode": "NFx 66 0F AE /7",
+    "instruction": "CLFLUSHOPT m8",
+    "operand_encoding": "M",
+    "description": "Flushes cache line containing m8."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "D9 D0", "instruction": "FNOP", "operand_encoding": "ZO", "description": "No operation is performed."}]
+[
+  {
+    "opcode": "D9 D0",
+    "instruction": "FNOP",
+    "operand_encoding": "ZO",
+    "description": "No operation is performed."
+  }
+]

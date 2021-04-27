@@ -1,1 +1,44 @@
-[{"opcode": "NP 0F F6 /r1", "instruction": "PSADBW mm1, mm2/m64", "operand_encoding": "A", "description": "Computes the absolute differences of the packed unsigned byte integers from mm2 /m64 and mm1; differences are then summed to produce an unsigned word integer result."}, {"opcode": "66 0F F6 /r", "instruction": "PSADBW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Computes the absolute differences of the packed unsigned byte integers from xmm2 /m128 and xmm1; the 8 low differences and 8 high differences are then summed separately to produce two unsigned word integer results."}, {"opcode": "VEX.128.66.0F.WIG F6 /r", "instruction": "VPSADBW xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Computes the absolute differences of the packed unsigned byte integers from xmm3 /m128 and xmm2; the 8 low differences and 8 high differences are then summed separately to produce two unsigned word integer results."}, {"opcode": "VEX.256.66.0F.WIG F6 /r", "instruction": "VPSADBW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Computes the absolute differences of the packed unsigned byte integers from ymm3 /m256 and ymm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."}, {"opcode": "EVEX.128.66.0F.WIG F6 /r", "instruction": "VPSADBW xmm1, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Computes the absolute differences of the packed unsigned byte integers from xmm3 /m128 and xmm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."}, {"opcode": "EVEX.256.66.0F.WIG F6 /r", "instruction": "VPSADBW ymm1, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Computes the absolute differences of the packed unsigned byte integers from ymm3 /m256 and ymm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."}, {"opcode": "EVEX.512.66.0F.WIG F6 /r", "instruction": "VPSADBW zmm1, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Computes the absolute differences of the packed unsigned byte integers from zmm3 /m512 and zmm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."}]
+[
+  {
+    "opcode": "NP 0F F6 /r1",
+    "instruction": "PSADBW mm1, mm2/m64",
+    "operand_encoding": "A",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from mm2 /m64 and mm1; differences are then summed to produce an unsigned word integer result."
+  },
+  {
+    "opcode": "66 0F F6 /r",
+    "instruction": "PSADBW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from xmm2 /m128 and xmm1; the 8 low differences and 8 high differences are then summed separately to produce two unsigned word integer results."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG F6 /r",
+    "instruction": "VPSADBW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from xmm3 /m128 and xmm2; the 8 low differences and 8 high differences are then summed separately to produce two unsigned word integer results."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG F6 /r",
+    "instruction": "VPSADBW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from ymm3 /m256 and ymm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG F6 /r",
+    "instruction": "VPSADBW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from xmm3 /m128 and xmm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.WIG F6 /r",
+    "instruction": "VPSADBW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from ymm3 /m256 and ymm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.WIG F6 /r",
+    "instruction": "VPSADBW zmm1, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Computes the absolute differences of the packed unsigned byte integers from zmm3 /m512 and zmm2; then each consecutive 8 differences are summed separately to produce four unsigned word integer results."
+  }
+]

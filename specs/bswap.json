@@ -1,1 +1,8 @@
-[{"opcode": "REX.W + 0F C8+rd", "instruction": "BSWAP r64", "operand_encoding": "O", "description": "Reverses the byte order of a 64-bit register."}]
+[
+  {
+    "opcode": "REX.W + 0F C8+rd",
+    "instruction": "BSWAP r64",
+    "operand_encoding": "O",
+    "description": "Reverses the byte order of a 64-bit register."
+  }
+]

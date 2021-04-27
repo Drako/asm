@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 1C /0", "instruction": "CLDEMOTE m8", "operand_encoding": "A", "description": "Hint to hardware to move the cache line containing m8 to a more distant level of the cache without writing back to memory."}]
+[
+  {
+    "opcode": "NP 0F 1C /0",
+    "instruction": "CLDEMOTE m8",
+    "operand_encoding": "A",
+    "description": "Hint to hardware to move the cache line containing m8 to a more distant level of the cache without writing back to memory."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "0F 30", "instruction": "WRMSR", "operand_encoding": "ZO", "description": "Write the value in EDX:EAX to MSR specified by ECX."}]
+[
+  {
+    "opcode": "0F 30",
+    "instruction": "WRMSR",
+    "operand_encoding": "ZO",
+    "description": "Write the value in EDX:EAX to MSR specified by ECX."
+  }
+]

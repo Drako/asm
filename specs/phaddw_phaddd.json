@@ -1,1 +1,50 @@
-[{"opcode": "NP 0F 38 01 /r1", "instruction": "PHADDW mm1, mm2/m64", "operand_encoding": "RM", "description": "Add 16-bit integers horizontally, pack to mm1."}, {"opcode": "66 0F 38 01 /r", "instruction": "PHADDW xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Add 16-bit integers horizontally, pack to xmm1."}, {"opcode": "NP 0F 38 02 /r", "instruction": "PHADDD mm1, mm2/m64", "operand_encoding": "RM", "description": "Add 32-bit integers horizontally, pack to mm1."}, {"opcode": "66 0F 38 02 /r", "instruction": "PHADDD xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Add 32-bit integers horizontally, pack to xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 01 /r", "instruction": "VPHADDW xmm1, xmm2, xmm3/m128", "operand_encoding": "RVM", "description": "Add 16-bit integers horizontally, pack to xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 02 /r", "instruction": "VPHADDD xmm1, xmm2, xmm3/m128", "operand_encoding": "RVM", "description": "Add 32-bit integers horizontally, pack to xmm1."}, {"opcode": "VEX.256.66.0F38.WIG 01 /r", "instruction": "VPHADDW ymm1, ymm2, ymm3/m256", "operand_encoding": "RVM", "description": "Add 16-bit signed integers horizontally, pack to ymm1."}, {"opcode": "VEX.256.66.0F38.WIG 02 /r", "instruction": "VPHADDD ymm1, ymm2, ymm3/m256", "operand_encoding": "RVM", "description": "Add 32-bit signed integers horizontally, pack to ymm1."}]
+[
+  {
+    "opcode": "NP 0F 38 01 /r1",
+    "instruction": "PHADDW mm1, mm2/m64",
+    "operand_encoding": "RM",
+    "description": "Add 16-bit integers horizontally, pack to mm1."
+  },
+  {
+    "opcode": "66 0F 38 01 /r",
+    "instruction": "PHADDW xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Add 16-bit integers horizontally, pack to xmm1."
+  },
+  {
+    "opcode": "NP 0F 38 02 /r",
+    "instruction": "PHADDD mm1, mm2/m64",
+    "operand_encoding": "RM",
+    "description": "Add 32-bit integers horizontally, pack to mm1."
+  },
+  {
+    "opcode": "66 0F 38 02 /r",
+    "instruction": "PHADDD xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Add 32-bit integers horizontally, pack to xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 01 /r",
+    "instruction": "VPHADDW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "RVM",
+    "description": "Add 16-bit integers horizontally, pack to xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 02 /r",
+    "instruction": "VPHADDD xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "RVM",
+    "description": "Add 32-bit integers horizontally, pack to xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 01 /r",
+    "instruction": "VPHADDW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "RVM",
+    "description": "Add 16-bit signed integers horizontally, pack to ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 02 /r",
+    "instruction": "VPHADDD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "RVM",
+    "description": "Add 32-bit signed integers horizontally, pack to ymm1."
+  }
+]

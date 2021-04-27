@@ -1,1 +1,362 @@
-[{"opcode": "0F 97", "instruction": "SETA r/m8", "operand_encoding": "M", "description": "Set byte if above (CF=0 and ZF=0)."}, {"opcode": "REX + 0F 97", "instruction": "SETA r/m8*", "operand_encoding": "M", "description": "Set byte if above (CF=0 and ZF=0)."}, {"opcode": "0F 93", "instruction": "SETAE r/m8", "operand_encoding": "M", "description": "Set byte if above or equal (CF=0)."}, {"opcode": "REX + 0F 93", "instruction": "SETAE r/m8*", "operand_encoding": "M", "description": "Set byte if above or equal (CF=0)."}, {"opcode": "0F 92", "instruction": "SETB r/m8", "operand_encoding": "M", "description": "Set byte if below (CF=1)."}, {"opcode": "REX + 0F 92", "instruction": "SETB r/m8*", "operand_encoding": "M", "description": "Set byte if below (CF=1)."}, {"opcode": "0F 96", "instruction": "SETBE r/m8", "operand_encoding": "M", "description": "Set byte if below or equal (CF=1 or ZF=1)."}, {"opcode": "REX + 0F 96", "instruction": "SETBE r/m8*", "operand_encoding": "M", "description": "Set byte if below or equal (CF=1 or ZF=1)."}, {"opcode": "0F 92", "instruction": "SETC r/m8", "operand_encoding": "M", "description": "Set byte if carry (CF=1)."}, {"opcode": "REX + 0F 92", "instruction": "SETC r/m8*", "operand_encoding": "M", "description": "Set byte if carry (CF=1)."}, {"opcode": "0F 94", "instruction": "SETE r/m8", "operand_encoding": "M", "description": "Set byte if equal (ZF=1)."}, {"opcode": "REX + 0F 94", "instruction": "SETE r/m8*", "operand_encoding": "M", "description": "Set byte if equal (ZF=1)."}, {"opcode": "0F 9F", "instruction": "SETG r/m8", "operand_encoding": "M", "description": "Set byte if greater (ZF=0 and SF=OF)."}, {"opcode": "REX + 0F 9F", "instruction": "SETG r/m8*", "operand_encoding": "M", "description": "Set byte if greater (ZF=0 and SF=OF)."}, {"opcode": "0F 9D", "instruction": "SETGE r/m8", "operand_encoding": "M", "description": "Set byte if greater or equal (SF=OF)."}, {"opcode": "REX + 0F 9D", "instruction": "SETGE r/m8*", "operand_encoding": "M", "description": "Set byte if greater or equal (SF=OF)."}, {"opcode": "0F 9C", "instruction": "SETL r/m8", "operand_encoding": "M", "description": "Set byte if less (SF=\u0338 OF)."}, {"opcode": "REX + 0F 9C", "instruction": "SETL r/m8*", "operand_encoding": "M", "description": "Set byte if less (SF=\u0338 OF)."}, {"opcode": "0F 9E", "instruction": "SETLE r/m8", "operand_encoding": "M", "description": "Set byte if less or equal (ZF=1 or SF=\u0338 OF)."}, {"opcode": "REX + 0F 9E", "instruction": "SETLE r/m8*", "operand_encoding": "M", "description": "Set byte if less or equal (ZF=1 or SF=\u0338 OF)."}, {"opcode": "0F 96", "instruction": "SETNA r/m8", "operand_encoding": "M", "description": "Set byte if not above (CF=1 or ZF=1)."}, {"opcode": "REX + 0F 96", "instruction": "SETNA r/m8*", "operand_encoding": "M", "description": "Set byte if not above (CF=1 or ZF=1)."}, {"opcode": "0F 92", "instruction": "SETNAE r/m8", "operand_encoding": "M", "description": "Set byte if not above or equal (CF=1)."}, {"opcode": "REX + 0F 92", "instruction": "SETNAE r/m8*", "operand_encoding": "M", "description": "Set byte if not above or equal (CF=1)."}, {"opcode": "0F 93", "instruction": "SETNB r/m8", "operand_encoding": "M", "description": "Set byte if not below (CF=0)."}, {"opcode": "REX + 0F 93", "instruction": "SETNB r/m8*", "operand_encoding": "M", "description": "Set byte if not below (CF=0)."}, {"opcode": "0F 97", "instruction": "SETNBE r/m8", "operand_encoding": "M", "description": "Set byte if not below or equal (CF=0 and ZF=0)."}, {"opcode": "REX + 0F 97", "instruction": "SETNBE r/m8*", "operand_encoding": "M", "description": "Set byte if not below or equal (CF=0 and ZF=0)."}, {"opcode": "0F 93", "instruction": "SETNC r/m8", "operand_encoding": "M", "description": "Set byte if not carry (CF=0)."}, {"opcode": "REX + 0F 93", "instruction": "SETNC r/m8*", "operand_encoding": "M", "description": "Set byte if not carry (CF=0)."}, {"opcode": "0F 95", "instruction": "SETNE r/m8", "operand_encoding": "M", "description": "Set byte if not equal (ZF=0)."}, {"opcode": "REX + 0F 95", "instruction": "SETNE r/m8*", "operand_encoding": "M", "description": "Set byte if not equal (ZF=0)."}, {"opcode": "0F 9E", "instruction": "SETNG r/m8", "operand_encoding": "M", "description": "Set byte if not greater (ZF=1 or SF=\u0338 OF)"}, {"opcode": "REX + 0F 9E", "instruction": "SETNG r/m8*", "operand_encoding": "M", "description": "Set byte if not greater (ZF=1 or SF=\u0338 OF)."}, {"opcode": "0F 9C", "instruction": "SETNGE r/m8", "operand_encoding": "M", "description": "Set byte if not greater or equal (SF=\u0338 OF)."}, {"opcode": "REX + 0F 9C", "instruction": "SETNGE r/m8*", "operand_encoding": "M", "description": "Set byte if not greater or equal (SF=\u0338 OF)."}, {"opcode": "0F 9D", "instruction": "SETNL r/m8", "operand_encoding": "M", "description": "Set byte if not less (SF=OF)."}, {"opcode": "REX + 0F 9D", "instruction": "SETNL r/m8*", "operand_encoding": "M", "description": "Set byte if not less (SF=OF)."}, {"opcode": "0F 9F", "instruction": "SETNLE r/m8", "operand_encoding": "M", "description": "Set byte if not less or equal (ZF=0 and SF=OF)."}, {"opcode": "REX + 0F 9F", "instruction": "SETNLE r/m8*", "operand_encoding": "M", "description": "Set byte if not less or equal (ZF=0 and SF=OF)."}, {"opcode": "0F 91", "instruction": "SETNO r/m8", "operand_encoding": "M", "description": "Set byte if not overflow (OF=0)."}, {"opcode": "REX + 0F 91", "instruction": "SETNO r/m8*", "operand_encoding": "M", "description": "Set byte if not overflow (OF=0)."}, {"opcode": "0F 9B", "instruction": "SETNP r/m8", "operand_encoding": "M", "description": "Set byte if not parity (PF=0)."}, {"opcode": "REX + 0F 9B", "instruction": "SETNP r/m8*", "operand_encoding": "M", "description": "Set byte if not parity (PF=0)."}, {"opcode": "0F 99", "instruction": "SETNS r/m8", "operand_encoding": "M", "description": "Set byte if not sign (SF=0)."}, {"opcode": "REX + 0F 99", "instruction": "SETNS r/m8*", "operand_encoding": "M", "description": "Set byte if not sign (SF=0)."}, {"opcode": "0F 95", "instruction": "SETNZ r/m8", "operand_encoding": "M", "description": "Set byte if not zero (ZF=0)."}, {"opcode": "REX + 0F 95", "instruction": "SETNZ r/m8*", "operand_encoding": "M", "description": "Set byte if not zero (ZF=0)."}, {"opcode": "0F 90", "instruction": "SETO r/m8", "operand_encoding": "M", "description": "Set byte if overflow (OF=1)"}, {"opcode": "REX + 0F 90", "instruction": "SETO r/m8*", "operand_encoding": "M", "description": "Set byte if overflow (OF=1)."}, {"opcode": "0F 9A", "instruction": "SETP r/m8", "operand_encoding": "M", "description": "Set byte if parity (PF=1)."}, {"opcode": "REX + 0F 9A", "instruction": "SETP r/m8*", "operand_encoding": "M", "description": "Set byte if parity (PF=1)."}, {"opcode": "0F 9A", "instruction": "SETPE r/m8", "operand_encoding": "M", "description": "Set byte if parity even (PF=1)."}, {"opcode": "REX + 0F 9A", "instruction": "SETPE r/m8*", "operand_encoding": "M", "description": "Set byte if parity even (PF=1)."}, {"opcode": "0F 9B", "instruction": "SETPO r/m8", "operand_encoding": "M", "description": "Set byte if parity odd (PF=0)."}, {"opcode": "REX + 0F 9B", "instruction": "SETPO r/m8*", "operand_encoding": "M", "description": "Set byte if parity odd (PF=0)."}, {"opcode": "0F 98", "instruction": "SETS r/m8", "operand_encoding": "M", "description": "Set byte if sign (SF=1)."}, {"opcode": "REX + 0F 98", "instruction": "SETS r/m8*", "operand_encoding": "M", "description": "Set byte if sign (SF=1)."}, {"opcode": "0F 94", "instruction": "SETZ r/m8", "operand_encoding": "M", "description": "Set byte if zero (ZF=1)."}, {"opcode": "REX + 0F 94", "instruction": "SETZ r/m8*", "operand_encoding": "M", "description": "Set byte if zero (ZF=1)."}]
+[
+  {
+    "opcode": "0F 97",
+    "instruction": "SETA r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if above (CF=0 and ZF=0)."
+  },
+  {
+    "opcode": "REX + 0F 97",
+    "instruction": "SETA r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if above (CF=0 and ZF=0)."
+  },
+  {
+    "opcode": "0F 93",
+    "instruction": "SETAE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if above or equal (CF=0)."
+  },
+  {
+    "opcode": "REX + 0F 93",
+    "instruction": "SETAE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if above or equal (CF=0)."
+  },
+  {
+    "opcode": "0F 92",
+    "instruction": "SETB r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if below (CF=1)."
+  },
+  {
+    "opcode": "REX + 0F 92",
+    "instruction": "SETB r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if below (CF=1)."
+  },
+  {
+    "opcode": "0F 96",
+    "instruction": "SETBE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if below or equal (CF=1 or ZF=1)."
+  },
+  {
+    "opcode": "REX + 0F 96",
+    "instruction": "SETBE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if below or equal (CF=1 or ZF=1)."
+  },
+  {
+    "opcode": "0F 92",
+    "instruction": "SETC r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if carry (CF=1)."
+  },
+  {
+    "opcode": "REX + 0F 92",
+    "instruction": "SETC r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if carry (CF=1)."
+  },
+  {
+    "opcode": "0F 94",
+    "instruction": "SETE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if equal (ZF=1)."
+  },
+  {
+    "opcode": "REX + 0F 94",
+    "instruction": "SETE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if equal (ZF=1)."
+  },
+  {
+    "opcode": "0F 9F",
+    "instruction": "SETG r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if greater (ZF=0 and SF=OF)."
+  },
+  {
+    "opcode": "REX + 0F 9F",
+    "instruction": "SETG r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if greater (ZF=0 and SF=OF)."
+  },
+  {
+    "opcode": "0F 9D",
+    "instruction": "SETGE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if greater or equal (SF=OF)."
+  },
+  {
+    "opcode": "REX + 0F 9D",
+    "instruction": "SETGE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if greater or equal (SF=OF)."
+  },
+  {
+    "opcode": "0F 9C",
+    "instruction": "SETL r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if less (SF=\u0338 OF)."
+  },
+  {
+    "opcode": "REX + 0F 9C",
+    "instruction": "SETL r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if less (SF=\u0338 OF)."
+  },
+  {
+    "opcode": "0F 9E",
+    "instruction": "SETLE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if less or equal (ZF=1 or SF=\u0338 OF)."
+  },
+  {
+    "opcode": "REX + 0F 9E",
+    "instruction": "SETLE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if less or equal (ZF=1 or SF=\u0338 OF)."
+  },
+  {
+    "opcode": "0F 96",
+    "instruction": "SETNA r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not above (CF=1 or ZF=1)."
+  },
+  {
+    "opcode": "REX + 0F 96",
+    "instruction": "SETNA r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not above (CF=1 or ZF=1)."
+  },
+  {
+    "opcode": "0F 92",
+    "instruction": "SETNAE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not above or equal (CF=1)."
+  },
+  {
+    "opcode": "REX + 0F 92",
+    "instruction": "SETNAE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not above or equal (CF=1)."
+  },
+  {
+    "opcode": "0F 93",
+    "instruction": "SETNB r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not below (CF=0)."
+  },
+  {
+    "opcode": "REX + 0F 93",
+    "instruction": "SETNB r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not below (CF=0)."
+  },
+  {
+    "opcode": "0F 97",
+    "instruction": "SETNBE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not below or equal (CF=0 and ZF=0)."
+  },
+  {
+    "opcode": "REX + 0F 97",
+    "instruction": "SETNBE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not below or equal (CF=0 and ZF=0)."
+  },
+  {
+    "opcode": "0F 93",
+    "instruction": "SETNC r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not carry (CF=0)."
+  },
+  {
+    "opcode": "REX + 0F 93",
+    "instruction": "SETNC r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not carry (CF=0)."
+  },
+  {
+    "opcode": "0F 95",
+    "instruction": "SETNE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not equal (ZF=0)."
+  },
+  {
+    "opcode": "REX + 0F 95",
+    "instruction": "SETNE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not equal (ZF=0)."
+  },
+  {
+    "opcode": "0F 9E",
+    "instruction": "SETNG r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not greater (ZF=1 or SF=\u0338 OF)"
+  },
+  {
+    "opcode": "REX + 0F 9E",
+    "instruction": "SETNG r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not greater (ZF=1 or SF=\u0338 OF)."
+  },
+  {
+    "opcode": "0F 9C",
+    "instruction": "SETNGE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not greater or equal (SF=\u0338 OF)."
+  },
+  {
+    "opcode": "REX + 0F 9C",
+    "instruction": "SETNGE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not greater or equal (SF=\u0338 OF)."
+  },
+  {
+    "opcode": "0F 9D",
+    "instruction": "SETNL r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not less (SF=OF)."
+  },
+  {
+    "opcode": "REX + 0F 9D",
+    "instruction": "SETNL r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not less (SF=OF)."
+  },
+  {
+    "opcode": "0F 9F",
+    "instruction": "SETNLE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not less or equal (ZF=0 and SF=OF)."
+  },
+  {
+    "opcode": "REX + 0F 9F",
+    "instruction": "SETNLE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not less or equal (ZF=0 and SF=OF)."
+  },
+  {
+    "opcode": "0F 91",
+    "instruction": "SETNO r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not overflow (OF=0)."
+  },
+  {
+    "opcode": "REX + 0F 91",
+    "instruction": "SETNO r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not overflow (OF=0)."
+  },
+  {
+    "opcode": "0F 9B",
+    "instruction": "SETNP r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not parity (PF=0)."
+  },
+  {
+    "opcode": "REX + 0F 9B",
+    "instruction": "SETNP r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not parity (PF=0)."
+  },
+  {
+    "opcode": "0F 99",
+    "instruction": "SETNS r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not sign (SF=0)."
+  },
+  {
+    "opcode": "REX + 0F 99",
+    "instruction": "SETNS r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not sign (SF=0)."
+  },
+  {
+    "opcode": "0F 95",
+    "instruction": "SETNZ r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if not zero (ZF=0)."
+  },
+  {
+    "opcode": "REX + 0F 95",
+    "instruction": "SETNZ r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if not zero (ZF=0)."
+  },
+  {
+    "opcode": "0F 90",
+    "instruction": "SETO r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if overflow (OF=1)"
+  },
+  {
+    "opcode": "REX + 0F 90",
+    "instruction": "SETO r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if overflow (OF=1)."
+  },
+  {
+    "opcode": "0F 9A",
+    "instruction": "SETP r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if parity (PF=1)."
+  },
+  {
+    "opcode": "REX + 0F 9A",
+    "instruction": "SETP r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if parity (PF=1)."
+  },
+  {
+    "opcode": "0F 9A",
+    "instruction": "SETPE r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if parity even (PF=1)."
+  },
+  {
+    "opcode": "REX + 0F 9A",
+    "instruction": "SETPE r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if parity even (PF=1)."
+  },
+  {
+    "opcode": "0F 9B",
+    "instruction": "SETPO r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if parity odd (PF=0)."
+  },
+  {
+    "opcode": "REX + 0F 9B",
+    "instruction": "SETPO r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if parity odd (PF=0)."
+  },
+  {
+    "opcode": "0F 98",
+    "instruction": "SETS r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if sign (SF=1)."
+  },
+  {
+    "opcode": "REX + 0F 98",
+    "instruction": "SETS r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if sign (SF=1)."
+  },
+  {
+    "opcode": "0F 94",
+    "instruction": "SETZ r/m8",
+    "operand_encoding": "M",
+    "description": "Set byte if zero (ZF=1)."
+  },
+  {
+    "opcode": "REX + 0F 94",
+    "instruction": "SETZ r/m8*",
+    "operand_encoding": "M",
+    "description": "Set byte if zero (ZF=1)."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "F5", "instruction": "CMC", "operand_encoding": "ZO", "description": "Complement CF flag."}]
+[
+  {
+    "opcode": "F5",
+    "instruction": "CMC",
+    "operand_encoding": "ZO",
+    "description": "Complement CF flag."
+  }
+]

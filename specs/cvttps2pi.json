@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 2C /r", "instruction": "CVTTPS2PI mm, xmm/m64", "operand_encoding": "RM", "description": "Convert two single-precision floating-point values from xmm/m64 to two signed doubleword signed integers in mm using truncation."}]
+[
+  {
+    "opcode": "NP 0F 2C /r",
+    "instruction": "CVTTPS2PI mm, xmm/m64",
+    "operand_encoding": "RM",
+    "description": "Convert two single-precision floating-point values from xmm/m64 to two signed doubleword signed integers in mm using truncation."
+  }
+]

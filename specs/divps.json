@@ -1,1 +1,38 @@
-[{"opcode": "NP 0F 5E /r", "instruction": "DIVPS xmm1, xmm2/m128", "operand_encoding": "A", "description": "Divide packed single-precision floating-point values in xmm1 by packed single-precision floating-point values in xmm2/mem."}, {"opcode": "VEX.128.0F.WIG 5E /r", "instruction": "VDIVPS xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Divide packed single-precision floating-point values in xmm2 by packed single-precision floating-point values in xmm3/mem."}, {"opcode": "VEX.256.0F.WIG 5E /r", "instruction": "VDIVPS ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Divide packed single-precision floating-point values in ymm2 by packed single-precision floating-point values in ymm3/mem."}, {"opcode": "EVEX.128.0F.W0 5E /r", "instruction": "VDIVPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "C", "description": "Divide packed single-precision floating-point values in xmm2 by packed single-precision floating-point values in xmm3/m128/m32bcst and write results to xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.0F.W0 5E /r", "instruction": "VDIVPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "C", "description": "Divide packed single-precision floating-point values in ymm2 by packed single-precision floating-point values in ymm3/m256/m32bcst and write results to ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.0F.W0 5E /r", "instruction": "VDIVPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}", "operand_encoding": "C", "description": "Divide packed single-precision floating-point values in zmm2 by packed single-precision floating-point values in zmm3/m512/m32bcst and write results to zmm1 subject to writemask k1."}]
+[
+  {
+    "opcode": "NP 0F 5E /r",
+    "instruction": "DIVPS xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Divide packed single-precision floating-point values in xmm1 by packed single-precision floating-point values in xmm2/mem."
+  },
+  {
+    "opcode": "VEX.128.0F.WIG 5E /r",
+    "instruction": "VDIVPS xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Divide packed single-precision floating-point values in xmm2 by packed single-precision floating-point values in xmm3/mem."
+  },
+  {
+    "opcode": "VEX.256.0F.WIG 5E /r",
+    "instruction": "VDIVPS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Divide packed single-precision floating-point values in ymm2 by packed single-precision floating-point values in ymm3/mem."
+  },
+  {
+    "opcode": "EVEX.128.0F.W0 5E /r",
+    "instruction": "VDIVPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "C",
+    "description": "Divide packed single-precision floating-point values in xmm2 by packed single-precision floating-point values in xmm3/m128/m32bcst and write results to xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.0F.W0 5E /r",
+    "instruction": "VDIVPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "C",
+    "description": "Divide packed single-precision floating-point values in ymm2 by packed single-precision floating-point values in ymm3/m256/m32bcst and write results to ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.0F.W0 5E /r",
+    "instruction": "VDIVPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst{er}",
+    "operand_encoding": "C",
+    "description": "Divide packed single-precision floating-point values in zmm2 by packed single-precision floating-point values in zmm3/m512/m32bcst and write results to zmm1 subject to writemask k1."
+  }
+]

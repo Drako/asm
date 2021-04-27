@@ -1,1 +1,80 @@
-[{"opcode": "F6 /5", "instruction": "IMUL r/m8*", "operand_encoding": "M", "description": "AX\u2190 AL \u2217 r/m byte."}, {"opcode": "F7 /5", "instruction": "IMUL r/m16", "operand_encoding": "M", "description": "DX:AX \u2190 AX \u2217 r/m word."}, {"opcode": "F7 /5", "instruction": "IMUL r/m32", "operand_encoding": "M", "description": "EDX:EAX \u2190 EAX \u2217 r/m32."}, {"opcode": "REX.W + F7 /5", "instruction": "IMUL r/m64", "operand_encoding": "M", "description": "RDX:RAX \u2190 RAX \u2217 r/m64."}, {"opcode": "0F AF /r", "instruction": "IMUL r16, r/m16", "operand_encoding": "RM", "description": "word register \u2190 word register \u2217 r/m16."}, {"opcode": "0F AF /r", "instruction": "IMUL r32, r/m32", "operand_encoding": "RM", "description": "doubleword register \u2190 doubleword register \u2217 r/m32."}, {"opcode": "REX.W + 0F AF /r", "instruction": "IMUL r64, r/m64", "operand_encoding": "RM", "description": "Quadword register \u2190 Quadword register \u2217 r/m64."}, {"opcode": "6B /r ib", "instruction": "IMUL r16, r/m16, imm8", "operand_encoding": "RMI", "description": "word register \u2190 r/m16 \u2217 sign-extended immediate byte."}, {"opcode": "6B /r ib", "instruction": "IMUL r32, r/m32, imm8", "operand_encoding": "RMI", "description": "doubleword register \u2190 r/m32 \u2217 sign-extended immediate byte."}, {"opcode": "REX.W + 6B /r ib", "instruction": "IMUL r64, r/m64, imm8", "operand_encoding": "RMI", "description": "Quadword register \u2190 r/m64 \u2217 sign-extended immediate byte."}, {"opcode": "69 /r iw", "instruction": "IMUL r16, r/m16, imm16", "operand_encoding": "RMI", "description": "word register \u2190 r/m16 \u2217 immediate word."}, {"opcode": "69 /r id", "instruction": "IMUL r32, r/m32, imm32", "operand_encoding": "RMI", "description": "doubleword register \u2190 r/m32 \u2217 immediate doubleword."}, {"opcode": "REX.W + 69 /r id", "instruction": "IMUL r64, r/m64, imm32", "operand_encoding": "RMI", "description": "Quadword register \u2190 r/m64 \u2217 immediate doubleword."}]
+[
+  {
+    "opcode": "F6 /5",
+    "instruction": "IMUL r/m8*",
+    "operand_encoding": "M",
+    "description": "AX\u2190 AL \u2217 r/m byte."
+  },
+  {
+    "opcode": "F7 /5",
+    "instruction": "IMUL r/m16",
+    "operand_encoding": "M",
+    "description": "DX:AX \u2190 AX \u2217 r/m word."
+  },
+  {
+    "opcode": "F7 /5",
+    "instruction": "IMUL r/m32",
+    "operand_encoding": "M",
+    "description": "EDX:EAX \u2190 EAX \u2217 r/m32."
+  },
+  {
+    "opcode": "REX.W + F7 /5",
+    "instruction": "IMUL r/m64",
+    "operand_encoding": "M",
+    "description": "RDX:RAX \u2190 RAX \u2217 r/m64."
+  },
+  {
+    "opcode": "0F AF /r",
+    "instruction": "IMUL r16, r/m16",
+    "operand_encoding": "RM",
+    "description": "word register \u2190 word register \u2217 r/m16."
+  },
+  {
+    "opcode": "0F AF /r",
+    "instruction": "IMUL r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "doubleword register \u2190 doubleword register \u2217 r/m32."
+  },
+  {
+    "opcode": "REX.W + 0F AF /r",
+    "instruction": "IMUL r64, r/m64",
+    "operand_encoding": "RM",
+    "description": "Quadword register \u2190 Quadword register \u2217 r/m64."
+  },
+  {
+    "opcode": "6B /r ib",
+    "instruction": "IMUL r16, r/m16, imm8",
+    "operand_encoding": "RMI",
+    "description": "word register \u2190 r/m16 \u2217 sign-extended immediate byte."
+  },
+  {
+    "opcode": "6B /r ib",
+    "instruction": "IMUL r32, r/m32, imm8",
+    "operand_encoding": "RMI",
+    "description": "doubleword register \u2190 r/m32 \u2217 sign-extended immediate byte."
+  },
+  {
+    "opcode": "REX.W + 6B /r ib",
+    "instruction": "IMUL r64, r/m64, imm8",
+    "operand_encoding": "RMI",
+    "description": "Quadword register \u2190 r/m64 \u2217 sign-extended immediate byte."
+  },
+  {
+    "opcode": "69 /r iw",
+    "instruction": "IMUL r16, r/m16, imm16",
+    "operand_encoding": "RMI",
+    "description": "word register \u2190 r/m16 \u2217 immediate word."
+  },
+  {
+    "opcode": "69 /r id",
+    "instruction": "IMUL r32, r/m32, imm32",
+    "operand_encoding": "RMI",
+    "description": "doubleword register \u2190 r/m32 \u2217 immediate doubleword."
+  },
+  {
+    "opcode": "REX.W + 69 /r id",
+    "instruction": "IMUL r64, r/m64, imm32",
+    "operand_encoding": "RMI",
+    "description": "Quadword register \u2190 r/m64 \u2217 immediate doubleword."
+  }
+]

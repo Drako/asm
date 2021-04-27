@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 01 EF", "instruction": "WRPKRU", "operand_encoding": "ZO", "description": "Writes EAX into PKRU."}]
+[
+  {
+    "opcode": "NP 0F 01 EF",
+    "instruction": "WRPKRU",
+    "operand_encoding": "ZO",
+    "description": "Writes EAX into PKRU."
+  }
+]

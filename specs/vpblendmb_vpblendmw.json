@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F38.W0 66 /r", "instruction": "VPBLENDMB xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Blend byte integer vector xmm2 and byte vector xmm3/m128 and store the result in xmm1, under control mask."}, {"opcode": "EVEX.256.66.0F38.W0 66 /r", "instruction": "VPBLENDMB ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Blend byte integer vector ymm2 and byte vector ymm3/m256 and store the result in ymm1, under control mask."}, {"opcode": "EVEX.512.66.0F38.W0 66 /r", "instruction": "VPBLENDMB zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "A", "description": "Blend byte integer vector zmm2 and byte vector zmm3/m512 and store the result in zmm1, under control mask."}, {"opcode": "EVEX.128.66.0F38.W1 66 /r", "instruction": "VPBLENDMW xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "A", "description": "Blend word integer vector xmm2 and word vector xmm3/m128 and store the result in xmm1, under control mask."}, {"opcode": "EVEX.256.66.0F38.W1 66 /r", "instruction": "VPBLENDMW ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "A", "description": "Blend word integer vector ymm2 and word vector ymm3/m256 and store the result in ymm1, under control mask."}, {"opcode": "EVEX.512.66.0F38.W1 66 /r", "instruction": "VPBLENDMW zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "A", "description": "Blend word integer vector zmm2 and word vector zmm3/m512 and store the result in zmm1, under control mask."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 66 /r",
+    "instruction": "VPBLENDMB xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Blend byte integer vector xmm2 and byte vector xmm3/m128 and store the result in xmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 66 /r",
+    "instruction": "VPBLENDMB ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Blend byte integer vector ymm2 and byte vector ymm3/m256 and store the result in ymm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 66 /r",
+    "instruction": "VPBLENDMB zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "A",
+    "description": "Blend byte integer vector zmm2 and byte vector zmm3/m512 and store the result in zmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 66 /r",
+    "instruction": "VPBLENDMW xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "A",
+    "description": "Blend word integer vector xmm2 and word vector xmm3/m128 and store the result in xmm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 66 /r",
+    "instruction": "VPBLENDMW ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "A",
+    "description": "Blend word integer vector ymm2 and word vector ymm3/m256 and store the result in ymm1, under control mask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 66 /r",
+    "instruction": "VPBLENDMW zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "A",
+    "description": "Blend word integer vector zmm2 and word vector zmm3/m512 and store the result in zmm1, under control mask."
+  }
+]

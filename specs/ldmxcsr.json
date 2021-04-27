@@ -1,1 +1,14 @@
-[{"opcode": "NP 0F AE /2", "instruction": "LDMXCSR m32", "operand_encoding": "M", "description": "Load MXCSR register from m32."}, {"opcode": "VEX.LZ.0F.WIG AE /2", "instruction": "VLDMXCSR m32", "operand_encoding": "M", "description": "Load MXCSR register from m32."}]
+[
+  {
+    "opcode": "NP 0F AE /2",
+    "instruction": "LDMXCSR m32",
+    "operand_encoding": "M",
+    "description": "Load MXCSR register from m32."
+  },
+  {
+    "opcode": "VEX.LZ.0F.WIG AE /2",
+    "instruction": "VLDMXCSR m32",
+    "operand_encoding": "M",
+    "description": "Load MXCSR register from m32."
+  }
+]

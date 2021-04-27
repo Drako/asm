@@ -1,1 +1,50 @@
-[{"opcode": "VEX.128.66.0F38.W0 8C /r", "instruction": "VPMASKMOVD xmm1, xmm2, m128", "operand_encoding": "RVM", "description": "Conditionally load dword values from m128 using mask in xmm2 and store in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 8C /r", "instruction": "VPMASKMOVD ymm1, ymm2, m256", "operand_encoding": "RVM", "description": "Conditionally load dword values from m256 using mask in ymm2 and store in ymm1."}, {"opcode": "VEX.128.66.0F38.W1 8C /r", "instruction": "VPMASKMOVQ xmm1, xmm2, m128", "operand_encoding": "RVM", "description": "Conditionally load qword values from m128 using mask in xmm2 and store in xmm1."}, {"opcode": "VEX.256.66.0F38.W1 8C /r", "instruction": "VPMASKMOVQ ymm1, ymm2, m256", "operand_encoding": "RVM", "description": "Conditionally load qword values from m256 using mask in ymm2 and store in ymm1."}, {"opcode": "VEX.128.66.0F38.W0 8E /r", "instruction": "VPMASKMOVD m128, xmm1, xmm2", "operand_encoding": "MVR", "description": "Conditionally store dword values from xmm2 using mask in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 8E /r", "instruction": "VPMASKMOVD m256, ymm1, ymm2", "operand_encoding": "MVR", "description": "Conditionally store dword values from ymm2 using mask in ymm1."}, {"opcode": "VEX.128.66.0F38.W1 8E /r", "instruction": "VPMASKMOVQ m128, xmm1, xmm2", "operand_encoding": "MVR", "description": "Conditionally store qword values from xmm2 using mask in xmm1."}, {"opcode": "VEX.256.66.0F38.W1 8E /r", "instruction": "VPMASKMOVQ m256, ymm1, ymm2", "operand_encoding": "MVR", "description": "Conditionally store qword values from ymm2 using mask in ymm1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 8C /r",
+    "instruction": "VPMASKMOVD xmm1, xmm2, m128",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load dword values from m128 using mask in xmm2 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 8C /r",
+    "instruction": "VPMASKMOVD ymm1, ymm2, m256",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load dword values from m256 using mask in ymm2 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W1 8C /r",
+    "instruction": "VPMASKMOVQ xmm1, xmm2, m128",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load qword values from m128 using mask in xmm2 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W1 8C /r",
+    "instruction": "VPMASKMOVQ ymm1, ymm2, m256",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load qword values from m256 using mask in ymm2 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 8E /r",
+    "instruction": "VPMASKMOVD m128, xmm1, xmm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store dword values from xmm2 using mask in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 8E /r",
+    "instruction": "VPMASKMOVD m256, ymm1, ymm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store dword values from ymm2 using mask in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W1 8E /r",
+    "instruction": "VPMASKMOVQ m128, xmm1, xmm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store qword values from xmm2 using mask in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W1 8E /r",
+    "instruction": "VPMASKMOVQ m256, ymm1, ymm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store qword values from ymm2 using mask in ymm1."
+  }
+]

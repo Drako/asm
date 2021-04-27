@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F3A.W1 56 /r ib", "instruction": "VREDUCEPD xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8", "operand_encoding": "A", "description": "Perform reduction transformation on packed double-precision floating point values in xmm2/m128/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in xmm1 register under writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W1 56 /r ib", "instruction": "VREDUCEPD ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8", "operand_encoding": "A", "description": "Perform reduction transformation on packed double-precision floating point values in ymm2/m256/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in ymm1 register under writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W1 56 /r ib", "instruction": "VREDUCEPD zmm1 {k1}{z}, zmm2/m512/m64bcst{sae}, imm8", "operand_encoding": "A", "description": "Perform reduction transformation on double-precision floating point values in zmm2/m512/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in zmm1 register under writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 56 /r ib",
+    "instruction": "VREDUCEPD xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Perform reduction transformation on packed double-precision floating point values in xmm2/m128/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in xmm1 register under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 56 /r ib",
+    "instruction": "VREDUCEPD ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Perform reduction transformation on packed double-precision floating point values in ymm2/m256/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in ymm1 register under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 56 /r ib",
+    "instruction": "VREDUCEPD zmm1 {k1}{z}, zmm2/m512/m64bcst{sae}, imm8",
+    "operand_encoding": "A",
+    "description": "Perform reduction transformation on double-precision floating point values in zmm2/m512/m32bcst by subtracting a number of fraction bits specified by the imm8 field. Stores the result in zmm1 register under writemask k1."
+  }
+]

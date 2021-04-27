@@ -1,1 +1,14 @@
-[{"opcode": "9B DD /6", "instruction": "FSAVE m94/108byte", "operand_encoding": "ZO", "description": "Store FPU state to m94byte or m108byte after checking for pending unmasked floating-point exceptions. Then re-initialize the FPU."}, {"opcode": "DD /6", "instruction": "FNSAVE* m94/108byte", "operand_encoding": "ZO", "description": "Store FPU environment to m94byte or m108byte without checking for pending unmasked floating-point exceptions. Then re-initialize the FPU."}]
+[
+  {
+    "opcode": "9B DD /6",
+    "instruction": "FSAVE m94/108byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU state to m94byte or m108byte after checking for pending unmasked floating-point exceptions. Then re-initialize the FPU."
+  },
+  {
+    "opcode": "DD /6",
+    "instruction": "FNSAVE* m94/108byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU environment to m94byte or m108byte without checking for pending unmasked floating-point exceptions. Then re-initialize the FPU."
+  }
+]

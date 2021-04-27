@@ -1,1 +1,20 @@
-[{"opcode": "66 0F 2E /r", "instruction": "UCOMISD xmm1, xmm2/m64", "operand_encoding": "A", "description": "Compare low double-precision floating-point values in xmm1 and xmm2/mem64 and set the EFLAGS flags accordingly."}, {"opcode": "VEX.LIG.66.0F.WIG 2E /r", "instruction": "VUCOMISD xmm1, xmm2/m64", "operand_encoding": "A", "description": "Compare low double-precision floating-point values in xmm1 and xmm2/mem64 and set the EFLAGS flags accordingly."}, {"opcode": "EVEX.LIG.66.0F.W1 2E /r", "instruction": "VUCOMISD xmm1, xmm2/m64{sae}", "operand_encoding": "B", "description": "Compare low double-precision floating-point values in xmm1 and xmm2/m64 and set the EFLAGS flags accordingly."}]
+[
+  {
+    "opcode": "66 0F 2E /r",
+    "instruction": "UCOMISD xmm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Compare low double-precision floating-point values in xmm1 and xmm2/mem64 and set the EFLAGS flags accordingly."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F.WIG 2E /r",
+    "instruction": "VUCOMISD xmm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Compare low double-precision floating-point values in xmm1 and xmm2/mem64 and set the EFLAGS flags accordingly."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F.W1 2E /r",
+    "instruction": "VUCOMISD xmm1, xmm2/m64{sae}",
+    "operand_encoding": "B",
+    "description": "Compare low double-precision floating-point values in xmm1 and xmm2/m64 and set the EFLAGS flags accordingly."
+  }
+]

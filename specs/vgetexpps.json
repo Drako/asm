@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F38.W0 42 /r", "instruction": "VGETEXPPS xmm1 {k1}{z}, xmm2/m128/m32bcst", "operand_encoding": "A", "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."}, {"opcode": "EVEX.256.66.0F38.W0 42 /r", "instruction": "VGETEXPPS ymm1 {k1}{z}, ymm2/m256/m32bcst", "operand_encoding": "A", "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."}, {"opcode": "EVEX.512.66.0F38.W0 42 /r", "instruction": "VGETEXPPS zmm1 {k1}{z}, zmm2/m512/m32bcst{sae}", "operand_encoding": "A", "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 42 /r",
+    "instruction": "VGETEXPPS xmm1 {k1}{z}, xmm2/m128/m32bcst",
+    "operand_encoding": "A",
+    "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 42 /r",
+    "instruction": "VGETEXPPS ymm1 {k1}{z}, ymm2/m256/m32bcst",
+    "operand_encoding": "A",
+    "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 42 /r",
+    "instruction": "VGETEXPPS zmm1 {k1}{z}, zmm2/m512/m32bcst{sae}",
+    "operand_encoding": "A",
+    "description": "Convert the exponent of packed single-precision floating-point values in the source operand to SP FP results representing unbiased integer exponents and stores the results in the destination register."
+  }
+]

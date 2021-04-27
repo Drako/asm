@@ -1,1 +1,14 @@
-[{"opcode": "66 0F 3A DF /r ib", "instruction": "AESKEYGENASSIST xmm1, xmm2/m128, imm8", "operand_encoding": "RMI", "description": "Assist in AES round key generation using an 8 bits Round Constant (RCON) specified in the immediate byte, operating on 128 bits of data specified in xmm2/m128 and stores the result in xmm1."}, {"opcode": "VEX.128.66.0F3A.WIG DF /r ib", "instruction": "VAESKEYGENASSIST xmm1, xmm2/m128, imm8", "operand_encoding": "RMI", "description": "Assist in AES round key generation using 8 bits Round Constant (RCON) specified in the immediate byte, operating on 128 bits of data specified in xmm2/m128 and stores the result in xmm1."}]
+[
+  {
+    "opcode": "66 0F 3A DF /r ib",
+    "instruction": "AESKEYGENASSIST xmm1, xmm2/m128, imm8",
+    "operand_encoding": "RMI",
+    "description": "Assist in AES round key generation using an 8 bits Round Constant (RCON) specified in the immediate byte, operating on 128 bits of data specified in xmm2/m128 and stores the result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F3A.WIG DF /r ib",
+    "instruction": "VAESKEYGENASSIST xmm1, xmm2/m128, imm8",
+    "operand_encoding": "RMI",
+    "description": "Assist in AES round key generation using 8 bits Round Constant (RCON) specified in the immediate byte, operating on 128 bits of data specified in xmm2/m128 and stores the result in xmm1."
+  }
+]

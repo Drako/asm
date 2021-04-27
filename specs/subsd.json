@@ -1,1 +1,20 @@
-[{"opcode": "F2 0F 5C /r", "instruction": "SUBSD xmm1, xmm2/m64", "operand_encoding": "A", "description": "Subtract the low double-precision floating-point value in xmm2/m64 from xmm1 and store the result in xmm1."}, {"opcode": "VEX.LIG.F2.0F.WIG 5C /r", "instruction": "VSUBSD xmm1,xmm2, xmm3/m64", "operand_encoding": "B", "description": "Subtract the low double-precision floating-point value in xmm3/m64 from xmm2 and store the result in xmm1."}, {"opcode": "EVEX.LIG.F2.0F.W1 5C /r", "instruction": "VSUBSD xmm1 {k1}{z}, xmm2, xmm3/m64{er}", "operand_encoding": "C", "description": "Subtract the low double-precision floating-point value in xmm3/m64 from xmm2 and store the result in xmm1 under writemask k1."}]
+[
+  {
+    "opcode": "F2 0F 5C /r",
+    "instruction": "SUBSD xmm1, xmm2/m64",
+    "operand_encoding": "A",
+    "description": "Subtract the low double-precision floating-point value in xmm2/m64 from xmm1 and store the result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.F2.0F.WIG 5C /r",
+    "instruction": "VSUBSD xmm1,xmm2, xmm3/m64",
+    "operand_encoding": "B",
+    "description": "Subtract the low double-precision floating-point value in xmm3/m64 from xmm2 and store the result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.F2.0F.W1 5C /r",
+    "instruction": "VSUBSD xmm1 {k1}{z}, xmm2, xmm3/m64{er}",
+    "operand_encoding": "C",
+    "description": "Subtract the low double-precision floating-point value in xmm3/m64 from xmm2 and store the result in xmm1 under writemask k1."
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F38.W0 90 /vsib", "instruction": "VPGATHERDD xmm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."}, {"opcode": "EVEX.256.66.0F38.W0 90 /vsib", "instruction": "VPGATHERDD ymm1 {k1}, vm32y", "operand_encoding": "A", "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."}, {"opcode": "EVEX.512.66.0F38.W0 90 /vsib", "instruction": "VPGATHERDD zmm1 {k1}, vm32z", "operand_encoding": "A", "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."}, {"opcode": "EVEX.128.66.0F38.W1 90 /vsib", "instruction": "VPGATHERDQ xmm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."}, {"opcode": "EVEX.256.66.0F38.W1 90 /vsib", "instruction": "VPGATHERDQ ymm1 {k1}, vm32x", "operand_encoding": "A", "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."}, {"opcode": "EVEX.512.66.0F38.W1 90 /vsib", "instruction": "VPGATHERDQ zmm1 {k1}, vm32y", "operand_encoding": "A", "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 90 /vsib",
+    "instruction": "VPGATHERDD xmm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 90 /vsib",
+    "instruction": "VPGATHERDD ymm1 {k1}, vm32y",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 90 /vsib",
+    "instruction": "VPGATHERDD zmm1 {k1}, vm32z",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather dword values from memory using writemask k1 for merging-masking."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 90 /vsib",
+    "instruction": "VPGATHERDQ xmm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 90 /vsib",
+    "instruction": "VPGATHERDQ ymm1 {k1}, vm32x",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 90 /vsib",
+    "instruction": "VPGATHERDQ zmm1 {k1}, vm32y",
+    "operand_encoding": "A",
+    "description": "Using signed dword indices, gather quadword values from memory using writemask k1 for merging-masking."
+  }
+]

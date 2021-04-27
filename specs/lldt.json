@@ -1,1 +1,8 @@
-[{"opcode": "0F 00 /2", "instruction": "LLDT r/m16", "operand_encoding": "M", "description": "Load segment selector r/m16 into LDTR."}]
+[
+  {
+    "opcode": "0F 00 /2",
+    "instruction": "LLDT r/m16",
+    "operand_encoding": "M",
+    "description": "Load segment selector r/m16 into LDTR."
+  }
+]

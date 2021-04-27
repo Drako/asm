@@ -1,1 +1,26 @@
-[{"opcode": "9B DD /7", "instruction": "FSTSW m2byte", "operand_encoding": "ZO", "description": "Store FPU status word at m2byte after checking for pending unmasked floating-point exceptions."}, {"opcode": "9B DF E0", "instruction": "FSTSW AX", "operand_encoding": "ZO", "description": "Store FPU status word in AX register after checking for pending unmasked floating-point exceptions."}, {"opcode": "DD /7", "instruction": "FNSTSW* m2byte", "operand_encoding": "ZO", "description": "Store FPU status word at m2byte without checking for pending unmasked floating-point exceptions."}, {"opcode": "DF E0", "instruction": "FNSTSW* AX", "operand_encoding": "ZO", "description": "Store FPU status word in AX register without checking for pending unmasked floating-point exceptions."}]
+[
+  {
+    "opcode": "9B DD /7",
+    "instruction": "FSTSW m2byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU status word at m2byte after checking for pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "9B DF E0",
+    "instruction": "FSTSW AX",
+    "operand_encoding": "ZO",
+    "description": "Store FPU status word in AX register after checking for pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "DD /7",
+    "instruction": "FNSTSW* m2byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU status word at m2byte without checking for pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "DF E0",
+    "instruction": "FNSTSW* AX",
+    "operand_encoding": "ZO",
+    "description": "Store FPU status word in AX register without checking for pending unmasked floating-point exceptions."
+  }
+]

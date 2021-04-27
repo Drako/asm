@@ -1,1 +1,50 @@
-[{"opcode": "0F BE /r", "instruction": "MOVSX r16, r/m8", "operand_encoding": "RM", "description": "Move byte to word with sign-extension."}, {"opcode": "0F BE /r", "instruction": "MOVSX r32, r/m8", "operand_encoding": "RM", "description": "Move byte to doubleword with sign-extension."}, {"opcode": "REX.W + 0F BE /r", "instruction": "MOVSX r64, r/m8", "operand_encoding": "RM", "description": "Move byte to quadword with sign-extension."}, {"opcode": "0F BF /r", "instruction": "MOVSX r32, r/m16", "operand_encoding": "RM", "description": "Move word to doubleword, with sign-extension."}, {"opcode": "REX.W + 0F BF /r", "instruction": "MOVSX r64, r/m16", "operand_encoding": "RM", "description": "Move word to quadword with sign-extension."}, {"opcode": "63 /r*", "instruction": "MOVSXD r16, r/m16", "operand_encoding": "RM", "description": "Move word to word with sign-extension."}, {"opcode": "63 /r*", "instruction": "MOVSXD r32, r/m32", "operand_encoding": "RM", "description": "Move doubleword to doubleword with sign-extension."}, {"opcode": "REX.W + 63 /r", "instruction": "MOVSXD r64, r/m32", "operand_encoding": "RM", "description": "Move doubleword to quadword with sign-extension."}]
+[
+  {
+    "opcode": "0F BE /r",
+    "instruction": "MOVSX r16, r/m8",
+    "operand_encoding": "RM",
+    "description": "Move byte to word with sign-extension."
+  },
+  {
+    "opcode": "0F BE /r",
+    "instruction": "MOVSX r32, r/m8",
+    "operand_encoding": "RM",
+    "description": "Move byte to doubleword with sign-extension."
+  },
+  {
+    "opcode": "REX.W + 0F BE /r",
+    "instruction": "MOVSX r64, r/m8",
+    "operand_encoding": "RM",
+    "description": "Move byte to quadword with sign-extension."
+  },
+  {
+    "opcode": "0F BF /r",
+    "instruction": "MOVSX r32, r/m16",
+    "operand_encoding": "RM",
+    "description": "Move word to doubleword, with sign-extension."
+  },
+  {
+    "opcode": "REX.W + 0F BF /r",
+    "instruction": "MOVSX r64, r/m16",
+    "operand_encoding": "RM",
+    "description": "Move word to quadword with sign-extension."
+  },
+  {
+    "opcode": "63 /r*",
+    "instruction": "MOVSXD r16, r/m16",
+    "operand_encoding": "RM",
+    "description": "Move word to word with sign-extension."
+  },
+  {
+    "opcode": "63 /r*",
+    "instruction": "MOVSXD r32, r/m32",
+    "operand_encoding": "RM",
+    "description": "Move doubleword to doubleword with sign-extension."
+  },
+  {
+    "opcode": "REX.W + 63 /r",
+    "instruction": "MOVSXD r64, r/m32",
+    "operand_encoding": "RM",
+    "description": "Move doubleword to quadword with sign-extension."
+  }
+]

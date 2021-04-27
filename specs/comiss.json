@@ -1,1 +1,20 @@
-[{"opcode": "NP 0F 2F /r", "instruction": "COMISS xmm1, xmm2/m32", "operand_encoding": "A", "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."}, {"opcode": "VEX.LIG.0F.WIG 2F /r", "instruction": "VCOMISS xmm1, xmm2/m32", "operand_encoding": "A", "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."}, {"opcode": "EVEX.LIG.0F.W0 2F /r", "instruction": "VCOMISS xmm1, xmm2/m32{sae}", "operand_encoding": "B", "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."}]
+[
+  {
+    "opcode": "NP 0F 2F /r",
+    "instruction": "COMISS xmm1, xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."
+  },
+  {
+    "opcode": "VEX.LIG.0F.WIG 2F /r",
+    "instruction": "VCOMISS xmm1, xmm2/m32",
+    "operand_encoding": "A",
+    "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."
+  },
+  {
+    "opcode": "EVEX.LIG.0F.W0 2F /r",
+    "instruction": "VCOMISS xmm1, xmm2/m32{sae}",
+    "operand_encoding": "B",
+    "description": "Compare low single-precision floating-point values in xmm1 and xmm2/mem32 and set the EFLAGS flags accordingly."
+  }
+]

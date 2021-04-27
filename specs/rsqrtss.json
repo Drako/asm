@@ -1,1 +1,14 @@
-[{"opcode": "F3 0F 52 /r", "instruction": "RSQRTSS xmm1, xmm2/m32", "operand_encoding": "RM", "description": "Computes the approximate reciprocal of the square root of the low single-precision floating-point value in xmm2/m32 and stores the results in xmm1."}, {"opcode": "VEX.LIG.F3.0F.WIG 52 /r", "instruction": "VRSQRTSS xmm1, xmm2, xmm3/m32", "operand_encoding": "RVM", "description": "Computes the approximate reciprocal of the square root of the low single precision floating-point value in xmm3/m32 and stores the results in xmm1. Also, upper single precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."}]
+[
+  {
+    "opcode": "F3 0F 52 /r",
+    "instruction": "RSQRTSS xmm1, xmm2/m32",
+    "operand_encoding": "RM",
+    "description": "Computes the approximate reciprocal of the square root of the low single-precision floating-point value in xmm2/m32 and stores the results in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.F3.0F.WIG 52 /r",
+    "instruction": "VRSQRTSS xmm1, xmm2, xmm3/m32",
+    "operand_encoding": "RVM",
+    "description": "Computes the approximate reciprocal of the square root of the low single precision floating-point value in xmm3/m32 and stores the results in xmm1. Also, upper single precision floating-point values (bits[127:32]) from xmm2 are copied to xmm1[127:32]."
+  }
+]

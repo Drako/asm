@@ -1,1 +1,26 @@
-[{"opcode": "VEX.128.66.0F38.W0 90 /r", "instruction": "VPGATHERDD xmm1, vm32x, xmm2", "operand_encoding": "RMV", "description": "Using dword indices specified in vm32x, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}, {"opcode": "VEX.128.66.0F38.W0 91 /r", "instruction": "VPGATHERQD xmm1, vm64x, xmm2", "operand_encoding": "RMV", "description": "Using qword indices specified in vm64x, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}, {"opcode": "VEX.256.66.0F38.W0 90 /r", "instruction": "VPGATHERDD ymm1, vm32y, ymm2", "operand_encoding": "RMV", "description": "Using dword indices specified in vm32y, gather dword from memory conditioned on mask specified by ymm2. Conditionally gathered elements are merged into ymm1."}, {"opcode": "VEX.256.66.0F38.W0 91 /r", "instruction": "VPGATHERQD xmm1, vm64y, xmm2", "operand_encoding": "RMV", "description": "Using qword indices specified in vm64y, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 90 /r",
+    "instruction": "VPGATHERDD xmm1, vm32x, xmm2",
+    "operand_encoding": "RMV",
+    "description": "Using dword indices specified in vm32x, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 91 /r",
+    "instruction": "VPGATHERQD xmm1, vm64x, xmm2",
+    "operand_encoding": "RMV",
+    "description": "Using qword indices specified in vm64x, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 90 /r",
+    "instruction": "VPGATHERDD ymm1, vm32y, ymm2",
+    "operand_encoding": "RMV",
+    "description": "Using dword indices specified in vm32y, gather dword from memory conditioned on mask specified by ymm2. Conditionally gathered elements are merged into ymm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 91 /r",
+    "instruction": "VPGATHERQD xmm1, vm64y, xmm2",
+    "operand_encoding": "RMV",
+    "description": "Using qword indices specified in vm64y, gather dword values from memory conditioned on mask specified by xmm2. Conditionally gathered elements are merged into xmm1."
+  }
+]

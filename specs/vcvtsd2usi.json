@@ -1,1 +1,14 @@
-[{"opcode": "EVEX.LIG.F2.0F.W0 79 /r", "instruction": "VCVTSD2USI r32, xmm1/m64{er}", "operand_encoding": "A", "description": "Convert one double-precision floating-point value from xmm1/m64 to one unsigned doubleword integer r32."}, {"opcode": "EVEX.LIG.F2.0F.W1 79 /r", "instruction": "VCVTSD2USI r64, xmm1/m64{er}", "operand_encoding": "A", "description": "Convert one double-precision floating-point value from xmm1/m64 to one unsigned quadword integer zero-extended into r64."}]
+[
+  {
+    "opcode": "EVEX.LIG.F2.0F.W0 79 /r",
+    "instruction": "VCVTSD2USI r32, xmm1/m64{er}",
+    "operand_encoding": "A",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one unsigned doubleword integer r32."
+  },
+  {
+    "opcode": "EVEX.LIG.F2.0F.W1 79 /r",
+    "instruction": "VCVTSD2USI r64, xmm1/m64{er}",
+    "operand_encoding": "A",
+    "description": "Convert one double-precision floating-point value from xmm1/m64 to one unsigned quadword integer zero-extended into r64."
+  }
+]

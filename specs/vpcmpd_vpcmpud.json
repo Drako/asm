@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F3A.W0 1F /r ib", "instruction": "VPCMPD k1 {k2}, xmm2, xmm3/m128/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed signed doubleword integer values in xmm3/m128/m32bcst and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.256.66.0F3A.W0 1F /r ib", "instruction": "VPCMPD k1 {k2}, ymm2, ymm3/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed signed doubleword integer values in ymm3/m256/m32bcst and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.512.66.0F3A.W0 1F /r ib", "instruction": "VPCMPD k1 {k2}, zmm2, zmm3/m512/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed signed doubleword integer values in zmm2 and zmm3/m512/m32bcst using bits 2:0 of imm8 as a comparison predicate. The comparison results are written to the destination k1 under writemask k2."}, {"opcode": "EVEX.128.66.0F3A.W0 1E /r ib", "instruction": "VPCMPUD k1 {k2}, xmm2, xmm3/m128/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed unsigned doubleword integer values in xmm3/m128/m32bcst and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.256.66.0F3A.W0 1E /r ib", "instruction": "VPCMPUD k1 {k2}, ymm2, ymm3/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed unsigned doubleword integer values in ymm3/m256/m32bcst and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."}, {"opcode": "EVEX.512.66.0F3A.W0 1E /r ib", "instruction": "VPCMPUD k1 {k2}, zmm2, zmm3/m512/m32bcst, imm8", "operand_encoding": "A", "description": "Compare packed unsigned doubleword integer values in zmm2 and zmm3/m512/m32bcst using bits 2:0 of imm8 as a comparison predicate. The comparison results are written to the destination k1 under writemask k2."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 1F /r ib",
+    "instruction": "VPCMPD k1 {k2}, xmm2, xmm3/m128/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed doubleword integer values in xmm3/m128/m32bcst and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 1F /r ib",
+    "instruction": "VPCMPD k1 {k2}, ymm2, ymm3/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed doubleword integer values in ymm3/m256/m32bcst and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 1F /r ib",
+    "instruction": "VPCMPD k1 {k2}, zmm2, zmm3/m512/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed signed doubleword integer values in zmm2 and zmm3/m512/m32bcst using bits 2:0 of imm8 as a comparison predicate. The comparison results are written to the destination k1 under writemask k2."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 1E /r ib",
+    "instruction": "VPCMPUD k1 {k2}, xmm2, xmm3/m128/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned doubleword integer values in xmm3/m128/m32bcst and xmm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 1E /r ib",
+    "instruction": "VPCMPUD k1 {k2}, ymm2, ymm3/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned doubleword integer values in ymm3/m256/m32bcst and ymm2 using bits 2:0 of imm8 as a comparison predicate with writemask k2 and leave the result in mask register k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 1E /r ib",
+    "instruction": "VPCMPUD k1 {k2}, zmm2, zmm3/m512/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Compare packed unsigned doubleword integer values in zmm2 and zmm3/m512/m32bcst using bits 2:0 of imm8 as a comparison predicate. The comparison results are written to the destination k1 under writemask k2."
+  }
+]

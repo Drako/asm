@@ -1,1 +1,44 @@
-[{"opcode": "NP 0F 38 0B /r1", "instruction": "PMULHRSW mm1, mm2/m64", "operand_encoding": "A", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to mm1."}, {"opcode": "66 0F 38 0B /r", "instruction": "PMULHRSW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 0B /r", "instruction": "VPMULHRSW xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1."}, {"opcode": "VEX.256.66.0F38.WIG 0B /r", "instruction": "VPMULHRSW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to ymm1."}, {"opcode": "EVEX.128.66.0F38.WIG 0B /r", "instruction": "VPMULHRSW xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1 under writemask k1."}, {"opcode": "EVEX.256.66.0F38.WIG 0B /r", "instruction": "VPMULHRSW ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F38.WIG 0B /r", "instruction": "VPMULHRSW zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to zmm1 under writemask k1."}]
+[
+  {
+    "opcode": "NP 0F 38 0B /r1",
+    "instruction": "PMULHRSW mm1, mm2/m64",
+    "operand_encoding": "A",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to mm1."
+  },
+  {
+    "opcode": "66 0F 38 0B /r",
+    "instruction": "PMULHRSW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 0B /r",
+    "instruction": "VPMULHRSW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 0B /r",
+    "instruction": "VPMULHRSW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.WIG 0B /r",
+    "instruction": "VPMULHRSW xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to xmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.WIG 0B /r",
+    "instruction": "VPMULHRSW ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.WIG 0B /r",
+    "instruction": "VPMULHRSW zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Multiply 16-bit signed words, scale and round signed doublewords, pack high 16 bits to zmm1 under writemask k1."
+  }
+]

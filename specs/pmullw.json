@@ -1,1 +1,44 @@
-[{"opcode": "NP 0F D5 /r1", "instruction": "PMULLW mm, mm/m64", "operand_encoding": "A", "description": "Multiply the packed signed word integers in mm1 register and mm2/m64, and store the low 16 bits of the results in mm1."}, {"opcode": "66 0F D5 /r", "instruction": "PMULLW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Multiply the packed signed word integers in xmm1 and xmm2/m128, and store the low 16 bits of the results in xmm1."}, {"opcode": "VEX.128.66.0F.WIG D5 /r", "instruction": "VPMULLW xmm1, xmm2, xmm3/m128", "operand_encoding": "B", "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128 and store the low 32 bits of each product in xmm1."}, {"opcode": "VEX.256.66.0F.WIG D5 /r", "instruction": "VPMULLW ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Multiply the packed signed word integers in ymm2 and ymm3/m256, and store the low 16 bits of the results in ymm1."}, {"opcode": "EVEX.128.66.0F.WIG D5 /r", "instruction": "VPMULLW xmm1 {k1}{z}, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Multiply the packed signed word integers in xmm2 and xmm3/m128, and store the low 16 bits of the results in xmm1 under writemask k1."}, {"opcode": "EVEX.256.66.0F.WIG D5 /r", "instruction": "VPMULLW ymm1 {k1}{z}, ymm2, ymm3/m256", "operand_encoding": "C", "description": "Multiply the packed signed word integers in ymm2 and ymm3/m256, and store the low 16 bits of the results in ymm1 under writemask k1."}, {"opcode": "EVEX.512.66.0F.WIG D5 /r", "instruction": "VPMULLW zmm1 {k1}{z}, zmm2, zmm3/m512", "operand_encoding": "C", "description": "Multiply the packed signed word integers in zmm2 and zmm3/m512, and store the low 16 bits of the results in zmm1 under writemask k1."}]
+[
+  {
+    "opcode": "NP 0F D5 /r1",
+    "instruction": "PMULLW mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Multiply the packed signed word integers in mm1 register and mm2/m64, and store the low 16 bits of the results in mm1."
+  },
+  {
+    "opcode": "66 0F D5 /r",
+    "instruction": "PMULLW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Multiply the packed signed word integers in xmm1 and xmm2/m128, and store the low 16 bits of the results in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG D5 /r",
+    "instruction": "VPMULLW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Multiply the packed dword signed integers in xmm2 and xmm3/m128 and store the low 32 bits of each product in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG D5 /r",
+    "instruction": "VPMULLW ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Multiply the packed signed word integers in ymm2 and ymm3/m256, and store the low 16 bits of the results in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.WIG D5 /r",
+    "instruction": "VPMULLW xmm1 {k1}{z}, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Multiply the packed signed word integers in xmm2 and xmm3/m128, and store the low 16 bits of the results in xmm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.WIG D5 /r",
+    "instruction": "VPMULLW ymm1 {k1}{z}, ymm2, ymm3/m256",
+    "operand_encoding": "C",
+    "description": "Multiply the packed signed word integers in ymm2 and ymm3/m256, and store the low 16 bits of the results in ymm1 under writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.WIG D5 /r",
+    "instruction": "VPMULLW zmm1 {k1}{z}, zmm2, zmm3/m512",
+    "operand_encoding": "C",
+    "description": "Multiply the packed signed word integers in zmm2 and zmm3/m512, and store the low 16 bits of the results in zmm1 under writemask k1."
+  }
+]

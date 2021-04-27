@@ -1,1 +1,8 @@
-[{"opcode": "D9 FB", "instruction": "FSINCOS", "operand_encoding": "ZO", "description": "Compute the sine and cosine of ST(0); replace ST(0) with the approximate sine, and push the approximate cosine onto the register stack."}]
+[
+  {
+    "opcode": "D9 FB",
+    "instruction": "FSINCOS",
+    "operand_encoding": "ZO",
+    "description": "Compute the sine and cosine of ST(0); replace ST(0) with the approximate sine, and push the approximate cosine onto the register stack."
+  }
+]

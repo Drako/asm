@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 01 CB", "instruction": "STAC", "operand_encoding": "ZO", "description": "Set the AC flag in the EFLAGS register."}]
+[
+  {
+    "opcode": "NP 0F 01 CB",
+    "instruction": "STAC",
+    "operand_encoding": "ZO",
+    "description": "Set the AC flag in the EFLAGS register."
+  }
+]

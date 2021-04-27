@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F F7 /r", "instruction": "MASKMOVQ mm1, mm2", "operand_encoding": "RM", "description": "Selectively write bytes from mm1 to memory location using the byte mask in mm2. The default memory location is specified by DS:DI/EDI/RDI."}]
+[
+  {
+    "opcode": "NP 0F F7 /r",
+    "instruction": "MASKMOVQ mm1, mm2",
+    "operand_encoding": "RM",
+    "description": "Selectively write bytes from mm1 to memory location using the byte mask in mm2. The default memory location is specified by DS:DI/EDI/RDI."
+  }
+]

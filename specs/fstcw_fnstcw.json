@@ -1,1 +1,14 @@
-[{"opcode": "9B D9 /7", "instruction": "FSTCW m2byte", "operand_encoding": "ZO", "description": "Store FPU control word to m2byte after checking for pending unmasked floating-point exceptions."}, {"opcode": "D9 /7", "instruction": "FNSTCW* m2byte", "operand_encoding": "ZO", "description": "Store FPU control word to m2byte without checking for pending unmasked floating-point exceptions."}]
+[
+  {
+    "opcode": "9B D9 /7",
+    "instruction": "FSTCW m2byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU control word to m2byte after checking for pending unmasked floating-point exceptions."
+  },
+  {
+    "opcode": "D9 /7",
+    "instruction": "FNSTCW* m2byte",
+    "operand_encoding": "ZO",
+    "description": "Store FPU control word to m2byte without checking for pending unmasked floating-point exceptions."
+  }
+]

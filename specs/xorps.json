@@ -1,1 +1,38 @@
-[{"opcode": "NP 0F 57 /r", "instruction": "XORPS xmm1, xmm2/m128", "operand_encoding": "A", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm1 and xmm2/mem."}, {"opcode": "VEX.128.0F.WIG 57 /r", "instruction": "VXORPS xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm2 and xmm3/mem."}, {"opcode": "VEX.256.0F.WIG 57 /r", "instruction": "VXORPS ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in ymm2 and ymm3/mem."}, {"opcode": "EVEX.128.0F.W0 57 /r", "instruction": "VXORPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "C", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm2 and xmm3/m128/m32bcst subject to writemask k1."}, {"opcode": "EVEX.256.0F.W0 57 /r", "instruction": "VXORPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "C", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in ymm2 and ymm3/m256/m32bcst subject to writemask k1."}, {"opcode": "EVEX.512.0F.W0 57 /r", "instruction": "VXORPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "C", "description": "Return the bitwise logical XOR of packed single-precision floating-point values in zmm2 and zmm3/m512/m32bcst subject to writemask k1."}]
+[
+  {
+    "opcode": "NP 0F 57 /r",
+    "instruction": "XORPS xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm1 and xmm2/mem."
+  },
+  {
+    "opcode": "VEX.128.0F.WIG 57 /r",
+    "instruction": "VXORPS xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm2 and xmm3/mem."
+  },
+  {
+    "opcode": "VEX.256.0F.WIG 57 /r",
+    "instruction": "VXORPS ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in ymm2 and ymm3/mem."
+  },
+  {
+    "opcode": "EVEX.128.0F.W0 57 /r",
+    "instruction": "VXORPS xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "C",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in xmm2 and xmm3/m128/m32bcst subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.0F.W0 57 /r",
+    "instruction": "VXORPS ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "C",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in ymm2 and ymm3/m256/m32bcst subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.0F.W0 57 /r",
+    "instruction": "VXORPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "C",
+    "description": "Return the bitwise logical XOR of packed single-precision floating-point values in zmm2 and zmm3/m512/m32bcst subject to writemask k1."
+  }
+]

@@ -1,1 +1,38 @@
-[{"opcode": "EVEX.128.66.0F3A.W0 03 /r ib", "instruction": "VALIGND xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors xmm2 and xmm3/m128/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in xmm1, under writemask."}, {"opcode": "EVEX.128.66.0F3A.W1 03 /r ib", "instruction": "VALIGNQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors xmm2 and xmm3/m128/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in xmm1, under writemask."}, {"opcode": "EVEX.256.66.0F3A.W0 03 /r ib", "instruction": "VALIGND ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors ymm2 and ymm3/m256/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in ymm1, under writemask."}, {"opcode": "EVEX.256.66.0F3A.W1 03 /r ib", "instruction": "VALIGNQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors ymm2 and ymm3/m256/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in ymm1, under writemask."}, {"opcode": "EVEX.512.66.0F3A.W0 03 /r ib", "instruction": "VALIGND zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors zmm2 and zmm3/m512/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in zmm1, under writemask."}, {"opcode": "EVEX.512.66.0F3A.W1 03 /r ib", "instruction": "VALIGNQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst, imm8", "operand_encoding": "A", "description": "Shift right and merge vectors zmm2 and zmm3/m512/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in zmm1, under writemask."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 03 /r ib",
+    "instruction": "VALIGND xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors xmm2 and xmm3/m128/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in xmm1, under writemask."
+  },
+  {
+    "opcode": "EVEX.128.66.0F3A.W1 03 /r ib",
+    "instruction": "VALIGNQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors xmm2 and xmm3/m128/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in xmm1, under writemask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 03 /r ib",
+    "instruction": "VALIGND ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors ymm2 and ymm3/m256/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in ymm1, under writemask."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W1 03 /r ib",
+    "instruction": "VALIGNQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors ymm2 and ymm3/m256/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in ymm1, under writemask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 03 /r ib",
+    "instruction": "VALIGND zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors zmm2 and zmm3/m512/m32bcst with double-word granularity using imm8 as number of elements to shift, and store the final result in zmm1, under writemask."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W1 03 /r ib",
+    "instruction": "VALIGNQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Shift right and merge vectors zmm2 and zmm3/m512/m64bcst with quad-word granularity using imm8 as number of elements to shift, and store the final result in zmm1, under writemask."
+  }
+]

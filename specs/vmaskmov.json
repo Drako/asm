@@ -1,1 +1,50 @@
-[{"opcode": "VEX.128.66.0F38.W0 2C /r", "instruction": "VMASKMOVPS xmm1, xmm2, m128", "operand_encoding": "RVM", "description": "Conditionally load packed single-precision values from m128 using mask in xmm2 and store in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 2C /r", "instruction": "VMASKMOVPS ymm1, ymm2, m256", "operand_encoding": "RVM", "description": "Conditionally load packed single-precision values from m256 using mask in ymm2 and store in ymm1."}, {"opcode": "VEX.128.66.0F38.W0 2D /r", "instruction": "VMASKMOVPD xmm1, xmm2, m128", "operand_encoding": "RVM", "description": "Conditionally load packed double-precision values from m128 using mask in xmm2 and store in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 2D /r", "instruction": "VMASKMOVPD ymm1, ymm2, m256", "operand_encoding": "RVM", "description": "Conditionally load packed double-precision values from m256 using mask in ymm2 and store in ymm1."}, {"opcode": "VEX.128.66.0F38.W0 2E /r", "instruction": "VMASKMOVPS m128, xmm1, xmm2", "operand_encoding": "MVR", "description": "Conditionally store packed single-precision values from xmm2 using mask in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 2E /r", "instruction": "VMASKMOVPS m256, ymm1, ymm2", "operand_encoding": "MVR", "description": "Conditionally store packed single-precision values from ymm2 using mask in ymm1."}, {"opcode": "VEX.128.66.0F38.W0 2F /r", "instruction": "VMASKMOVPD m128, xmm1, xmm2", "operand_encoding": "MVR", "description": "Conditionally store packed double-precision values from xmm2 using mask in xmm1."}, {"opcode": "VEX.256.66.0F38.W0 2F /r", "instruction": "VMASKMOVPD m256, ymm1, ymm2", "operand_encoding": "MVR", "description": "Conditionally store packed double-precision values from ymm2 using mask in ymm1."}]
+[
+  {
+    "opcode": "VEX.128.66.0F38.W0 2C /r",
+    "instruction": "VMASKMOVPS xmm1, xmm2, m128",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load packed single-precision values from m128 using mask in xmm2 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 2C /r",
+    "instruction": "VMASKMOVPS ymm1, ymm2, m256",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load packed single-precision values from m256 using mask in ymm2 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 2D /r",
+    "instruction": "VMASKMOVPD xmm1, xmm2, m128",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load packed double-precision values from m128 using mask in xmm2 and store in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 2D /r",
+    "instruction": "VMASKMOVPD ymm1, ymm2, m256",
+    "operand_encoding": "RVM",
+    "description": "Conditionally load packed double-precision values from m256 using mask in ymm2 and store in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 2E /r",
+    "instruction": "VMASKMOVPS m128, xmm1, xmm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store packed single-precision values from xmm2 using mask in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 2E /r",
+    "instruction": "VMASKMOVPS m256, ymm1, ymm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store packed single-precision values from ymm2 using mask in ymm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.W0 2F /r",
+    "instruction": "VMASKMOVPD m128, xmm1, xmm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store packed double-precision values from xmm2 using mask in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.W0 2F /r",
+    "instruction": "VMASKMOVPD m256, ymm1, ymm2",
+    "operand_encoding": "MVR",
+    "description": "Conditionally store packed double-precision values from ymm2 using mask in ymm1."
+  }
+]

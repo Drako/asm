@@ -1,1 +1,8 @@
-[{"opcode": "0F 01 F8", "instruction": "SWAPGS", "operand_encoding": "ZO", "description": "Exchanges the current GS base register value with the value contained in MSR address C0000102H."}]
+[
+  {
+    "opcode": "0F 01 F8",
+    "instruction": "SWAPGS",
+    "operand_encoding": "ZO",
+    "description": "Exchanges the current GS base register value with the value contained in MSR address C0000102H."
+  }
+]

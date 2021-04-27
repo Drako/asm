@@ -1,1 +1,74 @@
-[{"opcode": "EVEX.128.66.0F38.W0 14 /r", "instruction": "VPRORVD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst", "operand_encoding": "B", "description": "Rotate doublewords in xmm2 right by count in the corresponding element of xmm3/m128/m32bcst, store result using writemask k1."}, {"opcode": "EVEX.128.66.0F.W0 72 /0 ib", "instruction": "VPRORD xmm1 {k1}{z}, xmm2/m128/m32bcst, imm8", "operand_encoding": "A", "description": "Rotate doublewords in xmm2/m128/m32bcst right by imm8, store result using writemask k1."}, {"opcode": "EVEX.128.66.0F38.W1 14 /r", "instruction": "VPRORVQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "B", "description": "Rotate quadwords in xmm2 right by count in the corresponding element of xmm3/m128/m64bcst, store result using writemask k1."}, {"opcode": "EVEX.128.66.0F.W1 72 /0 ib", "instruction": "VPRORQ xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8", "operand_encoding": "A", "description": "Rotate quadwords in xmm2/m128/m64bcst right by imm8, store result using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W0 14 /r", "instruction": "VPRORVD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst", "operand_encoding": "B", "description": "Rotate doublewords in ymm2 right by count in the corresponding element of ymm3/m256/m32bcst, store using result writemask k1."}, {"opcode": "EVEX.256.66.0F.W0 72 /0 ib", "instruction": "VPRORD ymm1 {k1}{z}, ymm2/m256/m32bcst, imm8", "operand_encoding": "A", "description": "Rotate doublewords in ymm2/m256/m32bcst right by imm8, store result using writemask k1."}, {"opcode": "EVEX.256.66.0F38.W1 14 /r", "instruction": "VPRORVQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "B", "description": "Rotate quadwords in ymm2 right by count in the corresponding element of ymm3/m256/m64bcst, store result using writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 72 /0 ib", "instruction": "VPRORQ ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8", "operand_encoding": "A", "description": "Rotate quadwords in ymm2/m256/m64bcst right by imm8, store result using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W0 14 /r", "instruction": "VPRORVD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst", "operand_encoding": "B", "description": "Rotate doublewords in zmm2 right by count in the corresponding element of zmm3/m512/m32bcst, store result using writemask k1."}, {"opcode": "EVEX.512.66.0F.W0 72 /0 ib", "instruction": "VPRORD zmm1 {k1}{z}, zmm2/m512/m32bcst, imm8", "operand_encoding": "A", "description": "Rotate doublewords in zmm2/m512/m32bcst right by imm8, store result using writemask k1."}, {"opcode": "EVEX.512.66.0F38.W1 14 /r", "instruction": "VPRORVQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst", "operand_encoding": "B", "description": "Rotate quadwords in zmm2 right by count in the corresponding element of zmm3/m512/m64bcst, store result using writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 72 /0 ib", "instruction": "VPRORQ zmm1 {k1}{z}, zmm2/m512/m64bcst, imm8", "operand_encoding": "A", "description": "Rotate quadwords in zmm2/m512/m64bcst right by imm8, store result using writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F38.W0 14 /r",
+    "instruction": "VPRORVD xmm1 {k1}{z}, xmm2, xmm3/m128/m32bcst",
+    "operand_encoding": "B",
+    "description": "Rotate doublewords in xmm2 right by count in the corresponding element of xmm3/m128/m32bcst, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W0 72 /0 ib",
+    "instruction": "VPRORD xmm1 {k1}{z}, xmm2/m128/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate doublewords in xmm2/m128/m32bcst right by imm8, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F38.W1 14 /r",
+    "instruction": "VPRORVQ xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "B",
+    "description": "Rotate quadwords in xmm2 right by count in the corresponding element of xmm3/m128/m64bcst, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 72 /0 ib",
+    "instruction": "VPRORQ xmm1 {k1}{z}, xmm2/m128/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate quadwords in xmm2/m128/m64bcst right by imm8, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W0 14 /r",
+    "instruction": "VPRORVD ymm1 {k1}{z}, ymm2, ymm3/m256/m32bcst",
+    "operand_encoding": "B",
+    "description": "Rotate doublewords in ymm2 right by count in the corresponding element of ymm3/m256/m32bcst, store using result writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W0 72 /0 ib",
+    "instruction": "VPRORD ymm1 {k1}{z}, ymm2/m256/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate doublewords in ymm2/m256/m32bcst right by imm8, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F38.W1 14 /r",
+    "instruction": "VPRORVQ ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "B",
+    "description": "Rotate quadwords in ymm2 right by count in the corresponding element of ymm3/m256/m64bcst, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 72 /0 ib",
+    "instruction": "VPRORQ ymm1 {k1}{z}, ymm2/m256/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate quadwords in ymm2/m256/m64bcst right by imm8, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W0 14 /r",
+    "instruction": "VPRORVD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst",
+    "operand_encoding": "B",
+    "description": "Rotate doublewords in zmm2 right by count in the corresponding element of zmm3/m512/m32bcst, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W0 72 /0 ib",
+    "instruction": "VPRORD zmm1 {k1}{z}, zmm2/m512/m32bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate doublewords in zmm2/m512/m32bcst right by imm8, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F38.W1 14 /r",
+    "instruction": "VPRORVQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst",
+    "operand_encoding": "B",
+    "description": "Rotate quadwords in zmm2 right by count in the corresponding element of zmm3/m512/m64bcst, store result using writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 72 /0 ib",
+    "instruction": "VPRORQ zmm1 {k1}{z}, zmm2/m512/m64bcst, imm8",
+    "operand_encoding": "A",
+    "description": "Rotate quadwords in zmm2/m512/m64bcst right by imm8, store result using writemask k1."
+  }
+]

@@ -1,1 +1,242 @@
-[{"opcode": "D0 /4", "instruction": "SAL r/m8, 1", "operand_encoding": "M1", "description": "Multiply r/m8 by 2, once."}, {"opcode": "REX + D0 /4", "instruction": "SAL r/m8**, 1", "operand_encoding": "M1", "description": "Multiply r/m8 by 2, once."}, {"opcode": "D2 /4", "instruction": "SAL r/m8, CL", "operand_encoding": "MC", "description": "Multiply r/m8 by 2, CL times."}, {"opcode": "REX + D2 /4", "instruction": "SAL r/m8**, CL", "operand_encoding": "MC", "description": "Multiply r/m8 by 2, CL times."}, {"opcode": "C0 /4 ib", "instruction": "SAL r/m8, imm8", "operand_encoding": "MI", "description": "Multiply r/m8 by 2, imm8 times."}, {"opcode": "REX + C0 /4 ib", "instruction": "SAL r/m8**, imm8", "operand_encoding": "MI", "description": "Multiply r/m8 by 2, imm8 times."}, {"opcode": "D1 /4", "instruction": "SAL r/m16, 1", "operand_encoding": "M1", "description": "Multiply r/m16 by 2, once."}, {"opcode": "D3 /4", "instruction": "SAL r/m16, CL", "operand_encoding": "MC", "description": "Multiply r/m16 by 2, CL times."}, {"opcode": "C1 /4 ib", "instruction": "SAL r/m16, imm8", "operand_encoding": "MI", "description": "Multiply r/m16 by 2, imm8 times."}, {"opcode": "D1 /4", "instruction": "SAL r/m32, 1", "operand_encoding": "M1", "description": "Multiply r/m32 by 2, once."}, {"opcode": "REX.W + D1 /4", "instruction": "SAL r/m64, 1", "operand_encoding": "M1", "description": "Multiply r/m64 by 2, once."}, {"opcode": "D3 /4", "instruction": "SAL r/m32, CL", "operand_encoding": "MC", "description": "Multiply r/m32 by 2, CL times."}, {"opcode": "REX.W + D3 /4", "instruction": "SAL r/m64, CL", "operand_encoding": "MC", "description": "Multiply r/m64 by 2, CL times."}, {"opcode": "C1 /4 ib", "instruction": "SAL r/m32, imm8", "operand_encoding": "MI", "description": "Multiply r/m32 by 2, imm8 times."}, {"opcode": "REX.W + C1 /4 ib", "instruction": "SAL r/m64, imm8", "operand_encoding": "MI", "description": "Multiply r/m64 by 2, imm8 times."}, {"opcode": "D0 /7", "instruction": "SAR r/m8, 1", "operand_encoding": "M1", "description": "Signed divide* r/m8 by 2, once."}, {"opcode": "REX + D0 /7", "instruction": "SAR r/m8**, 1", "operand_encoding": "M1", "description": "Signed divide* r/m8 by 2, once."}, {"opcode": "D2 /7", "instruction": "SAR r/m8, CL", "operand_encoding": "MC", "description": "Signed divide* r/m8 by 2, CL times."}, {"opcode": "REX + D2 /7", "instruction": "SAR r/m8**, CL", "operand_encoding": "MC", "description": "Signed divide* r/m8 by 2, CL times."}, {"opcode": "C0 /7 ib", "instruction": "SAR r/m8, imm8", "operand_encoding": "MI", "description": "Signed divide* r/m8 by 2, imm8 time."}, {"opcode": "REX + C0 /7 ib", "instruction": "SAR r/m8**, imm8", "operand_encoding": "MI", "description": "Signed divide* r/m8 by 2, imm8 times."}, {"opcode": "D1 /7", "instruction": "SAR r/m16,1", "operand_encoding": "M1", "description": "Signed divide* r/m16 by 2, once."}, {"opcode": "D3 /7", "instruction": "SAR r/m16, CL", "operand_encoding": "MC", "description": "Signed divide* r/m16 by 2, CL times."}, {"opcode": "C1 /7 ib", "instruction": "SAR r/m16, imm8", "operand_encoding": "MI", "description": "Signed divide* r/m16 by 2, imm8 times."}, {"opcode": "D1 /7", "instruction": "SAR r/m32, 1", "operand_encoding": "M1", "description": "Signed divide* r/m32 by 2, once."}, {"opcode": "REX.W + D1 /7", "instruction": "SAR r/m64, 1", "operand_encoding": "M1", "description": "Signed divide* r/m64 by 2, once."}, {"opcode": "D3 /7", "instruction": "SAR r/m32, CL", "operand_encoding": "MC", "description": "Signed divide* r/m32 by 2, CL times."}, {"opcode": "REX.W + D3 /7", "instruction": "SAR r/m64, CL", "operand_encoding": "MC", "description": "Signed divide* r/m64 by 2, CL times."}, {"opcode": "C1 /7 ib", "instruction": "SAR r/m32, imm8", "operand_encoding": "MI", "description": "Signed divide* r/m32 by 2, imm8 times."}, {"opcode": "REX.W + C1 /7 ib", "instruction": "SAR r/m64, imm8", "operand_encoding": "MI", "description": "Signed divide* r/m64 by 2, imm8 times"}, {"opcode": "D0 /4", "instruction": "SHL r/m8, 1", "operand_encoding": "M1", "description": "Multiply r/m8 by 2, once."}, {"opcode": "REX + D0 /4", "instruction": "SHL r/m8**, 1", "operand_encoding": "M1", "description": "Multiply r/m8 by 2, once."}, {"opcode": "D2 /4", "instruction": "SHL r/m8, CL", "operand_encoding": "MC", "description": "Multiply r/m8 by 2, CL times."}, {"opcode": "REX + D2 /4", "instruction": "SHL r/m8**, CL", "operand_encoding": "MC", "description": "Multiply r/m8 by 2, CL times."}, {"opcode": "C0 /4 ib", "instruction": "SHL r/m8, imm8", "operand_encoding": "MI", "description": "Multiply r/m8 by 2, imm8 times."}, {"opcode": "REX + C0 /4 ib", "instruction": "SHL r/m8**, imm8", "operand_encoding": "MI", "description": "Multiply r/m8 by 2, imm8 times."}, {"opcode": "D1 /4", "instruction": "SHL r/m16,1", "operand_encoding": "M1", "description": "Multiply r/m16 by 2, once."}, {"opcode": "D3 /4", "instruction": "SHL r/m16, CL", "operand_encoding": "MC", "description": "Multiply r/m16 by 2, CL times."}, {"opcode": "C1 /4 ib", "instruction": "SHL r/m16, imm8", "operand_encoding": "MI", "description": "Multiply r/m16 by 2, imm8 times."}, {"opcode": "D1 /4", "instruction": "SHL r/m32,1", "operand_encoding": "M1", "description": "Multiply r/m32 by 2, once."}]
+[
+  {
+    "opcode": "D0 /4",
+    "instruction": "SAL r/m8, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m8 by 2, once."
+  },
+  {
+    "opcode": "REX + D0 /4",
+    "instruction": "SAL r/m8**, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m8 by 2, once."
+  },
+  {
+    "opcode": "D2 /4",
+    "instruction": "SAL r/m8, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "REX + D2 /4",
+    "instruction": "SAL r/m8**, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "C0 /4 ib",
+    "instruction": "SAL r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m8 by 2, imm8 times."
+  },
+  {
+    "opcode": "REX + C0 /4 ib",
+    "instruction": "SAL r/m8**, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m8 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /4",
+    "instruction": "SAL r/m16, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m16 by 2, once."
+  },
+  {
+    "opcode": "D3 /4",
+    "instruction": "SAL r/m16, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m16 by 2, CL times."
+  },
+  {
+    "opcode": "C1 /4 ib",
+    "instruction": "SAL r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m16 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /4",
+    "instruction": "SAL r/m32, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m32 by 2, once."
+  },
+  {
+    "opcode": "REX.W + D1 /4",
+    "instruction": "SAL r/m64, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m64 by 2, once."
+  },
+  {
+    "opcode": "D3 /4",
+    "instruction": "SAL r/m32, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m32 by 2, CL times."
+  },
+  {
+    "opcode": "REX.W + D3 /4",
+    "instruction": "SAL r/m64, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m64 by 2, CL times."
+  },
+  {
+    "opcode": "C1 /4 ib",
+    "instruction": "SAL r/m32, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m32 by 2, imm8 times."
+  },
+  {
+    "opcode": "REX.W + C1 /4 ib",
+    "instruction": "SAL r/m64, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m64 by 2, imm8 times."
+  },
+  {
+    "opcode": "D0 /7",
+    "instruction": "SAR r/m8, 1",
+    "operand_encoding": "M1",
+    "description": "Signed divide* r/m8 by 2, once."
+  },
+  {
+    "opcode": "REX + D0 /7",
+    "instruction": "SAR r/m8**, 1",
+    "operand_encoding": "M1",
+    "description": "Signed divide* r/m8 by 2, once."
+  },
+  {
+    "opcode": "D2 /7",
+    "instruction": "SAR r/m8, CL",
+    "operand_encoding": "MC",
+    "description": "Signed divide* r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "REX + D2 /7",
+    "instruction": "SAR r/m8**, CL",
+    "operand_encoding": "MC",
+    "description": "Signed divide* r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "C0 /7 ib",
+    "instruction": "SAR r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "Signed divide* r/m8 by 2, imm8 time."
+  },
+  {
+    "opcode": "REX + C0 /7 ib",
+    "instruction": "SAR r/m8**, imm8",
+    "operand_encoding": "MI",
+    "description": "Signed divide* r/m8 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /7",
+    "instruction": "SAR r/m16,1",
+    "operand_encoding": "M1",
+    "description": "Signed divide* r/m16 by 2, once."
+  },
+  {
+    "opcode": "D3 /7",
+    "instruction": "SAR r/m16, CL",
+    "operand_encoding": "MC",
+    "description": "Signed divide* r/m16 by 2, CL times."
+  },
+  {
+    "opcode": "C1 /7 ib",
+    "instruction": "SAR r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "Signed divide* r/m16 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /7",
+    "instruction": "SAR r/m32, 1",
+    "operand_encoding": "M1",
+    "description": "Signed divide* r/m32 by 2, once."
+  },
+  {
+    "opcode": "REX.W + D1 /7",
+    "instruction": "SAR r/m64, 1",
+    "operand_encoding": "M1",
+    "description": "Signed divide* r/m64 by 2, once."
+  },
+  {
+    "opcode": "D3 /7",
+    "instruction": "SAR r/m32, CL",
+    "operand_encoding": "MC",
+    "description": "Signed divide* r/m32 by 2, CL times."
+  },
+  {
+    "opcode": "REX.W + D3 /7",
+    "instruction": "SAR r/m64, CL",
+    "operand_encoding": "MC",
+    "description": "Signed divide* r/m64 by 2, CL times."
+  },
+  {
+    "opcode": "C1 /7 ib",
+    "instruction": "SAR r/m32, imm8",
+    "operand_encoding": "MI",
+    "description": "Signed divide* r/m32 by 2, imm8 times."
+  },
+  {
+    "opcode": "REX.W + C1 /7 ib",
+    "instruction": "SAR r/m64, imm8",
+    "operand_encoding": "MI",
+    "description": "Signed divide* r/m64 by 2, imm8 times"
+  },
+  {
+    "opcode": "D0 /4",
+    "instruction": "SHL r/m8, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m8 by 2, once."
+  },
+  {
+    "opcode": "REX + D0 /4",
+    "instruction": "SHL r/m8**, 1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m8 by 2, once."
+  },
+  {
+    "opcode": "D2 /4",
+    "instruction": "SHL r/m8, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "REX + D2 /4",
+    "instruction": "SHL r/m8**, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m8 by 2, CL times."
+  },
+  {
+    "opcode": "C0 /4 ib",
+    "instruction": "SHL r/m8, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m8 by 2, imm8 times."
+  },
+  {
+    "opcode": "REX + C0 /4 ib",
+    "instruction": "SHL r/m8**, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m8 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /4",
+    "instruction": "SHL r/m16,1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m16 by 2, once."
+  },
+  {
+    "opcode": "D3 /4",
+    "instruction": "SHL r/m16, CL",
+    "operand_encoding": "MC",
+    "description": "Multiply r/m16 by 2, CL times."
+  },
+  {
+    "opcode": "C1 /4 ib",
+    "instruction": "SHL r/m16, imm8",
+    "operand_encoding": "MI",
+    "description": "Multiply r/m16 by 2, imm8 times."
+  },
+  {
+    "opcode": "D1 /4",
+    "instruction": "SHL r/m32,1",
+    "operand_encoding": "M1",
+    "description": "Multiply r/m32 by 2, once."
+  }
+]

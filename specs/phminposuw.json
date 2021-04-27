@@ -1,1 +1,14 @@
-[{"opcode": "66 0F 38 41 /r", "instruction": "PHMINPOSUW xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Find the minimum unsigned word in xmm2/m128 and place its value in the low word of xmm1 and its index in the second-lowest word of xmm1."}, {"opcode": "VEX.128.66.0F38.WIG 41 /r", "instruction": "VPHMINPOSUW xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Find the minimum unsigned word in xmm2/m128 and place its value in the low word of xmm1 and its index in the second-lowest word of xmm1."}]
+[
+  {
+    "opcode": "66 0F 38 41 /r",
+    "instruction": "PHMINPOSUW xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Find the minimum unsigned word in xmm2/m128 and place its value in the low word of xmm1 and its index in the second-lowest word of xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 41 /r",
+    "instruction": "VPHMINPOSUW xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Find the minimum unsigned word in xmm2/m128 and place its value in the low word of xmm1 and its index in the second-lowest word of xmm1."
+  }
+]

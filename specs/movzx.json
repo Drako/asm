@@ -1,1 +1,32 @@
-[{"opcode": "0F B6 /r", "instruction": "MOVZX r16, r/m8", "operand_encoding": "RM", "description": "Move byte to word with zero-extension."}, {"opcode": "0F B6 /r", "instruction": "MOVZX r32, r/m8", "operand_encoding": "RM", "description": "Move byte to doubleword, zero-extension."}, {"opcode": "REX.W + 0F B6 /r", "instruction": "MOVZX r64, r/m8*", "operand_encoding": "RM", "description": "Move byte to quadword, zero-extension."}, {"opcode": "0F B7 /r", "instruction": "MOVZX r32, r/m16", "operand_encoding": "RM", "description": "Move word to doubleword, zero-extension."}, {"opcode": "REX.W + 0F B7 /r", "instruction": "MOVZX r64, r/m16", "operand_encoding": "RM", "description": "Move word to quadword, zero-extension."}]
+[
+  {
+    "opcode": "0F B6 /r",
+    "instruction": "MOVZX r16, r/m8",
+    "operand_encoding": "RM",
+    "description": "Move byte to word with zero-extension."
+  },
+  {
+    "opcode": "0F B6 /r",
+    "instruction": "MOVZX r32, r/m8",
+    "operand_encoding": "RM",
+    "description": "Move byte to doubleword, zero-extension."
+  },
+  {
+    "opcode": "REX.W + 0F B6 /r",
+    "instruction": "MOVZX r64, r/m8*",
+    "operand_encoding": "RM",
+    "description": "Move byte to quadword, zero-extension."
+  },
+  {
+    "opcode": "0F B7 /r",
+    "instruction": "MOVZX r32, r/m16",
+    "operand_encoding": "RM",
+    "description": "Move word to doubleword, zero-extension."
+  },
+  {
+    "opcode": "REX.W + 0F B7 /r",
+    "instruction": "MOVZX r64, r/m16",
+    "operand_encoding": "RM",
+    "description": "Move word to quadword, zero-extension."
+  }
+]

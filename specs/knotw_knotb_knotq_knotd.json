@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L0.0F.W0 44 /r", "instruction": "KNOTW k1, k2", "operand_encoding": "RR", "description": "Bitwise NOT of 16 bits mask k2."}, {"opcode": "VEX.L0.66.0F.W0 44 /r", "instruction": "KNOTB k1, k2", "operand_encoding": "RR", "description": "Bitwise NOT of 8 bits mask k2."}, {"opcode": "VEX.L0.0F.W1 44 /r", "instruction": "KNOTQ k1, k2", "operand_encoding": "RR", "description": "Bitwise NOT of 64 bits mask k2."}, {"opcode": "VEX.L0.66.0F.W1 44 /r", "instruction": "KNOTD k1, k2", "operand_encoding": "RR", "description": "Bitwise NOT of 32 bits mask k2."}]
+[
+  {
+    "opcode": "VEX.L0.0F.W0 44 /r",
+    "instruction": "KNOTW k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise NOT of 16 bits mask k2."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W0 44 /r",
+    "instruction": "KNOTB k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise NOT of 8 bits mask k2."
+  },
+  {
+    "opcode": "VEX.L0.0F.W1 44 /r",
+    "instruction": "KNOTQ k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise NOT of 64 bits mask k2."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W1 44 /r",
+    "instruction": "KNOTD k1, k2",
+    "operand_encoding": "RR",
+    "description": "Bitwise NOT of 32 bits mask k2."
+  }
+]

@@ -1,4 +1,4 @@
-from json import JSONEncoder, dumps
+from json import JSONEncoder, dump
 
 import requests
 from bs4 import BeautifulSoup
@@ -101,7 +101,10 @@ def op_en_reader(columns: dict[str, int]):
     try:
         col_names = [
             'op/en',
-            'op / en'
+            'op / en',
+            'op/e n',
+            'op /en',
+            'op/ en',
         ]
         col = next((columns[name] for name in col_names if name in columns))
 
@@ -340,7 +343,8 @@ def generate_spec(instruction: str):
     if len(instructions) != 0:
         print(f'{instruction} -> {spec_name}')
         with open(spec_name, 'w') as spec:
-            spec.write(dumps(instructions, cls=InstructionEncoder))
+            dump(instructions, spec, cls=InstructionEncoder, indent=2)
+            spec.write('\n')
     else:
         print(f'{instruction} -> ignored (no 64bit instructions)')
 

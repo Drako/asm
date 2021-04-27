@@ -1,1 +1,8 @@
-[{"opcode": "D9 FD", "instruction": "FSCALE", "operand_encoding": "ZO", "description": "Scale ST(0) by ST(1)."}]
+[
+  {
+    "opcode": "D9 FD",
+    "instruction": "FSCALE",
+    "operand_encoding": "ZO",
+    "description": "Scale ST(0) by ST(1)."
+  }
+]

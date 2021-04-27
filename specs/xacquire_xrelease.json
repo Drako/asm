@@ -1,1 +1,14 @@
-[{"opcode": "F2", "instruction": "XACQUIRE", "operand_encoding": "ZO", "description": "A hint used with an \u201cXACQUIRE-enabled\u201c instruction to start lock elision on the instruction memory operand address."}, {"opcode": "F3", "instruction": "XRELEASE", "operand_encoding": "ZO", "description": "A hint used with an \u201cXRELEASE-enabled\u201c instruction to end lock elision on the instruction memory operand address."}]
+[
+  {
+    "opcode": "F2",
+    "instruction": "XACQUIRE",
+    "operand_encoding": "ZO",
+    "description": "A hint used with an \u201cXACQUIRE-enabled\u201c instruction to start lock elision on the instruction memory operand address."
+  },
+  {
+    "opcode": "F3",
+    "instruction": "XRELEASE",
+    "operand_encoding": "ZO",
+    "description": "A hint used with an \u201cXRELEASE-enabled\u201c instruction to end lock elision on the instruction memory operand address."
+  }
+]

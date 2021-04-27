@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L1.0F.W0 42 /r", "instruction": "KANDNW k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise AND NOT 16 bits masks k2 and k3 and place result in k1."}, {"opcode": "VEX.L1.66.0F.W0 42 /r", "instruction": "KANDNB k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise AND NOT 8 bits masks k1 and k2 and place result in k1."}, {"opcode": "VEX.L1.0F.W1 42 /r", "instruction": "KANDNQ k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise AND NOT 64 bits masks k2 and k3 and place result in k1."}, {"opcode": "VEX.L1.66.0F.W1 42 /r", "instruction": "KANDND k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise AND NOT 32 bits masks k2 and k3 and place result in k1."}]
+[
+  {
+    "opcode": "VEX.L1.0F.W0 42 /r",
+    "instruction": "KANDNW k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise AND NOT 16 bits masks k2 and k3 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.66.0F.W0 42 /r",
+    "instruction": "KANDNB k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise AND NOT 8 bits masks k1 and k2 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.0F.W1 42 /r",
+    "instruction": "KANDNQ k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise AND NOT 64 bits masks k2 and k3 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.66.0F.W1 42 /r",
+    "instruction": "KANDND k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise AND NOT 32 bits masks k2 and k3 and place result in k1."
+  }
+]

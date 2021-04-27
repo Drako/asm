@@ -1,1 +1,20 @@
-[{"opcode": "EVEX.128.66.0F3A.W0 42 /r ib", "instruction": "VDBPSADBW xmm1 {k1}{z}, xmm2, xmm3/m128, imm8", "operand_encoding": "A", "description": "Compute packed SAD word results of unsigned bytes in dword block from xmm2 with unsigned bytes of dword blocks transformed from xmm3/m128 using the shuffle controls in imm8. Results are written to xmm1 under the writemask k1."}, {"opcode": "EVEX.256.66.0F3A.W0 42 /r ib", "instruction": "VDBPSADBW ymm1 {k1}{z}, ymm2, ymm3/m256, imm8", "operand_encoding": "A", "description": "Compute packed SAD word results of unsigned bytes in dword block from ymm2 with unsigned bytes of dword blocks transformed from ymm3/m256 using the shuffle controls in imm8. Results are written to ymm1 under the writemask k1."}, {"opcode": "EVEX.512.66.0F3A.W0 42 /r ib", "instruction": "VDBPSADBW zmm1 {k1}{z}, zmm2, zmm3/m512, imm8", "operand_encoding": "A", "description": "Compute packed SAD word results of unsigned bytes in dword block from zmm2 with unsigned bytes of dword blocks transformed from zmm3/m512 using the shuffle controls in imm8. Results are written to zmm1 under the writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.66.0F3A.W0 42 /r ib",
+    "instruction": "VDBPSADBW xmm1 {k1}{z}, xmm2, xmm3/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Compute packed SAD word results of unsigned bytes in dword block from xmm2 with unsigned bytes of dword blocks transformed from xmm3/m128 using the shuffle controls in imm8. Results are written to xmm1 under the writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F3A.W0 42 /r ib",
+    "instruction": "VDBPSADBW ymm1 {k1}{z}, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "A",
+    "description": "Compute packed SAD word results of unsigned bytes in dword block from ymm2 with unsigned bytes of dword blocks transformed from ymm3/m256 using the shuffle controls in imm8. Results are written to ymm1 under the writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F3A.W0 42 /r ib",
+    "instruction": "VDBPSADBW zmm1 {k1}{z}, zmm2, zmm3/m512, imm8",
+    "operand_encoding": "A",
+    "description": "Compute packed SAD word results of unsigned bytes in dword block from zmm2 with unsigned bytes of dword blocks transformed from zmm3/m512 using the shuffle controls in imm8. Results are written to zmm1 under the writemask k1."
+  }
+]

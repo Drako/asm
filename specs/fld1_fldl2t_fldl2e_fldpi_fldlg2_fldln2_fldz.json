@@ -1,1 +1,44 @@
-[{"opcode": "D9 E8", "instruction": "FLD1", "operand_encoding": "ZO", "description": "Push +1.0 onto the FPU register stack."}, {"opcode": "D9 E9", "instruction": "FLDL2T", "operand_encoding": "ZO", "description": "Push log210 onto the FPU register stack."}, {"opcode": "D9 EA", "instruction": "FLDL2E", "operand_encoding": "ZO", "description": "Push log2e onto the FPU register stack."}, {"opcode": "D9 EB", "instruction": "FLDPI", "operand_encoding": "ZO", "description": "Push \u03c0 onto the FPU register stack."}, {"opcode": "D9 EC", "instruction": "FLDLG2", "operand_encoding": "ZO", "description": "Push log102 onto the FPU register stack."}, {"opcode": "D9 ED", "instruction": "FLDLN2", "operand_encoding": "ZO", "description": "Push loge2 onto the FPU register stack."}, {"opcode": "D9 EE", "instruction": "FLDZ", "operand_encoding": "ZO", "description": "Push +0.0 onto the FPU register stack."}]
+[
+  {
+    "opcode": "D9 E8",
+    "instruction": "FLD1",
+    "operand_encoding": "ZO",
+    "description": "Push +1.0 onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 E9",
+    "instruction": "FLDL2T",
+    "operand_encoding": "ZO",
+    "description": "Push log210 onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 EA",
+    "instruction": "FLDL2E",
+    "operand_encoding": "ZO",
+    "description": "Push log2e onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 EB",
+    "instruction": "FLDPI",
+    "operand_encoding": "ZO",
+    "description": "Push \u03c0 onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 EC",
+    "instruction": "FLDLG2",
+    "operand_encoding": "ZO",
+    "description": "Push log102 onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 ED",
+    "instruction": "FLDLN2",
+    "operand_encoding": "ZO",
+    "description": "Push loge2 onto the FPU register stack."
+  },
+  {
+    "opcode": "D9 EE",
+    "instruction": "FLDZ",
+    "operand_encoding": "ZO",
+    "description": "Push +0.0 onto the FPU register stack."
+  }
+]

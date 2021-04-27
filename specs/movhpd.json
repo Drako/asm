@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 16 /r", "instruction": "MOVHPD xmm1, m64", "operand_encoding": "A", "description": "Move double-precision floating-point value from m64 to high quadword of xmm1."}, {"opcode": "VEX.128.66.0F.WIG 16 /r", "instruction": "VMOVHPD xmm2, xmm1, m64", "operand_encoding": "B", "description": "Merge double-precision floating-point value from m64 and the low quadword of xmm1."}, {"opcode": "EVEX.128.66.0F.W1 16 /r", "instruction": "VMOVHPD xmm2, xmm1, m64", "operand_encoding": "D", "description": "Merge double-precision floating-point value from m64 and the low quadword of xmm1."}, {"opcode": "66 0F 17 /r", "instruction": "MOVHPD m64, xmm1", "operand_encoding": "C", "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."}, {"opcode": "VEX.128.66.0F.WIG 17 /r", "instruction": "VMOVHPD m64, xmm1", "operand_encoding": "C", "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."}, {"opcode": "EVEX.128.66.0F.W1 17 /r", "instruction": "VMOVHPD m64, xmm1", "operand_encoding": "E", "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."}]
+[
+  {
+    "opcode": "66 0F 16 /r",
+    "instruction": "MOVHPD xmm1, m64",
+    "operand_encoding": "A",
+    "description": "Move double-precision floating-point value from m64 to high quadword of xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 16 /r",
+    "instruction": "VMOVHPD xmm2, xmm1, m64",
+    "operand_encoding": "B",
+    "description": "Merge double-precision floating-point value from m64 and the low quadword of xmm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 16 /r",
+    "instruction": "VMOVHPD xmm2, xmm1, m64",
+    "operand_encoding": "D",
+    "description": "Merge double-precision floating-point value from m64 and the low quadword of xmm1."
+  },
+  {
+    "opcode": "66 0F 17 /r",
+    "instruction": "MOVHPD m64, xmm1",
+    "operand_encoding": "C",
+    "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 17 /r",
+    "instruction": "VMOVHPD m64, xmm1",
+    "operand_encoding": "C",
+    "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 17 /r",
+    "instruction": "VMOVHPD m64, xmm1",
+    "operand_encoding": "E",
+    "description": "Move double-precision floating-point value from high quadword of xmm1 to m64."
+  }
+]

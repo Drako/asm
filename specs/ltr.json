@@ -1,1 +1,8 @@
-[{"opcode": "0F 00 /3", "instruction": "LTR r/m16", "operand_encoding": "M", "description": "Load r/m16 into task register."}]
+[
+  {
+    "opcode": "0F 00 /3",
+    "instruction": "LTR r/m16",
+    "operand_encoding": "M",
+    "description": "Load r/m16 into task register."
+  }
+]

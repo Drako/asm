@@ -1,1 +1,8 @@
-[{"opcode": "EVEX.LIG.66.0F38.W0 43 /r", "instruction": "VGETEXPSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}", "operand_encoding": "A", "description": "Convert the biased exponent (bits 30:23) of the low single-precision floating-point value in xmm3/m32 to a SP FP value representing unbiased integer exponent. Stores the result to xmm1 under the writemask k1 and merge with the other elements of xmm2."}]
+[
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 43 /r",
+    "instruction": "VGETEXPSS xmm1 {k1}{z}, xmm2, xmm3/m32{sae}",
+    "operand_encoding": "A",
+    "description": "Convert the biased exponent (bits 30:23) of the low single-precision floating-point value in xmm3/m32 to a SP FP value representing unbiased integer exponent. Stores the result to xmm1 under the writemask k1 and merge with the other elements of xmm2."
+  }
+]

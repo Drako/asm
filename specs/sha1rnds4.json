@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 3A CC /r ib", "instruction": "SHA1RNDS4 xmm1, xmm2/m128, imm8", "operand_encoding": "RMI", "description": "Performs four rounds of SHA1 operation operating on SHA1 state (A,B,C,D) from xmm1, with a pre-computed sum of the next 4 round message dwords and state variable E from xmm2/m128. The immediate byte controls logic functions and round constants."}]
+[
+  {
+    "opcode": "NP 0F 3A CC /r ib",
+    "instruction": "SHA1RNDS4 xmm1, xmm2/m128, imm8",
+    "operand_encoding": "RMI",
+    "description": "Performs four rounds of SHA1 operation operating on SHA1 state (A,B,C,D) from xmm1, with a pre-computed sum of the next 4 round message dwords and state variable E from xmm2/m128. The immediate byte controls logic functions and round constants."
+  }
+]

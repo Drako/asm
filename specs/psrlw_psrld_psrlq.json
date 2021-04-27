@@ -1,1 +1,122 @@
-[{"opcode": "NP 0F D1 /r1", "instruction": "PSRLW mm, mm/m64", "operand_encoding": "A", "description": "Shift words in mm right by amount specified in mm/m64 while shifting in 0s."}, {"opcode": "66 0F D1 /r", "instruction": "PSRLW xmm1, xmm2/m128", "operand_encoding": "A", "description": "Shift words in xmm1 right by amount specified in xmm2/m128 while shifting in 0s."}, {"opcode": "NP 0F 71 /2 ib1", "instruction": "PSRLW mm, imm8", "operand_encoding": "B", "description": "Shift words in mm right by imm8 while shifting in 0s."}, {"opcode": "66 0F 71 /2 ib", "instruction": "PSRLW xmm1, imm8", "operand_encoding": "B", "description": "Shift words in xmm1 right by imm8 while shifting in 0s."}, {"opcode": "NP 0F D2 /r1", "instruction": "PSRLD mm, mm/m64", "operand_encoding": "A", "description": "Shift doublewords in mm right by amount specified in mm/m64 while shifting in 0s."}, {"opcode": "66 0F D2 /r", "instruction": "PSRLD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Shift doublewords in xmm1 right by amount specified in xmm2 /m128 while shifting in 0s."}, {"opcode": "NP 0F 72 /2 ib1", "instruction": "PSRLD mm, imm8", "operand_encoding": "B", "description": "Shift doublewords in mm right by imm8 while shifting in 0s."}, {"opcode": "66 0F 72 /2 ib", "instruction": "PSRLD xmm1, imm8", "operand_encoding": "B", "description": "Shift doublewords in xmm1 right by imm8 while shifting in 0s."}, {"opcode": "NP 0F D3 /r1", "instruction": "PSRLQ mm, mm/m64", "operand_encoding": "A", "description": "Shift mm right by amount specified in mm/m64 while shifting in 0s."}, {"opcode": "66 0F D3 /r", "instruction": "PSRLQ xmm1, xmm2/m128", "operand_encoding": "A", "description": "Shift quadwords in xmm1 right by amount specified in xmm2/m128 while shifting in 0s."}, {"opcode": "NP 0F 73 /2 ib1", "instruction": "PSRLQ mm, imm8", "operand_encoding": "B", "description": "Shift mm right by imm8 while shifting in 0s."}, {"opcode": "66 0F 73 /2 ib", "instruction": "PSRLQ xmm1, imm8", "operand_encoding": "B", "description": "Shift quadwords in xmm1 right by imm8 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG D1 /r", "instruction": "VPSRLW xmm1, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Shift words in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG 71 /2 ib", "instruction": "VPSRLW xmm1, xmm2, imm8", "operand_encoding": "D", "description": "Shift words in xmm2 right by imm8 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG D2 /r", "instruction": "VPSRLD xmm1, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Shift doublewords in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG 72 /2 ib", "instruction": "VPSRLD xmm1, xmm2, imm8", "operand_encoding": "D", "description": "Shift doublewords in xmm2 right by imm8 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG D3 /r", "instruction": "VPSRLQ xmm1, xmm2, xmm3/m128", "operand_encoding": "C", "description": "Shift quadwords in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."}, {"opcode": "VEX.128.66.0F.WIG 73 /2 ib", "instruction": "VPSRLQ xmm1, xmm2, imm8", "operand_encoding": "D", "description": "Shift quadwords in xmm2 right by imm8 while shifting in 0s."}, {"opcode": "VEX.256.66.0F.WIG D1 /r", "instruction": "VPSRLW ymm1, ymm2, xmm3/m128", "operand_encoding": "C", "description": "Shift words in ymm2 right by amount specified in xmm3/m128 while shifting in 0s."}, {"opcode": "VEX.256.66.0F.WIG 71 /2 ib", "instruction": "VPSRLW ymm1, ymm2, imm8", "operand_encoding": "D", "description": "Shift words in ymm2 right by imm8 while shifting in 0s."}]
+[
+  {
+    "opcode": "NP 0F D1 /r1",
+    "instruction": "PSRLW mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Shift words in mm right by amount specified in mm/m64 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F D1 /r",
+    "instruction": "PSRLW xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Shift words in xmm1 right by amount specified in xmm2/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "NP 0F 71 /2 ib1",
+    "instruction": "PSRLW mm, imm8",
+    "operand_encoding": "B",
+    "description": "Shift words in mm right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F 71 /2 ib",
+    "instruction": "PSRLW xmm1, imm8",
+    "operand_encoding": "B",
+    "description": "Shift words in xmm1 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "NP 0F D2 /r1",
+    "instruction": "PSRLD mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Shift doublewords in mm right by amount specified in mm/m64 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F D2 /r",
+    "instruction": "PSRLD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Shift doublewords in xmm1 right by amount specified in xmm2 /m128 while shifting in 0s."
+  },
+  {
+    "opcode": "NP 0F 72 /2 ib1",
+    "instruction": "PSRLD mm, imm8",
+    "operand_encoding": "B",
+    "description": "Shift doublewords in mm right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F 72 /2 ib",
+    "instruction": "PSRLD xmm1, imm8",
+    "operand_encoding": "B",
+    "description": "Shift doublewords in xmm1 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "NP 0F D3 /r1",
+    "instruction": "PSRLQ mm, mm/m64",
+    "operand_encoding": "A",
+    "description": "Shift mm right by amount specified in mm/m64 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F D3 /r",
+    "instruction": "PSRLQ xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Shift quadwords in xmm1 right by amount specified in xmm2/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "NP 0F 73 /2 ib1",
+    "instruction": "PSRLQ mm, imm8",
+    "operand_encoding": "B",
+    "description": "Shift mm right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "66 0F 73 /2 ib",
+    "instruction": "PSRLQ xmm1, imm8",
+    "operand_encoding": "B",
+    "description": "Shift quadwords in xmm1 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG D1 /r",
+    "instruction": "VPSRLW xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Shift words in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 71 /2 ib",
+    "instruction": "VPSRLW xmm1, xmm2, imm8",
+    "operand_encoding": "D",
+    "description": "Shift words in xmm2 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG D2 /r",
+    "instruction": "VPSRLD xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Shift doublewords in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 72 /2 ib",
+    "instruction": "VPSRLD xmm1, xmm2, imm8",
+    "operand_encoding": "D",
+    "description": "Shift doublewords in xmm2 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG D3 /r",
+    "instruction": "VPSRLQ xmm1, xmm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Shift quadwords in xmm2 right by amount specified in xmm3/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 73 /2 ib",
+    "instruction": "VPSRLQ xmm1, xmm2, imm8",
+    "operand_encoding": "D",
+    "description": "Shift quadwords in xmm2 right by imm8 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG D1 /r",
+    "instruction": "VPSRLW ymm1, ymm2, xmm3/m128",
+    "operand_encoding": "C",
+    "description": "Shift words in ymm2 right by amount specified in xmm3/m128 while shifting in 0s."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 71 /2 ib",
+    "instruction": "VPSRLW ymm1, ymm2, imm8",
+    "operand_encoding": "D",
+    "description": "Shift words in ymm2 right by imm8 while shifting in 0s."
+  }
+]

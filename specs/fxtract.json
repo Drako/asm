@@ -1,1 +1,8 @@
-[{"opcode": "D9 F4", "instruction": "FXTRACT", "operand_encoding": "ZO", "description": "Separate value in ST(0) into exponent and significand, store exponent in ST(0), and push the significand onto the register stack."}]
+[
+  {
+    "opcode": "D9 F4",
+    "instruction": "FXTRACT",
+    "operand_encoding": "ZO",
+    "description": "Separate value in ST(0) into exponent and significand, store exponent in ST(0), and push the significand onto the register stack."
+  }
+]

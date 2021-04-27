@@ -1,1 +1,38 @@
-[{"opcode": "VEX.LIG.66.0F38.W0 9B /r", "instruction": "VFMSUB132SS xmm1, xmm2, xmm3/m32", "operand_encoding": "A", "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm3/m32, subtract xmm2 and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W0 AB /r", "instruction": "VFMSUB213SS xmm1, xmm2, xmm3/m32", "operand_encoding": "A", "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm2, subtract xmm3/m32 and put result in xmm1."}, {"opcode": "VEX.LIG.66.0F38.W0 BB /r", "instruction": "VFMSUB231SS xmm1, xmm2, xmm3/m32", "operand_encoding": "A", "description": "Multiply scalar single-precision floating-point value from xmm2 and xmm3/m32, subtract xmm1 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W0 9B /r", "instruction": "VFMSUB132SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}", "operand_encoding": "B", "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm3/m32, subtract xmm2 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W0 AB /r", "instruction": "VFMSUB213SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}", "operand_encoding": "B", "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm2, subtract xmm3/m32 and put result in xmm1."}, {"opcode": "EVEX.LIG.66.0F38.W0 BB /r", "instruction": "VFMSUB231SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}", "operand_encoding": "B", "description": "Multiply scalar single-precision floating-point value from xmm2 and xmm3/m32, subtract xmm1 and put result in xmm1."}]
+[
+  {
+    "opcode": "VEX.LIG.66.0F38.W0 9B /r",
+    "instruction": "VFMSUB132SS xmm1, xmm2, xmm3/m32",
+    "operand_encoding": "A",
+    "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm3/m32, subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W0 AB /r",
+    "instruction": "VFMSUB213SS xmm1, xmm2, xmm3/m32",
+    "operand_encoding": "A",
+    "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm2, subtract xmm3/m32 and put result in xmm1."
+  },
+  {
+    "opcode": "VEX.LIG.66.0F38.W0 BB /r",
+    "instruction": "VFMSUB231SS xmm1, xmm2, xmm3/m32",
+    "operand_encoding": "A",
+    "description": "Multiply scalar single-precision floating-point value from xmm2 and xmm3/m32, subtract xmm1 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 9B /r",
+    "instruction": "VFMSUB132SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm3/m32, subtract xmm2 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 AB /r",
+    "instruction": "VFMSUB213SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar single-precision floating-point value from xmm1 and xmm2, subtract xmm3/m32 and put result in xmm1."
+  },
+  {
+    "opcode": "EVEX.LIG.66.0F38.W0 BB /r",
+    "instruction": "VFMSUB231SS xmm1 {k1}{z}, xmm2, xmm3/m32{er}",
+    "operand_encoding": "B",
+    "description": "Multiply scalar single-precision floating-point value from xmm2 and xmm3/m32, subtract xmm1 and put result in xmm1."
+  }
+]

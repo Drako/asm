@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 51 /r", "instruction": "SQRTPD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128 and stores the result in xmm1."}, {"opcode": "VEX.128.66.0F.WIG 51 /r", "instruction": "VSQRTPD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128 and stores the result in xmm1."}, {"opcode": "VEX.256.66.0F.WIG 51 /r", "instruction": "VSQRTPD ymm1, ymm2/m256", "operand_encoding": "A", "description": "Computes Square Roots of the packed double-precision floating-point values in ymm2/m256 and stores the result in ymm1."}, {"opcode": "EVEX.128.66.0F.W1 51 /r", "instruction": "VSQRTPD xmm1 {k1}{z}, xmm2/m128/m64bcst", "operand_encoding": "B", "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128/m64bcst and stores the result in xmm1 subject to writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 51 /r", "instruction": "VSQRTPD ymm1 {k1}{z}, ymm2/m256/m64bcst", "operand_encoding": "B", "description": "Computes Square Roots of the packed double-precision floating-point values in ymm2/m256/m64bcst and stores the result in ymm1 subject to writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 51 /r", "instruction": "VSQRTPD zmm1 {k1}{z}, zmm2/m512/m64bcst{er}", "operand_encoding": "B", "description": "Computes Square Roots of the packed double-precision floating-point values in zmm2/m512/m64bcst and stores the result in zmm1 subject to writemask k1."}]
+[
+  {
+    "opcode": "66 0F 51 /r",
+    "instruction": "SQRTPD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128 and stores the result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 51 /r",
+    "instruction": "VSQRTPD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128 and stores the result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 51 /r",
+    "instruction": "VSQRTPD ymm1, ymm2/m256",
+    "operand_encoding": "A",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in ymm2/m256 and stores the result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 51 /r",
+    "instruction": "VSQRTPD xmm1 {k1}{z}, xmm2/m128/m64bcst",
+    "operand_encoding": "B",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in xmm2/m128/m64bcst and stores the result in xmm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 51 /r",
+    "instruction": "VSQRTPD ymm1 {k1}{z}, ymm2/m256/m64bcst",
+    "operand_encoding": "B",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in ymm2/m256/m64bcst and stores the result in ymm1 subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 51 /r",
+    "instruction": "VSQRTPD zmm1 {k1}{z}, zmm2/m512/m64bcst{er}",
+    "operand_encoding": "B",
+    "description": "Computes Square Roots of the packed double-precision floating-point values in zmm2/m512/m64bcst and stores the result in zmm1 subject to writemask k1."
+  }
+]

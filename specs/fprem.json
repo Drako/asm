@@ -1,1 +1,8 @@
-[{"opcode": "D9 F8", "instruction": "FPREM", "operand_encoding": "ZO", "description": "Replace ST(0) with the remainder obtained from dividing ST(0) by ST(1)."}]
+[
+  {
+    "opcode": "D9 F8",
+    "instruction": "FPREM",
+    "operand_encoding": "ZO",
+    "description": "Replace ST(0) with the remainder obtained from dividing ST(0) by ST(1)."
+  }
+]

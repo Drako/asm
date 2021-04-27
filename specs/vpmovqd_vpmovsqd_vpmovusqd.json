@@ -1,1 +1,56 @@
-[{"opcode": "EVEX.128.F3.0F38.W0 35 /r", "instruction": "VPMOVQD xmm1/m128 {k1}{z}, xmm2", "operand_encoding": "A", "description": "Converts 2 packed quad-word integers from xmm2 into 2 packed double-word integers in xmm1/m128 with truncation subject to writemask k1."}, {"opcode": "EVEX.128.F3.0F38.W0 25 /r", "instruction": "VPMOVSQD xmm1/m64 {k1}{z}, xmm2", "operand_encoding": "A", "description": "Converts 2 packed signed quad-word integers from xmm2 into 2 packed signed double-word integers in xmm1/m64 using signed saturation subject to writemask k1."}, {"opcode": "EVEX.128.F3.0F38.W0 15 /r", "instruction": "VPMOVUSQD xmm1/m64 {k1}{z}, xmm2", "operand_encoding": "A", "description": "Converts 2 packed unsigned quad-word integers from xmm2 into 2 packed unsigned double-word integers in xmm1/m64 using unsigned saturation subject to writemask k1."}, {"opcode": "EVEX.256.F3.0F38.W0 35 /r", "instruction": "VPMOVQD xmm1/m128 {k1}{z}, ymm2", "operand_encoding": "A", "description": "Converts 4 packed quad-word integers from ymm2 into 4 packed double-word integers in xmm1/m128 with truncation subject to writemask k1."}, {"opcode": "EVEX.256.F3.0F38.W0 25 /r", "instruction": "VPMOVSQD xmm1/m128 {k1}{z}, ymm2", "operand_encoding": "A", "description": "Converts 4 packed signed quad-word integers from ymm2 into 4 packed signed double-word integers in xmm1/m128 using signed saturation subject to writemask k1."}, {"opcode": "EVEX.256.F3.0F38.W0 15 /r", "instruction": "VPMOVUSQD xmm1/m128 {k1}{z}, ymm2", "operand_encoding": "A", "description": "Converts 4 packed unsigned quad-word integers from ymm2 into 4 packed unsigned double-word integers in xmm1/m128 using unsigned saturation subject to writemask k1."}, {"opcode": "EVEX.512.F3.0F38.W0 35 /r", "instruction": "VPMOVQD ymm1/m256 {k1}{z}, zmm2", "operand_encoding": "A", "description": "Converts 8 packed quad-word integers from zmm2 into 8 packed double-word integers in ymm1/m256 with truncation subject to writemask k1."}, {"opcode": "EVEX.512.F3.0F38.W0 25 /r", "instruction": "VPMOVSQD ymm1/m256 {k1}{z}, zmm2", "operand_encoding": "A", "description": "Converts 8 packed signed quad-word integers from zmm2 into 8 packed signed double-word integers in ymm1/m256 using signed saturation subject to writemask k1."}, {"opcode": "EVEX.512.F3.0F38.W0 15 /r", "instruction": "VPMOVUSQD ymm1/m256 {k1}{z}, zmm2", "operand_encoding": "A", "description": "Converts 8 packed unsigned quad-word integers from zmm2 into 8 packed unsigned double-word integers in ymm1/m256 using unsigned saturation subject to writemask k1."}]
+[
+  {
+    "opcode": "EVEX.128.F3.0F38.W0 35 /r",
+    "instruction": "VPMOVQD xmm1/m128 {k1}{z}, xmm2",
+    "operand_encoding": "A",
+    "description": "Converts 2 packed quad-word integers from xmm2 into 2 packed double-word integers in xmm1/m128 with truncation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F38.W0 25 /r",
+    "instruction": "VPMOVSQD xmm1/m64 {k1}{z}, xmm2",
+    "operand_encoding": "A",
+    "description": "Converts 2 packed signed quad-word integers from xmm2 into 2 packed signed double-word integers in xmm1/m64 using signed saturation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.128.F3.0F38.W0 15 /r",
+    "instruction": "VPMOVUSQD xmm1/m64 {k1}{z}, xmm2",
+    "operand_encoding": "A",
+    "description": "Converts 2 packed unsigned quad-word integers from xmm2 into 2 packed unsigned double-word integers in xmm1/m64 using unsigned saturation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F38.W0 35 /r",
+    "instruction": "VPMOVQD xmm1/m128 {k1}{z}, ymm2",
+    "operand_encoding": "A",
+    "description": "Converts 4 packed quad-word integers from ymm2 into 4 packed double-word integers in xmm1/m128 with truncation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F38.W0 25 /r",
+    "instruction": "VPMOVSQD xmm1/m128 {k1}{z}, ymm2",
+    "operand_encoding": "A",
+    "description": "Converts 4 packed signed quad-word integers from ymm2 into 4 packed signed double-word integers in xmm1/m128 using signed saturation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.F3.0F38.W0 15 /r",
+    "instruction": "VPMOVUSQD xmm1/m128 {k1}{z}, ymm2",
+    "operand_encoding": "A",
+    "description": "Converts 4 packed unsigned quad-word integers from ymm2 into 4 packed unsigned double-word integers in xmm1/m128 using unsigned saturation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F38.W0 35 /r",
+    "instruction": "VPMOVQD ymm1/m256 {k1}{z}, zmm2",
+    "operand_encoding": "A",
+    "description": "Converts 8 packed quad-word integers from zmm2 into 8 packed double-word integers in ymm1/m256 with truncation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F38.W0 25 /r",
+    "instruction": "VPMOVSQD ymm1/m256 {k1}{z}, zmm2",
+    "operand_encoding": "A",
+    "description": "Converts 8 packed signed quad-word integers from zmm2 into 8 packed signed double-word integers in ymm1/m256 using signed saturation subject to writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.F3.0F38.W0 15 /r",
+    "instruction": "VPMOVUSQD ymm1/m256 {k1}{z}, zmm2",
+    "operand_encoding": "A",
+    "description": "Converts 8 packed unsigned quad-word integers from zmm2 into 8 packed unsigned double-word integers in ymm1/m256 using unsigned saturation subject to writemask k1."
+  }
+]

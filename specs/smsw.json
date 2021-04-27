@@ -1,1 +1,20 @@
-[{"opcode": "0F 01 /4", "instruction": "SMSW r/m16", "operand_encoding": "M", "description": "Store machine status word to r/m16."}, {"opcode": "0F 01 /4", "instruction": "SMSW r32/m16", "operand_encoding": "M", "description": "Store machine status word in low-order 16 bits of r32/m16; high-order 16 bits of r32 are undefined."}, {"opcode": "REX.W + 0F 01 /4", "instruction": "SMSW r64/m16", "operand_encoding": "M", "description": "Store machine status word in low-order 16 bits of r64/m16; high-order 16 bits of r32 are undefined."}]
+[
+  {
+    "opcode": "0F 01 /4",
+    "instruction": "SMSW r/m16",
+    "operand_encoding": "M",
+    "description": "Store machine status word to r/m16."
+  },
+  {
+    "opcode": "0F 01 /4",
+    "instruction": "SMSW r32/m16",
+    "operand_encoding": "M",
+    "description": "Store machine status word in low-order 16 bits of r32/m16; high-order 16 bits of r32 are undefined."
+  },
+  {
+    "opcode": "REX.W + 0F 01 /4",
+    "instruction": "SMSW r64/m16",
+    "operand_encoding": "M",
+    "description": "Store machine status word in low-order 16 bits of r64/m16; high-order 16 bits of r32 are undefined."
+  }
+]

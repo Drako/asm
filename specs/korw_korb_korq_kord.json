@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L1.0F.W0 45 /r", "instruction": "KORW k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise OR 16 bits masks k2 and k3 and place result in k1."}, {"opcode": "VEX.L1.66.0F.W0 45 /r", "instruction": "KORB k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise OR 8 bits masks k2 and k3 and place result in k1."}, {"opcode": "VEX.L1.0F.W1 45 /r", "instruction": "KORQ k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise OR 64 bits masks k2 and k3 and place result in k1."}, {"opcode": "VEX.L1.66.0F.W1 45 /r", "instruction": "KORD k1, k2, k3", "operand_encoding": "RVR", "description": "Bitwise OR 32 bits masks k2 and k3 and place result in k1."}]
+[
+  {
+    "opcode": "VEX.L1.0F.W0 45 /r",
+    "instruction": "KORW k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise OR 16 bits masks k2 and k3 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.66.0F.W0 45 /r",
+    "instruction": "KORB k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise OR 8 bits masks k2 and k3 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.0F.W1 45 /r",
+    "instruction": "KORQ k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise OR 64 bits masks k2 and k3 and place result in k1."
+  },
+  {
+    "opcode": "VEX.L1.66.0F.W1 45 /r",
+    "instruction": "KORD k1, k2, k3",
+    "operand_encoding": "RVR",
+    "description": "Bitwise OR 32 bits masks k2 and k3 and place result in k1."
+  }
+]

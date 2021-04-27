@@ -1,1 +1,14 @@
-[{"opcode": "66 0F 1A /r", "instruction": "BNDMOV bnd1, bnd2/m128", "operand_encoding": "RM", "description": "Move lower and upper bound from bnd2/m128 to bound register bnd1."}, {"opcode": "66 0F 1B /r", "instruction": "BNDMOV bnd1/m128, bnd2", "operand_encoding": "MR", "description": "Move lower and upper bound from bnd2 to bound register bnd1/m128."}]
+[
+  {
+    "opcode": "66 0F 1A /r",
+    "instruction": "BNDMOV bnd1, bnd2/m128",
+    "operand_encoding": "RM",
+    "description": "Move lower and upper bound from bnd2/m128 to bound register bnd1."
+  },
+  {
+    "opcode": "66 0F 1B /r",
+    "instruction": "BNDMOV bnd1/m128, bnd2",
+    "operand_encoding": "MR",
+    "description": "Move lower and upper bound from bnd2 to bound register bnd1/m128."
+  }
+]

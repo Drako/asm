@@ -1,1 +1,8 @@
-[{"opcode": "VEX.256.66.0F3A.W0 46 /r ib", "instruction": "VPERM2I128 ymm1, ymm2, ymm3/m256, imm8", "operand_encoding": "RVMI", "description": "Permute 128-bit integer data in ymm2 and ymm3/mem using controls from imm8 and store result in ymm1."}]
+[
+  {
+    "opcode": "VEX.256.66.0F3A.W0 46 /r ib",
+    "instruction": "VPERM2I128 ymm1, ymm2, ymm3/m256, imm8",
+    "operand_encoding": "RVMI",
+    "description": "Permute 128-bit integer data in ymm2 and ymm3/mem using controls from imm8 and store result in ymm1."
+  }
+]

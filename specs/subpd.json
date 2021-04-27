@@ -1,1 +1,38 @@
-[{"opcode": "66 0F 5C /r", "instruction": "SUBPD xmm1, xmm2/m128", "operand_encoding": "A", "description": "Subtract packed double-precision floating-point values in xmm2/mem from xmm1 and store result in xmm1."}, {"opcode": "VEX.128.66.0F.WIG 5C /r", "instruction": "VSUBPD xmm1,xmm2, xmm3/m128", "operand_encoding": "B", "description": "Subtract packed double-precision floating-point values in xmm3/mem from xmm2 and store result in xmm1."}, {"opcode": "VEX.256.66.0F.WIG 5C /r", "instruction": "VSUBPD ymm1, ymm2, ymm3/m256", "operand_encoding": "B", "description": "Subtract packed double-precision floating-point values in ymm3/mem from ymm2 and store result in ymm1."}, {"opcode": "EVEX.128.66.0F.W1 5C /r", "instruction": "VSUBPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst", "operand_encoding": "C", "description": "Subtract packed double-precision floating-point values from xmm3/m128/m64bcst to xmm2 and store result in xmm1 with writemask k1."}, {"opcode": "EVEX.256.66.0F.W1 5C /r", "instruction": "VSUBPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst", "operand_encoding": "C", "description": "Subtract packed double-precision floating-point values from ymm3/m256/m64bcst to ymm2 and store result in ymm1 with writemask k1."}, {"opcode": "EVEX.512.66.0F.W1 5C /r", "instruction": "VSUBPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst{er}", "operand_encoding": "C", "description": "Subtract packed double-precision floating-point values from zmm3/m512/m64bcst to zmm2 and store result in zmm1 with writemask k1."}]
+[
+  {
+    "opcode": "66 0F 5C /r",
+    "instruction": "SUBPD xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Subtract packed double-precision floating-point values in xmm2/mem from xmm1 and store result in xmm1."
+  },
+  {
+    "opcode": "VEX.128.66.0F.WIG 5C /r",
+    "instruction": "VSUBPD xmm1,xmm2, xmm3/m128",
+    "operand_encoding": "B",
+    "description": "Subtract packed double-precision floating-point values in xmm3/mem from xmm2 and store result in xmm1."
+  },
+  {
+    "opcode": "VEX.256.66.0F.WIG 5C /r",
+    "instruction": "VSUBPD ymm1, ymm2, ymm3/m256",
+    "operand_encoding": "B",
+    "description": "Subtract packed double-precision floating-point values in ymm3/mem from ymm2 and store result in ymm1."
+  },
+  {
+    "opcode": "EVEX.128.66.0F.W1 5C /r",
+    "instruction": "VSUBPD xmm1 {k1}{z}, xmm2, xmm3/m128/m64bcst",
+    "operand_encoding": "C",
+    "description": "Subtract packed double-precision floating-point values from xmm3/m128/m64bcst to xmm2 and store result in xmm1 with writemask k1."
+  },
+  {
+    "opcode": "EVEX.256.66.0F.W1 5C /r",
+    "instruction": "VSUBPD ymm1 {k1}{z}, ymm2, ymm3/m256/m64bcst",
+    "operand_encoding": "C",
+    "description": "Subtract packed double-precision floating-point values from ymm3/m256/m64bcst to ymm2 and store result in ymm1 with writemask k1."
+  },
+  {
+    "opcode": "EVEX.512.66.0F.W1 5C /r",
+    "instruction": "VSUBPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst{er}",
+    "operand_encoding": "C",
+    "description": "Subtract packed double-precision floating-point values from zmm3/m512/m64bcst to zmm2 and store result in zmm1 with writemask k1."
+  }
+]

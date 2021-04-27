@@ -1,1 +1,14 @@
-[{"opcode": "NP 0F C7 /3", "instruction": "XRSTORS mem", "operand_encoding": "M", "description": "Restore state components specified by EDX:EAX from mem."}, {"opcode": "NP", "instruction": "XRSTORS64 mem", "operand_encoding": "M", "description": "Restore state components specified by EDX:EAX from mem."}]
+[
+  {
+    "opcode": "NP 0F C7 /3",
+    "instruction": "XRSTORS mem",
+    "operand_encoding": "M",
+    "description": "Restore state components specified by EDX:EAX from mem."
+  },
+  {
+    "opcode": "NP",
+    "instruction": "XRSTORS64 mem",
+    "operand_encoding": "M",
+    "description": "Restore state components specified by EDX:EAX from mem."
+  }
+]

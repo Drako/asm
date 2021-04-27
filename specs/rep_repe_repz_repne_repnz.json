@@ -1,1 +1,272 @@
-[{"opcode": "F3 6C", "instruction": "REP INS m8, DX", "operand_encoding": "ZO", "description": "Input (E)CX bytes from port DX into ES:[(E)DI]."}, {"opcode": "F3 6C", "instruction": "REP INS m8, DX", "operand_encoding": "ZO", "description": "Input RCX bytes from port DX into [RDI]."}, {"opcode": "F3 6D", "instruction": "REP INS m16, DX", "operand_encoding": "ZO", "description": "Input (E)CX words from port DX into ES:[(E)DI.]"}, {"opcode": "F3 6D", "instruction": "REP INS m32, DX", "operand_encoding": "ZO", "description": "Input (E)CX doublewords from port DX into ES:[(E)DI]."}, {"opcode": "F3 6D", "instruction": "REP INS r/m32, DX", "operand_encoding": "ZO", "description": "Input RCX default size from port DX into [RDI]."}, {"opcode": "F3 A4", "instruction": "REP MOVS m8, m8", "operand_encoding": "ZO", "description": "Move (E)CX bytes from DS:[(E)SI] to ES:[(E)DI]."}, {"opcode": "F3 REX.W A4", "instruction": "REP MOVS m8, m8", "operand_encoding": "ZO", "description": "Move RCX bytes from [RSI] to [RDI]."}, {"opcode": "F3 A5", "instruction": "REP MOVS m16, m16", "operand_encoding": "ZO", "description": "Move (E)CX words from DS:[(E)SI] to ES:[(E)DI]."}, {"opcode": "F3 A5", "instruction": "REP MOVS m32, m32", "operand_encoding": "ZO", "description": "Move (E)CX doublewords from DS:[(E)SI] to ES:[(E)DI]."}, {"opcode": "F3 REX.W A5", "instruction": "REP MOVS m64, m64", "operand_encoding": "ZO", "description": "Move RCX quadwords from [RSI] to [RDI]."}, {"opcode": "F3 6E", "instruction": "REP OUTS DX, r/m8", "operand_encoding": "ZO", "description": "Output (E)CX bytes from DS:[(E)SI] to port DX."}, {"opcode": "F3 REX.W 6E", "instruction": "REP OUTS DX, r/m8*", "operand_encoding": "ZO", "description": "Output RCX bytes from [RSI] to port DX."}, {"opcode": "F3 6F", "instruction": "REP OUTS DX, r/m16", "operand_encoding": "ZO", "description": "Output (E)CX words from DS:[(E)SI] to port DX."}, {"opcode": "F3 6F", "instruction": "REP OUTS DX, r/m32", "operand_encoding": "ZO", "description": "Output (E)CX doublewords from DS:[(E)SI] to port DX."}, {"opcode": "F3 REX.W 6F", "instruction": "REP OUTS DX, r/m32", "operand_encoding": "ZO", "description": "Output RCX default size from [RSI] to port DX."}, {"opcode": "F3 AC", "instruction": "REP LODS AL", "operand_encoding": "ZO", "description": "Load (E)CX bytes from DS:[(E)SI] to AL."}, {"opcode": "F3 REX.W AC", "instruction": "REP LODS AL", "operand_encoding": "ZO", "description": "Load RCX bytes from [RSI] to AL."}, {"opcode": "F3 AD", "instruction": "REP LODS AX", "operand_encoding": "ZO", "description": "Load (E)CX words from DS:[(E)SI] to AX."}, {"opcode": "F3 AD", "instruction": "REP LODS EAX", "operand_encoding": "ZO", "description": "Load (E)CX doublewords from DS:[(E)SI] to EAX."}, {"opcode": "F3 REX.W AD", "instruction": "REP LODS RAX", "operand_encoding": "ZO", "description": "Load RCX quadwords from [RSI] to RAX."}, {"opcode": "F3 AA", "instruction": "REP STOS m8", "operand_encoding": "ZO", "description": "Fill (E)CX bytes at ES:[(E)DI] with AL."}, {"opcode": "F3 REX.W AA", "instruction": "REP STOS m8", "operand_encoding": "ZO", "description": "Fill RCX bytes at [RDI] with AL."}, {"opcode": "F3 AB", "instruction": "REP STOS m16", "operand_encoding": "ZO", "description": "Fill (E)CX words at ES:[(E)DI] with AX."}, {"opcode": "F3 AB", "instruction": "REP STOS m32", "operand_encoding": "ZO", "description": "Fill (E)CX doublewords at ES:[(E)DI] with EAX."}, {"opcode": "F3 REX.W AB", "instruction": "REP STOS m64", "operand_encoding": "ZO", "description": "Fill RCX quadwords at [RDI] with RAX."}, {"opcode": "F3 A6", "instruction": "REPE CMPS m8, m8", "operand_encoding": "ZO", "description": "Find nonmatching bytes in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F3 REX.W A6", "instruction": "REPE CMPS m8, m8", "operand_encoding": "ZO", "description": "Find non-matching bytes in [RDI] and [RSI]."}, {"opcode": "F3 A7", "instruction": "REPE CMPS m16, m16", "operand_encoding": "ZO", "description": "Find nonmatching words in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F3 A7", "instruction": "REPE CMPS m32, m32", "operand_encoding": "ZO", "description": "Find nonmatching doublewords in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F3 REX.W A7", "instruction": "REPE CMPS m64, m64", "operand_encoding": "ZO", "description": "Find non-matching quadwords in [RDI] and [RSI]."}, {"opcode": "F3 AE", "instruction": "REPE SCAS m8", "operand_encoding": "ZO", "description": "Find non-AL byte starting at ES:[(E)DI]."}, {"opcode": "F3 REX.W AE", "instruction": "REPE SCAS m8", "operand_encoding": "ZO", "description": "Find non-AL byte starting at [RDI]."}, {"opcode": "F3 AF", "instruction": "REPE SCAS m16", "operand_encoding": "ZO", "description": "Find non-AX word starting at ES:[(E)DI]."}, {"opcode": "F3 AF", "instruction": "REPE SCAS m32", "operand_encoding": "ZO", "description": "Find non-EAX doubleword starting at ES:[(E)DI]."}, {"opcode": "F3 REX.W AF", "instruction": "REPE SCAS m64", "operand_encoding": "ZO", "description": "Find non-RAX quadword starting at [RDI]."}, {"opcode": "F2 A6", "instruction": "REPNE CMPS m8, m8", "operand_encoding": "ZO", "description": "Find matching bytes in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F2 REX.W A6", "instruction": "REPNE CMPS m8, m8", "operand_encoding": "ZO", "description": "Find matching bytes in [RDI] and [RSI]."}, {"opcode": "F2 A7", "instruction": "REPNE CMPS m16, m16", "operand_encoding": "ZO", "description": "Find matching words in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F2 A7", "instruction": "REPNE CMPS m32, m32", "operand_encoding": "ZO", "description": "Find matching doublewords in ES:[(E)DI] and DS:[(E)SI]."}, {"opcode": "F2 REX.W A7", "instruction": "REPNE CMPS m64, m64", "operand_encoding": "ZO", "description": "Find matching doublewords in [RDI] and [RSI]."}, {"opcode": "F2 AE", "instruction": "REPNE SCAS m8", "operand_encoding": "ZO", "description": "Find AL, starting at ES:[(E)DI]."}, {"opcode": "F2 REX.W AE", "instruction": "REPNE SCAS m8", "operand_encoding": "ZO", "description": "Find AL, starting at [RDI]."}, {"opcode": "F2 AF", "instruction": "REPNE SCAS m16", "operand_encoding": "ZO", "description": "Find AX, starting at ES:[(E)DI]."}, {"opcode": "F2 AF", "instruction": "REPNE SCAS m32", "operand_encoding": "ZO", "description": "Find EAX, starting at ES:[(E)DI]."}, {"opcode": "F2 REX.W AF", "instruction": "REPNE SCAS m64", "operand_encoding": "ZO", "description": "Find RAX, starting at [RDI]."}]
+[
+  {
+    "opcode": "F3 6C",
+    "instruction": "REP INS m8, DX",
+    "operand_encoding": "ZO",
+    "description": "Input (E)CX bytes from port DX into ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 6C",
+    "instruction": "REP INS m8, DX",
+    "operand_encoding": "ZO",
+    "description": "Input RCX bytes from port DX into [RDI]."
+  },
+  {
+    "opcode": "F3 6D",
+    "instruction": "REP INS m16, DX",
+    "operand_encoding": "ZO",
+    "description": "Input (E)CX words from port DX into ES:[(E)DI.]"
+  },
+  {
+    "opcode": "F3 6D",
+    "instruction": "REP INS m32, DX",
+    "operand_encoding": "ZO",
+    "description": "Input (E)CX doublewords from port DX into ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 6D",
+    "instruction": "REP INS r/m32, DX",
+    "operand_encoding": "ZO",
+    "description": "Input RCX default size from port DX into [RDI]."
+  },
+  {
+    "opcode": "F3 A4",
+    "instruction": "REP MOVS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Move (E)CX bytes from DS:[(E)SI] to ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 REX.W A4",
+    "instruction": "REP MOVS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Move RCX bytes from [RSI] to [RDI]."
+  },
+  {
+    "opcode": "F3 A5",
+    "instruction": "REP MOVS m16, m16",
+    "operand_encoding": "ZO",
+    "description": "Move (E)CX words from DS:[(E)SI] to ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 A5",
+    "instruction": "REP MOVS m32, m32",
+    "operand_encoding": "ZO",
+    "description": "Move (E)CX doublewords from DS:[(E)SI] to ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 REX.W A5",
+    "instruction": "REP MOVS m64, m64",
+    "operand_encoding": "ZO",
+    "description": "Move RCX quadwords from [RSI] to [RDI]."
+  },
+  {
+    "opcode": "F3 6E",
+    "instruction": "REP OUTS DX, r/m8",
+    "operand_encoding": "ZO",
+    "description": "Output (E)CX bytes from DS:[(E)SI] to port DX."
+  },
+  {
+    "opcode": "F3 REX.W 6E",
+    "instruction": "REP OUTS DX, r/m8*",
+    "operand_encoding": "ZO",
+    "description": "Output RCX bytes from [RSI] to port DX."
+  },
+  {
+    "opcode": "F3 6F",
+    "instruction": "REP OUTS DX, r/m16",
+    "operand_encoding": "ZO",
+    "description": "Output (E)CX words from DS:[(E)SI] to port DX."
+  },
+  {
+    "opcode": "F3 6F",
+    "instruction": "REP OUTS DX, r/m32",
+    "operand_encoding": "ZO",
+    "description": "Output (E)CX doublewords from DS:[(E)SI] to port DX."
+  },
+  {
+    "opcode": "F3 REX.W 6F",
+    "instruction": "REP OUTS DX, r/m32",
+    "operand_encoding": "ZO",
+    "description": "Output RCX default size from [RSI] to port DX."
+  },
+  {
+    "opcode": "F3 AC",
+    "instruction": "REP LODS AL",
+    "operand_encoding": "ZO",
+    "description": "Load (E)CX bytes from DS:[(E)SI] to AL."
+  },
+  {
+    "opcode": "F3 REX.W AC",
+    "instruction": "REP LODS AL",
+    "operand_encoding": "ZO",
+    "description": "Load RCX bytes from [RSI] to AL."
+  },
+  {
+    "opcode": "F3 AD",
+    "instruction": "REP LODS AX",
+    "operand_encoding": "ZO",
+    "description": "Load (E)CX words from DS:[(E)SI] to AX."
+  },
+  {
+    "opcode": "F3 AD",
+    "instruction": "REP LODS EAX",
+    "operand_encoding": "ZO",
+    "description": "Load (E)CX doublewords from DS:[(E)SI] to EAX."
+  },
+  {
+    "opcode": "F3 REX.W AD",
+    "instruction": "REP LODS RAX",
+    "operand_encoding": "ZO",
+    "description": "Load RCX quadwords from [RSI] to RAX."
+  },
+  {
+    "opcode": "F3 AA",
+    "instruction": "REP STOS m8",
+    "operand_encoding": "ZO",
+    "description": "Fill (E)CX bytes at ES:[(E)DI] with AL."
+  },
+  {
+    "opcode": "F3 REX.W AA",
+    "instruction": "REP STOS m8",
+    "operand_encoding": "ZO",
+    "description": "Fill RCX bytes at [RDI] with AL."
+  },
+  {
+    "opcode": "F3 AB",
+    "instruction": "REP STOS m16",
+    "operand_encoding": "ZO",
+    "description": "Fill (E)CX words at ES:[(E)DI] with AX."
+  },
+  {
+    "opcode": "F3 AB",
+    "instruction": "REP STOS m32",
+    "operand_encoding": "ZO",
+    "description": "Fill (E)CX doublewords at ES:[(E)DI] with EAX."
+  },
+  {
+    "opcode": "F3 REX.W AB",
+    "instruction": "REP STOS m64",
+    "operand_encoding": "ZO",
+    "description": "Fill RCX quadwords at [RDI] with RAX."
+  },
+  {
+    "opcode": "F3 A6",
+    "instruction": "REPE CMPS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Find nonmatching bytes in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F3 REX.W A6",
+    "instruction": "REPE CMPS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Find non-matching bytes in [RDI] and [RSI]."
+  },
+  {
+    "opcode": "F3 A7",
+    "instruction": "REPE CMPS m16, m16",
+    "operand_encoding": "ZO",
+    "description": "Find nonmatching words in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F3 A7",
+    "instruction": "REPE CMPS m32, m32",
+    "operand_encoding": "ZO",
+    "description": "Find nonmatching doublewords in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F3 REX.W A7",
+    "instruction": "REPE CMPS m64, m64",
+    "operand_encoding": "ZO",
+    "description": "Find non-matching quadwords in [RDI] and [RSI]."
+  },
+  {
+    "opcode": "F3 AE",
+    "instruction": "REPE SCAS m8",
+    "operand_encoding": "ZO",
+    "description": "Find non-AL byte starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 REX.W AE",
+    "instruction": "REPE SCAS m8",
+    "operand_encoding": "ZO",
+    "description": "Find non-AL byte starting at [RDI]."
+  },
+  {
+    "opcode": "F3 AF",
+    "instruction": "REPE SCAS m16",
+    "operand_encoding": "ZO",
+    "description": "Find non-AX word starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 AF",
+    "instruction": "REPE SCAS m32",
+    "operand_encoding": "ZO",
+    "description": "Find non-EAX doubleword starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F3 REX.W AF",
+    "instruction": "REPE SCAS m64",
+    "operand_encoding": "ZO",
+    "description": "Find non-RAX quadword starting at [RDI]."
+  },
+  {
+    "opcode": "F2 A6",
+    "instruction": "REPNE CMPS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Find matching bytes in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F2 REX.W A6",
+    "instruction": "REPNE CMPS m8, m8",
+    "operand_encoding": "ZO",
+    "description": "Find matching bytes in [RDI] and [RSI]."
+  },
+  {
+    "opcode": "F2 A7",
+    "instruction": "REPNE CMPS m16, m16",
+    "operand_encoding": "ZO",
+    "description": "Find matching words in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F2 A7",
+    "instruction": "REPNE CMPS m32, m32",
+    "operand_encoding": "ZO",
+    "description": "Find matching doublewords in ES:[(E)DI] and DS:[(E)SI]."
+  },
+  {
+    "opcode": "F2 REX.W A7",
+    "instruction": "REPNE CMPS m64, m64",
+    "operand_encoding": "ZO",
+    "description": "Find matching doublewords in [RDI] and [RSI]."
+  },
+  {
+    "opcode": "F2 AE",
+    "instruction": "REPNE SCAS m8",
+    "operand_encoding": "ZO",
+    "description": "Find AL, starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F2 REX.W AE",
+    "instruction": "REPNE SCAS m8",
+    "operand_encoding": "ZO",
+    "description": "Find AL, starting at [RDI]."
+  },
+  {
+    "opcode": "F2 AF",
+    "instruction": "REPNE SCAS m16",
+    "operand_encoding": "ZO",
+    "description": "Find AX, starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F2 AF",
+    "instruction": "REPNE SCAS m32",
+    "operand_encoding": "ZO",
+    "description": "Find EAX, starting at ES:[(E)DI]."
+  },
+  {
+    "opcode": "F2 REX.W AF",
+    "instruction": "REPNE SCAS m64",
+    "operand_encoding": "ZO",
+    "description": "Find RAX, starting at [RDI]."
+  }
+]

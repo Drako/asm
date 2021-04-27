@@ -1,1 +1,20 @@
-[{"opcode": "66 0F 38 17 /r", "instruction": "PTEST xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Set ZF if xmm2/m128 AND xmm1 result is all 0s. Set CF if xmm2/m128 AND NOT xmm1 result is all 0s."}, {"opcode": "VEX.128.66.0F38.WIG 17 /r", "instruction": "VPTEST xmm1, xmm2/m128", "operand_encoding": "RM", "description": "Set ZF and CF depending on bitwise AND and ANDN of sources."}, {"opcode": "VEX.256.66.0F38.WIG 17 /r", "instruction": "VPTEST ymm1, ymm2/m256", "operand_encoding": "RM", "description": "Set ZF and CF depending on bitwise AND and ANDN of sources."}]
+[
+  {
+    "opcode": "66 0F 38 17 /r",
+    "instruction": "PTEST xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Set ZF if xmm2/m128 AND xmm1 result is all 0s. Set CF if xmm2/m128 AND NOT xmm1 result is all 0s."
+  },
+  {
+    "opcode": "VEX.128.66.0F38.WIG 17 /r",
+    "instruction": "VPTEST xmm1, xmm2/m128",
+    "operand_encoding": "RM",
+    "description": "Set ZF and CF depending on bitwise AND and ANDN of sources."
+  },
+  {
+    "opcode": "VEX.256.66.0F38.WIG 17 /r",
+    "instruction": "VPTEST ymm1, ymm2/m256",
+    "operand_encoding": "RM",
+    "description": "Set ZF and CF depending on bitwise AND and ANDN of sources."
+  }
+]

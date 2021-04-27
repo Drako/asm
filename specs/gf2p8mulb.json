@@ -1,1 +1,8 @@
-[{"opcode": "66", "instruction": "GF2P8MULB xmm1, xmm2/m128", "operand_encoding": "A", "description": "Multiplies elements in the finite field GF(2^8)."}]
+[
+  {
+    "opcode": "66",
+    "instruction": "GF2P8MULB xmm1, xmm2/m128",
+    "operand_encoding": "A",
+    "description": "Multiplies elements in the finite field GF(2^8)."
+  }
+]

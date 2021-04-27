@@ -1,1 +1,26 @@
-[{"opcode": "VEX.L0.0F.W0 99 /r", "instruction": "KTESTW k1, k2", "operand_encoding": "ZO", "description": "Set ZF and CF depending on sign bit AND and ANDN of 16 bits mask register sources."}, {"opcode": "VEX.L0.66.0F.W0 99 /r", "instruction": "KTESTB k1, k2", "operand_encoding": "ZO", "description": "Set ZF and CF depending on sign bit AND and ANDN of 8 bits mask register sources."}, {"opcode": "VEX.L0.0F.W1 99 /r", "instruction": "KTESTQ k1, k2", "operand_encoding": "ZO", "description": "Set ZF and CF depending on sign bit AND and ANDN of 64 bits mask register sources."}, {"opcode": "VEX.L0.66.0F.W1 99 /r", "instruction": "KTESTD k1, k2", "operand_encoding": "ZO", "description": "Set ZF and CF depending on sign bit AND and ANDN of 32 bits mask register sources."}]
+[
+  {
+    "opcode": "VEX.L0.0F.W0 99 /r",
+    "instruction": "KTESTW k1, k2",
+    "operand_encoding": "ZO",
+    "description": "Set ZF and CF depending on sign bit AND and ANDN of 16 bits mask register sources."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W0 99 /r",
+    "instruction": "KTESTB k1, k2",
+    "operand_encoding": "ZO",
+    "description": "Set ZF and CF depending on sign bit AND and ANDN of 8 bits mask register sources."
+  },
+  {
+    "opcode": "VEX.L0.0F.W1 99 /r",
+    "instruction": "KTESTQ k1, k2",
+    "operand_encoding": "ZO",
+    "description": "Set ZF and CF depending on sign bit AND and ANDN of 64 bits mask register sources."
+  },
+  {
+    "opcode": "VEX.L0.66.0F.W1 99 /r",
+    "instruction": "KTESTD k1, k2",
+    "operand_encoding": "ZO",
+    "description": "Set ZF and CF depending on sign bit AND and ANDN of 32 bits mask register sources."
+  }
+]

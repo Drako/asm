@@ -1,1 +1,8 @@
-[{"opcode": "66", "instruction": "GF2P8AFFINEINVQB xmm1, xmm2/m128, imm8", "operand_encoding": "A", "description": "Computes inverse affine transformation in the finite field GF(2^8)."}]
+[
+  {
+    "opcode": "66",
+    "instruction": "GF2P8AFFINEINVQB xmm1, xmm2/m128, imm8",
+    "operand_encoding": "A",
+    "description": "Computes inverse affine transformation in the finite field GF(2^8)."
+  }
+]

@@ -1,1 +1,8 @@
-[{"opcode": "NP 0F 01 D0", "instruction": "XGETBV", "operand_encoding": "ZO", "description": "Reads an XCR specified by ECX into EDX:EAX."}]
+[
+  {
+    "opcode": "NP 0F 01 D0",
+    "instruction": "XGETBV",
+    "operand_encoding": "ZO",
+    "description": "Reads an XCR specified by ECX into EDX:EAX."
+  }
+]

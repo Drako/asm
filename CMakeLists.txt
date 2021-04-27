@@ -16,3 +16,5 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 enable_testing()
+add_subdirectory(src)
+add_subdirectory(test)
